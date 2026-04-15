@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="45%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#3B7EF0"/>
+      <stop offset="100%" stop-color="#1A4FC4"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="40%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(0,0,50,0.45)"/>
+    </filter>
+  </defs>
+  <!-- Círculo base -->
+  <circle cx="60" cy="60" r="57" fill="url(#bg)" filter="url(#shadow)"/>
+  <!-- Brillo superior -->
+  <circle cx="60" cy="60" r="57" fill="url(#shine)"/>
+  <!-- C grande -->
+  <path
+    d="M78 34 A34 34 0 1 0 78 86"
+    stroke="#F0ECDF"
+    stroke-width="13"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <!-- a minúscula dentro de la C -->
+  <g transform="translate(59, 48)">
+    <!-- cuerpo circular de la a -->
+    <circle cx="3" cy="8" r="9" stroke="#F0ECDF" stroke-width="5" fill="none"/>
+    <!-- palo derecho de la a -->
+    <line x1="12" y1="0" x2="12" y2="17" stroke="#F0ECDF" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

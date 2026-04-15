@@ -1,0 +1,161 @@
+@if (success()) {
+  <div class="rounded-lg p-6 text-center" style="background-color: #D5F5E3;">
+    <svg class="w-12 h-12 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1E8449;" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+    </svg>
+    <h3 class="text-lg font-semibold" style="color: #1E8449;">¡Consulta enviada!</h3>
+    <p class="mt-2 text-sm" style="color: #1C2833;">Te contactaremos dentro de las próximas 24 horas. Si es urgente, escribinos por WhatsApp.</p>
+    <a
+      href="https://wa.me/5493415000000"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn-whatsapp mt-4 inline-flex"
+    >
+      Ir a WhatsApp
+    </a>
+  </div>
+} @else {
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate class="space-y-4">
+
+    <!-- Nombre -->
+    <div>
+      <label for="nombre" class="block text-sm font-medium mb-1" style="color: #1C2833;">
+        Nombre completo <span style="color: #922B21;" aria-hidden="true">*</span>
+      </label>
+      <input
+        id="nombre"
+        type="text"
+        formControlName="nombre"
+        autocomplete="name"
+        placeholder="Tu nombre"
+        class="w-full px-4 py-3 rounded-lg border text-sm transition-colors duration-150 focus:outline-none focus:ring-2"
+        [class.border-red-400]="isInvalid('nombre')"
+        [class.focus:ring-red-300]="isInvalid('nombre')"
+        [class.border-gray-300]="!isInvalid('nombre')"
+        [class.focus:ring-blue-300]="!isInvalid('nombre')"
+        aria-required="true"
+        [attr.aria-invalid]="isInvalid('nombre')"
+      >
+      @if (isInvalid('nombre')) {
+        <p class="mt-1 text-xs" style="color: #922B21;" role="alert">Ingresá tu nombre completo.</p>
+      }
+    </div>
+
+    <!-- Teléfono -->
+    <div>
+      <label for="telefono" class="block text-sm font-medium mb-1" style="color: #1C2833;">
+        Teléfono / WhatsApp <span style="color: #922B21;" aria-hidden="true">*</span>
+      </label>
+      <input
+        id="telefono"
+        type="tel"
+        formControlName="telefono"
+        autocomplete="tel"
+        placeholder="Tu número con código de área"
+        class="w-full px-4 py-3 rounded-lg border text-sm transition-colors duration-150 focus:outline-none focus:ring-2"
+        [class.border-red-400]="isInvalid('telefono')"
+        [class.border-gray-300]="!isInvalid('telefono')"
+        aria-required="true"
+        [attr.aria-invalid]="isInvalid('telefono')"
+      >
+      @if (isInvalid('telefono')) {
+        <p class="mt-1 text-xs" style="color: #922B21;" role="alert">Ingresá un teléfono válido.</p>
+      }
+    </div>
+
+    <!-- Provincia -->
+    <div>
+      <label for="provincia" class="block text-sm font-medium mb-1" style="color: #1C2833;">
+        Provincia <span style="color: #922B21;" aria-hidden="true">*</span>
+      </label>
+      <select
+        id="provincia"
+        formControlName="provincia"
+        class="w-full px-4 py-3 rounded-lg border text-sm transition-colors duration-150 focus:outline-none focus:ring-2 bg-white"
+        [class.border-red-400]="isInvalid('provincia')"
+        [class.border-gray-300]="!isInvalid('provincia')"
+        aria-required="true"
+      >
+        <option value="">Seleccioná tu provincia</option>
+        @for (p of provincias; track p) {
+          <option [value]="p">{{ p }}</option>
+        }
+      </select>
+      @if (isInvalid('provincia')) {
+        <p class="mt-1 text-xs" style="color: #922B21;" role="alert">Seleccioná una provincia.</p>
+      }
+    </div>
+
+    <!-- Tipo de caso -->
+    <div>
+      <label for="tipoCaso" class="block text-sm font-medium mb-1" style="color: #1C2833;">
+        Tipo de caso <span style="color: #922B21;" aria-hidden="true">*</span>
+      </label>
+      <select
+        id="tipoCaso"
+        formControlName="tipoCaso"
+        class="w-full px-4 py-3 rounded-lg border text-sm transition-colors duration-150 focus:outline-none focus:ring-2 bg-white"
+        [class.border-red-400]="isInvalid('tipoCaso')"
+        [class.border-gray-300]="!isInvalid('tipoCaso')"
+        aria-required="true"
+      >
+        <option value="">Seleccioná el tipo de caso</option>
+        @for (t of tiposCaso; track t) {
+          <option [value]="t">{{ t }}</option>
+        }
+      </select>
+      @if (isInvalid('tipoCaso')) {
+        <p class="mt-1 text-xs" style="color: #922B21;" role="alert">Seleccioná el tipo de caso.</p>
+      }
+    </div>
+
+    <!-- Mensaje -->
+    <div>
+      <label for="mensaje" class="block text-sm font-medium mb-1" style="color: #1C2833;">
+        Describí brevemente tu caso <span style="color: #922B21;" aria-hidden="true">*</span>
+      </label>
+      <textarea
+        id="mensaje"
+        formControlName="mensaje"
+        rows="4"
+        placeholder="¿Qué pasó? ¿Cuándo ocurrió? ¿Qué lesiones tenés?"
+        class="w-full px-4 py-3 rounded-lg border text-sm transition-colors duration-150 focus:outline-none focus:ring-2 resize-none"
+        [class.border-red-400]="isInvalid('mensaje')"
+        [class.border-gray-300]="!isInvalid('mensaje')"
+        aria-required="true"
+        [attr.aria-invalid]="isInvalid('mensaje')"
+      ></textarea>
+      @if (isInvalid('mensaje')) {
+        <p class="mt-1 text-xs" style="color: #922B21;" role="alert">Describí brevemente tu caso.</p>
+      }
+    </div>
+
+    @if (errorMsg()) {
+      <div class="p-3 rounded-lg text-sm" style="background-color: #FADBD8; color: #922B21;" role="alert">
+        {{ errorMsg() }}
+      </div>
+    }
+
+    <button
+      type="submit"
+      class="btn-primary w-full justify-center text-base py-4"
+      [disabled]="loading()"
+      [class.opacity-70]="loading()"
+    >
+      @if (loading()) {
+        <svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/>
+        </svg>
+        Enviando...
+      } @else {
+        Enviar consulta gratis
+      }
+    </button>
+
+    <p class="text-xs text-center" style="color: #5D6D7E;">
+      Tu consulta es confidencial. Respondemos en menos de 24 hs.
+    </p>
+
+  </form>
+}

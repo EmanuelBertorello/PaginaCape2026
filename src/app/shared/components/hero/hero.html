@@ -1,0 +1,114 @@
+<section
+  [class]="compact ? 'py-16' : 'py-28 md:py-36'"
+  class="relative overflow-hidden"
+  aria-labelledby="hero-heading"
+  style="background-color: #080D1A;"
+>
+  <!-- Blob top-left -->
+  <div
+    class="absolute pointer-events-none"
+    aria-hidden="true"
+    style="
+      top: -160px; left: -160px;
+      width: 560px; height: 560px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,126,247,0.45) 0%, rgba(59,106,232,0.15) 55%, transparent 72%);
+      filter: blur(60px);
+    "
+  ></div>
+
+  <!-- Blob bottom-right -->
+  <div
+    class="absolute pointer-events-none"
+    aria-hidden="true"
+    style="
+      bottom: -140px; right: -140px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,126,247,0.35) 0%, rgba(59,106,232,0.1) 55%, transparent 72%);
+      filter: blur(60px);
+    "
+  ></div>
+
+  <!-- Blob center subtle -->
+  <div
+    class="absolute pointer-events-none"
+    aria-hidden="true"
+    style="
+      top: 30%; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(79,126,247,0.08) 0%, transparent 70%);
+      filter: blur(40px);
+    "
+  ></div>
+
+  <!-- Contenido -->
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+    @if (badge) {
+      <div
+        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-8 uppercase tracking-wider"
+        style="
+          background: rgba(79,126,247,0.12);
+          color: #7EA8FF;
+          border: 1px solid rgba(79,126,247,0.25);
+        "
+      >
+        <span style="width:6px;height:6px;border-radius:50%;background:#4F7EF7;display:inline-block;"></span>
+        {{ badge }}
+      </div>
+    }
+
+    <h1 id="hero-heading" class="font-bold text-white leading-tight" style="font-size: clamp(2.5rem, 6vw, 4rem);">
+      {{ title }}
+      @if (titleAccent) {
+        <br>
+        <span style="color: #4F7EF7;">{{ titleAccent }}</span>
+      }
+    </h1>
+
+    @if (subtitle) {
+      <p
+        class="mt-6 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto"
+        style="color: #8899BB;"
+      >
+        {{ subtitle }}
+      </p>
+    }
+
+    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a [routerLink]="ctaLink" class="btn-primary text-base px-8 py-4">
+        {{ ctaText }}
+      </a>
+      @if (ctaSecondaryText && ctaSecondaryLink) {
+        <a
+          [routerLink]="ctaSecondaryLink"
+          class="btn-secondary text-base px-8 py-4"
+        >
+          {{ ctaSecondaryText }} →
+        </a>
+      }
+    </div>
+
+    <!-- Stats -->
+    <div
+      class="mt-16 grid grid-cols-3 gap-4 max-w-lg mx-auto pt-8"
+      style="border-top: 1px solid rgba(255,255,255,0.08);"
+    >
+      <div class="text-center">
+        <p class="text-2xl font-bold" style="color: #4F7EF7;">+7.000</p>
+        <p class="text-xs mt-1" style="color: #8899BB;">casos ganados</p>
+      </div>
+      <div class="text-center" style="border-left: 1px solid rgba(255,255,255,0.08); border-right: 1px solid rgba(255,255,255,0.08);">
+        <p class="text-2xl font-bold" style="color: #4F7EF7;">5</p>
+        <p class="text-xs mt-1" style="color: #8899BB;">provincias</p>
+      </div>
+      <div class="text-center">
+        <p class="text-2xl font-bold" style="color: #34D399;">$0</p>
+        <p class="text-xs mt-1" style="color: #8899BB;">costo inicial</p>
+      </div>
+    </div>
+
+  </div>
+</section>

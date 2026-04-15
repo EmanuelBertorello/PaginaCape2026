@@ -1,0 +1,30 @@
+<app-breadcrumb [items]="breadcrumbs" />
+
+<section style="background-color: #1A5276;" class="py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="badge badge-primary mb-4">Actualización 2026</span>
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Nuevo Baremo ART 2026</h1>
+    <p class="mt-4 text-lg max-w-3xl mx-auto" style="color: #D6EAF8;">
+      El baremo actualizado cambió los porcentajes de incapacidad para muchas lesiones. Conocé cómo impacta en tu caso.
+    </p>
+    <a routerLink="/contactanos" class="btn-primary mt-8 inline-flex text-base px-8 py-4">Evaluar Mi Caso</a>
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-10">
+  <div>
+    <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">¿Qué es el baremo y por qué importa?</h2>
+    <p class="leading-relaxed" style="color: #5D6D7E;">El baremo es la tabla oficial que determina el porcentaje de incapacidad que corresponde a cada tipo de lesión o enfermedad laboral. Ese porcentaje es la base del cálculo de la indemnización. Un baremo más favorable puede significar decenas de miles de pesos más para el trabajador.</p>
+  </div>
+
+  <div>
+    <h2 class="text-2xl font-semibold mb-6" style="color: #1C2833;">Preguntas sobre el nuevo baremo</h2>
+    <app-faq-accordion [faqs]="faqs" />
+  </div>
+
+  <div class="card p-8 text-center">
+    <h2 class="text-xl font-semibold mb-3" style="color: #1C2833;">¿Querés saber si el nuevo baremo te beneficia?</h2>
+    <p class="mb-6" style="color: #5D6D7E;">Revisamos tu caso con el baremo vigente. Consulta gratis.</p>
+    <a routerLink="/contactanos" class="btn-primary">Consultar gratis</a>
+  </div>
+</div>

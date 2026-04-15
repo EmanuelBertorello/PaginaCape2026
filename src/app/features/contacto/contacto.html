@@ -1,0 +1,71 @@
+<app-breadcrumb [items]="breadcrumbs" />
+
+<section style="background-color: #1A5276;" class="py-14">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Consulta Gratis</h1>
+    <p class="mt-4 text-lg" style="color: #D6EAF8;">
+      Contanos tu caso. Sin costo, sin compromiso. Respondemos en menos de 24 horas.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+
+    <!-- Info lateral -->
+    <div class="lg:col-span-2 space-y-6">
+      <div>
+        <h2 class="text-xl font-semibold mb-4" style="color: #1C2833;">Cómo contactarnos</h2>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="text-2xl" aria-hidden="true">📱</span>
+            <div>
+              <p class="font-medium" style="color: #1C2833;">WhatsApp</p>
+              <a href="https://wa.me/5493415000000" target="_blank" rel="noopener noreferrer" class="text-sm" style="color: #2E86C1;">
+                +54 9 341 500-0000
+              </a>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-2xl" aria-hidden="true">📞</span>
+            <div>
+              <p class="font-medium" style="color: #1C2833;">Teléfono</p>
+              <a href="tel:+543415000000" class="text-sm" style="color: #2E86C1;">341-5000000</a>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-2xl" aria-hidden="true">✉️</span>
+            <div>
+              <p class="font-medium" style="color: #1C2833;">Email</p>
+              <a href="mailto:consultas@capelettiabogados.com" class="text-sm" style="color: #2E86C1;">
+                consultas&#64;capelettiabogados.com
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="p-5 rounded-lg" style="background-color: #F8FAFB;">
+        <h3 class="font-semibold mb-3" style="color: #1C2833;">Oficinas</h3>
+        <ul class="space-y-2 text-sm" style="color: #5D6D7E;">
+          <li>📍 Rosario, Santa Fe</li>
+          <li>📍 Santa Fe Capital</li>
+          <li>📍 Neuquén Capital</li>
+          <li class="text-xs pt-2" style="color: #5D6D7E;">+ atención remota en Entre Ríos, Río Negro y Buenos Aires</li>
+        </ul>
+      </div>
+
+      <div class="p-5 rounded-lg" style="background-color: #D5F5E3;">
+        <p class="text-sm font-semibold mb-1" style="color: #1E8449;">Sin costo anticipado</p>
+        <p class="text-sm leading-relaxed" style="color: #1C2833;">Solo cobramos honorarios si ganamos tu caso. La consulta inicial es siempre gratuita.</p>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="lg:col-span-3 card p-8">
+      <h2 class="text-xl font-semibold mb-6" style="color: #1A5276;">Envianos tu consulta</h2>
+      <app-contact-form />
+    </div>
+
+  </div>
+</div>

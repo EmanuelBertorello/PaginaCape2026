@@ -1,0 +1,58 @@
+@if (abogado) {
+  <app-breadcrumb [items]="breadcrumbs" />
+  <section style="background-color: #1A5276;" class="py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+        <div class="w-24 h-24 rounded-full flex items-center justify-center text-white text-3xl font-bold shrink-0" style="background-color: #2E86C1;">
+          {{ abogado.nombre[0] }}{{ abogado.apellido[0] }}
+        </div>
+        <div class="text-center sm:text-left">
+          <h1 class="text-3xl font-bold text-white">{{ abogado.nombre }} {{ abogado.apellido }}</h1>
+          <p class="mt-2 text-lg" style="color: #D6EAF8;">{{ abogado.titulo }}</p>
+          <p class="mt-1 text-sm" style="color: #9AACB8;">{{ abogado.matricula }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div class="lg:col-span-2">
+        <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">Biografía</h2>
+        @for (parrafo of abogado.biografia.split('\n\n'); track parrafo) {
+          <p class="leading-relaxed mb-4" style="color: #5D6D7E;">{{ parrafo }}</p>
+        }
+        <h3 class="text-lg font-semibold mt-8 mb-3" style="color: #1C2833;">Especializaciones</h3>
+        <ul class="flex flex-wrap gap-2">
+          @for (esp of abogado.especializaciones; track esp) {
+            <li class="badge badge-primary">{{ esp }}</li>
+          }
+        </ul>
+      </div>
+      <aside>
+        <div class="card p-5 space-y-3">
+          <h3 class="font-semibold" style="color: #1C2833;">Datos profesionales</h3>
+          <p class="text-sm" style="color: #5D6D7E;"><span class="font-medium text-body">Universidad:</span> {{ abogado.universidad }}</p>
+          <p class="text-sm" style="color: #5D6D7E;"><span class="font-medium" style="color: #1C2833;">Matrícula:</span> {{ abogado.matricula }}</p>
+          <div>
+            <p class="text-sm font-medium mb-2" style="color: #1C2833;">Provincias</p>
+            <div class="flex flex-wrap gap-1">
+              @for (p of abogado.provinciasFoco; track p) {
+                <span class="badge badge-primary text-xs">{{ p }}</span>
+              }
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 card p-5">
+          <p class="font-semibold mb-3" style="color: #1A5276;">Consultar con {{ abogado.nombre }}</p>
+          <a routerLink="/contactanos" class="btn-primary w-full justify-center">Consulta Gratis</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+} @else {
+  <div class="max-w-2xl mx-auto px-4 py-20 text-center">
+    <h1 class="text-3xl font-bold" style="color: #1A5276;">Abogado no encontrado</h1>
+    <a routerLink="/abogados" class="btn-primary mt-6 inline-flex">Ver el equipo</a>
+  </div>
+}

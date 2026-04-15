@@ -1,0 +1,35 @@
+<app-breadcrumb [items]="breadcrumbs" />
+
+<section style="background-color: #1A5276;" class="py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Nuestros Abogados</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
+      Abogados con matrícula activa, especializados exclusivamente en accidentes laborales y ART.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    @for (abogado of abogados; track abogado.slug) {
+      <a
+        [routerLink]="'/abogados/' + abogado.slug"
+        class="card p-6 group hover:border-blue-200 border border-gray-100 transition-all duration-150"
+      >
+        <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4" style="background-color: #1A5276;">
+          {{ abogado.nombre[0] }}{{ abogado.apellido[0] }}
+        </div>
+        <h2 class="font-bold text-lg group-hover:underline" style="color: #1A5276;">
+          {{ abogado.nombre }} {{ abogado.apellido }}
+        </h2>
+        <p class="text-sm mt-1" style="color: #5D6D7E;">{{ abogado.titulo }}</p>
+        <p class="text-xs mt-2" style="color: #5D6D7E;">{{ abogado.matricula }}</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          @for (prov of abogado.provinciasFoco; track prov) {
+            <span class="badge badge-primary text-xs">{{ prov }}</span>
+          }
+        </div>
+      </a>
+    }
+  </div>
+</div>

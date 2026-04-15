@@ -1,0 +1,133 @@
+@if (lesion) {
+  <app-breadcrumb [items]="breadcrumbs" />
+
+  <!-- HERO -->
+  <section style="background-color: #1A5276;" class="py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <span class="badge mb-4" style="background-color: rgba(255,255,255,0.2); color: #D6EAF8;">Accidente Laboral</span>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">{{ lesion.h1 }}</h1>
+        <p class="mt-4 text-lg leading-relaxed max-w-3xl mx-auto" style="color: #D6EAF8;">
+          {{ lesion.descripcionCorta }}
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a routerLink="/contactanos" class="btn-primary text-base px-8 py-4">Consulta Gratis Ahora</a>
+          <a
+            href="https://wa.me/5493415000000?text=Hola%2C+quiero+consultar+sobre+{{ lesion.titulo }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-whatsapp text-base px-8 py-4"
+          >
+            WhatsApp directo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALERTA: honorarios a éxito -->
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <app-alert-banner
+      title="¿La ART te ofreció poco o rechazó tu caso?"
+      message="No aceptes el primer ofrecimiento sin consultarnos. En muchos casos logramos duplicar o triplicar el monto inicial."
+      ctaText="Consultar ahora"
+      ctaHref="https://wa.me/5493415000000"
+    />
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+      <!-- Cuerpo del artículo -->
+      <div class="lg:col-span-2">
+        <p class="text-base leading-relaxed" style="color: #1C2833;">{{ lesion.descripcionLarga }}</p>
+
+        <!-- H2s del contenido -->
+        @for (h2 of lesion.h2s; track h2) {
+          <h2 class="text-2xl font-semibold mt-10 mb-4" style="color: #1C2833;">{{ h2 }}</h2>
+          <p class="text-base leading-relaxed" style="color: #5D6D7E;">
+            Nuestros abogados especializados en {{ lesion.titulo.toLowerCase() }} conocen cada aspecto de este tipo de reclamo: el baremo aplicable, los dictámenes típicos de cada Comisión Médica y las estrategias de impugnación más efectivas. Consultanos para evaluar tu caso específico.
+          </p>
+        }
+
+        <!-- Beneficios / garantías -->
+        @if (lesion.beneficios.length) {
+          <div class="mt-10 p-6 rounded-lg" style="background-color: #D6EAF8;">
+            <h3 class="font-semibold text-lg mb-4" style="color: #1A5276;">Por qué elegirnos para este caso</h3>
+            <ul class="space-y-3">
+              @for (b of lesion.beneficios; track b) {
+                <li class="flex items-start gap-3 text-sm" style="color: #1C2833;">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1E8449;" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  {{ b }}
+                </li>
+              }
+            </ul>
+          </div>
+        }
+
+        <!-- FAQ -->
+        @if (lesion.faqs.length) {
+          <section class="mt-12" aria-labelledby="faq-lesion-h2">
+            <h2 id="faq-lesion-h2" class="text-2xl font-semibold mb-6" style="color: #1C2833;">Preguntas Frecuentes</h2>
+            <app-faq-accordion [faqs]="lesion.faqs" [allowMultiple]="true" />
+          </section>
+        }
+      </div>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sticky top-24 space-y-6">
+          <!-- Formulario -->
+          <div class="card p-6 border border-gray-100">
+            <h3 class="font-semibold text-lg mb-4" style="color: #1A5276;">Consultá tu caso gratis</h3>
+            <app-contact-form />
+          </div>
+
+          <!-- Info rápida -->
+          <div class="p-5 rounded-lg" style="background-color: #F8FAFB; border: 1px solid #E5E7EB;">
+            <h4 class="font-semibold mb-3" style="color: #1C2833;">Información rápida</h4>
+            <dl class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <dt style="color: #5D6D7E;">Tipo</dt>
+                <dd class="font-medium" style="color: #1C2833;">{{ lesion.volumen }}</dd>
+              </div>
+              @if (lesion.sectorFoco) {
+                <div class="flex justify-between">
+                  <dt style="color: #5D6D7E;">Sectores</dt>
+                  <dd class="font-medium text-right" style="color: #1C2833;">{{ lesion.sectorFoco }}</dd>
+                </div>
+              }
+              <div class="flex justify-between">
+                <dt style="color: #5D6D7E;">Costo inicial</dt>
+                <dd class="font-bold" style="color: #1E8449;">$0</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Links a provincias -->
+          <div class="p-5 rounded-lg border border-gray-100">
+            <h4 class="font-semibold mb-3" style="color: #1C2833;">Atendemos en</h4>
+            <ul class="space-y-2 text-sm">
+              @for (p of provincias; track p.url) {
+                <li>
+                  <a [routerLink]="p.url" class="hover:underline" style="color: #2E86C1;">{{ p.label }}</a>
+                </li>
+              }
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+} @else {
+  <!-- Lesión no encontrada -->
+  <div class="max-w-2xl mx-auto px-4 py-20 text-center">
+    <h1 class="text-3xl font-bold" style="color: #1A5276;">Página no encontrada</h1>
+    <p class="mt-4" style="color: #5D6D7E;">La lesión que buscás no existe en nuestro sistema.</p>
+    <a routerLink="/" class="btn-primary mt-6 inline-flex">Volver al inicio</a>
+  </div>
+}

@@ -1,0 +1,35 @@
+<app-breadcrumb [items]="breadcrumbs" />
+
+<section style="background-color: #1A5276;" class="py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Comisiones Médicas ART</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
+      Las Comisiones Médicas son el órgano clave del sistema de riesgos del trabajo. Conocé cómo funcionan y cómo representarte en ellas.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+  <div>
+    <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">¿Qué es la Comisión Médica?</h2>
+    <p class="leading-relaxed" style="color: #5D6D7E;">La Comisión Médica (CM) es el organismo dependiente de la SRT que determina el porcentaje de incapacidad del trabajador y resuelve las disputas entre el trabajador y la ART. Es la instancia administrativa obligatoria antes de la vía judicial.</p>
+  </div>
+
+  <div>
+    <h2 class="text-2xl font-semibold mb-6" style="color: #1C2833;">Comisiones Médicas locales</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      @for (cm of comisiones; track cm.url) {
+        <a [routerLink]="cm.url" class="card p-5 group hover:border-blue-200 border border-gray-100 transition-all duration-150">
+          <h3 class="font-semibold group-hover:underline" style="color: #1A5276;">{{ cm.titulo }}</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color: #5D6D7E;">{{ cm.descripcion }}</p>
+        </a>
+      }
+    </div>
+  </div>
+
+  <div class="card p-8 text-center">
+    <h2 class="text-xl font-semibold mb-3" style="color: #1C2833;">¿Tenés que presentarte ante una CM?</h2>
+    <p class="mb-6" style="color: #5D6D7E;">Nuestros abogados te representan y te acompañan en la audiencia. Consulta gratis.</p>
+    <a routerLink="/contactanos" class="btn-primary">Consultar gratis</a>
+  </div>
+</div>

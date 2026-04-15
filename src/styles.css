@@ -1,3 +1,238 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
+
+@theme {
+  /* === PALETA DARK === */
+  --color-primary: #4F7EF7;
+  --color-primary-hover: #3B6AE8;
+  --color-accent: #4F7EF7;
+  --color-accent-hover: #3B6AE8;
+  --color-primary-light: rgba(79,126,247,0.15);
+  --color-body: #E8EEFF;
+  --color-secondary-text: #8899BB;
+  --color-success: #34D399;
+  --color-success-light: rgba(52,211,153,0.15);
+  --color-danger: #F87171;
+  --color-danger-light: rgba(248,113,113,0.15);
+  --color-bg-dark: #080D1A;
+  --color-bg-card: #0F1629;
+  --color-bg-alt: #0C1424;
+  --color-border: rgba(255,255,255,0.08);
+
+  /* === TIPOGRAFÍA === */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  /* === BORDES === */
+  --radius-card: 0.75rem;
+  --radius-badge: 9999px;
+
+  /* === SOMBRAS === */
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.3);
+  --shadow-card-hover: 0 8px 24px -4px rgb(79 126 247 / 0.2);
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-body);
+    background-color: var(--color-bg-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #E8EEFF;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #E8EEFF;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 150ms ease;
+  }
+
+  a:hover {
+    color: var(--color-accent-hover);
+  }
+}
+
+/* ========================================================= */
+/*  COMPONENTS                                               */
+/* ========================================================= */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: linear-gradient(135deg, #4F7EF7, #3B6AE8);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 0.625rem;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 150ms ease, transform 150ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(79,126,247,0.35);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 28px rgba(79,126,247,0.55);
+  transform: translateY(-1px);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background-color: transparent;
+  color: #E8EEFF;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 0.625rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.35);
+  color: #ffffff;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background-color: #25D366;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 0.625rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe57;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+  color: #ffffff;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 0;
+}
+
+.card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  border-color: rgba(79,126,247,0.3);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.875rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-primary {
+  background-color: rgba(79,126,247,0.15);
+  color: #7EA8FF;
+  border: 1px solid rgba(79,126,247,0.25);
+}
+
+.badge-success {
+  background-color: rgba(52,211,153,0.12);
+  color: #34D399;
+  border: 1px solid rgba(52,211,153,0.2);
+}
+
+.badge-danger {
+  background-color: rgba(248,113,113,0.12);
+  color: #F87171;
+  border: 1px solid rgba(248,113,113,0.2);
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 300ms ease, opacity 300ms ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.nav-dropdown-item {
+  color: #C8D8F0;
+}
+.nav-dropdown-item:hover {
+  color: #ffffff;
+  background-color: rgba(79,126,247,0.1);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0F1629; }
+::-webkit-scrollbar-thumb { background: #2A3A5C; border-radius: 3px; }

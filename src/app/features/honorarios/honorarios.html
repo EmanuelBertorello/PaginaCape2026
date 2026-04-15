@@ -1,0 +1,44 @@
+<app-breadcrumb [items]="breadcrumbs" />
+
+<section style="background-color: #1A5276;" class="py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Honorarios: Sin Costo Anticipado</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
+      No cobramos nada hasta que vos cobrás. Así de simple.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+
+  <div class="card p-8">
+    <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">Honorarios a éxito: cómo funciona</h2>
+    <p class="leading-relaxed" style="color: #5D6D7E;">
+      Nuestros honorarios son siempre a éxito. Esto significa que solo cobramos si obtenemos un resultado favorable para vos. No hay gastos de inicio, no hay cuotas mensuales y no hay cargos ocultos.
+    </p>
+    <p class="mt-4 leading-relaxed" style="color: #5D6D7E;">
+      Cuando cobrás tu indemnización, descontamos un porcentaje acordado de antemano. Ese porcentaje se informa claramente en la primera consulta y está regulado por los colegios de abogados provinciales.
+    </p>
+  </div>
+
+  <div>
+    <h2 class="text-2xl font-semibold mb-6" style="color: #1C2833;">¿Qué está incluido en el servicio?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      @for (item of servicios; track item) {
+        <div class="flex items-start gap-3 p-4 rounded-lg" style="background-color: #F8FAFB;">
+          <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1E8449;" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p class="text-sm" style="color: #1C2833;">{{ item }}</p>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="card p-8 text-center" style="background-color: #D5F5E3; border: 1px solid #A9DFBF;">
+    <p class="text-xl font-bold mb-2" style="color: #1E8449;">Si no ganamos, no cobramos</p>
+    <p class="text-sm" style="color: #1C2833;">Este compromiso está en la base de cómo trabajamos. Tu riesgo económico es cero.</p>
+    <a routerLink="/contactanos" class="btn-primary mt-6 inline-flex">Consultar gratis</a>
+  </div>
+
+</div>

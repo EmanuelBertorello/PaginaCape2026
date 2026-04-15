@@ -1,0 +1,57 @@
+@if (ciudad) {
+  <app-breadcrumb [items]="breadcrumbs" />
+
+  <section style="background-color: #1A5276;" class="py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+        Abogados Accidentes Laborales en {{ ciudad.nombre }}
+      </h1>
+      <p class="mt-4 text-lg max-w-3xl mx-auto" style="color: #D6EAF8;">
+        {{ ciudad.descripcion }}
+      </p>
+      @if (ciudad.cmLocal) {
+        <p class="mt-4 text-sm font-medium" style="color: #D6EAF8;">
+          📍 Comisión Médica local: {{ ciudad.cmLocal }}
+        </p>
+      }
+      <a routerLink="/contactanos" class="btn-primary mt-8 inline-flex text-base px-8 py-4">
+        Consulta Gratis
+      </a>
+    </div>
+  </section>
+
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">
+          Reclamos laborales en {{ ciudad.nombre }}
+        </h2>
+        <p class="leading-relaxed" style="color: #5D6D7E;">
+          Nuestro equipo atiende casos de accidentes laborales, enfermedades profesionales y reclamos a la ART en {{ ciudad.nombre }}, {{ ciudad.provincia }}.
+          @if (ciudad.sectorPrincipal) {
+            Los sectores con mayor siniestralidad en la zona son: {{ ciudad.sectorPrincipal }}.
+          }
+        </p>
+        <ul class="mt-6 space-y-3">
+          @for (item of beneficios; track item) {
+            <li class="flex items-center gap-3 text-sm" style="color: #1C2833;">
+              <svg class="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1E8449;" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              {{ item }}
+            </li>
+          }
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-semibold text-lg mb-4" style="color: #1A5276;">Consulta Gratis desde {{ ciudad.nombre }}</h3>
+        <app-contact-form />
+      </div>
+    </div>
+  </div>
+} @else {
+  <div class="max-w-2xl mx-auto px-4 py-20 text-center">
+    <h1 class="text-3xl font-bold" style="color: #1A5276;">Ciudad no encontrada</h1>
+    <a routerLink="/" class="btn-primary mt-6 inline-flex">Volver al inicio</a>
+  </div>
+}

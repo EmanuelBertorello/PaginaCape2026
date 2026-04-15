@@ -1,0 +1,68 @@
+<app-breadcrumb [items]="breadcrumbs" />
+
+<section style="background-color: #922B21;" class="py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="badge mb-4" style="background-color: rgba(255,255,255,0.2); color: white;">⚠️ URGENTE</span>
+    <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+      Alta Médica ART: No Firmes Sin Consultarnos
+    </h1>
+    <p class="mt-4 text-lg max-w-3xl mx-auto" style="color: #FADBD8;">
+      El alta médica de la ART abre el proceso de indemnización. Firmar sin asesoramiento puede costarte miles de pesos.
+    </p>
+    <a
+      href="https://wa.me/5493415000000?text=La+ART+me+dio+el+alta+m%C3%A9dica+y+necesito+asesoramiento+urgente."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn-whatsapp mt-8 inline-flex text-base px-8 py-4"
+    >
+      Consulta Urgente por WhatsApp
+    </a>
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <app-alert-banner
+    title="¿La ART te dio el alta y no estás curado?"
+    message="Tenés 10 días para presentar la disconformidad ante la Comisión Médica. No dejes pasar el plazo."
+    ctaText="Consultar ahora"
+    ctaHref="https://wa.me/5493415000000"
+  />
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
+    <div class="lg:col-span-2">
+      <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">¿Qué es el alta médica de la ART?</h2>
+      <p class="leading-relaxed" style="color: #5D6D7E;">
+        El alta médica es la resolución de la ART que da por concluido el período de Incapacidad Laboral Temporaria (ILT). A partir de ese momento, la ART deja de pagar el salario complementario y se abre la etapa de evaluación de la incapacidad permanente.
+      </p>
+      <p class="mt-4 leading-relaxed" style="color: #5D6D7E;">
+        El problema es que muchas ART otorgan el alta prematuramente, cuando el trabajador todavía no está en condiciones de reintegrarse al trabajo o cuando las secuelas no fueron correctamente evaluadas.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4" style="color: #1C2833;">Qué hacer si no estás de acuerdo con el alta</h2>
+      <ol class="space-y-3">
+        @for (paso of pasos; track paso.numero) {
+          <li class="flex items-start gap-3">
+            <span class="w-7 h-7 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0" style="background-color: #1A5276;">{{ paso.numero }}</span>
+            <div>
+              <p class="font-medium" style="color: #1C2833;">{{ paso.titulo }}</p>
+              <p class="text-sm mt-0.5" style="color: #5D6D7E;">{{ paso.descripcion }}</p>
+            </div>
+          </li>
+        }
+      </ol>
+
+      <section class="mt-10" aria-labelledby="faq-alta-h2">
+        <h2 id="faq-alta-h2" class="text-2xl font-semibold mb-6" style="color: #1C2833;">Preguntas Frecuentes</h2>
+        <app-faq-accordion [faqs]="faqs" />
+      </section>
+    </div>
+
+    <aside class="sticky top-24">
+      <div class="card p-6 border-2" style="border-color: #922B21;">
+        <p class="font-bold text-base mb-1" style="color: #922B21;">¿Recibiste el alta?</p>
+        <p class="text-sm mb-4" style="color: #5D6D7E;">Tenés 10 días para actuar. Consultanos ahora.</p>
+        <app-contact-form />
+      </div>
+    </aside>
+  </div>
+</div>

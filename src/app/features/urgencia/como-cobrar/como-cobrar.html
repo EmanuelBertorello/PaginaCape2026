@@ -1,0 +1,33 @@
+<app-breadcrumb [items]="breadcrumbs" />
+
+<section style="background-color: #1A5276;" class="py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Cómo Cobrar la ART — Guía Completa</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
+      El proceso de cobro de una indemnización por accidente laboral tiene pasos específicos. Te los explicamos.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+  <section aria-labelledby="pasos-h2">
+    <h2 id="pasos-h2" class="text-2xl font-semibold mb-8" style="color: #1C2833;">Los 5 pasos para cobrar tu indemnización</h2>
+    <ol class="space-y-6">
+      @for (paso of pasos; track paso.numero) {
+        <li class="flex items-start gap-4 p-5 rounded-lg" style="background-color: #F8FAFB;">
+          <span class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold shrink-0" style="background-color: #1A5276;">{{ paso.numero }}</span>
+          <div>
+            <h3 class="font-semibold" style="color: #1C2833;">{{ paso.titulo }}</h3>
+            <p class="text-sm mt-1 leading-relaxed" style="color: #5D6D7E;">{{ paso.descripcion }}</p>
+          </div>
+        </li>
+      }
+    </ol>
+  </section>
+
+  <div class="card p-8 text-center">
+    <h2 class="text-xl font-semibold mb-3" style="color: #1C2833;">¿Necesitás ayuda con el proceso?</h2>
+    <p class="mb-6" style="color: #5D6D7E;">Nos encargamos de todo el proceso por vos. Consulta gratis.</p>
+    <a routerLink="/contactanos" class="btn-primary">Iniciar consulta gratis</a>
+  </div>
+</div>

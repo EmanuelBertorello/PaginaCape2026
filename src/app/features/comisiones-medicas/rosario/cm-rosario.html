@@ -1,0 +1,33 @@
+<app-breadcrumb [items]="breadcrumbs" />
+<section style="background-color: #1A5276;" class="py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Comisión Médica N° 2 — Rosario</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
+      Guía completa para trabajadores que deben presentarse ante la CM de Rosario.
+    </p>
+  </div>
+</section>
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <div class="lg:col-span-2 space-y-8">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">Datos de la Comisión Médica N° 2</h2>
+        <div class="p-5 rounded-lg space-y-2 text-sm" style="background-color: #F8FAFB;">
+          <p><span class="font-medium" style="color: #1C2833;">Ciudad:</span> <span style="color: #5D6D7E;">Rosario, Santa Fe</span></p>
+          <p><span class="font-medium" style="color: #1C2833;">Jurisdicción:</span> <span style="color: #5D6D7E;">Zona sur de Santa Fe</span></p>
+          <p class="text-xs" style="color: #5D6D7E;">Los datos oficiales (dirección y horarios) se actualizan periódicamente en el sitio de la SRT: srt.gob.ar</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold mb-3" style="color: #1C2833;">¿Cómo prepararse para la audiencia?</h2>
+        <p class="leading-relaxed" style="color: #5D6D7E;">Llevá toda la documentación médica disponible, los resultados de estudios y cualquier constancia de tratamiento. No vayas solo: tenés derecho a concurrir con un abogado que te represente y asegure que tus derechos sean respetados.</p>
+      </div>
+    </div>
+    <aside class="sticky top-24">
+      <div class="card p-6">
+        <h3 class="font-semibold mb-4" style="color: #1A5276;">¿Tenés audiencia en la CM Rosario?</h3>
+        <app-contact-form />
+      </div>
+    </aside>
+  </div>
+</div>

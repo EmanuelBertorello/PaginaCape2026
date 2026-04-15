@@ -1,0 +1,29 @@
+<app-breadcrumb [items]="breadcrumbs" />
+
+<section style="background-color: #1A5276;" class="py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Blog — Derecho Laboral y ART</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
+      Información actualizada sobre accidentes laborales, ART y novedades legales para trabajadores de Argentina.
+    </p>
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    @for (post of posts; track post.slug) {
+      <a
+        [routerLink]="'/blog/' + post.slug"
+        class="card p-6 group hover:border-blue-200 border border-gray-100 transition-all duration-150 flex flex-col"
+      >
+        <span class="badge badge-primary text-xs mb-3 self-start">{{ post.categoria }}</span>
+        <h2 class="font-semibold text-base leading-snug group-hover:underline flex-1" style="color: #1A5276;">{{ post.titulo }}</h2>
+        <p class="text-sm mt-3 leading-relaxed" style="color: #5D6D7E;">{{ post.excerpt }}</p>
+        <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between text-xs" style="color: #5D6D7E;">
+          <span>{{ post.autor }}</span>
+          <span>{{ post.tiempoLectura }} min lectura</span>
+        </div>
+      </a>
+    }
+  </div>
+</div>
