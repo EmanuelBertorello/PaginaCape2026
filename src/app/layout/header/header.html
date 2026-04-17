@@ -1,23 +1,23 @@
 <header
-  class="sticky top-0 z-50 transition-all duration-200"
+  class="sticky top-0 z-50 transition-all duration-300"
   [style]="isScrolled()
-    ? 'background: rgba(8,13,26,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.08); box-shadow: 0 4px 24px rgba(0,0,0,0.4);'
-    : 'background: rgba(8,13,26,0.6); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.05);'"
+    ? 'background: #ffffff; border-bottom: 1px solid #e5e7eb; box-shadow: 0 2px 16px rgba(0,0,0,0.08);'
+    : 'background: #ffffff; border-bottom: 1px solid #e5e7eb;'"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
+    <div class="flex items-center justify-between h-18" style="height:72px;">
 
       <!-- Logo -->
       <a routerLink="/" class="flex items-center gap-3 shrink-0" (click)="closeMobileMenu()">
-        <img src="/logo.svg" alt="Capeletti Abogados" class="w-10 h-10" width="40" height="40">
-        <div class="leading-tight">
-          <span class="font-bold text-base text-white tracking-wide">CAPELETTI</span>
-          <span class="font-light text-sm ml-1" style="color: #8899BB;">Abogados</span>
+        <img src="/logo.svg" alt="Capeletti Abogados" class="w-11 h-11" width="44" height="44">
+        <div class="leading-none">
+          <div class="font-bold text-base tracking-widest" style="color:#002b7b; letter-spacing:0.12em;">CAPELETTI</div>
+          <div class="text-xs font-medium tracking-widest uppercase" style="color:#5a7ab8; letter-spacing:0.18em;">Abogados</div>
         </div>
       </a>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-1" aria-label="Navegación principal">
+      <!-- Desktop Nav — centrada -->
+      <nav class="hidden lg:flex items-center gap-0.5" aria-label="Navegación principal">
         @for (item of navItems; track item.label) {
           @if (item.dropdown) {
             <div class="relative" (mouseleave)="closeDropdown()">
@@ -25,12 +25,12 @@
                 (mouseenter)="toggleDropdown(item.label)"
                 (click)="toggleDropdown(item.label)"
                 [attr.aria-expanded]="isDropdownOpen(item.label)"
-                class="flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150 cursor-pointer"
-                style="color: #C8D8F0;"
+                class="flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors duration-150 cursor-pointer rounded-lg hover:bg-blue-50"
+                style="color: #1e3a6e;"
               >
                 {{ item.label }}
                 <svg
-                  class="w-4 h-4 transition-transform duration-150"
+                  class="w-3.5 h-3.5 transition-transform duration-150"
                   [class.rotate-180]="isDropdownOpen(item.label)"
                   fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"
                 >
@@ -40,15 +40,16 @@
 
               @if (isDropdownOpen(item.label)) {
                 <div
-                  class="absolute top-full left-0 mt-2 w-56 rounded-xl py-1 z-50"
-                  style="background: #0F1629; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 16px 48px rgba(0,0,0,0.5);"
+                  class="absolute top-full left-0 mt-1 w-60 rounded-xl py-1.5 z-50"
+                  style="background: #ffffff; border: 1px solid #e5e7eb; box-shadow: 0 16px 48px rgba(0,0,0,0.12);"
                   role="menu"
                 >
                   @for (sub of item.dropdown!; track sub.url) {
                     <a
                       [routerLink]="sub.url"
                       (click)="closeDropdown()"
-                      class="nav-dropdown-item block px-4 py-2.5 text-sm transition-colors duration-150"
+                      class="block px-4 py-2.5 text-sm transition-colors duration-150 hover:bg-blue-50"
+                      style="color:#1e3a6e;"
                       role="menuitem"
                     >
                       {{ sub.label }}
@@ -60,10 +61,10 @@
           } @else {
             <a
               [routerLink]="item.url"
-              routerLinkActive="text-white"
+              routerLinkActive="font-semibold"
               [routerLinkActiveOptions]="{ exact: item.url === '/' }"
-              class="px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-              style="color: #C8D8F0;"
+              class="px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150 hover:bg-blue-50"
+              style="color: #1e3a6e;"
             >
               {{ item.label }}
             </a>
@@ -72,19 +73,25 @@
       </nav>
 
       <!-- CTA Desktop -->
-      <div class="hidden lg:flex items-center gap-3">
+      <div class="hidden lg:flex items-center gap-4">
+        <!-- Teléfono sutil -->
         <a
           href="tel:+543415000000"
-          class="text-sm font-medium flex items-center gap-1"
-          style="color: #8899BB;"
+          class="text-sm font-medium flex items-center gap-1.5 transition-colors hover:opacity-80"
+          style="color: #5a7ab8;"
         >
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
           </svg>
           341-5000000
         </a>
-        <a routerLink="/contactanos" class="btn-primary text-sm py-2 px-4">
-          Consulta Gratis
+        <!-- Botón -->
+        <a
+          routerLink="/contactanos"
+          class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-sm font-bold text-white transition-all"
+          style="background: #002b7b; box-shadow: 0 2px 12px rgba(0,43,123,0.3);"
+        >
+          Consulta Gratuita
         </a>
       </div>
 
@@ -94,7 +101,7 @@
         (click)="toggleMobileMenu()"
         [attr.aria-expanded]="mobileMenuOpen()"
         aria-label="Abrir menú"
-        style="color: #C8D8F0;"
+        style="color: #1e3a6e;"
       >
         @if (mobileMenuOpen()) {
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -116,17 +123,17 @@
       id="mobile-menu"
       role="navigation"
       aria-label="Menú móvil"
-      style="background: #0C1424; border-top: 1px solid rgba(255,255,255,0.07);"
+      style="background: #ffffff; border-top: 1px solid #e5e7eb;"
     >
-      <div class="max-w-7xl mx-auto px-4 py-3 space-y-1">
+      <div class="max-w-7xl mx-auto px-4 py-3 space-y-0.5">
         @for (item of navItems; track item.label) {
           @if (item.dropdown) {
             <div>
               <button
                 (click)="toggleDropdown(item.label)"
                 [attr.aria-expanded]="isDropdownOpen(item.label)"
-                class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium"
-                style="color: #C8D8F0;"
+                class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-50 transition-colors"
+                style="color: #1e3a6e;"
               >
                 {{ item.label }}
                 <svg
@@ -138,13 +145,13 @@
                 </svg>
               </button>
               @if (isDropdownOpen(item.label)) {
-                <div class="pl-4 mt-1 space-y-1">
+                <div class="pl-4 mt-1 space-y-0.5">
                   @for (sub of item.dropdown!; track sub.url) {
                     <a
                       [routerLink]="sub.url"
                       (click)="closeMobileMenu()"
-                      class="block px-3 py-2 text-sm rounded-lg"
-                      style="color: #8899BB;"
+                      class="block px-3 py-2 text-sm rounded-lg hover:bg-blue-50 transition-colors"
+                      style="color: #5a7ab8;"
                     >
                       {{ sub.label }}
                     </a>
@@ -156,27 +163,32 @@
             <a
               [routerLink]="item.url"
               (click)="closeMobileMenu()"
-              class="block px-3 py-2.5 rounded-lg text-sm font-medium"
-              style="color: #C8D8F0;"
+              class="block px-3 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-50 transition-colors"
+              style="color: #1e3a6e;"
             >
               {{ item.label }}
             </a>
           }
         }
 
-        <div class="pt-3 pb-2 flex flex-col gap-2" style="border-top: 1px solid rgba(255,255,255,0.07);">
+        <div class="pt-3 pb-2 flex flex-col gap-2" style="border-top: 1px solid #e5e7eb;">
           <a
             href="tel:+543415000000"
-            class="flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium"
-            style="color: #C8D8F0; border: 1px solid rgba(255,255,255,0.15);"
+            class="flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors"
+            style="color: #1e3a6e; border: 1px solid #e5e7eb;"
           >
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
             </svg>
             Llamar ahora
           </a>
-          <a routerLink="/contactanos" (click)="closeMobileMenu()" class="btn-primary text-sm text-center">
-            Consulta Gratis
+          <a
+            routerLink="/contactanos"
+            (click)="closeMobileMenu()"
+            class="text-sm text-center py-2.5 px-4 rounded-lg font-bold text-white"
+            style="background: #002b7b;"
+          >
+            Consulta Gratuita
           </a>
         </div>
       </div>
