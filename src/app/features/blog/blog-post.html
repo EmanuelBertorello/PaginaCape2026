@@ -10,6 +10,10 @@
         <time [attr.datetime]="post.fechaPublicacion">Publicado: {{ post.fechaPublicacion }}</time>
         <span>·</span>
         <time [attr.datetime]="post.fechaModificacion">Actualizado: {{ post.fechaModificacion }}</time>
+        @if (post.tiempoLectura) {
+          <span>·</span>
+          <span>{{ post.tiempoLectura }} min de lectura</span>
+        }
       </div>
     </header>
 
@@ -21,11 +25,70 @@
       [fechaActualizacion]="post.fechaModificacion"
     />
 
-    <div class="mt-10 prose max-w-none" style="color: #1C2833;">
-      <p class="leading-relaxed" style="color: #5D6D7E;">
-        El contenido completo de este artículo está disponible en el sitio. Para consultar tu caso específico, contactanos de forma gratuita.
-      </p>
+    <!-- Contenido del artículo -->
+    <div class="mt-10 space-y-10">
+      @for (section of post.sections; track section.h2) {
+        <div>
+          <h2 class="text-2xl font-bold mb-4" style="color: #1C2833;">{{ section.h2 }}</h2>
+
+          @if (section.parrafos) {
+            @for (p of section.parrafos; track p) {
+              <p class="mb-4 leading-relaxed" style="color: #5D6D7E;">{{ p }}</p>
+            }
+          }
+
+          @if (section.lista) {
+            <ul class="mt-4 space-y-2">
+              @for (item of section.lista; track item) {
+                <li class="flex items-start gap-3 text-sm" style="color: #1C2833;">
+                  <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1E8449;" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  {{ item }}
+                </li>
+              }
+            </ul>
+          }
+
+          @if (section.subsecciones) {
+            @for (sub of section.subsecciones; track sub.h3) {
+              <div class="mt-6 pl-4" style="border-left: 3px solid #D5E8D4;">
+                <h3 class="text-lg font-semibold mb-2" style="color: #1A5276;">{{ sub.h3 }}</h3>
+                @if (sub.parrafos) {
+                  @for (p of sub.parrafos; track p) {
+                    <p class="mb-3 leading-relaxed text-sm" style="color: #5D6D7E;">{{ p }}</p>
+                  }
+                }
+                @if (sub.lista) {
+                  <ul class="mt-2 space-y-1">
+                    @for (item of sub.lista; track item) {
+                      <li class="flex items-start gap-2 text-sm" style="color: #1C2833;">
+                        <span style="color:#1E8449;margin-top:2px;">•</span> {{ item }}
+                      </li>
+                    }
+                  </ul>
+                }
+              </div>
+            }
+          }
+        </div>
+      }
     </div>
+
+    <!-- FAQs -->
+    @if (post.faqs && post.faqs.length > 0) {
+      <div class="mt-14">
+        <h2 class="text-2xl font-bold mb-6" style="color: #1C2833;">Preguntas frecuentes</h2>
+        <div class="space-y-4">
+          @for (faq of post.faqs; track faq.pregunta) {
+            <div class="rounded-lg p-5" style="background-color: #EBF5FB; border: 1px solid #D6EAF8;">
+              <h3 class="font-semibold text-base mb-2" style="color: #1A5276;">{{ faq.pregunta }}</h3>
+              <p class="leading-relaxed text-sm" style="color: #5D6D7E;">{{ faq.respuesta }}</p>
+            </div>
+          }
+        </div>
+      </div>
+    }
 
     <div class="mt-12 p-6 rounded-lg text-center" style="background-color: #D6EAF8;">
       <p class="font-semibold mb-3" style="color: #1A5276;">¿Tenés dudas sobre tu caso?</p>

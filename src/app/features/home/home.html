@@ -10,60 +10,132 @@
   badge="Más de 7.000 trabajadores representados"
 />
 
-<!-- STATS BANNER -->
-<section style="background-color: #0C1424; border-bottom: 1px solid rgba(255,255,255,0.06);" class="py-10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-      <div>
-        <p class="text-3xl font-bold" style="color: #4F7EF7;">+12.500</p>
-        <p class="text-sm mt-1" style="color: #8899BB;">Casos activos y cerrados</p>
+<!-- STATS BAR -->
+<div style="background-color: #0d1e38; border-bottom: 1px solid rgba(255,255,255,0.05);">
+  <div class="max-w-3xl mx-auto px-6 py-10">
+    <div class="grid grid-cols-3 text-center">
+      <div class="py-2 px-4">
+        <p class="text-4xl sm:text-5xl font-black text-white">+7.000</p>
+        <p class="text-xs uppercase tracking-widest font-semibold mt-2" style="color: rgba(147,197,253,0.55);">Casos ganados</p>
       </div>
-      <div>
-        <p class="text-3xl font-bold" style="color: #4F7EF7;">+7.000</p>
-        <p class="text-sm mt-1" style="color: #8899BB;">Casos ganados</p>
+      <div class="py-2 px-4" style="border-left: 1px solid rgba(255,255,255,0.08); border-right: 1px solid rgba(255,255,255,0.08);">
+        <p class="text-4xl sm:text-5xl font-black text-white">5</p>
+        <p class="text-xs uppercase tracking-widest font-semibold mt-2" style="color: rgba(147,197,253,0.55);">Provincias</p>
       </div>
-      <div>
-        <p class="text-3xl font-bold" style="color: #4F7EF7;">5</p>
-        <p class="text-sm mt-1" style="color: #8899BB;">Provincias cubiertas</p>
-      </div>
-      <div>
-        <p class="text-3xl font-bold" style="color: #34D399;">$0</p>
-        <p class="text-sm mt-1" style="color: #8899BB;">Costo si no ganamos</p>
+      <div class="py-2 px-4">
+        <p class="text-4xl sm:text-5xl font-black" style="color: #D4A843;">$0</p>
+        <p class="text-xs uppercase tracking-widest font-semibold mt-2" style="color: rgba(147,197,253,0.55);">Costo inicial</p>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- POR QUÉ ELEGIRNOS -->
-<section style="background-color: #080D1A;" class="py-20">
+<section class="py-24" style="background-color: #ffffff;">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <span class="badge badge-primary mb-4">Por qué elegirnos</span>
-      <h2 class="text-3xl font-semibold" style="color: #E8EEFF;">Especialistas en lo que Más Importa</h2>
-      <p class="mt-3 max-w-2xl mx-auto" style="color: #8899BB;">No somos un estudio generalista. Trabajamos exclusivamente en accidentes laborales y ART desde hace más de 10 años.</p>
+    <div class="text-center mb-14">
+      <span class="badge-light">Por qué elegirnos</span>
+      <h2 class="text-3xl sm:text-4xl font-black mt-4" style="color: #0D1B2A;">
+        Especialistas en lo que Más Importa
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-base" style="color: #4B5E6D;">
+        No somos un estudio generalista. Trabajamos exclusivamente en accidentes laborales y ART desde hace más de 10 años.
+      </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       @for (item of ventajas; track item.titulo) {
-        <div class="card p-6">
-          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background-color: rgba(79,126,247,0.12);">
+        <div class="card-light p-7">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+               style="background: #EEF2FF;">
             <span class="text-2xl" aria-hidden="true">{{ item.icono }}</span>
           </div>
-          <h3 class="font-semibold text-lg mb-2" style="color: #E8EEFF;">{{ item.titulo }}</h3>
-          <p class="text-sm leading-relaxed" style="color: #8899BB;">{{ item.descripcion }}</p>
+          <h3 class="font-bold text-lg mb-2" style="color: #0D1B2A;">{{ item.titulo }}</h3>
+          <p class="text-sm leading-relaxed" style="color: #4B5E6D;">{{ item.descripcion }}</p>
         </div>
       }
     </div>
   </div>
 </section>
 
-<!-- ÁREAS DE PRÁCTICA -->
-<section style="background-color: #0C1424; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);" class="py-20">
+<!-- NUESTRO EQUIPO -->
+<section class="py-24" style="background-color: #F4F7FE;">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <span class="badge badge-primary mb-4">Lesiones que tramitamos</span>
-      <h2 class="text-3xl font-semibold" style="color: #E8EEFF;">Accidentes Laborales y Enfermedades Profesionales</h2>
-      <p class="mt-3 max-w-2xl mx-auto" style="color: #8899BB;">Manejamos todo tipo de lesiones laborales ante la ART y las Comisiones Médicas.</p>
+    <div class="text-center mb-14">
+      <span class="badge-light">Nuestro equipo</span>
+      <h2 class="text-3xl sm:text-4xl font-black mt-4" style="color: #0D1B2A;">
+        Las Personas Detrás de Cada Caso
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-base" style="color: #4B5E6D;">
+        Abogados con matrícula activa y especialistas técnicos dedicados exclusivamente a defender tus derechos laborales.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      @for (miembro of equipo; track miembro.slug) {
+        <a
+          [routerLink]="'/abogados/' + miembro.slug"
+          class="card-light p-6 text-center group block"
+          style="text-decoration: none;"
+        >
+          <!-- Foto o iniciales -->
+          <div
+            class="mx-auto mb-5 w-24 h-24 rounded-full overflow-hidden transition-all duration-200"
+            style="background: #DBEAFE; outline: 3px solid #BFDBFE; outline-offset: 2px;"
+          >
+            @if (miembro.foto) {
+              <img
+                [src]="miembro.foto"
+                [alt]="miembro.nombre + ' ' + miembro.apellido"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            } @else {
+              <div class="w-full h-full flex items-center justify-center text-2xl font-black"
+                   style="color: #1D4ED8;">
+                {{ miembro.nombre[0] }}{{ miembro.apellido[0] }}
+              </div>
+            }
+          </div>
+
+          <h3 class="font-bold text-base transition-colors group-hover:text-blue-700"
+              style="color: #0D1B2A;">
+            {{ miembro.nombre }} {{ miembro.apellido }}
+          </h3>
+          <p class="text-xs mt-1.5 leading-snug" style="color: #4B5E6D;">
+            {{ miembro.titulo }}
+          </p>
+          <p class="mt-4 text-xs font-semibold" style="color: #2563EB;">
+            Ver perfil →
+          </p>
+        </a>
+      }
+    </div>
+
+    <div class="text-center mt-10">
+      <a
+        routerLink="/abogados"
+        class="inline-flex items-center gap-2 font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-200"
+        style="color: #1D4ED8; border: 1.5px solid #BFDBFE; background: transparent;"
+        onmouseover="this.style.background='#EEF2FF'" onmouseout="this.style.background='transparent'"
+      >
+        Conocé a todo el equipo →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ÁREAS DE PRÁCTICA -->
+<section class="py-24" style="background-color: #ffffff;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <span class="badge-light">Lesiones que tramitamos</span>
+      <h2 class="text-3xl sm:text-4xl font-black mt-4" style="color: #0D1B2A;">
+        Accidentes Laborales y Enfermedades Profesionales
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-base" style="color: #4B5E6D;">
+        Manejamos todo tipo de lesiones laborales ante la ART y las Comisiones Médicas.
+      </p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -77,40 +149,51 @@
     </div>
 
     <div class="text-center mt-10">
-      <a routerLink="/enfermedad-profesional" class="btn-secondary">
-        Ver todas las lesiones y enfermedades
+      <a
+        routerLink="/enfermedad-profesional"
+        class="inline-flex items-center gap-2 font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-200"
+        style="color: #1D4ED8; border: 1.5px solid #BFDBFE; background: transparent;"
+        onmouseover="this.style.background='#EEF2FF'" onmouseout="this.style.background='transparent'"
+      >
+        Ver todas las lesiones y enfermedades →
       </a>
     </div>
   </div>
 </section>
 
 <!-- PRESENCIA PROVINCIAL -->
-<section style="background-color: #080D1A;" class="py-20">
+<section class="py-24" style="background-color: #F4F7FE;">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <span class="badge badge-primary mb-4">Cobertura nacional</span>
-      <h2 class="text-3xl font-semibold" style="color: #E8EEFF;">Presencia Real en 5 Provincias</h2>
-      <p class="mt-3 max-w-2xl mx-auto" style="color: #8899BB;">Abogados y Comisiones Médicas locales en cada provincia donde operamos.</p>
+    <div class="text-center mb-14">
+      <span class="badge-light">Cobertura nacional</span>
+      <h2 class="text-3xl sm:text-4xl font-black mt-4" style="color: #0D1B2A;">
+        Presencia Real en 5 Provincias
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-base" style="color: #4B5E6D;">
+        Abogados y Comisiones Médicas locales en cada provincia donde operamos.
+      </p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       @for (provincia of provincias; track provincia.slug) {
-        <a
-          [routerLink]="'/' + provincia.slug"
-          class="card p-6 group block"
-        >
+        <a [routerLink]="'/' + provincia.slug" class="card-light p-6 group block" style="text-decoration: none;">
           <div class="flex items-start justify-between">
             <div>
-              <h3 class="font-semibold text-lg" style="color: #E8EEFF;">{{ provincia.nombre }}</h3>
-              <p class="text-sm mt-1" style="color: #8899BB;">{{ provincia.ciudades.length }} ciudades cubiertas</p>
+              <h3 class="font-bold text-lg" style="color: #0D1B2A;">{{ provincia.nombre }}</h3>
+              <p class="text-sm mt-1" style="color: #4B5E6D;">
+                {{ provincia.ciudades.length }} ciudades cubiertas
+              </p>
             </div>
-            <svg class="w-5 h-5 shrink-0 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #4F7EF7;" aria-hidden="true">
+            <svg class="w-5 h-5 shrink-0 mt-0.5 transition-transform group-hover:translate-x-1"
+                 fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #2563EB;" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
           </div>
-          <p class="mt-3 text-sm leading-relaxed" style="color: #8899BB;">{{ provincia.descripcion | slice:0:100 }}...</p>
+          <p class="mt-3 text-sm leading-relaxed" style="color: #4B5E6D;">
+            {{ provincia.descripcion | slice:0:100 }}...
+          </p>
           @if (provincia.cmPrincipal) {
-            <span class="badge badge-primary mt-3 text-xs">{{ provincia.cmPrincipal }}</span>
+            <span class="badge-light mt-3 inline-flex" style="font-size:0.7rem;">{{ provincia.cmPrincipal }}</span>
           }
         </a>
       }
@@ -118,87 +201,193 @@
   </div>
 </section>
 
-<!-- CÓMO FUNCIONA -->
-<section style="background-color: #0C1424; border-top: 1px solid rgba(255,255,255,0.05);" class="py-20">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <span class="badge badge-primary mb-4">Sin burocracia</span>
-      <h2 class="text-3xl font-semibold" style="color: #E8EEFF;">Cómo Funciona el Reclamo</h2>
+<!-- BANNER ASESORAMIENTO LABORAL -->
+<section class="relative overflow-hidden" style="min-height: 360px; background-color: #0a1628;">
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+       style="background-image: url('/assets/equipo/grupo.webp');" aria-hidden="true"></div>
+  <div class="absolute inset-0"
+       style="background: linear-gradient(90deg, rgba(10,22,40,0.97) 0%, rgba(10,22,40,0.85) 50%, rgba(10,22,40,0.55) 100%);"
+       aria-hidden="true"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex items-center" style="min-height: 360px;">
+    <div class="max-w-xl">
+      <span
+        class="inline-block mb-5 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full"
+        style="background: rgba(212,168,67,0.15); color: #D4A843; border: 1px solid rgba(212,168,67,0.3);"
+      >
+        Tus derechos, sin vueltas
+      </span>
+      <h2 class="text-4xl sm:text-5xl font-black text-white leading-tight">
+        Asesoramiento<br/>
+        <span style="background: linear-gradient(90deg,#93C5FD,#3B82F6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
+          Laboral
+        </span>
+      </h2>
+      <p class="mt-4 text-lg" style="color: rgba(147,197,253,0.85);">
+        Un equipo especializado, dedicado exclusivamente a defender trabajadores.
+      </p>
+      <a
+        routerLink="/abogados"
+        class="mt-8 inline-flex items-center gap-2 font-bold text-sm uppercase tracking-wider px-7 py-3.5 rounded-2xl transition-all duration-200"
+        style="background: #ffffff; color: #1e3a8a; box-shadow: 0 6px 24px rgba(59,130,246,0.3);"
+        onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+        Analizá tu caso con nuestro equipo
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="py-24" style="background-color: #ffffff;">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="badge-light">Sin burocracia</span>
+      <h2 class="text-3xl sm:text-4xl font-black mt-4" style="color: #0D1B2A;">
+        Cómo Funciona el Reclamo
+      </h2>
+      <p class="mt-4 max-w-xl mx-auto text-base" style="color: #4B5E6D;">
+        Un proceso claro, sin trámites engorrosos de tu parte.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       @for (paso of pasos; track paso.numero) {
         <div class="text-center">
           <div
-            class="w-12 h-12 rounded-xl flex items-center justify-center text-white text-lg font-bold mx-auto mb-4"
-            style="background: linear-gradient(135deg, #4F7EF7, #3B6AE8); box-shadow: 0 4px 16px rgba(79,126,247,0.35);"
+            class="w-14 h-14 rounded-2xl flex items-center justify-center text-white text-xl font-black mx-auto mb-5"
+            style="background: linear-gradient(135deg, #1D4ED8, #3B82F6); box-shadow: 0 4px 20px rgba(37,99,235,0.22);"
           >
             {{ paso.numero }}
           </div>
-          <h3 class="font-semibold" style="color: #E8EEFF;">{{ paso.titulo }}</h3>
-          <p class="text-sm mt-2 leading-relaxed" style="color: #8899BB;">{{ paso.descripcion }}</p>
+          <h3 class="font-bold" style="color: #0D1B2A;">{{ paso.titulo }}</h3>
+          <p class="text-sm mt-2 leading-relaxed" style="color: #4B5E6D;">{{ paso.descripcion }}</p>
         </div>
       }
     </div>
-    <div class="text-center mt-12">
-      <a routerLink="/contactanos" class="btn-primary text-base px-8 py-4">Empezar ahora — es gratis</a>
+
+    <div class="text-center mt-14">
+      <a
+        routerLink="/contactanos"
+        class="inline-flex items-center gap-2 font-bold text-base px-8 py-4 rounded-2xl transition-all duration-200"
+        style="background: linear-gradient(135deg, #1D4ED8, #3B82F6); color: #ffffff; box-shadow: 0 6px 24px rgba(37,99,235,0.28);"
+        onmouseover="this.style.boxShadow='0 10px 32px rgba(37,99,235,0.4)'"
+        onmouseout="this.style.boxShadow='0 6px 24px rgba(37,99,235,0.28)'"
+      >
+        Empezar ahora — es gratis
+      </a>
     </div>
   </div>
 </section>
 
 <!-- RESULTADOS DESTACADOS -->
-<section style="background-color: #080D1A;" class="py-20">
+<section class="py-24" style="background-color: #F4F7FE;">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <span class="badge badge-success mb-4">Casos reales</span>
-      <h2 class="text-3xl font-semibold" style="color: #E8EEFF;">Resultados que Hablan por Nosotros</h2>
-      <p class="mt-3 max-w-xl mx-auto" style="color: #8899BB;">Casos reales, anonimizados. Los montos reflejan lo que efectivamente cobró cada trabajador.</p>
+    <div class="text-center mb-14">
+      <span class="badge-success-light">Casos reales</span>
+      <h2 class="text-3xl sm:text-4xl font-black mt-4" style="color: #0D1B2A;">
+        Resultados que Hablan por Nosotros
+      </h2>
+      <p class="mt-4 max-w-xl mx-auto text-base" style="color: #4B5E6D;">
+        Casos reales, anonimizados. Los montos reflejan lo que efectivamente cobró cada trabajador.
+      </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
       @for (resultado of resultadosDestacados; track resultado.tipo + resultado.anio) {
-        <div class="card p-6" style="border-left: 3px solid #34D399;">
+        <div class="card-light p-6" style="border-left: 3px solid #10B981;">
           <div class="flex items-start justify-between gap-4 mb-3">
             <div>
-              <span class="badge badge-success text-xs">{{ resultado.tipo }}</span>
-              <h3 class="font-semibold mt-2" style="color: #E8EEFF;">{{ resultado.lesion }}</h3>
+              <span class="badge-success-light" style="font-size:0.7rem;">{{ resultado.tipo }}</span>
+              <h3 class="font-bold mt-2" style="color: #0D1B2A;">{{ resultado.lesion }}</h3>
             </div>
-            <p class="text-xl font-bold shrink-0" style="color: #34D399;">{{ resultado.montoAproximado }}</p>
+            <p class="text-xl font-black shrink-0" style="color: #059669;">{{ resultado.montoAproximado }}</p>
           </div>
-          <p class="text-sm leading-relaxed" style="color: #8899BB;">{{ resultado.descripcionBreve }}</p>
-          <p class="text-xs mt-3" style="color: #8899BB;">{{ resultado.provincia }} · {{ resultado.anio }}</p>
+          <p class="text-sm leading-relaxed" style="color: #4B5E6D;">{{ resultado.descripcionBreve }}</p>
+          <p class="text-xs mt-3" style="color: #9AACB8;">{{ resultado.provincia }} · {{ resultado.anio }}</p>
         </div>
       }
     </div>
 
     <div class="text-center mt-10">
-      <a routerLink="/resultados" class="btn-secondary">Ver todos los casos ganados</a>
+      <a
+        routerLink="/resultados"
+        class="inline-flex items-center gap-2 font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-200"
+        style="color: #047857; border: 1.5px solid #A7F3D0; background: transparent;"
+        onmouseover="this.style.background='#F0FDF4'" onmouseout="this.style.background='transparent'"
+      >
+        Ver todos los casos ganados →
+      </a>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIOS -->
-<section style="background-color: #0C1424; border-top: 1px solid rgba(255,255,255,0.05);" class="py-20">
+<!-- GOOGLE REVIEWS -->
+<section class="py-20" style="background-color: #ffffff;">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
     <div class="text-center mb-12">
-      <h2 class="text-3xl font-semibold" style="color: #E8EEFF;">Lo que Dicen Nuestros Clientes</h2>
+      <div class="flex items-center justify-center gap-3 mb-3">
+        <svg class="w-8 h-8" viewBox="0 0 48 48" aria-hidden="true">
+          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+          <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+          <path fill="none" d="M0 0h48v48H0z"/>
+        </svg>
+        <span class="text-2xl font-black" style="color: #0D1B2A;">Reseñas en Google</span>
+      </div>
+      <div class="flex items-center justify-center gap-2 mt-2">
+        <span class="text-3xl font-black" style="color: #0D1B2A;">5.0</span>
+        <div class="flex gap-0.5" aria-label="5 estrellas">
+          @for (s of [1,2,3,4,5]; track s) {
+            <svg class="w-6 h-6" fill="#F59E0B" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          }
+        </div>
+        <span class="text-sm" style="color: #4B5E6D;">Clientes verificados</span>
+      </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-      @for (t of testimonios; track t.nombre) {
-        <div class="card p-6">
-          <div class="flex gap-1 mb-4" aria-label="5 estrellas">
+
+    <!-- Grid de reseñas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      @for (review of googleReviews; track review.nombre) {
+        <div class="rounded-2xl p-5 flex flex-col gap-3 bg-white"
+             style="border: 1px solid #E8ECF0; box-shadow: 0 1px 6px rgba(0,0,0,0.06);">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0 overflow-hidden"
+                   [style.background-color]="review.color">
+                @if (review.foto) {
+                  <img [src]="review.foto" [alt]="review.nombre" class="w-full h-full object-cover" loading="lazy"/>
+                } @else {
+                  {{ review.inicial }}
+                }
+              </div>
+              <div>
+                <p class="font-bold text-sm leading-tight" style="color: #0D1B2A;">{{ review.nombre }}</p>
+                <p class="text-xs" style="color: #9E9E9E;">{{ review.tiempo }}</p>
+              </div>
+            </div>
+            <svg class="w-5 h-5 shrink-0" viewBox="0 0 48 48" role="img" aria-label="Google">
+              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+              <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+              <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+              <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+              <path fill="none" d="M0 0h48v48H0z"/>
+            </svg>
+          </div>
+          <div class="flex gap-0.5" aria-label="5 estrellas">
             @for (s of [1,2,3,4,5]; track s) {
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" style="color: #F59E0B;" aria-hidden="true">
+              <svg class="w-4 h-4" fill="#F59E0B" viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
               </svg>
             }
           </div>
-          <blockquote class="text-sm leading-relaxed italic" style="color: #C8D8F0;">
-            "{{ t.texto }}"
-          </blockquote>
-          <div class="mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.07);">
-            <p class="font-semibold text-sm" style="color: #4F7EF7;">{{ t.nombre }}</p>
-            <p class="text-xs" style="color: #8899BB;">{{ t.lesion }} · {{ t.provincia }} · {{ t.anio }}</p>
-          </div>
+          <p class="text-sm leading-relaxed flex-1" style="color: #3D3D3D;">{{ review.texto }}</p>
         </div>
       }
     </div>
@@ -206,31 +395,49 @@
 </section>
 
 <!-- FAQ -->
-<section style="background-color: #080D1A;" class="py-20">
+<section class="py-24" style="background-color: #F4F7FE;">
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12">
-      <h2 class="text-3xl font-semibold" style="color: #E8EEFF;">Preguntas Frecuentes</h2>
+      <span class="badge-light">Preguntas frecuentes</span>
+      <h2 class="text-3xl sm:text-4xl font-black mt-4" style="color: #0D1B2A;">Preguntas Frecuentes</h2>
     </div>
     <app-faq-accordion [faqs]="faqsHome" />
-    <div class="text-center mt-8">
-      <a routerLink="/preguntas-frecuentes" class="btn-secondary">Ver todas las preguntas</a>
+    <div class="text-center mt-10">
+      <a
+        routerLink="/preguntas-frecuentes"
+        class="inline-flex items-center gap-2 font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-200"
+        style="color: #1D4ED8; border: 1.5px solid #BFDBFE; background: transparent;"
+        onmouseover="this.style.background='#EEF2FF'" onmouseout="this.style.background='transparent'"
+      >
+        Ver todas las preguntas →
+      </a>
     </div>
   </div>
 </section>
 
-<!-- CTA CONTACTO -->
-<section style="background: linear-gradient(135deg, #0D1F3C 0%, #0F1629 100%); border-top: 1px solid rgba(79,126,247,0.2);" class="py-20">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- CTA CONTACTO FINAL -->
+<section class="relative py-24 overflow-hidden" style="background-color: #0a1628;">
+  <div class="absolute pointer-events-none right-0 top-0 w-96 h-96 opacity-30" aria-hidden="true"
+    style="background: radial-gradient(circle at top right, #1d4ed8, transparent 65%); filter: blur(70px);"></div>
+  <div class="absolute pointer-events-none left-0 bottom-0 w-80 h-80 opacity-20" aria-hidden="true"
+    style="background: radial-gradient(circle at bottom left, #1e3a8a, transparent 65%); filter: blur(60px);"></div>
+
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
       <div>
-        <h2 class="text-3xl font-bold" style="color: #E8EEFF;">Contanos Tu Caso Ahora</h2>
-        <p class="mt-3 text-lg leading-relaxed" style="color: #8899BB;">Consulta gratuita y confidencial. Nuestros abogados te responden en menos de 24 horas.</p>
-        <ul class="mt-6 space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-black text-white">Contanos Tu Caso Ahora</h2>
+        <p class="mt-4 text-lg leading-relaxed" style="color: rgba(147,197,253,0.8);">
+          Consulta gratuita y confidencial. Nuestros abogados te responden en menos de 24 horas.
+        </p>
+        <ul class="mt-7 space-y-3">
           @for (item of garantias; track item) {
-            <li class="flex items-center gap-3 text-sm" style="color: #C8D8F0;">
-              <svg class="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #4F7EF7;" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-              </svg>
+            <li class="flex items-center gap-3 text-sm text-white">
+              <div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0"
+                   style="background: rgba(59,130,246,0.2); border: 1px solid rgba(59,130,246,0.4);">
+                <svg class="w-3 h-3" style="color: #60A5FA;" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
               {{ item }}
             </li>
           }
@@ -249,7 +456,7 @@
           </a>
         </div>
       </div>
-      <div class="rounded-2xl p-6" style="background: rgba(15,22,41,0.8); border: 1px solid rgba(79,126,247,0.2);">
+      <div class="rounded-2xl p-6" style="background: rgba(13,30,56,0.9); border: 1px solid rgba(59,130,246,0.2);">
         <app-contact-form />
       </div>
     </div>

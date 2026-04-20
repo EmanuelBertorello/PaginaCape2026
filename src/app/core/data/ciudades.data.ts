@@ -10,7 +10,13 @@ export const CIUDADES_SANTA_FE: CiudadData[] = [
     poblacion: '1.200.000',
     sectorPrincipal: 'industria, construcción, salud',
     cmLocal: 'CM N° 2 — Rosario',
-    metaTitle: 'Abogados Accidentes Laborales Rosario | Capeletti',
+    cmDireccion: 'Rioja 1462, Rosario (CP 2000)',
+    casosTipo: [
+      'Trabajadores de frigoríficos con cortes y aplastamientos de mano',
+      'Obreros de construcción con caídas desde andamios y fracturas',
+      'Personal de salud con accidentes in itinere y lesiones de espalda',
+    ],
+    metaTitle: 'Abogado laboral en Rosario | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados especialistas en accidentes laborales y ART en Rosario. Comisión Médica local N° 2. Consulta gratis, sin anticipos. Capeletti Abogados.',
   },
   {
@@ -22,7 +28,13 @@ export const CIUDADES_SANTA_FE: CiudadData[] = [
     poblacion: '400.000',
     sectorPrincipal: 'construcción, administración pública, salud',
     cmLocal: 'CM N° 1 — Santa Fe',
-    metaTitle: 'Abogados Accidentes Laborales Santa Fe Capital | Capeletti',
+    cmDireccion: 'San Martín 1743, Santa Fe (CP 3000)',
+    casosTipo: [
+      'Empleados municipales con accidentes in itinere en bicicleta o moto',
+      'Obreros de construcción con lesiones lumbares por esfuerzo repetitivo',
+      'Trabajadores de salud con accidentes con objetos cortopunzantes',
+    ],
+    metaTitle: 'Abogado laboral en Santa Fe Capital | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados en Santa Fe Capital para reclamos laborales y ART. Comisión Médica N° 1. Sin honorarios anticipados. Consultá gratis hoy.',
   },
   {
@@ -34,8 +46,14 @@ export const CIUDADES_SANTA_FE: CiudadData[] = [
     poblacion: '80.000',
     sectorPrincipal: 'agroindustria, forestal, construcción',
     cmLocal: 'CM N° 17 — Reconquista',
-    metaTitle: 'Abogados Accidentes Laborales Reconquista | Capeletti',
-    metaDescription: 'Abogados especializados en ART y accidentes laborales en Reconquista, Santa Fe. Comisión Médica local. Consulta gratis.',
+    cmDireccion: 'Wilde 2011, Reconquista (CP 3560)',
+    casosTipo: [
+      'Trabajadores forestales con cortes de sierra y amputaciones parciales',
+      'Operarios de aserradero con lesiones oculares y pérdida auditiva',
+      'Peones rurales con accidentes de maquinaria agrícola en cosecha',
+    ],
+    metaTitle: 'Abogado laboral en Reconquista | ART y accidentes de trabajo | Capeletti',
+    metaDescription: 'Abogados especializados en ART y accidentes laborales en Reconquista, Santa Fe. Comisión Médica N° 17. Consulta gratis.',
   },
   {
     slug: 'rafaela',
@@ -46,7 +64,13 @@ export const CIUDADES_SANTA_FE: CiudadData[] = [
     poblacion: '105.000',
     sectorPrincipal: 'metalurgia, alimentación, textil',
     cmLocal: 'CM — Rafaela',
-    metaTitle: 'Abogados Laborales Rafaela | Capeletti Abogados',
+    cmDireccion: 'Pellegrini 660, Rafaela (CP 2300)',
+    casosTipo: [
+      'Metalúrgicos con aplastamiento de dedos y lesiones de hombro por prensas',
+      'Trabajadores de frigoríficos lácteos con lesiones por frío extremo y esfuerzo',
+      'Operarios textiles con síndrome del túnel carpiano por movimientos repetitivos',
+    ],
+    metaTitle: 'Abogado laboral en Rafaela | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados en Rafaela para reclamos a la ART y accidentes de trabajo. Casos de metalurgia y alimentación. Consulta gratis sin costo.',
   },
   {
@@ -58,7 +82,13 @@ export const CIUDADES_SANTA_FE: CiudadData[] = [
     poblacion: '80.000',
     sectorPrincipal: 'agroindustria, logística, construcción',
     cmLocal: 'CM — Venado Tuerto',
-    metaTitle: 'Abogados Laborales Venado Tuerto | Capeletti',
+    cmDireccion: 'San Martín 785, Venado Tuerto (CP 2600)',
+    casosTipo: [
+      'Transportistas con accidentes de ruta y lesiones de columna',
+      'Trabajadores en silos con caídas y exposición a agroquímicos',
+      'Obreros de la construcción con fracturas por derrumbes y andamios',
+    ],
+    metaTitle: 'Abogado laboral en Venado Tuerto | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados especializados en accidentes laborales en Venado Tuerto. Reclamos a la ART con representación local. Consulta gratis.',
   },
 ];
@@ -73,7 +103,13 @@ export const CIUDADES_NEUQUEN: CiudadData[] = [
     poblacion: '350.000',
     sectorPrincipal: 'petróleo, construcción, servicios',
     cmLocal: 'CM N° 10 — Neuquén',
-    metaTitle: 'Abogados Accidentes Laborales Neuquén | Capeletti',
+    cmDireccion: 'Independencia 54, Neuquén Capital (CP 8300)',
+    casosTipo: [
+      'Operadores de pozo petrolero con quemaduras y lesiones por explosión',
+      'Obreros de construcción de gasoductos con fracturas vertebrales',
+      'Conductores de camiones de carga con accidentes en rutas patagónicas',
+    ],
+    metaTitle: 'Abogado laboral en Neuquén | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados especialistas en ART y accidentes laborales en Neuquén. Industria petrolera, construcción y más. CM local N°10. Consulta gratis.',
   },
   {
@@ -85,7 +121,13 @@ export const CIUDADES_NEUQUEN: CiudadData[] = [
     poblacion: '45.000',
     sectorPrincipal: 'minería, logística, agroindustria',
     cmLocal: 'CM — Zapala',
-    metaTitle: 'Abogados Laborales Zapala Neuquén | Capeletti',
+    cmDireccion: 'Ejército Argentino 455, Zapala (CP 8340)',
+    casosTipo: [
+      'Mineros con enfermedades respiratorias por inhalación de polvo de sílice',
+      'Conductores de logística con lesiones de columna en rutas de montaña',
+      'Trabajadores de cantera con pérdida auditiva por explosiones',
+    ],
+    metaTitle: 'Abogado laboral en Zapala | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados para reclamos a la ART en Zapala, Neuquén. Minería y accidentes laborales. Sin anticipos. Consulta gratis.',
   },
 ];
@@ -100,7 +142,13 @@ export const CIUDADES_RIO_NEGRO: CiudadData[] = [
     poblacion: '130.000',
     sectorPrincipal: 'turismo, construcción, gastronomía',
     cmLocal: 'CM — Bariloche',
-    metaTitle: 'Abogados Laborales Bariloche | Capeletti Abogados',
+    cmDireccion: 'Quaglia 270, Bariloche (CP 8400)',
+    casosTipo: [
+      'Empleados gastronómicos con quemaduras y cortes en temporada turística',
+      'Obreros de construcción de obras en altura con caídas y fracturas',
+      'Trabajadores de ski y turismo de aventura con lesiones ligamentarias',
+    ],
+    metaTitle: 'Abogado laboral en Bariloche | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados especializados en accidentes laborales en Bariloche, Río Negro. Gastronomía, turismo y construcción. Consulta gratis.',
   },
   {
@@ -112,7 +160,13 @@ export const CIUDADES_RIO_NEGRO: CiudadData[] = [
     poblacion: '70.000',
     sectorPrincipal: 'administración pública, agroindustria',
     cmLocal: 'CM — Viedma',
-    metaTitle: 'Abogados Accidentes Laborales Viedma | Capeletti',
+    cmDireccion: 'Saavedra 361, Viedma (CP 8500)',
+    casosTipo: [
+      'Empleados estatales provinciales con accidentes in itinere',
+      'Trabajadores frutícolas con lesiones por esfuerzo en cosecha de manzana y pera',
+      'Operarios de la construcción pública con aplastamientos y caídas',
+    ],
+    metaTitle: 'Abogado laboral en Viedma | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados para reclamos laborales y ART en Viedma, Río Negro. Comisión Médica local. Consulta gratis y sin costo anticipado.',
   },
 ];
@@ -127,7 +181,13 @@ export const CIUDADES_ENTRE_RIOS: CiudadData[] = [
     poblacion: '250.000',
     sectorPrincipal: 'construcción, salud, administración pública',
     cmLocal: 'CM N° 5 — Paraná',
-    metaTitle: 'Abogados Laborales Paraná Entre Ríos | Capeletti',
+    cmDireccion: 'Urquiza 1224, Paraná (CP 3100)',
+    casosTipo: [
+      'Enfermeros y médicos del hospital público con accidentes con material cortante',
+      'Obreros de la construcción con hernias de disco por carga de materiales',
+      'Docentes y empleados estatales con accidentes in itinere',
+    ],
+    metaTitle: 'Abogado laboral en Paraná | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados especializados en ART y accidentes laborales en Paraná, Entre Ríos. CM N°5 local. Consulta gratis.',
   },
   {
@@ -139,7 +199,13 @@ export const CIUDADES_ENTRE_RIOS: CiudadData[] = [
     poblacion: '155.000',
     sectorPrincipal: 'citricultura, agroindustria, logística',
     cmLocal: 'CM — Concordia',
-    metaTitle: 'Abogados Laborales Concordia | Capeletti Abogados',
+    cmDireccion: 'Hipólito Yrigoyen 568, Concordia (CP 3200)',
+    casosTipo: [
+      'Cosechadores de citrus con lesiones de hombro y manguito rotador',
+      'Trabajadores de empaque con síndrome del túnel carpiano por movimiento repetitivo',
+      'Operarios de cámaras frigoríficas con enfermedades por exposición al frío',
+    ],
+    metaTitle: 'Abogado laboral en Concordia | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados para reclamos a la ART en Concordia, Entre Ríos. Accidentes en citricultura y agroindustria. Consulta gratis.',
   },
 ];
@@ -154,7 +220,13 @@ export const CIUDADES_BUENOS_AIRES: CiudadData[] = [
     poblacion: '3.100.000',
     sectorPrincipal: 'construcción, salud, gastronomía, logística',
     cmLocal: 'CM N° 1 — CABA',
-    metaTitle: 'Abogados Accidentes Laborales CABA | Capeletti',
+    cmDireccion: 'Bartolomé Mitre 751, CABA (CP 1036)',
+    casosTipo: [
+      'Repartidores de plataformas digitales con accidentes de tránsito en moto',
+      'Personal de gastronomía con quemaduras y caídas en cocinas',
+      'Trabajadores de construcción en obra alta con caídas y fracturas graves',
+    ],
+    metaTitle: 'Abogado laboral en CABA | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados especialistas en accidentes laborales y ART en CABA. Sin anticipos. Consulta gratis con abogado especializado.',
   },
   {
@@ -166,7 +238,13 @@ export const CIUDADES_BUENOS_AIRES: CiudadData[] = [
     poblacion: '300.000',
     sectorPrincipal: 'petroquímica, puerto, construcción',
     cmLocal: 'CM — Bahía Blanca',
-    metaTitle: 'Abogados Laborales Bahía Blanca | Capeletti Abogados',
+    cmDireccion: 'Alsina 40, Bahía Blanca (CP 8000)',
+    casosTipo: [
+      'Operarios petroquímicos con intoxicaciones y quemaduras químicas',
+      'Estibadores portuarios con hernias discales y lesiones de hombro',
+      'Trabajadores de la construcción del polo industrial con aplastamientos',
+    ],
+    metaTitle: 'Abogado laboral en Bahía Blanca | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados para reclamos de ART en Bahía Blanca. Industria petroquímica y accidentes laborales. Consulta gratis sin anticipos.',
   },
   {
@@ -178,7 +256,13 @@ export const CIUDADES_BUENOS_AIRES: CiudadData[] = [
     poblacion: '650.000',
     sectorPrincipal: 'pesca, turismo, construcción',
     cmLocal: 'CM — Mar del Plata',
-    metaTitle: 'Abogados Laborales Mar del Plata | Capeletti',
+    cmDireccion: 'San Luis 1730, Mar del Plata (CP 7600)',
+    casosTipo: [
+      'Pescadores con lesiones de mano por maquinaria de procesado y redes',
+      'Trabajadores gastronómicos con accidentes durante temporada turística alta',
+      'Operarios de conserveras de pescado con enfermedades por frío y humedad',
+    ],
+    metaTitle: 'Abogado laboral en Mar del Plata | ART y accidentes de trabajo | Capeletti',
     metaDescription: 'Abogados especializados en ART y accidentes de trabajo en Mar del Plata. Industria pesquera y turismo. Consulta gratis.',
   },
 ];

@@ -6,6 +6,18 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      { "source": "/rosario", "destination": "/santa-fe/rosario", "type": 301 },
+      { "source": "/santa-fe-ciudad", "destination": "/santa-fe/santa-fe-capital", "type": 301 },
+      { "source": "/reconquista", "destination": "/santa-fe/reconquista", "type": 301 },
+      { "source": "/rafaela-y-sunchales", "destination": "/santa-fe/rafaela", "type": 301 },
+      { "source": "/venado-tuerto", "destination": "/santa-fe/venado-tuerto", "type": 301 },
+      { "source": "/caba", "destination": "/buenos-aires/caba", "type": 301 },
+      { "source": "/bahia-blanca", "destination": "/buenos-aires/bahia-blanca", "type": 301 },
+      { "source": "/mar-del-plata", "destination": "/buenos-aires/mar-del-plata", "type": 301 },
+      { "source": "/calculadora-de-indemnizacion-por-accidente-de-trabajo", "destination": "/calculadoras-de-indemnizacion", "type": 301 },
+      { "source": "/calculadora-de-indemnizacion-por-enfermedad-en-el-trabajo", "destination": "/calculadoras-de-indemnizacion", "type": 301 }
+    ],
     "headers": [
       {
         "source": "**/*.@(js|mjs)",

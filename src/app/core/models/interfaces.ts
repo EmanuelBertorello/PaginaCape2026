@@ -43,6 +43,8 @@ export interface CiudadData {
   poblacion?: string;
   sectorPrincipal?: string;
   cmLocal?: string;
+  cmDireccion?: string;
+  casosTipo?: string[];
   metaTitle: string;
   metaDescription: string;
 }

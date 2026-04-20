@@ -1,11 +1,25 @@
 @if (abogado) {
   <app-breadcrumb [items]="breadcrumbs" />
+
   <section style="background-color: #1A5276;" class="py-14">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-        <div class="w-24 h-24 rounded-full flex items-center justify-center text-white text-3xl font-bold shrink-0" style="background-color: #2E86C1;">
-          {{ abogado.nombre[0] }}{{ abogado.apellido[0] }}
+
+        <!-- Foto o iniciales -->
+        <div class="w-28 h-28 rounded-full overflow-hidden shrink-0" style="background-color: #2E86C1;">
+          @if (abogado.foto) {
+            <img
+              [src]="abogado.foto"
+              [alt]="abogado.nombre + ' ' + abogado.apellido"
+              class="w-full h-full object-cover"
+            />
+          } @else {
+            <div class="w-full h-full flex items-center justify-center text-white text-3xl font-bold">
+              {{ abogado.nombre[0] }}{{ abogado.apellido[0] }}
+            </div>
+          }
         </div>
+
         <div class="text-center sm:text-left">
           <h1 class="text-3xl font-bold text-white">{{ abogado.nombre }} {{ abogado.apellido }}</h1>
           <p class="mt-2 text-lg" style="color: #D6EAF8;">{{ abogado.titulo }}</p>
@@ -22,18 +36,38 @@
         @for (parrafo of abogado.biografia.split('\n\n'); track parrafo) {
           <p class="leading-relaxed mb-4" style="color: #5D6D7E;">{{ parrafo }}</p>
         }
+
         <h3 class="text-lg font-semibold mt-8 mb-3" style="color: #1C2833;">Especializaciones</h3>
         <ul class="flex flex-wrap gap-2">
           @for (esp of abogado.especializaciones; track esp) {
             <li class="badge badge-primary">{{ esp }}</li>
           }
         </ul>
+
+        @if (abogado.casosEspeciales && abogado.casosEspeciales.length > 0) {
+          <h3 class="text-lg font-semibold mt-8 mb-3" style="color: #1C2833;">Casos destacados</h3>
+          <ul class="space-y-2">
+            @for (caso of abogado.casosEspeciales; track caso) {
+              <li class="flex items-start gap-3 text-sm" style="color: #5D6D7E;">
+                <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1E8449;" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                {{ caso }}
+              </li>
+            }
+          </ul>
+        }
       </div>
+
       <aside>
         <div class="card p-5 space-y-3">
           <h3 class="font-semibold" style="color: #1C2833;">Datos profesionales</h3>
-          <p class="text-sm" style="color: #5D6D7E;"><span class="font-medium text-body">Universidad:</span> {{ abogado.universidad }}</p>
-          <p class="text-sm" style="color: #5D6D7E;"><span class="font-medium" style="color: #1C2833;">Matrícula:</span> {{ abogado.matricula }}</p>
+          <p class="text-sm" style="color: #5D6D7E;">
+            <span class="font-medium" style="color: #1C2833;">Universidad:</span> {{ abogado.universidad }}
+          </p>
+          <p class="text-sm" style="color: #5D6D7E;">
+            <span class="font-medium" style="color: #1C2833;">Matrícula:</span> {{ abogado.matricula }}
+          </p>
           <div>
             <p class="text-sm font-medium mb-2" style="color: #1C2833;">Provincias</p>
             <div class="flex flex-wrap gap-1">
@@ -43,16 +77,23 @@
             </div>
           </div>
         </div>
+
         <div class="mt-4 card p-5">
           <p class="font-semibold mb-3" style="color: #1A5276;">Consultar con {{ abogado.nombre }}</p>
           <a routerLink="/contactanos" class="btn-primary w-full justify-center">Consulta Gratis</a>
+        </div>
+
+        <div class="mt-4 card p-5">
+          <a routerLink="/abogados" class="text-sm font-medium" style="color: #1A5276;">
+            ← Ver todo el equipo
+          </a>
         </div>
       </aside>
     </div>
   </div>
 } @else {
   <div class="max-w-2xl mx-auto px-4 py-20 text-center">
-    <h1 class="text-3xl font-bold" style="color: #1A5276;">Abogado no encontrado</h1>
+    <h1 class="text-3xl font-bold" style="color: #1A5276;">Profesional no encontrado</h1>
     <a routerLink="/abogados" class="btn-primary mt-6 inline-flex">Ver el equipo</a>
   </div>
 }

@@ -11,7 +11,10 @@
       </p>
       @if (ciudad.cmLocal) {
         <p class="mt-4 text-sm font-medium" style="color: #D6EAF8;">
-          📍 Comisión Médica local: {{ ciudad.cmLocal }}
+          📍 {{ ciudad.cmLocal }}
+          @if (ciudad.cmDireccion) {
+            — {{ ciudad.cmDireccion }}
+          }
         </p>
       }
       <a routerLink="/contactanos" class="btn-primary mt-8 inline-flex text-base px-8 py-4">
@@ -42,6 +45,24 @@
             </li>
           }
         </ul>
+
+        @if (ciudad.casosTipo && ciudad.casosTipo.length > 0) {
+          <div class="mt-8">
+            <h3 class="text-base font-semibold mb-3" style="color: #1A5276;">
+              Casos frecuentes en {{ ciudad.nombre }}
+            </h3>
+            <ul class="space-y-2">
+              @for (caso of ciudad.casosTipo; track caso) {
+                <li class="flex items-start gap-3 text-sm" style="color: #5D6D7E;">
+                  <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1A5276;" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  {{ caso }}
+                </li>
+              }
+            </ul>
+          </div>
+        }
       </div>
       <div class="card p-6">
         <h3 class="font-semibold text-lg mb-4" style="color: #1A5276;">Consulta Gratis desde {{ ciudad.nombre }}</h3>

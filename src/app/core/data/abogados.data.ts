@@ -5,7 +5,7 @@ export const ABOGADOS_DATA: AbogadoData[] = [
     slug: 'bruno-capeletti',
     nombre: 'Bruno',
     apellido: 'Capeletti',
-    titulo: 'Abogado — Especialista en Accidentes Laborales y ART',
+    titulo: 'Abogado — Director del Estudio',
     matricula: 'C.S.J.S.F. T° XVI F° 48',
     universidad: 'Universidad Nacional del Litoral (UNL)',
     especializaciones: [
@@ -15,7 +15,7 @@ export const ABOGADOS_DATA: AbogadoData[] = [
       'Enfermedades Profesionales',
       'Accidentes In Itinere',
     ],
-    biografia: `Bruno Capeletti es el fundador y principal abogado del estudio. Con más de 12 años de ejercicio profesional exclusivamente en derecho laboral y riesgos del trabajo, ha representado a más de 7.000 trabajadores en las provincias de Santa Fe, Neuquén, Entre Ríos, Río Negro y Buenos Aires.
+    biografia: `Bruno Capeletti es el fundador y director del estudio. Con más de 12 años de ejercicio profesional exclusivamente en derecho laboral y riesgos del trabajo, ha representado a más de 7.000 trabajadores en las provincias de Santa Fe, Neuquén, Entre Ríos, Río Negro y Buenos Aires.
 
 Egresado de la Universidad Nacional del Litoral, se especializó en el sistema de riesgos del trabajo desde el inicio de su carrera. Su conocimiento profundo de las Comisiones Médicas locales, los baremos y las estrategias de litigación lo posicionan como uno de los referentes en la materia en el interior del país.
 
@@ -29,53 +29,84 @@ Su filosofía de trabajo: "Cada trabajador lesionado merece ser representado con
     ],
   },
   {
-    slug: 'valeria-mendez',
-    nombre: 'Valeria',
-    apellido: 'Méndez',
-    titulo: 'Abogada — Especialista en ART y Enfermedades Profesionales',
-    matricula: 'C.A.N. T° 90 F° 211',
-    universidad: 'Universidad de Buenos Aires (UBA)',
+    slug: 'rocio-bello',
+    nombre: 'Rocío',
+    apellido: 'Bello',
+    titulo: 'Abogada — Especialista en ART y Comisiones Médicas',
+    matricula: 'C.S.J.S.F. T° — F° —',
+    universidad: 'Universidad Nacional del Litoral (UNL)',
     especializaciones: [
-      'Enfermedades Profesionales',
-      'Hipoacusia Laboral',
-      'Síndrome del Túnel Carpiano',
+      'Riesgos del Trabajo (ART)',
+      'Comisiones Médicas',
+      'Impugnación de Alta Médica',
       'Accidentes In Itinere',
-      'Reclamos ante Comisión Médica Central',
+      'Enfermedades Profesionales',
     ],
-    biografia: `Valeria Méndez se incorporó al estudio Capeletti en 2018. Especialista en enfermedades profesionales, es la referente del equipo para los casos de hipoacusia laboral, enfermedades respiratorias y patologías por movimientos repetitivos.
+    biografia: `Rocío Bello integra el equipo de Capeletti Abogados desde sus inicios en la práctica del derecho laboral. Es la referente del estudio en el seguimiento de expedientes ante las Comisiones Médicas de Santa Fe y la coordinación de los trámites ante la Superintendencia de Riesgos del Trabajo.
 
-Egresada de la UBA con posgrado en Derecho del Trabajo, tiene amplia experiencia en litigios ante la Justicia Nacional del Trabajo en CABA y Buenos Aires.`,
-    foto: '/assets/team/valeria-mendez.webp',
-    provinciasFoco: ['Buenos Aires', 'CABA'],
+Egresada de la Universidad Nacional del Litoral, se especializó en el procedimiento administrativo ante la SRT y en la defensa de trabajadores en instancias de impugnación de alta médica. Su capacidad de acompañar al cliente en cada etapa del proceso es una de las características más valoradas por los trabajadores que representa.
+
+Tiene amplia experiencia en casos de accidentes in itinere, enfermedades profesionales no reconocidas y revisión de porcentajes de incapacidad fijados incorrectamente por las ART.`,
+    foto: '/assets/team/rocio-bello.webp',
+    provinciasFoco: ['Santa Fe', 'Entre Ríos'],
     casosEspeciales: [
-      'Hipoacusia bilateral en trabajadores de metalurgia',
-      'Enfermedades respiratorias en minería',
-      'Patologías por estrés laboral',
+      'Accidentes in itinere rechazados por supuesta desviación del camino',
+      'Impugnaciones de alta médica con secuelas documentadas',
+      'Revisión de incapacidades 0% ante Comisión Médica Central',
     ],
   },
   {
-    slug: 'martin-suarez',
-    nombre: 'Martín',
-    apellido: 'Suárez',
-    titulo: 'Abogado — Especialista en Accidentes Laborales Patagonia',
-    matricula: 'C.A.N. T° 78 F° 144',
-    universidad: 'Universidad Nacional del Comahue',
+    slug: 'daiana-parache',
+    nombre: 'Daiana',
+    apellido: 'Parache',
+    titulo: 'Abogada — Especialista en Litigación Laboral',
+    matricula: 'C.S.J.S.F. T° — F° —',
+    universidad: 'Universidad Nacional del Litoral (UNL)',
     especializaciones: [
+      'Litigación en Juzgados Laborales',
       'Accidentes en Construcción',
-      'Accidentes en Industria Petrolera',
-      'Reclamos en Neuquén y Río Negro',
+      'Hernias de Disco y Lesiones Lumbares',
+      'Lesiones de Hombro y Manguito Rotador',
       'Gran Invalidez',
-      'Fallecimientos Laborales',
     ],
-    biografia: `Martín Suárez lidera la oficina de Neuquén del estudio. Especialista en accidentes de la industria petrolera y de la construcción en la región patagónica, cuenta con amplio conocimiento de la Comisión Médica local de Neuquén y los tribunales laborales de la región.
+    biografia: `Daiana Parache es la especialista en litigación del estudio. Su área de trabajo se concentra en la estrategia judicial de los casos que superan la instancia administrativa, representando a trabajadores ante los juzgados laborales de Santa Fe y el resto del país.
 
-Egresado de la Universidad del Comahue, tiene más de 8 años de experiencia en casos de alta complejidad en la región patagónica.`,
-    foto: '/assets/team/martin-suarez.webp',
-    provinciasFoco: ['Neuquén', 'Río Negro'],
+Egresada de la Universidad Nacional del Litoral, desarrolló su especialización en accidentes graves de la construcción y la industria. Conoce en profundidad los mecanismos de prueba médica en juicio y la coordinación con peritos independientes.
+
+Su experiencia en casos de alta complejidad —incluyendo gran invalidez y fallecimientos laborales— la posiciona como la referente del estudio para los expedientes judiciales de mayor envergadura.`,
+    foto: '/assets/team/daiana-parache.webp',
+    provinciasFoco: ['Santa Fe', 'Buenos Aires', 'Neuquén'],
     casosEspeciales: [
-      'Accidentes en pozos petroleros',
-      'Lesiones graves en construcción de infraestructura',
-      'Fallecimientos en la industria hidrocarburífera',
+      'Accidentes graves en obra con incapacidad total',
+      'Hernias de disco múltiples con cirugía y secuelas',
+      'Gran invalidez por aplastamiento en industria',
+    ],
+  },
+  {
+    slug: 'emanuel-bertorello',
+    nombre: 'Emanuel',
+    apellido: 'Bertorello',
+    titulo: 'Ing. en Seguridad e Higiene Laboral — Perito Técnico',
+    matricula: 'CIARPA T° — F° —',
+    universidad: 'Universidad Tecnológica Nacional (UTN)',
+    especializaciones: [
+      'Seguridad e Higiene Laboral',
+      'Evaluación de Riesgo en Obra',
+      'Pericias Técnicas en Accidentes',
+      'Análisis de Causas de Accidentes',
+      'Normas IRAM e ISO 45001',
+    ],
+    biografia: `Emanuel Bertorello es el perito técnico en Seguridad e Higiene del estudio. Su rol es fundamental en los casos donde el accidente laboral involucra deficiencias en las condiciones de seguridad del empleador: falta de equipos de protección, ausencia de capacitación, instalaciones defectuosas o incumplimiento de normas de seguridad.
+
+Egresado de la UTN con especialización en análisis de causas de accidentes laborales, trabaja en coordinación con el equipo de abogados para construir prueba técnica sólida que soporte el reclamo judicial o extrajudicial.
+
+Su intervención temprana en los expedientes permite identificar responsabilidades del empleador más allá de la cobertura estándar de la ART, habilitando la vía civil cuando corresponde y maximizando la indemnización total del trabajador.`,
+    foto: '/assets/team/emanuel-bertorello.webp',
+    provinciasFoco: ['Santa Fe', 'Entre Ríos', 'Buenos Aires'],
+    casosEspeciales: [
+      'Accidentes por falta de EPP o capacitación verificable',
+      'Análisis de causalidad en accidentes con maquinaria industrial',
+      'Pericias técnicas para habilitación de acción civil contra el empleador',
     ],
   },
 ];

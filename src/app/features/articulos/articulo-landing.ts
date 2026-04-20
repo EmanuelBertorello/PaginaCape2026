@@ -33,7 +33,7 @@ export class ArticuloLandingComponent implements OnInit {
       this.seoService.setPage({
         title: a.seoTitle,
         description: a.seoDescription,
-        path: '/' + a.slug,
+        path: a.canonicalOverride ?? '/' + a.slug,
         ogType: 'article',
         schema: this.seoService.getArticleSchema({
           titulo: a.seoTitle,

@@ -8,15 +8,21 @@
   --color-accent-hover: #3B6AE8;
   --color-primary-light: rgba(79,126,247,0.15);
   --color-body: #E8EEFF;
-  --color-secondary-text: #8899BB;
+  --color-secondary-text: #93C5FD;
   --color-success: #34D399;
   --color-success-light: rgba(52,211,153,0.15);
   --color-danger: #F87171;
   --color-danger-light: rgba(248,113,113,0.15);
-  --color-bg-dark: #080D1A;
-  --color-bg-card: #0F1629;
-  --color-bg-alt: #0C1424;
-  --color-border: rgba(255,255,255,0.08);
+  --color-bg-dark: #0a1628;
+  --color-bg-card: #0d1e38;
+  --color-bg-alt: #0f2446;
+  --color-border: rgba(255,255,255,0.07);
+
+  /* === PALETA LIGHT === */
+  --color-bg-light: #F4F7FE;
+  --color-heading: #0D1B2A;
+  --color-muted: #4B5E6D;
+  --color-gold: #D4A843;
 
   /* === TIPOGRAFÍA === */
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
@@ -26,8 +32,8 @@
   --radius-badge: 9999px;
 
   /* === SOMBRAS === */
-  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.3);
-  --shadow-card-hover: 0 8px 24px -4px rgb(79 126 247 / 0.2);
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+  --shadow-card-hover: 0 8px 28px -4px rgb(59 130 246 / 0.25);
 }
 
 @layer base {
@@ -172,14 +178,15 @@
 .card {
   background: var(--color-bg-card);
   border-radius: var(--radius-card);
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(59,130,246,0.12);
   box-shadow: var(--shadow-card);
-  transition: box-shadow 150ms ease, border-color 150ms ease;
+  transition: box-shadow 200ms ease, border-color 200ms ease, transform 200ms ease;
 }
 
 .card:hover {
   box-shadow: var(--shadow-card-hover);
-  border-color: rgba(79,126,247,0.3);
+  border-color: rgba(59,130,246,0.35);
+  transform: translateY(-2px);
 }
 
 .badge {
@@ -194,9 +201,9 @@
 }
 
 .badge-primary {
-  background-color: rgba(79,126,247,0.15);
-  color: #7EA8FF;
-  border: 1px solid rgba(79,126,247,0.25);
+  background-color: rgba(59,130,246,0.15);
+  color: #93C5FD;
+  border: 1px solid rgba(59,130,246,0.28);
 }
 
 .badge-success {
@@ -231,6 +238,49 @@
 .nav-dropdown-item:hover {
   color: #ffffff;
   background-color: rgba(79,126,247,0.1);
+}
+
+/* ── Cards para fondos claros ── */
+.card-light {
+  background: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid rgba(13,27,42,0.07);
+  box-shadow: 0 2px 12px rgba(13,27,42,0.06);
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+
+.card-light:hover {
+  box-shadow: 0 8px 32px rgba(13,27,42,0.11);
+  transform: translateY(-2px);
+}
+
+/* ── Badges para fondos claros ── */
+.badge-light {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.875rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background-color: rgba(37,99,235,0.08);
+  color: #1D4ED8;
+  border: 1px solid rgba(37,99,235,0.18);
+}
+
+.badge-success-light {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.875rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background-color: rgba(5,150,105,0.08);
+  color: #047857;
+  border: 1px solid rgba(5,150,105,0.18);
 }
 
 ::-webkit-scrollbar { width: 6px; }

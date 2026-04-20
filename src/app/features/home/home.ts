@@ -10,6 +10,7 @@ import { LESIONES_DATA } from '../../core/data/lesiones.data';
 import { PROVINCIAS_DATA } from '../../core/data/ciudades.data';
 import { FAQS_DATA } from '../../core/data/faqs.data';
 import { RESULTADOS_DATA } from '../../core/data/resultados.data';
+import { ABOGADOS_DATA } from '../../core/data/abogados.data';
 
 @Component({
   selector: 'app-home',
@@ -34,6 +35,7 @@ export class HomeComponent implements OnInit {
     ['art-general', 'indemnizaciones', 'honorarios'].includes(f.categoria ?? '')
   ).slice(0, 6);
   readonly resultadosDestacados = RESULTADOS_DATA.filter(r => r.destacado);
+  readonly equipo = ABOGADOS_DATA;
 
   readonly testimonios = [
     {
@@ -112,6 +114,74 @@ export class HomeComponent implements OnInit {
     'Respuesta en menos de 24 horas',
     'Abogados con matrícula activa en tu provincia',
     'Más de 10 años de experiencia exclusiva en ART',
+  ];
+
+  readonly googleReviews = [
+    {
+      nombre: 'Julian Villagra',
+      inicial: 'J',
+      color: '#4285F4',
+      tiempo: 'hace 1 año',
+      texto: 'Excelente servicio.',
+      completo: false,
+    },
+    {
+      nombre: 'Héctor Saenz',
+      inicial: 'H',
+      color: '#9B59B6',
+      tiempo: 'hace 1 año',
+      texto: 'Gracias doctor, muy amable! 👍',
+      completo: false,
+      foto: '/assets/reviews/hector-saenz.webp',
+    },
+    {
+      nombre: 'Ezequiel Contreras',
+      inicial: 'E',
+      color: '#E74C3C',
+      tiempo: 'hace 1 año',
+      texto: 'Gracias Dr Capeletti, por su buena disposición por explicarme todo y acompañarme.',
+      completo: false,
+    },
+    {
+      nombre: 'Matias Lopez',
+      inicial: 'M',
+      color: '#27AE60',
+      tiempo: 'hace 1 año',
+      texto: 'La verdad que desde el día uno se preocuparon y ocuparon al 100% de todo y resolvieron muy rápidamente, cumpliendo con creces lo que esperaba. Muy buena atención y servicio.',
+      completo: true,
+    },
+    {
+      nombre: 'José Arteaga',
+      inicial: 'J',
+      color: '#1A5276',
+      tiempo: 'hace 1 año',
+      texto: 'Excelente servicio, rápido y eficaz. Muchas gracias Leo y a todo el equipo que opera. Gracias por defender nuestros derechos.',
+      completo: true,
+    },
+    {
+      nombre: 'Denis Sergio Rene',
+      inicial: 'D',
+      color: '#8E44AD',
+      tiempo: 'hace 1 año',
+      texto: 'Buenas, solo quería comentar, agradecer y recomendar a este estudio de abogados. Muchas gracias.',
+      completo: false,
+    },
+    {
+      nombre: 'Caamii Juarez',
+      inicial: 'C',
+      color: '#E67E22',
+      tiempo: 'hace 1 año',
+      texto: 'Excelente servicio, la volvería a elegir 👏👏',
+      completo: false,
+    },
+    {
+      nombre: 'Ian Rodriguez',
+      inicial: 'I',
+      color: '#C0392B',
+      tiempo: 'hace 1 año',
+      texto: 'Muy recomendable, excelente atención, muy eficaz, a todo momento pendiente del trámite a realizar, muy profesionales y comprometidos con su trabajo.',
+      completo: true,
+    },
   ];
 
   ngOnInit(): void {
