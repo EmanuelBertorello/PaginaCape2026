@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       especialidad: 'Accidentes Laborales y ART',
       bio: 'Fundador del estudio. Más de 10 años dedicados exclusivamente al derecho laboral y los reclamos contra la ART. Referente en Comisiones Médicas del litoral.',
       gradFrom: '#002b7b', gradTo: '#045fc3',
-      img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80&auto=format&fit=crop&crop=face',
+      img: '/brunito.png',
     },
     {
       nombre: 'Dra. Rocío Bello',
@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       especialidad: 'ART y Despidos',
       bio: 'Especialista en reclamos ante la ART y en despidos con causa. Acompaña a cada trabajador desde la denuncia del accidente hasta el cobro de la indemnización.',
       gradFrom: '#7c2d12', gradTo: '#b45309',
-      img: '/rocio-bello.jpg',
+      img: '/rocio-bello.jpeg',
     },
     {
       nombre: 'Dra. Daiana Parache',
@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       especialidad: 'Derecho Laboral',
       bio: 'Abogado litigante con sólida experiencia en juicios laborales. Maneja casos de accidentes de trabajo, enfermedades profesionales e incapacidades ante la justicia.',
       gradFrom: '#023660', gradTo: '#045fc3',
-      img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80&auto=format&fit=crop&crop=face',
+      img: '/laureano.png',
     },
     {
       nombre: 'Dr. Julián Casalli',
@@ -97,10 +97,12 @@ export class HomeComponent implements OnInit, OnDestroy {
     { value: '+10', label: 'Años de experiencia' },
     { value: '+7.000', label: 'Casos ganados' },
     { value: '+12.500', label: 'Clientes satisfechos' },
-    { value: '5', label: 'Provincias' },
+    { value: '6', label: 'Provincias' },
   ];
 
   readonly activeLesion = signal(0);
+  readonly lesionVisible = signal(true);
+  readonly activeTestimonio = signal(0);
 
   readonly lesionFotos = [
     'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80&auto=format&fit=crop',
@@ -121,15 +123,16 @@ export class HomeComponent implements OnInit, OnDestroy {
   ];
 
   readonly provinciaFotos = [
-    'https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?w=600&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop',
+    '/santa-fe-logo.jpg',
+    '/nequen.jpg',
+    '/rio negro.jpg',
+    '/entre rios.jpg',
+    '/buenos aires.jpg',
+    '/cordoba.jpg',
   ];
 
   readonly provinciaStats = [
-    { valor: '5', label: 'Provincias cubiertas' },
+    { valor: '6', label: 'Provincias cubiertas' },
     { valor: '+15', label: 'Ciudades con atención' },
     { valor: '98%', label: 'Tasa de éxito' },
     { valor: '+10', label: 'Años de presencia' },
@@ -144,31 +147,101 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   readonly testimonios = [
     {
-      nombre: 'Gustavo R.',
-      lesion: 'Hernia de disco L4-L5',
-      provincia: 'Rosario, Santa Fe',
-      texto: 'La ART me ofreció $3M. Con Capeletti cobramos $18.5M. No tenía ni idea de que podía reclamar tanto. Los recomiendo sin dudar.',
+      nombre: 'Emanuel B.',
+      lesion: 'Accidente laboral',
+      provincia: 'Argentina',
+      texto: 'Excelente atención y asesoramiento. Se nota la especialización en accidentes laborales y reclamos contra las ART. Explican todo con claridad, acompañan el proceso y logran resultados favorables. Totalmente recomendables.',
       anio: 2024,
     },
     {
-      nombre: 'Mirta L.',
-      lesion: 'Síndrome de Túnel Carpiano',
-      provincia: 'Entre Ríos',
-      texto: 'Trabajé 15 años como cajera y desarrollé el túnel carpiano. Nadie me decía que era una enfermedad laboral. El estudio me lo explicó todo y ganamos el caso.',
+      nombre: 'Ezequiel G.',
+      lesion: 'Reclamo ART',
+      provincia: 'Argentina',
+      texto: 'Mi experiencia con el estudio Capeletti fue muy profesional, todo el equipo me trató espectacular durante todo el proceso. Me garantizaron seguridad y compromiso. ¡Recomiendo trabajar con ellos!',
       anio: 2024,
     },
     {
-      nombre: 'Familia de Carlos M.',
-      lesion: 'Fallecimiento en obra',
-      provincia: 'Neuquén',
-      texto: 'Perdimos a Carlos en un accidente en obra. El estudio Capeletti nos acompañó en todo el proceso y logró que la empresa y la ART respondan. Infinitamente agradecidos.',
-      anio: 2023,
+      nombre: 'Lucas S.',
+      lesion: 'Accidente laboral',
+      provincia: 'Argentina',
+      texto: 'Gracias Bruno y todo su cuerpo de trabajo, la verdad. Excelente como se comprometieron conmigo y muy buena atención.',
+      anio: 2024,
     },
     {
-      nombre: 'Rubén T.',
-      lesion: 'Accidente in itinere — fractura fémur',
-      provincia: 'Buenos Aires',
-      texto: 'La ART rechazó mi accidente diciendo que me había "desviado" del camino. Los abogados revirtieron el rechazo y cobramos más de lo esperado.',
+      nombre: 'Ivan A.',
+      lesion: 'Accidente laboral',
+      provincia: 'Argentina',
+      texto: 'Leo Capeletti excelente abogado, muy profesional y atento. Siempre me explicó todo con claridad, estuvo disponible cuando lo necesité y resolvió mi caso de manera rápida. Lo recomiendo al 100%.',
+      anio: 2024,
+    },
+    {
+      nombre: 'Lucas D.',
+      lesion: 'Reclamo ART',
+      provincia: 'Argentina',
+      texto: 'Durante todo el proceso se bancan cada consulta y te dan detalles del avance. Unos genios. Espero no necesitarlos, pero si necesito un estudio de abogados no dudaré en llamarlos.',
+      anio: 2025,
+    },
+    {
+      nombre: 'Lorena C.',
+      lesion: 'Accidente laboral',
+      provincia: 'Argentina',
+      texto: 'Quiero darle las gracias al estudio Capeletti por tanta dedicación y profesionalismo en mi caso. Darle las gracias en especial a Leila por su paciencia y por estar cada vez que la necesité.',
+      anio: 2024,
+    },
+    {
+      nombre: 'Alexis D.',
+      lesion: 'Reclamo ART',
+      provincia: 'Argentina',
+      texto: 'Excelente atención. Muy atentos y siempre a disposición. ¡Leilen una genia! Siempre sacándonos todas las dudas. Mil gracias.',
+      anio: 2024,
+    },
+    {
+      nombre: 'Braian M.',
+      lesion: 'Denuncia ART',
+      provincia: 'Argentina',
+      texto: 'La verdad que el estudio súper recomendable. Me gestionaron mi denuncia por ART y siempre impecable. Especial mención para Lautaro, muy atento con el seguimiento de mi caso y con mucha paciencia para explicar todo.',
+      anio: 2024,
+    },
+    {
+      nombre: 'Cristian S.',
+      lesion: 'Reclamo ART',
+      provincia: 'Argentina',
+      texto: 'Estoy muy conforme por lo logrado. Gracias Leilen por brindarme toda tu atención excelente en cada momento.',
+      anio: 2024,
+    },
+    {
+      nombre: 'Gonzalo M.',
+      lesion: 'Accidente laboral',
+      provincia: 'Argentina',
+      texto: 'Excelente equipo, todos con muy buena atención y predisposición. Muchas gracias estudio Capeletti.',
+      anio: 2024,
+    },
+    {
+      nombre: 'Jonatan G.',
+      lesion: 'Reclamo laboral',
+      provincia: 'Argentina',
+      texto: 'Muy profesionales y muy buena atención. Excelentísimos trabajando, súper recomendables.',
+      anio: 2025,
+    },
+    {
+      nombre: 'Roxana M.',
+      lesion: 'Reclamo ART',
+      provincia: 'Argentina',
+      texto: 'Una atención muy profesional, comprometida con el caso, atendiendo dudas y moviéndose rápido. Se ocuparon y preocuparon para poder cobrar lo que la ART decía que no era nada. Muy recomendable.',
+      anio: 2024,
+    },
+    {
+      nombre: 'Damian P.',
+      lesion: 'Accidente laboral',
+      provincia: 'Argentina',
+      texto: 'Asistencia en todo momento y mucha predisposición. Gracias.',
+      anio: 2025,
+    },
+    {
+      nombre: 'Alan H.',
+      lesion: 'Reclamo ART',
+      provincia: 'Argentina',
+      texto: 'Atención y servicio perfecto, muy responsables, atentos y amables. Super recomendable.',
       anio: 2024,
     },
   ];
@@ -196,8 +269,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     },
     {
       icono: '🗺️',
-      titulo: 'Presencia real en 5 provincias',
-      descripcion: 'Santa Fe, Neuquén, Río Negro, Entre Ríos y Buenos Aires. Abogados locales que conocen cada jurisdicción.',
+      titulo: 'Presencia real en 6 provincias',
+      descripcion: 'Santa Fe, Neuquén, Río Negro, Entre Ríos, Buenos Aires y Córdoba. Abogados locales que conocen cada jurisdicción.',
     },
     {
       icono: '🔒',
@@ -222,14 +295,25 @@ export class HomeComponent implements OnInit, OnDestroy {
   ];
 
   nextLesion(): void {
-    this.activeLesion.update(i => (i + 1) % this.lesiones.length);
+    this.lesionVisible.set(false);
+    setTimeout(() => {
+      this.activeLesion.update(i => (i + 1) % this.lesiones.length);
+      this.lesionVisible.set(true);
+    }, 220);
   }
 
   setActiveLesion(i: number): void {
-    this.activeLesion.set(i);
-    clearInterval(this.lesionInterval);
-    this.lesionInterval = setInterval(() => this.nextLesion(), this.lesionDuration);
+    this.lesionVisible.set(false);
+    setTimeout(() => {
+      this.activeLesion.set(i);
+      this.lesionVisible.set(true);
+      clearInterval(this.lesionInterval);
+      this.lesionInterval = setInterval(() => this.nextLesion(), this.lesionDuration);
+    }, 220);
   }
+
+  prevTestimonio(): void { this.activeTestimonio.update(i => (i - 1 + this.testimonios.length) % this.testimonios.length); }
+  nextTestimonio(): void { this.activeTestimonio.update(i => (i + 1) % this.testimonios.length); }
 
   ngOnDestroy(): void {
     clearInterval(this.slideInterval);

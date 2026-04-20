@@ -183,6 +183,33 @@ export const CIUDADES_BUENOS_AIRES: CiudadData[] = [
   },
 ];
 
+export const CIUDADES_CORDOBA: CiudadData[] = [
+  {
+    slug: 'cordoba-capital',
+    nombre: 'Córdoba Capital',
+    provincia: 'Córdoba',
+    provinciaSlug: 'cordoba',
+    descripcion: 'Córdoba Capital concentra industria automotriz, construcción y servicios. Alta incidencia de accidentes laborales en manufactura y logística.',
+    poblacion: '1.500.000',
+    sectorPrincipal: 'automotriz, construcción, logística',
+    cmLocal: 'CM N° 7 — Córdoba',
+    metaTitle: 'Abogados Accidentes Laborales Córdoba | Capeletti',
+    metaDescription: 'Abogados especialistas en accidentes laborales y ART en Córdoba. CM local N° 7. Consulta gratis, sin anticipos.',
+  },
+  {
+    slug: 'rio-cuarto',
+    nombre: 'Río Cuarto',
+    provincia: 'Córdoba',
+    provinciaSlug: 'cordoba',
+    descripcion: 'Río Cuarto es el segundo centro urbano de Córdoba, con fuerte actividad agroindustrial y comercial.',
+    poblacion: '175.000',
+    sectorPrincipal: 'agroindustria, comercio',
+    cmLocal: 'CM — Río Cuarto',
+    metaTitle: 'Abogados Accidentes Laborales Río Cuarto | Capeletti',
+    metaDescription: 'Abogados especialistas en accidentes laborales en Río Cuarto, Córdoba. Consulta gratis.',
+  },
+];
+
 export const PROVINCIAS_DATA: ProvinciaData[] = [
   {
     slug: 'santa-fe',
@@ -228,5 +255,14 @@ export const PROVINCIAS_DATA: ProvinciaData[] = [
     cmPrincipal: 'CM N° 1 — CABA',
     metaTitle: 'Abogados Laborales Buenos Aires | Capeletti Abogados',
     metaDescription: 'Abogados especializados en accidentes laborales y ART en Buenos Aires y CABA. Consulta gratis sin anticipos.',
+  },
+  {
+    slug: 'cordoba',
+    nombre: 'Córdoba',
+    descripcion: 'Córdoba es la segunda provincia más grande del país. Alta actividad en industria automotriz, construcción y agroindustria con numerosos accidentes laborales.',
+    ciudades: CIUDADES_CORDOBA,
+    cmPrincipal: 'CM N° 7 — Córdoba Capital',
+    metaTitle: 'Abogados Laborales Córdoba | Capeletti Abogados',
+    metaDescription: 'Abogados especializados en accidentes laborales y ART en Córdoba. Consulta gratis, sin anticipos.',
   },
 ];
