@@ -11,7 +11,7 @@ import { SeoService } from '../../core/services/seo.service';
     <app-breadcrumb [items]="breadcrumbs" />
     <section style="background-color: #1A5276;" class="py-14">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-3xl sm:text-4xl font-bold text-white">Capeletti en los Medios</h1>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white"> en los Medios</h1>
         <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">Apariciones en medios de comunicación y notas periodísticas.</p>
       </div>
     </section>
@@ -28,8 +28,8 @@ export class MediosComponent implements OnInit {
   ];
   ngOnInit(): void {
     this.seoService.setPage({
-      title: 'Capeletti Abogados en los Medios',
-      description: 'Apariciones de Capeletti Abogados en medios de comunicación. Notas sobre derecho laboral, ART y accidentes de trabajo.',
+      title: ' Abogados en los Medios',
+      description: 'Apariciones de  Abogados en medios de comunicación. Notas sobre derecho laboral, ART y accidentes de trabajo.',
       path: '/medios',
     });
   }

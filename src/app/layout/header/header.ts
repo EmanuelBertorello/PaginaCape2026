@@ -4,6 +4,7 @@ import {
   signal,
   HostListener,
   inject,
+  ElementRef,
 } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -27,9 +28,17 @@ interface NavItem {
   templateUrl: './header.html',
 })
 export class HeaderComponent {
+  private readonly el = inject(ElementRef);
   readonly isScrolled = signal(false);
   readonly mobileMenuOpen = signal(false);
   readonly activeDropdown = signal<string | null>(null);
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    if (!this.el.nativeElement.contains(event.target)) {
+      this.activeDropdown.set(null);
+    }
+  }
 
   readonly navItems: NavItem[] = [
     {

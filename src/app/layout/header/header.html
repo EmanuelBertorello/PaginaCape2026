@@ -20,12 +20,12 @@
       <nav class="hidden lg:flex items-center gap-0.5" aria-label="Navegación principal">
         @for (item of navItems; track item.label) {
           @if (item.dropdown) {
-            <div class="relative" (mouseleave)="closeDropdown()">
+            <div class="relative">
               <button
-                (mouseenter)="toggleDropdown(item.label)"
                 (click)="toggleDropdown(item.label)"
                 [attr.aria-expanded]="isDropdownOpen(item.label)"
                 class="flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors duration-150 cursor-pointer rounded-lg hover:bg-blue-50"
+                [class.bg-blue-50]="isDropdownOpen(item.label)"
                 style="color: #1e3a6e;"
               >
                 {{ item.label }}
@@ -40,7 +40,7 @@
 
               @if (isDropdownOpen(item.label)) {
                 <div
-                  class="absolute top-full left-0 mt-1 w-60 rounded-xl py-1.5 z-50"
+                  class="absolute top-full left-0 w-60 rounded-xl py-1.5 z-50"
                   style="background: #ffffff; border: 1px solid #e5e7eb; box-shadow: 0 16px 48px rgba(0,0,0,0.12);"
                   role="menu"
                 >

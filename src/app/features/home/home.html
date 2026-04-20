@@ -650,17 +650,23 @@
             </a>
           </div>
 
-          <!-- Badge especialidad -->
-          <div class="absolute left-3 right-3" [style]="'bottom: 64px; opacity: ' + (activeTeamCard() === i ? '1' : '0') + '; transition: opacity 0.3s;'">
-            <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-white text-[10px] font-semibold shadow-lg"
-              [style]="'background: linear-gradient(to right, ' + ab.gradFrom + ', ' + ab.gradTo + ');'">
-              <span style="width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.6);display:inline-block;"></span>
-              {{ ab.especialidad }}
-            </div>
-          </div>
-
-          <!-- Nombre y cargo -->
+          <!-- Contenido inferior -->
           <div class="absolute bottom-0 left-0 right-0 p-4">
+            <!-- Bio (solo activo) -->
+            <p class="text-[11px] leading-relaxed mb-3 transition-all duration-300"
+              style="color:rgba(255,255,255,0.75);"
+              [style]="'opacity:' + (activeTeamCard() === i ? '1' : '0') + '; max-height:' + (activeTeamCard() === i ? '60px' : '0') + '; overflow:hidden; transition: opacity 0.4s, max-height 0.4s;'">
+              {{ ab.bio }}
+            </p>
+            <!-- Especialidad badge -->
+            <div class="mb-2 transition-opacity duration-300" [style.opacity]="activeTeamCard() === i ? '1' : '0'">
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-white text-[10px] font-semibold shadow-lg"
+                [style]="'background: linear-gradient(to right, ' + ab.gradFrom + ', ' + ab.gradTo + ');'">
+                <span style="width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.6);display:inline-block;"></span>
+                {{ ab.especialidad }}
+              </div>
+            </div>
+            <!-- Nombre y cargo -->
             <h3 class="font-bold text-white text-sm leading-tight mb-0.5 truncate">{{ ab.nombre }}</h3>
             <p class="text-[10px] font-semibold uppercase tracking-wider transition-opacity duration-300"
               style="color:#baf1ff;"
@@ -693,8 +699,9 @@
             </div>
           </div>
           <div class="p-5">
-            <h3 class="font-bold text-base leading-tight mb-1" style="color:#0b183a;">{{ ab.nombre }}</h3>
-            <p class="text-xs font-semibold uppercase tracking-wider" style="color:#045fc3;">{{ ab.cargo }}</p>
+            <h3 class="font-bold text-base leading-tight mb-0.5" style="color:#0b183a;">{{ ab.nombre }}</h3>
+            <p class="text-xs font-semibold uppercase tracking-wider mb-2" [style]="'color:' + ab.gradTo + ';'">{{ ab.cargo }}</p>
+            <p class="text-xs leading-relaxed" style="color:rgba(11,24,58,0.6);">{{ ab.bio }}</p>
           </div>
           <div class="absolute bottom-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             [style]="'background: linear-gradient(to right, ' + ab.gradFrom + ', ' + ab.gradTo + ');'">
