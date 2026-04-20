@@ -43,8 +43,6 @@ export interface CiudadData {
   poblacion?: string;
   sectorPrincipal?: string;
   cmLocal?: string;
-  cmDireccion?: string;
-  casosTipo?: string[];
   metaTitle: string;
   metaDescription: string;
 }
@@ -66,6 +64,7 @@ export interface AbogadoData {
   apellido: string;
   titulo: string;
   matricula: string;
+  matriculas?: { colegio: string; numero: string }[];
   universidad: string;
   especializaciones: string[];
   biografia: string;

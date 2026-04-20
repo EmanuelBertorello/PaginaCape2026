@@ -114,7 +114,7 @@ export class SeoService {
       name: 'Capeletti Abogados',
       url: this.siteUrl,
       logo: `${this.siteUrl}/assets/logo.webp`,
-      telephone: '+54-341-5000000',
+      telephone: '+54-11-25007192',
       email: 'consultas@capelettiabogados.com',
       areaServed: ['Santa Fe', 'Neuquén', 'Río Negro', 'Entre Ríos', 'Buenos Aires', 'Ciudad Autónoma de Buenos Aires'],
       knowsAbout: [
@@ -193,7 +193,7 @@ export class SeoService {
       '@type': 'LocalBusiness',
       name: `Capeletti Abogados — ${params.ciudad}`,
       url: `${this.siteUrl}/${params.slug}`,
-      telephone: '+54-341-5000000',
+      telephone: '+54-11-25007192',
       address: {
         '@type': 'PostalAddress',
         addressLocality: params.ciudad,

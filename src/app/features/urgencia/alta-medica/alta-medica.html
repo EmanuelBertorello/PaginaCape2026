@@ -1,12 +1,20 @@
 <app-breadcrumb [items]="breadcrumbs" />
 
-<section style="background-color: #922B21;" class="py-14">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <span class="badge mb-4" style="background-color: rgba(255,255,255,0.2); color: white;">⚠️ URGENTE</span>
+<!-- HERO (urgente — rojo moderno) -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #5c0a0a 0%, #991b1b 50%, #7f1d1d 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.05; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(220,38,38,0.3); filter:blur(120px);"></div>
+  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #991b1b, #dc2626, #991b1b);"></div>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-6 uppercase tracking-wider"
+      style="background:rgba(255,255,255,0.15); color:#fff; border:1px solid rgba(255,255,255,0.3);">
+      ⚠️ URGENTE
+    </div>
     <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
       Alta Médica ART: No Firmes Sin Consultarnos
     </h1>
-    <p class="mt-4 text-lg max-w-3xl mx-auto" style="color: #FADBD8;">
+    <p class="mt-4 text-lg max-w-3xl mx-auto" style="color:rgba(255,255,255,0.8);">
       El alta médica de la ART abre el proceso de indemnización. Firmar sin asesoramiento puede costarte miles de pesos.
     </p>
     <a
@@ -20,49 +28,67 @@
   </div>
 </section>
 
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<!-- ALERTA -->
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
   <app-alert-banner
     title="¿La ART te dio el alta y no estás curado?"
     message="Tenés 10 días para presentar la disconformidad ante la Comisión Médica. No dejes pasar el plazo."
     ctaText="Consultar ahora"
     ctaHref="https://wa.me/5493415000000"
   />
-
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
-    <div class="lg:col-span-2">
-      <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">¿Qué es el alta médica de la ART?</h2>
-      <p class="leading-relaxed" style="color: #5D6D7E;">
-        El alta médica es la resolución de la ART que da por concluido el período de Incapacidad Laboral Temporaria (ILT). A partir de ese momento, la ART deja de pagar el salario complementario y se abre la etapa de evaluación de la incapacidad permanente.
-      </p>
-      <p class="mt-4 leading-relaxed" style="color: #5D6D7E;">
-        El problema es que muchas ART otorgan el alta prematuramente, cuando el trabajador todavía no está en condiciones de reintegrarse al trabajo o cuando las secuelas no fueron correctamente evaluadas.
-      </p>
-
-      <h2 class="text-2xl font-semibold mt-10 mb-4" style="color: #1C2833;">Qué hacer si no estás de acuerdo con el alta</h2>
-      <ol class="space-y-3">
-        @for (paso of pasos; track paso.numero) {
-          <li class="flex items-start gap-3">
-            <span class="w-7 h-7 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0" style="background-color: #1A5276;">{{ paso.numero }}</span>
-            <div>
-              <p class="font-medium" style="color: #1C2833;">{{ paso.titulo }}</p>
-              <p class="text-sm mt-0.5" style="color: #5D6D7E;">{{ paso.descripcion }}</p>
-            </div>
-          </li>
-        }
-      </ol>
-
-      <section class="mt-10" aria-labelledby="faq-alta-h2">
-        <h2 id="faq-alta-h2" class="text-2xl font-semibold mb-6" style="color: #1C2833;">Preguntas Frecuentes</h2>
-        <app-faq-accordion [faqs]="faqs" />
-      </section>
-    </div>
-
-    <aside class="sticky top-24">
-      <div class="card p-6 border-2" style="border-color: #922B21;">
-        <p class="font-bold text-base mb-1" style="color: #922B21;">¿Recibiste el alta?</p>
-        <p class="text-sm mb-4" style="color: #5D6D7E;">Tenés 10 días para actuar. Consultanos ahora.</p>
-        <app-contact-form />
-      </div>
-    </aside>
-  </div>
 </div>
+
+<!-- CONTENIDO -->
+<section style="background:#ffffff;" class="py-12">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div class="lg:col-span-2 space-y-8">
+        <div>
+          <h2 class="text-2xl font-bold mb-4" style="color:#0b183a;">¿Qué es el alta médica de la ART?</h2>
+          <p class="leading-relaxed" style="color:rgba(11,24,58,0.7);">
+            El alta médica es la resolución de la ART que da por concluido el período de Incapacidad Laboral Temporaria (ILT). A partir de ese momento, la ART deja de pagar el salario complementario y se abre la etapa de evaluación de la incapacidad permanente.
+          </p>
+          <p class="mt-4 leading-relaxed" style="color:rgba(11,24,58,0.7);">
+            El problema es que muchas ART otorgan el alta prematuramente, cuando el trabajador todavía no está en condiciones de reintegrarse al trabajo o cuando las secuelas no fueron correctamente evaluadas.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-5" style="color:#0b183a;">Qué hacer si no estás de acuerdo con el alta</h2>
+          <ol class="space-y-4">
+            @for (paso of pasos; track paso.numero) {
+              <li class="flex items-start gap-4 p-4 rounded-xl" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+                <span class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
+                  style="background:#002b7b;">{{ paso.numero }}</span>
+                <div>
+                  <p class="font-semibold text-sm" style="color:#0b183a;">{{ paso.titulo }}</p>
+                  <p class="text-sm mt-0.5 leading-relaxed" style="color:rgba(11,24,58,0.6);">{{ paso.descripcion }}</p>
+                </div>
+              </li>
+            }
+          </ol>
+        </div>
+
+        <section aria-labelledby="faq-alta-h2">
+          <div class="flex items-center gap-3 mb-6 pb-4" style="border-bottom:1px solid rgba(0,43,123,0.1);">
+            <div class="w-2 h-6 rounded-full" style="background:linear-gradient(to bottom, #002b7b, #045fc3);"></div>
+            <h2 id="faq-alta-h2" class="text-2xl font-bold" style="color:#0b183a;">Preguntas Frecuentes</h2>
+          </div>
+          <app-faq-accordion [faqs]="faqs" />
+        </section>
+      </div>
+
+      <aside class="sticky top-24">
+        <div class="rounded-2xl overflow-hidden" style="box-shadow:0 8px 40px rgba(153,27,27,0.15);">
+          <div class="px-6 py-4" style="background:#991b1b;">
+            <p class="font-bold text-white text-base">¿Recibiste el alta?</p>
+            <p class="text-xs mt-1" style="color:rgba(255,255,255,0.8);">Tenés 10 días para actuar. Consultanos ahora.</p>
+          </div>
+          <div class="p-6 bg-white" style="border:1px solid rgba(153,27,27,0.15);">
+            <app-contact-form />
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>

@@ -1,71 +1,111 @@
 <app-breadcrumb [items]="breadcrumbs" />
 
-<section style="background-color: #1A5276;" class="py-14">
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 class="text-3xl sm:text-4xl font-bold text-white">Consulta Gratis</h1>
-    <p class="mt-4 text-lg" style="color: #D6EAF8;">
-      Contanos tu caso. Sin costo, sin compromiso. Respondemos en menos de 24 horas.
+<!-- HERO -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+      style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+      <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+      Consulta Gratis
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">Contanos tu caso</h1>
+    <p class="mt-4 text-lg" style="color:rgba(255,255,255,0.75);">
+      Sin costo, sin compromiso. Respondemos en menos de 24 horas.
     </p>
   </div>
 </section>
 
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-  <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+<!-- CONTENIDO -->
+<section style="background:#ffffff;" class="py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
 
-    <!-- Info lateral -->
-    <div class="lg:col-span-2 space-y-6">
-      <div>
-        <h2 class="text-xl font-semibold mb-4" style="color: #1C2833;">Cómo contactarnos</h2>
-        <ul class="space-y-4">
-          <li class="flex items-start gap-3">
-            <span class="text-2xl" aria-hidden="true">📱</span>
-            <div>
-              <p class="font-medium" style="color: #1C2833;">WhatsApp</p>
-              <a href="https://wa.me/5493415000000" target="_blank" rel="noopener noreferrer" class="text-sm" style="color: #2E86C1;">
-                +54 9 341 500-0000
-              </a>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-2xl" aria-hidden="true">📞</span>
-            <div>
-              <p class="font-medium" style="color: #1C2833;">Teléfono</p>
-              <a href="tel:+543415000000" class="text-sm" style="color: #2E86C1;">341-5000000</a>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-2xl" aria-hidden="true">✉️</span>
-            <div>
-              <p class="font-medium" style="color: #1C2833;">Email</p>
-              <a href="mailto:consultas@capelettiabogados.com" class="text-sm" style="color: #2E86C1;">
-                consultas&#64;capelettiabogados.com
-              </a>
-            </div>
-          </li>
-        </ul>
+      <!-- Info lateral -->
+      <div class="lg:col-span-2 space-y-6">
+
+        <div>
+          <h2 class="text-xl font-bold mb-5" style="color:#0b183a;">Cómo contactarnos</h2>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-4 p-4 rounded-xl" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style="background:#002b7b;">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm" style="color:#0b183a;">WhatsApp</p>
+                <a href="https://wa.me/5493415000000" target="_blank" rel="noopener noreferrer"
+                  class="text-sm font-medium" style="color:#045fc3;">+54 9 341 500-0000</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-4 p-4 rounded-xl" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style="background:#002b7b;">
+                <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm" style="color:#0b183a;">Teléfono</p>
+                <a href="tel:+541125007192" class="text-sm font-medium" style="color:#045fc3;">11-2500-7192</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-4 p-4 rounded-xl" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style="background:#002b7b;">
+                <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm" style="color:#0b183a;">Email</p>
+                <a href="mailto:consultas@capelettiabogados.com" class="text-sm font-medium" style="color:#045fc3;">
+                  consultas&#64;capelettiabogados.com
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Oficinas -->
+        <div class="p-5 rounded-2xl" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+          <h3 class="font-bold text-sm mb-3" style="color:#0b183a;">Oficinas</h3>
+          <ul class="space-y-2 text-sm" style="color:rgba(11,24,58,0.65);">
+            <li class="flex items-center gap-2">
+              <span style="color:#045fc3;">📍</span> Rosario, Santa Fe
+            </li>
+            <li class="flex items-center gap-2">
+              <span style="color:#045fc3;">📍</span> Santa Fe Capital
+            </li>
+            <li class="flex items-center gap-2">
+              <span style="color:#045fc3;">📍</span> Neuquén Capital
+            </li>
+            <li class="text-xs pt-2" style="color:rgba(11,24,58,0.45);">+ atención remota en Entre Ríos, Río Negro y Buenos Aires</li>
+          </ul>
+        </div>
+
+        <!-- Garantía -->
+        <div class="p-5 rounded-2xl" style="background:rgba(5,150,105,0.07); border:1px solid rgba(5,150,105,0.2);">
+          <p class="text-sm font-bold mb-1" style="color:#059669;">Sin costo anticipado</p>
+          <p class="text-sm leading-relaxed" style="color:rgba(11,24,58,0.65);">Solo cobramos honorarios si ganamos tu caso. La consulta inicial es siempre gratuita.</p>
+        </div>
       </div>
 
-      <div class="p-5 rounded-lg" style="background-color: #F8FAFB;">
-        <h3 class="font-semibold mb-3" style="color: #1C2833;">Oficinas</h3>
-        <ul class="space-y-2 text-sm" style="color: #5D6D7E;">
-          <li>📍 Rosario, Santa Fe</li>
-          <li>📍 Santa Fe Capital</li>
-          <li>📍 Neuquén Capital</li>
-          <li class="text-xs pt-2" style="color: #5D6D7E;">+ atención remota en Entre Ríos, Río Negro y Buenos Aires</li>
-        </ul>
+      <!-- Formulario -->
+      <div class="lg:col-span-3">
+        <div class="rounded-2xl overflow-hidden" style="background:#ffffff; box-shadow: 0 8px 40px rgba(0,43,123,0.12); border:1px solid rgba(0,43,123,0.1);">
+          <div class="px-7 py-5" style="background: linear-gradient(135deg, #002b7b, #045fc3);">
+            <p class="font-bold text-white text-base">Evaluá tu caso gratis</p>
+            <p class="text-xs mt-1" style="color:rgba(255,255,255,0.7);">Respondemos en menos de 24 horas</p>
+          </div>
+          <div class="p-7">
+            <app-contact-form />
+          </div>
+        </div>
       </div>
 
-      <div class="p-5 rounded-lg" style="background-color: #D5F5E3;">
-        <p class="text-sm font-semibold mb-1" style="color: #1E8449;">Sin costo anticipado</p>
-        <p class="text-sm leading-relaxed" style="color: #1C2833;">Solo cobramos honorarios si ganamos tu caso. La consulta inicial es siempre gratuita.</p>
-      </div>
     </div>
-
-    <!-- Formulario -->
-    <div class="lg:col-span-3 card p-8">
-      <h2 class="text-xl font-semibold mb-6" style="color: #1A5276;">Envianos tu consulta</h2>
-      <app-contact-form />
-    </div>
-
   </div>
-</div>
+</section>

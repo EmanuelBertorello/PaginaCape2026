@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
   template: `
     <a
       [routerLink]="'/' + slug"
-      class="card-light flex flex-col gap-3 p-5 group transition-all duration-150"
+      class="card flex flex-col gap-3 p-5 group hover:border-blue-200 border border-transparent transition-all duration-150"
     >
       <div class="w-12 h-12 rounded-lg flex items-center justify-center shrink-0"
            style="background-color: #D6EAF8;">

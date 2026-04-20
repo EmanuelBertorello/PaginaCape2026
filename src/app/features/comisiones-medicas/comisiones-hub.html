@@ -1,35 +1,96 @@
 <app-breadcrumb [items]="breadcrumbs" />
 
-<section style="background-color: #1A5276;" class="py-14">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 class="text-3xl sm:text-4xl font-bold text-white">Comisiones Médicas ART</h1>
-    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
+<!-- HERO -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+      style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+      <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+      Sistema de ART
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">Comisiones Médicas ART</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color:rgba(255,255,255,0.75);">
       Las Comisiones Médicas son el órgano clave del sistema de riesgos del trabajo. Conocé cómo funcionan y cómo representarte en ellas.
     </p>
   </div>
 </section>
 
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
-  <div>
-    <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">¿Qué es la Comisión Médica?</h2>
-    <p class="leading-relaxed" style="color: #5D6D7E;">La Comisión Médica (CM) es el organismo dependiente de la SRT que determina el porcentaje de incapacidad del trabajador y resuelve las disputas entre el trabajador y la ART. Es la instancia administrativa obligatoria antes de la vía judicial.</p>
-  </div>
+<!-- QUE ES -->
+<section style="background:#ffffff;" class="py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-14">
+      <div>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-5"
+          style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+          ¿Qué es?
+        </div>
+        <h2 class="text-2xl font-bold mb-4" style="color:#0b183a;">¿Qué es la Comisión Médica?</h2>
+        <p class="leading-relaxed" style="color:rgba(11,24,58,0.7);">
+          La Comisión Médica (CM) es el organismo dependiente de la SRT que determina el porcentaje de incapacidad del trabajador y resuelve las disputas entre el trabajador y la ART. Es la instancia administrativa obligatoria antes de la vía judicial.
+        </p>
+        <p class="mt-4 leading-relaxed" style="color:rgba(11,24,58,0.7);">
+          Tenés derecho a ir acompañado de un abogado de tu confianza. Nuestro equipo asiste y representa trabajadores en las Comisiones Médicas de Rosario, Santa Fe Capital, Neuquén, Reconquista y más.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="p-5 rounded-2xl text-center" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+          <p class="text-3xl font-extrabold" style="color:#002b7b;">$0</p>
+          <p class="text-xs mt-1" style="color:rgba(11,24,58,0.5);">Costo inicial</p>
+        </div>
+        <div class="p-5 rounded-2xl text-center" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+          <p class="text-3xl font-extrabold" style="color:#002b7b;">+5</p>
+          <p class="text-xs mt-1" style="color:rgba(11,24,58,0.5);">CMs donde operamos</p>
+        </div>
+        <div class="p-5 rounded-2xl text-center" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+          <p class="text-3xl font-extrabold" style="color:#002b7b;">+10</p>
+          <p class="text-xs mt-1" style="color:rgba(11,24,58,0.5);">Años de experiencia</p>
+        </div>
+        <div class="p-5 rounded-2xl text-center" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+          <p class="text-3xl font-extrabold" style="color:#059669;">⚖️</p>
+          <p class="text-xs mt-1" style="color:rgba(11,24,58,0.5);">Honorarios a éxito</p>
+        </div>
+      </div>
+    </div>
 
-  <div>
-    <h2 class="text-2xl font-semibold mb-6" style="color: #1C2833;">Comisiones Médicas locales</h2>
+    <!-- Grilla de CMs -->
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
+        style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+        <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
+        Comisiones locales
+      </div>
+      <h2 class="text-2xl font-bold" style="color:#0b183a;">Comisiones Médicas donde operamos</h2>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
       @for (cm of comisiones; track cm.url) {
-        <a [routerLink]="cm.url" class="card p-5 group hover:border-blue-200 border border-gray-100 transition-all duration-150">
-          <h3 class="font-semibold group-hover:underline" style="color: #1A5276;">{{ cm.titulo }}</h3>
-          <p class="text-sm mt-2 leading-relaxed" style="color: #5D6D7E;">{{ cm.descripcion }}</p>
+        <a [routerLink]="cm.url" class="group flex items-start gap-5 p-6 bg-white rounded-2xl transition-all hover:shadow-lg"
+          style="border:1px solid rgba(0,43,123,0.1);">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+            style="background: linear-gradient(135deg, #002b7b, #045fc3);">
+            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-base group-hover:text-[#045fc3] transition-colors" style="color:#0b183a;">{{ cm.titulo }}</h3>
+            <p class="text-sm mt-1.5 leading-relaxed" style="color:rgba(11,24,58,0.6);">{{ cm.descripcion }}</p>
+            <p class="text-xs mt-3 font-semibold" style="color:#045fc3;">Ver guía completa →</p>
+          </div>
         </a>
       }
     </div>
   </div>
+</section>
 
-  <div class="card p-8 text-center">
-    <h2 class="text-xl font-semibold mb-3" style="color: #1C2833;">¿Tenés que presentarte ante una CM?</h2>
-    <p class="mb-6" style="color: #5D6D7E;">Nuestros abogados te representan y te acompañan en la audiencia. Consulta gratis.</p>
-    <a routerLink="/contactanos" class="btn-primary">Consultar gratis</a>
+<!-- CTA -->
+<section class="py-16" style="background: linear-gradient(135deg, #001a4d, #002b7b);">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-2xl font-bold text-white mb-4">¿Tenés que presentarte ante una CM?</h2>
+    <p class="text-base mb-8" style="color:rgba(255,255,255,0.7);">Nuestros abogados te representan y te acompañan en la audiencia. Consulta gratis.</p>
+    <a routerLink="/contactanos" class="btn-primary text-base px-10 py-4">Consultar gratis</a>
   </div>
-</div>
+</section>

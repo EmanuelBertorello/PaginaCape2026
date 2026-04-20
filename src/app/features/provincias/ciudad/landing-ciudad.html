@@ -1,78 +1,116 @@
 @if (ciudad) {
   <app-breadcrumb [items]="breadcrumbs" />
 
-  <section style="background-color: #1A5276;" class="py-14">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+  <!-- HERO -->
+  <section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+      style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+    <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+        style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+        <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+        {{ ciudad.provincia }}
+      </div>
       <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
         Abogados Accidentes Laborales en {{ ciudad.nombre }}
       </h1>
-      <p class="mt-4 text-lg max-w-3xl mx-auto" style="color: #D6EAF8;">
+      <p class="mt-4 text-lg max-w-3xl mx-auto" style="color:rgba(255,255,255,0.75);">
         {{ ciudad.descripcion }}
       </p>
       @if (ciudad.cmLocal) {
-        <p class="mt-4 text-sm font-medium" style="color: #D6EAF8;">
-          📍 {{ ciudad.cmLocal }}
-          @if (ciudad.cmDireccion) {
-            — {{ ciudad.cmDireccion }}
-          }
-        </p>
+        <div class="mt-5 inline-flex items-center gap-2 px-4 py-2 rounded-xl"
+          style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#baf1ff;" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          </svg>
+          <p class="text-sm font-medium text-white">CM local: {{ ciudad.cmLocal }}</p>
+        </div>
       }
-      <a routerLink="/contactanos" class="btn-primary mt-8 inline-flex text-base px-8 py-4">
-        Consulta Gratis
-      </a>
+      <div class="mt-8">
+        <a routerLink="/contactanos" class="btn-primary text-base px-8 py-4">
+          Consulta Gratis
+        </a>
+      </div>
     </div>
   </section>
 
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">
-          Reclamos laborales en {{ ciudad.nombre }}
-        </h2>
-        <p class="leading-relaxed" style="color: #5D6D7E;">
-          Nuestro equipo atiende casos de accidentes laborales, enfermedades profesionales y reclamos a la ART en {{ ciudad.nombre }}, {{ ciudad.provincia }}.
-          @if (ciudad.sectorPrincipal) {
-            Los sectores con mayor siniestralidad en la zona son: {{ ciudad.sectorPrincipal }}.
-          }
-        </p>
-        <ul class="mt-6 space-y-3">
-          @for (item of beneficios; track item) {
-            <li class="flex items-center gap-3 text-sm" style="color: #1C2833;">
-              <svg class="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1E8449;" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-              </svg>
-              {{ item }}
-            </li>
-          }
-        </ul>
-
-        @if (ciudad.casosTipo && ciudad.casosTipo.length > 0) {
-          <div class="mt-8">
-            <h3 class="text-base font-semibold mb-3" style="color: #1A5276;">
-              Casos frecuentes en {{ ciudad.nombre }}
-            </h3>
-            <ul class="space-y-2">
-              @for (caso of ciudad.casosTipo; track caso) {
-                <li class="flex items-start gap-3 text-sm" style="color: #5D6D7E;">
-                  <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1A5276;" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                  </svg>
-                  {{ caso }}
-                </li>
-              }
-            </ul>
+  <!-- CONTENIDO -->
+  <section style="background:#ffffff;" class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-5"
+            style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+            Reclamos en {{ ciudad.nombre }}
           </div>
-        }
-      </div>
-      <div class="card p-6">
-        <h3 class="font-semibold text-lg mb-4" style="color: #1A5276;">Consulta Gratis desde {{ ciudad.nombre }}</h3>
-        <app-contact-form />
+          <h2 class="text-2xl font-bold mb-4" style="color:#0b183a;">
+            Reclamos laborales en {{ ciudad.nombre }}
+          </h2>
+          <p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.7);">
+            Nuestro equipo atiende casos de accidentes laborales, enfermedades profesionales y reclamos a la ART en {{ ciudad.nombre }}, {{ ciudad.provincia }}.
+            @if (ciudad.sectorPrincipal) {
+              Los sectores con mayor siniestralidad en la zona son: {{ ciudad.sectorPrincipal }}.
+            }
+          </p>
+          <ul class="space-y-3">
+            @for (item of beneficios; track item) {
+              <li class="flex items-center gap-3 text-sm" style="color:rgba(11,24,58,0.75);">
+                <svg class="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#059669;" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                {{ item }}
+              </li>
+            }
+          </ul>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden" style="box-shadow:0 8px 40px rgba(0,43,123,0.12);">
+          <div class="px-6 py-5" style="background: linear-gradient(135deg, #002b7b, #045fc3);">
+            <h3 class="font-bold text-white text-base">Consulta Gratis desde {{ ciudad.nombre }}</h3>
+            <p class="text-xs mt-1" style="color:rgba(255,255,255,0.7);">Respondemos en menos de 24 horas</p>
+          </div>
+          <div class="p-6 bg-white" style="border:1px solid rgba(0,43,123,0.1);">
+            <app-contact-form />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- SEO TEXT -->
+  <section style="background:#F4F7FE; border-top:1px solid rgba(0,43,123,0.07);" class="py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold mb-5" style="color:#0b183a;">
+        Preguntas frecuentes sobre accidentes laborales en {{ ciudad.nombre }}
+      </h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-bold mb-2" style="color:#0b183a;">¿Cuánto tiempo tengo para reclamar en {{ ciudad.nombre }}?</h3>
+          <p class="text-sm leading-relaxed" style="color:rgba(11,24,58,0.7);">
+            El plazo de prescripción para reclamar a la ART es de 2 años desde el accidente o el diagnóstico de la enfermedad profesional. Es importante iniciar el reclamo cuanto antes para no perder derechos.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2" style="color:#0b183a;">¿Necesito un abogado para reclamar en la Comisión Médica de {{ ciudad.provincia }}?</h3>
+          <p class="text-sm leading-relaxed" style="color:rgba(11,24,58,0.7);">
+            No es obligatorio, pero contar con representación legal especializada en {{ ciudad.provincia }} aumenta significativamente las probabilidades de obtener un porcentaje de incapacidad justo y una indemnización acorde al daño sufrido.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2" style="color:#0b183a;">¿Cuánto cobra un abogado laboralista en {{ ciudad.nombre }}?</h3>
+          <p class="text-sm leading-relaxed" style="color:rgba(11,24,58,0.7);">
+            En Capeletti Abogados trabajamos a honorarios a éxito: solo cobramos si ganamos el caso. Sin adelantos ni gastos iniciales para el trabajador.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 } @else {
   <div class="max-w-2xl mx-auto px-4 py-20 text-center">
-    <h1 class="text-3xl font-bold" style="color: #1A5276;">Ciudad no encontrada</h1>
+    <h1 class="text-3xl font-bold" style="color:#0b183a;">Ciudad no encontrada</h1>
     <a routerLink="/" class="btn-primary mt-6 inline-flex">Volver al inicio</a>
   </div>
 }

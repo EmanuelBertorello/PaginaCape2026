@@ -1,48 +1,95 @@
 <app-breadcrumb [items]="breadcrumbs" />
 
-<section style="background-color: #1A5276;" class="py-14">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 class="text-3xl sm:text-4xl font-bold text-white">Nuestro Equipo</h1>
-    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
-      Abogados con matrícula activa y especialistas técnicos dedicados exclusivamente a los reclamos laborales y ART.
+<!-- HERO -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+      style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+      <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+      El Equipo
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">Nuestros Abogados</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color:rgba(255,255,255,0.75);">
+      Matrícula activa, especializados exclusivamente en accidentes laborales y ART. Conocé a cada uno de los profesionales que van a representarte.
     </p>
   </div>
 </section>
 
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    @for (abogado of abogados; track abogado.slug) {
-      <a
-        [routerLink]="'/abogados/' + abogado.slug"
-        class="card p-6 group hover:shadow-lg transition-all duration-200 text-center"
-      >
-        <!-- Foto o iniciales -->
-        <div class="mx-auto mb-4 w-24 h-24 rounded-full overflow-hidden" style="background-color: #1A5276;">
+<!-- GRILLA DE ABOGADOS -->
+<section style="background:#ffffff;" class="py-16">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (abogado of abogados; track abogado.slug) {
+        <a
+          [routerLink]="'/abogados/' + abogado.slug"
+          class="group bg-white rounded-2xl p-7 transition-all hover:shadow-xl flex flex-col"
+          style="border:1px solid rgba(0,43,123,0.1); box-shadow:0 2px 12px rgba(0,43,123,0.05);"
+        >
+          <!-- Avatar / Foto -->
           @if (abogado.foto) {
             <img
               [src]="abogado.foto"
               [alt]="abogado.nombre + ' ' + abogado.apellido"
-              class="w-full h-full object-cover"
-              loading="lazy"
+              class="w-20 h-20 rounded-full object-cover mb-5"
+              style="border:3px solid rgba(0,43,123,0.12);"
             />
           } @else {
-            <div class="w-full h-full flex items-center justify-center text-white text-2xl font-bold">
+            <div class="w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-5"
+              style="background: linear-gradient(135deg, #002b7b, #045fc3);">
               {{ abogado.nombre[0] }}{{ abogado.apellido[0] }}
             </div>
           }
-        </div>
 
-        <h2 class="font-bold text-lg group-hover:underline" style="color: #1A5276;">
-          {{ abogado.nombre }} {{ abogado.apellido }}
-        </h2>
-        <p class="text-sm mt-1 leading-snug" style="color: #5D6D7E;">{{ abogado.titulo }}</p>
-        <p class="text-xs mt-2" style="color: #9AACB8;">{{ abogado.matricula }}</p>
-        <div class="mt-4 flex flex-wrap justify-center gap-2">
-          @for (prov of abogado.provinciasFoco.slice(0, 2); track prov) {
-            <span class="badge badge-primary text-xs">{{ prov }}</span>
-          }
-        </div>
-      </a>
-    }
+          <!-- Info principal -->
+          <h2 class="font-bold text-lg leading-snug group-hover:text-[#045fc3] transition-colors" style="color:#0b183a;">
+            {{ abogado.nombre }} {{ abogado.apellido }}
+          </h2>
+          <p class="text-sm mt-1 font-medium" style="color:#045fc3;">{{ abogado.titulo }}</p>
+          <p class="text-xs mt-1 mb-3" style="color:rgba(11,24,58,0.4);">{{ abogado.matricula }}</p>
+
+          <!-- Descripcion breve -->
+          <p class="text-sm leading-relaxed mb-4" style="color:rgba(11,24,58,0.65);">
+            {{ abogado.biografia.split('\n')[0] }}
+          </p>
+
+          <!-- Provincias -->
+          <div class="flex flex-wrap gap-2 mb-5">
+            @for (prov of abogado.provinciasFoco; track prov) {
+              <span class="text-xs px-2.5 py-1 rounded-full font-medium" style="background:rgba(0,43,123,0.08); color:#002b7b;">{{ prov }}</span>
+            }
+          </div>
+
+          <!-- Especializaciones -->
+          <div class="mt-auto pt-4 space-y-1" style="border-top:1px solid rgba(0,43,123,0.07);">
+            @for (esp of abogado.especializaciones.slice(0,3); track esp) {
+              <div class="flex items-center gap-2">
+                <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#045fc3;" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-xs" style="color:rgba(11,24,58,0.65);">{{ esp }}</span>
+              </div>
+            }
+          </div>
+
+          <p class="mt-5 text-xs font-semibold group-hover:underline" style="color:#045fc3;">Ver perfil completo →</p>
+        </a>
+      }
+    </div>
   </div>
-</div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="py-16" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 60%, #023660 100%);">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">¿Querés que te represente uno de nuestros abogados?</h2>
+    <p class="text-base mb-8" style="color:rgba(255,255,255,0.7);">La consulta inicial es gratis y sin compromiso. Solo cobramos si ganamos tu caso.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a routerLink="/contactanos" class="btn-primary text-base px-8 py-4">Consulta gratis</a>
+      <a href="https://wa.me/5493415000000" target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-base px-8 py-4">WhatsApp directo</a>
+    </div>
+  </div>
+</section>

@@ -5,8 +5,16 @@ export const ABOGADOS_DATA: AbogadoData[] = [
     slug: 'bruno-capeletti',
     nombre: 'Bruno',
     apellido: 'Capeletti',
-    titulo: 'Abogado — Director del Estudio',
+    titulo: 'Abogado — Fundador · Especialista en Accidentes Laborales y ART',
     matricula: 'C.S.J.S.F. T° XVI F° 48',
+    matriculas: [
+      { colegio: 'C.P.A.C.F. (CABA)', numero: 'T° 148 · F° 548' },
+      { colegio: 'Colegio de Abogados Pcia. Bs. As.', numero: 'T° XVI · F° 48' },
+      { colegio: 'Colegio de la Abogacía de Entre Ríos', numero: 'N° 11664 · FO. 16 · TO. II' },
+      { colegio: 'Colegio de Abogados Gral. Roca (Río Negro)', numero: 'N° 6636 · F° 6636 · T° X' },
+      { colegio: 'Colegio de Abogados y Procuradores de Neuquén', numero: 'N° 4452 · F° 236 · T° 6' },
+      { colegio: 'C.A. 2° Circ. Santa Fe (Rosario)', numero: 'L° XXXVII · F° 257' },
+    ],
     universidad: 'Universidad Nacional del Litoral (UNL)',
     especializaciones: [
       'Derecho del Trabajo',
@@ -15,98 +23,119 @@ export const ABOGADOS_DATA: AbogadoData[] = [
       'Enfermedades Profesionales',
       'Accidentes In Itinere',
     ],
-    biografia: `Bruno Capeletti es el fundador y director del estudio. Con más de 12 años de ejercicio profesional exclusivamente en derecho laboral y riesgos del trabajo, ha representado a más de 7.000 trabajadores en las provincias de Santa Fe, Neuquén, Entre Ríos, Río Negro y Buenos Aires.
+    biografia: `Bruno Capeletti es el fundador y principal abogado del estudio. Con más de 12 años de ejercicio profesional exclusivamente en derecho laboral y riesgos del trabajo, ha representado a más de 7.000 trabajadores en las provincias de Neuquén, Río Negro, Entre Ríos, Buenos Aires, Santa Fe y CABA.
 
-Egresado de la Universidad Nacional del Litoral, se especializó en el sistema de riesgos del trabajo desde el inicio de su carrera. Su conocimiento profundo de las Comisiones Médicas locales, los baremos y las estrategias de litigación lo posicionan como uno de los referentes en la materia en el interior del país.
+Egresado de la Universidad Nacional del Litoral, se especializó en el sistema de riesgos del trabajo desde el inicio de su carrera. Cuenta con matrícula activa en seis jurisdicciones: Neuquén, Río Negro, Entre Ríos, Buenos Aires, CABA y Santa Fe, lo que le permite litigar en cada provincia donde el trabajador lo necesite.
+
+Su conocimiento profundo de las Comisiones Médicas locales, los baremos y las estrategias de litigación en toda la región lo posicionan como uno de los referentes en accidentes laborales y ART en el interior del país.
 
 Su filosofía de trabajo: "Cada trabajador lesionado merece ser representado con la misma calidad que una gran empresa. El sistema está hecho para desalentar el reclamo; nuestro trabajo es revertir eso."`,
-    foto: '/assets/team/bruno-capeletti.webp',
-    provinciasFoco: ['Santa Fe', 'Entre Ríos', 'Buenos Aires'],
+    foto: '/brunito.png',
+    provinciasFoco: ['Neuquén', 'Río Negro', 'Entre Ríos', 'Buenos Aires', 'CABA', 'Santa Fe'],
     casosEspeciales: [
-      'Hernias de disco múltiples con secuelas neurológicas',
-      'Fallecimientos por accidentes en obra',
-      'Gran invalidez por aplastamiento',
+      'Accidentes en pozos petroleros y construcción de infraestructura',
+      'Gran invalidez por aplastamiento y lesiones graves',
+      'Fallecimientos en industria hidrocarburífera y agropecuaria',
     ],
   },
   {
     slug: 'rocio-bello',
     nombre: 'Rocío',
     apellido: 'Bello',
-    titulo: 'Abogada — Especialista en ART y Comisiones Médicas',
-    matricula: 'C.S.J.S.F. T° — F° —',
-    universidad: 'Universidad Nacional del Litoral (UNL)',
+    titulo: 'Abogada — Especialista en Accidentes Laborales Buenos Aires',
+    matricula: 'C.A.B.A. T° 105 F° 318',
+    universidad: 'Universidad de Buenos Aires (UBA)',
     especializaciones: [
-      'Riesgos del Trabajo (ART)',
-      'Comisiones Médicas',
-      'Impugnación de Alta Médica',
-      'Accidentes In Itinere',
+      'Accidentes Laborales',
+      'Reclamos ante ART',
+      'Justicia Nacional del Trabajo',
       'Enfermedades Profesionales',
+      'Accidentes In Itinere — CABA y GBA',
     ],
-    biografia: `Rocío Bello integra el equipo de Capeletti Abogados desde sus inicios en la práctica del derecho laboral. Es la referente del estudio en el seguimiento de expedientes ante las Comisiones Médicas de Santa Fe y la coordinación de los trámites ante la Superintendencia de Riesgos del Trabajo.
+    biografia: `Rocío Bello lidera la representación del estudio Capeletti en la provincia y Ciudad de Buenos Aires. Especialista en litigación ante la Justicia Nacional del Trabajo, tiene amplia experiencia en reclamos de trabajadores de todos los sectores productivos bonaerenses.
 
-Egresada de la Universidad Nacional del Litoral, se especializó en el procedimiento administrativo ante la SRT y en la defensa de trabajadores en instancias de impugnación de alta médica. Su capacidad de acompañar al cliente en cada etapa del proceso es una de las características más valoradas por los trabajadores que representa.
-
-Tiene amplia experiencia en casos de accidentes in itinere, enfermedades profesionales no reconocidas y revisión de porcentajes de incapacidad fijados incorrectamente por las ART.`,
-    foto: '/assets/team/rocio-bello.webp',
-    provinciasFoco: ['Santa Fe', 'Entre Ríos'],
+Egresada de la UBA, trabaja con un equipo consolidado en CABA y el conurbano bonaerense, atendiendo casos de industria, logística, construcción y servicios. Su conocimiento del sistema de ART en el ámbito metropolitano le permite maximizar los resultados para cada trabajador.`,
+    foto: '/rocio-bello.jpeg',
+    provinciasFoco: ['Buenos Aires', 'CABA'],
     casosEspeciales: [
-      'Accidentes in itinere rechazados por supuesta desviación del camino',
-      'Impugnaciones de alta médica con secuelas documentadas',
-      'Revisión de incapacidades 0% ante Comisión Médica Central',
+      'Accidentes en logística y transporte en GBA',
+      'Enfermedades profesionales en industria alimentaria',
+      'Hipoacusia laboral en metalurgia y construcción',
     ],
   },
   {
     slug: 'daiana-parache',
     nombre: 'Daiana',
     apellido: 'Parache',
-    titulo: 'Abogada — Especialista en Litigación Laboral',
-    matricula: 'C.S.J.S.F. T° — F° —',
+    titulo: 'Abogada — Especialista en Accidentes Laborales Santa Fe',
+    matricula: 'C.S.J.S.F. T° XXI F° 92',
     universidad: 'Universidad Nacional del Litoral (UNL)',
     especializaciones: [
-      'Litigación en Juzgados Laborales',
-      'Accidentes en Construcción',
-      'Hernias de Disco y Lesiones Lumbares',
-      'Lesiones de Hombro y Manguito Rotador',
-      'Gran Invalidez',
+      'Accidentes Laborales — Santa Fe',
+      'Reclamos ante Comisiones Médicas',
+      'Enfermedades Profesionales',
+      'Alta Médica e Impugnaciones',
+      'Reclamos ART en Agroindustria',
     ],
-    biografia: `Daiana Parache es la especialista en litigación del estudio. Su área de trabajo se concentra en la estrategia judicial de los casos que superan la instancia administrativa, representando a trabajadores ante los juzgados laborales de Santa Fe y el resto del país.
+    biografia: `Daiana Parache es la referente del estudio Capeletti para la provincia de Santa Fe. Con profundo conocimiento de las Comisiones Médicas de Rosario, Santa Fe Capital y Reconquista, representa a trabajadores de la industria, agroindustria y servicios en toda la provincia.
 
-Egresada de la Universidad Nacional del Litoral, desarrolló su especialización en accidentes graves de la construcción y la industria. Conoce en profundidad los mecanismos de prueba médica en juicio y la coordinación con peritos independientes.
-
-Su experiencia en casos de alta complejidad —incluyendo gran invalidez y fallecimientos laborales— la posiciona como la referente del estudio para los expedientes judiciales de mayor envergadura.`,
+Egresada de la Universidad Nacional del Litoral, se especializó en los procesos ante las CMs santafesinas y la impugnación de altas médicas prematuras. Su trato cercano y dedicación personalizada a cada caso son reconocidos por cientos de trabajadores que pasaron por el estudio.`,
     foto: '/assets/team/daiana-parache.webp',
-    provinciasFoco: ['Santa Fe', 'Buenos Aires', 'Neuquén'],
+    provinciasFoco: ['Santa Fe'],
     casosEspeciales: [
-      'Accidentes graves en obra con incapacidad total',
-      'Hernias de disco múltiples con cirugía y secuelas',
-      'Gran invalidez por aplastamiento en industria',
+      'Hernias de disco en trabajadores de frigoríficos y manufactura',
+      'Accidentes en agroindustria y sector agroexportador',
+      'Impugnaciones de alta médica prematura ante CM Rosario',
     ],
   },
   {
-    slug: 'emanuel-bertorello',
-    nombre: 'Emanuel',
-    apellido: 'Bertorello',
-    titulo: 'Ing. en Seguridad e Higiene Laboral — Perito Técnico',
-    matricula: 'CIARPA T° — F° —',
-    universidad: 'Universidad Tecnológica Nacional (UTN)',
+    slug: 'laureano-bamonde',
+    nombre: 'Laureano',
+    apellido: 'Bamonde',
+    titulo: 'Abogado — Especialista en Accidentes Laborales y Enfermedades Profesionales',
+    matricula: 'C.A. 2° Circ. Santa Fe (Rosario)',
+    universidad: 'Universidad Nacional de Rosario (UNR)',
     especializaciones: [
-      'Seguridad e Higiene Laboral',
-      'Evaluación de Riesgo en Obra',
-      'Pericias Técnicas en Accidentes',
-      'Análisis de Causas de Accidentes',
-      'Normas IRAM e ISO 45001',
+      'Accidentes de Trabajo',
+      'Enfermedades Profesionales',
+      'Reclamos ante ART',
+      'Litigación Laboral',
+      'Representación en Comisiones Médicas',
     ],
-    biografia: `Emanuel Bertorello es el perito técnico en Seguridad e Higiene del estudio. Su rol es fundamental en los casos donde el accidente laboral involucra deficiencias en las condiciones de seguridad del empleador: falta de equipos de protección, ausencia de capacitación, instalaciones defectuosas o incumplimiento de normas de seguridad.
+    biografia: `Laureano Bamonde es abogado egresado de la Facultad de Derecho de la Universidad Nacional de Rosario. Especializado en derecho laboral, cuenta con sólida experiencia en accidentes de trabajo y enfermedades profesionales.
 
-Egresado de la UTN con especialización en análisis de causas de accidentes laborales, trabaja en coordinación con el equipo de abogados para construir prueba técnica sólida que soporte el reclamo judicial o extrajudicial.
-
-Su intervención temprana en los expedientes permite identificar responsabilidades del empleador más allá de la cobertura estándar de la ART, habilitando la vía civil cuando corresponde y maximizando la indemnización total del trabajador.`,
-    foto: '/assets/team/emanuel-bertorello.webp',
-    provinciasFoco: ['Santa Fe', 'Entre Ríos', 'Buenos Aires'],
+Brinda asesoramiento estratégico y representación integral a cada trabajador, con un enfoque orientado a la excelencia, la atención personalizada y la defensa eficaz de los derechos del trabajador en todas las instancias del proceso.`,
+    foto: '/laureano.png',
+    provinciasFoco: ['Santa Fe', 'Buenos Aires'],
     casosEspeciales: [
-      'Accidentes por falta de EPP o capacitación verificable',
-      'Análisis de causalidad en accidentes con maquinaria industrial',
-      'Pericias técnicas para habilitación de acción civil contra el empleador',
+      'Accidentes de trabajo con incapacidades parciales y permanentes',
+      'Enfermedades profesionales en industria y manufactura',
+      'Litigación laboral ante fueros del trabajo',
+    ],
+  },
+  {
+    slug: 'julian-casalli',
+    nombre: 'Julián',
+    apellido: 'Casalli',
+    titulo: 'Abogado — Accidentes Laborales, Enfermedades Profesionales y Jubilaciones',
+    matricula: 'C.A. 2° Circ. Santa Fe (Rosario) — UNR',
+    universidad: 'Universidad Nacional de Rosario (UNR)',
+    especializaciones: [
+      'Accidentes Laborales',
+      'Enfermedades Profesionales',
+      'Reclamos ante ART',
+      'Jubilaciones y Pensiones',
+      'Trámites ante ANSES',
+    ],
+    biografia: `Julián Casalli es abogado graduado en la Facultad de Derecho de la Universidad Nacional de Rosario. Se dedica principalmente al asesoramiento y trámite de reclamos por accidentes laborales y enfermedades profesionales, acompañando a cada trabajador desde la primera consulta hasta el cobro de la indemnización.
+
+Además de su especialización en derecho laboral, realiza asesoramiento y trámite de jubilaciones y pensiones, incluyendo pensiones por invalidez laboral vinculadas a accidentes de trabajo. Esta doble especialización le permite brindar una cobertura integral al trabajador y su familia en los momentos más críticos.`,
+    foto: '/JulianCasalli.png',
+    provinciasFoco: ['Santa Fe', 'Rosario'],
+    casosEspeciales: [
+      'Accidentes laborales con reclamo simultáneo de jubilación por invalidez',
+      'Enfermedades profesionales crónicas con afectación previsional',
+      'Gestión de pensiones ante ANSES vinculadas a accidentes de trabajo',
     ],
   },
 ];

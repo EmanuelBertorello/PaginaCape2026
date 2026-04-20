@@ -49,8 +49,10 @@ export const serverRoutes: ServerRoute[] = [
     async getPrerenderParams() {
       return [
         { slug: 'bruno-capeletti' },
-        { slug: 'valeria-mendez' },
-        { slug: 'martin-suarez' },
+        { slug: 'rocio-bello' },
+        { slug: 'daiana-parache' },
+        { slug: 'laureano-bamonde' },
+        { slug: 'julian-casalli' },
       ];
     },
   },

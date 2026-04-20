@@ -23,10 +23,6 @@ export interface ArticuloData {
   faqs: ArticuloFaq[];
   ctaTitle?: string;
   ctaText?: string;
-  /** Cuando esta página es secundaria respecto a otra, apuntar el canonical aquí */
-  canonicalOverride?: string;
-  /** Link interno que apunta a la página principal de este tema */
-  internalLinkTo?: { url: string; label: string };
 }
 
 export const ARTICULOS_DATA: ArticuloData[] = [
@@ -132,8 +128,6 @@ export const ARTICULOS_DATA: ArticuloData[] = [
   },
   {
     slug: 'impugnacion-alta-medica',
-    canonicalOverride: '/alta-medica-art',
-    internalLinkTo: { url: '/alta-medica-art', label: 'Ver página principal: Alta Médica de la ART — qué es y cómo reclamar' },
     seoTitle: 'Cómo Impugnar el Alta Médica de la ART — Guía Paso a Paso',
     seoDescription: 'Cómo impugnar el alta médica ART en Argentina. Procedimiento ante Comisión Médica, plazos, documentación y estrategia probatoria. Consulta gratis.',
     badge: 'Alta Médica · Impugnación',
@@ -232,8 +226,6 @@ export const ARTICULOS_DATA: ArticuloData[] = [
   },
   {
     slug: 'reclamar-contra-art',
-    canonicalOverride: '/rechazo-art',
-    internalLinkTo: { url: '/rechazo-art', label: 'Ver página principal: Rechazo de la ART — qué hacer cuando niegan tu siniestro' },
     seoTitle: 'Cómo Reclamar Contra la ART en Argentina — Guía Completa 2026',
     seoDescription: 'Guía completa para reclamar contra la ART en Argentina. Procedimiento ante Comisión Médica, plazos, documentación y derechos del trabajador accidentado.',
     badge: 'ART · Procedimiento',

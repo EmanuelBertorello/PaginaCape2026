@@ -1,33 +1,58 @@
 <app-breadcrumb [items]="breadcrumbs" />
 
-<section style="background-color: #1A5276;" class="py-14">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 class="text-3xl sm:text-4xl font-bold text-white">Cómo Cobrar la ART — Guía Completa</h1>
-    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
+<!-- HERO -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+      style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+      <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+      Guía Completa
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">Cómo Cobrar la ART</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color:rgba(255,255,255,0.75);">
       El proceso de cobro de una indemnización por accidente laboral tiene pasos específicos. Te los explicamos.
     </p>
   </div>
 </section>
 
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
-  <section aria-labelledby="pasos-h2">
-    <h2 id="pasos-h2" class="text-2xl font-semibold mb-8" style="color: #1C2833;">Los 5 pasos para cobrar tu indemnización</h2>
-    <ol class="space-y-6">
+<!-- PASOS -->
+<section style="background:#ffffff;" class="py-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
+        style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+        El proceso paso a paso
+      </div>
+      <h2 class="text-2xl font-bold" style="color:#0b183a;">Los 5 pasos para cobrar tu indemnización</h2>
+    </div>
+    <ol class="space-y-5" aria-labelledby="pasos-h2">
       @for (paso of pasos; track paso.numero) {
-        <li class="flex items-start gap-4 p-5 rounded-lg" style="background-color: #F8FAFB;">
-          <span class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold shrink-0" style="background-color: #1A5276;">{{ paso.numero }}</span>
+        <li class="flex items-start gap-5 p-6 rounded-2xl transition-all hover:shadow-md"
+          style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+          <span class="w-11 h-11 rounded-full flex items-center justify-center text-white font-bold shrink-0 text-lg"
+            style="background: linear-gradient(135deg, #002b7b, #045fc3);">{{ paso.numero }}</span>
           <div>
-            <h3 class="font-semibold" style="color: #1C2833;">{{ paso.titulo }}</h3>
-            <p class="text-sm mt-1 leading-relaxed" style="color: #5D6D7E;">{{ paso.descripcion }}</p>
+            <h3 class="font-bold text-base" style="color:#0b183a;">{{ paso.titulo }}</h3>
+            <p class="text-sm mt-1.5 leading-relaxed" style="color:rgba(11,24,58,0.65);">{{ paso.descripcion }}</p>
           </div>
         </li>
       }
     </ol>
-  </section>
-
-  <div class="card p-8 text-center">
-    <h2 class="text-xl font-semibold mb-3" style="color: #1C2833;">¿Necesitás ayuda con el proceso?</h2>
-    <p class="mb-6" style="color: #5D6D7E;">Nos encargamos de todo el proceso por vos. Consulta gratis.</p>
-    <a routerLink="/contactanos" class="btn-primary">Iniciar consulta gratis</a>
   </div>
-</div>
+</section>
+
+<!-- CTA -->
+<section class="py-16" style="background: linear-gradient(135deg, #001a4d, #002b7b);">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-2xl font-bold text-white mb-4">¿Necesitás ayuda con el proceso?</h2>
+    <p class="text-base mb-8" style="color:rgba(255,255,255,0.7);">Nos encargamos de todo el proceso por vos. Consulta gratis, sin compromiso.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a routerLink="/contactanos" class="btn-primary text-base px-8 py-4">Iniciar consulta gratis</a>
+      <a href="https://wa.me/5493415000000" target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-base px-8 py-4">WhatsApp directo</a>
+    </div>
+  </div>
+</section>

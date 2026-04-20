@@ -1,59 +1,156 @@
 <app-breadcrumb [items]="breadcrumbs" />
 
-<section style="background-color: #1A5276;" class="py-14">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 class="text-3xl sm:text-4xl font-bold text-white">Sobre Capeletti Abogados</h1>
-    <p class="mt-4 text-lg max-w-3xl mx-auto" style="color: #D6EAF8;">
+<!-- HERO -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+      style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+      <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+      Sobre Nosotros
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">Capeletti Abogados</h1>
+    <p class="mt-4 text-lg max-w-3xl mx-auto" style="color:rgba(255,255,255,0.75);">
       Más de 10 años especializados exclusivamente en accidentes laborales, ART e indemnizaciones. Sin generalistas, sin demoras.
     </p>
   </div>
 </section>
 
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    <div>
-      <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">Nuestra misión</h2>
-      <p class="leading-relaxed" style="color: #5D6D7E;">
-        Capeletti Abogados nació con una misión clara: que ningún trabajador lesionado tenga que enfrentarse solo al sistema de ART. El sistema de riesgos del trabajo en Argentina está diseñado para desalentar el reclamo. Nuestra misión es revertir esa ecuación.
-      </p>
-      <p class="mt-4 leading-relaxed" style="color: #5D6D7E;">
-        Trabajamos exclusivamente en derecho laboral y accidentes de trabajo desde hace más de 10 años. Eso nos da un conocimiento profundo de cada Comisión Médica, cada baremo y cada estrategia de impugnación.
-      </p>
-    </div>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="card p-5 text-center">
-        <p class="text-3xl font-bold" style="color: #1A5276;">+12.500</p>
-        <p class="text-sm mt-1" style="color: #5D6D7E;">Casos tramitados</p>
+<!-- STATS -->
+<section style="background:#ffffff; border-bottom:1px solid rgba(0,43,123,0.07);">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <p class="text-3xl font-extrabold" style="color:#002b7b;">+12.500</p>
+        <p class="text-sm mt-1" style="color:rgba(11,24,58,0.55);">Casos tramitados</p>
       </div>
-      <div class="card p-5 text-center">
-        <p class="text-3xl font-bold" style="color: #1A5276;">+7.000</p>
-        <p class="text-sm mt-1" style="color: #5D6D7E;">Casos ganados</p>
+      <div>
+        <p class="text-3xl font-extrabold" style="color:#002b7b;">+7.000</p>
+        <p class="text-sm mt-1" style="color:rgba(11,24,58,0.55);">Casos ganados</p>
       </div>
-      <div class="card p-5 text-center">
-        <p class="text-3xl font-bold" style="color: #1A5276;">5</p>
-        <p class="text-sm mt-1" style="color: #5D6D7E;">Provincias</p>
+      <div>
+        <p class="text-3xl font-extrabold" style="color:#002b7b;">5</p>
+        <p class="text-sm mt-1" style="color:rgba(11,24,58,0.55);">Provincias</p>
       </div>
-      <div class="card p-5 text-center">
-        <p class="text-3xl font-bold" style="color: #1A5276;">+10</p>
-        <p class="text-sm mt-1" style="color: #5D6D7E;">Años de experiencia</p>
+      <div>
+        <p class="text-3xl font-extrabold" style="color:#002b7b;">+10</p>
+        <p class="text-sm mt-1" style="color:rgba(11,24,58,0.55);">Años de experiencia</p>
       </div>
     </div>
   </div>
+</section>
 
-  <div class="mt-16 border-t border-gray-100 pt-16">
-    <h2 class="text-2xl font-semibold mb-8" style="color: #1C2833;">Valores que nos guían</h2>
+<!-- MISIÓN -->
+<section style="background:#ffffff;" class="py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-5"
+          style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+          <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
+          Nuestra misión
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-5" style="color:#0b183a;">
+          Que ningún trabajador enfrente solo al sistema de ART
+        </h2>
+        <p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.65);">
+          Capeletti Abogados nació con una misión clara: que ningún trabajador lesionado tenga que enfrentarse solo al sistema de ART. El sistema de riesgos del trabajo en Argentina está diseñado para desalentar el reclamo. Nuestra misión es revertir esa ecuación.
+        </p>
+        <p class="leading-relaxed" style="color:rgba(11,24,58,0.65);">
+          Trabajamos exclusivamente en derecho laboral y accidentes de trabajo desde hace más de 10 años. Eso nos da un conocimiento profundo de cada Comisión Médica, cada baremo y cada estrategia de impugnación.
+        </p>
+        <a routerLink="/abogados" class="btn-primary mt-8 inline-flex">Conocé a nuestros abogados</a>
+      </div>
+      <div class="p-8 rounded-2xl" style="background:linear-gradient(135deg, #002b7b, #045fc3);">
+        <blockquote class="text-white text-lg leading-relaxed italic mb-6">
+          "Cada trabajador lesionado merece ser representado con la misma calidad que una gran empresa. El sistema está hecho para desalentar el reclamo; nuestro trabajo es revertir eso."
+        </blockquote>
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-full flex items-center justify-center text-white font-bold text-sm"
+            style="background:rgba(255,255,255,0.2);">BC</div>
+          <div>
+            <p class="font-bold text-white text-sm">Bruno Capeletti</p>
+            <p class="text-xs" style="color:rgba(255,255,255,0.65);">Fundador del estudio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section style="background:#F4F7FE; border-top:1px solid rgba(0,43,123,0.07);" class="py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
+        style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+        <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
+        Valores
+      </div>
+      <h2 class="text-2xl font-bold" style="color:#0b183a;">Los valores que nos guían</h2>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       @for (valor of valores; track valor.titulo) {
-        <div class="p-5 rounded-lg" style="background-color: #F8FAFB;">
-          <p class="text-3xl mb-3" aria-hidden="true">{{ valor.icono }}</p>
-          <h3 class="font-semibold mb-2" style="color: #1A5276;">{{ valor.titulo }}</h3>
-          <p class="text-sm leading-relaxed" style="color: #5D6D7E;">{{ valor.descripcion }}</p>
+        <div class="bg-white rounded-2xl p-6" style="border:1px solid rgba(0,43,123,0.08); box-shadow:0 2px 12px rgba(0,43,123,0.05);">
+          <p class="text-3xl mb-4" aria-hidden="true">{{ valor.icono }}</p>
+          <h3 class="font-bold text-base mb-2" style="color:#0b183a;">{{ valor.titulo }}</h3>
+          <p class="text-sm leading-relaxed" style="color:rgba(11,24,58,0.6);">{{ valor.descripcion }}</p>
         </div>
       }
     </div>
   </div>
+</section>
 
-  <div class="mt-12 text-center">
-    <a routerLink="/abogados" class="btn-primary">Conocé a nuestros abogados</a>
+<!-- EQUIPO -->
+<section style="background:#ffffff; border-top:1px solid rgba(0,43,123,0.07);" class="py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
+        style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+        <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
+        Nuestro Equipo
+      </div>
+      <h2 class="text-2xl font-bold" style="color:#0b183a;">Los abogados que van a representarte</h2>
+      <p class="mt-2 text-sm" style="color:rgba(11,24,58,0.5);">Matrícula activa · Solo accidentes laborales · Honorarios a éxito</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <a routerLink="/abogados/bruno-capeletti" class="group bg-white rounded-2xl p-6 text-center transition-all hover:shadow-lg" style="border:1px solid rgba(0,43,123,0.1);">
+        <img src="/brunito.png" alt="Bruno Capeletti" class="w-16 h-16 rounded-full object-cover mx-auto mb-4" style="border:2px solid rgba(0,43,123,0.15);">
+        <p class="font-bold" style="color:#0b183a;">Bruno Capeletti</p>
+        <p class="text-xs mt-1" style="color:rgba(11,24,58,0.5);">Fundador · C.S.J.S.F. T° XVI F° 48</p>
+        <p class="text-xs mt-0.5 mb-3" style="color:rgba(11,24,58,0.45);">Neuquén · Río Negro · Entre Ríos</p>
+        <div class="flex flex-wrap justify-center gap-1 mb-4">
+          <span class="text-xs px-2 py-0.5 rounded-full" style="background:rgba(0,43,123,0.08); color:#002b7b;">Accidentes laborales</span>
+          <span class="text-xs px-2 py-0.5 rounded-full" style="background:rgba(0,43,123,0.08); color:#002b7b;">ART</span>
+        </div>
+        <p class="text-xs font-semibold group-hover:underline" style="color:#045fc3;">Ver perfil →</p>
+      </a>
+      <a routerLink="/abogados/rocio-bello" class="group bg-white rounded-2xl p-6 text-center transition-all hover:shadow-lg" style="border:1px solid rgba(0,43,123,0.1);">
+        <img src="/rocio-bello.jpeg" alt="Rocío Bello" class="w-16 h-16 rounded-full object-cover mx-auto mb-4" style="border:2px solid rgba(0,43,123,0.15);">
+        <p class="font-bold" style="color:#0b183a;">Rocío Bello</p>
+        <p class="text-xs mt-1" style="color:rgba(11,24,58,0.5);">Abogada · C.A.B.A. T° 105 F° 318</p>
+        <p class="text-xs mt-0.5 mb-3" style="color:rgba(11,24,58,0.45);">Buenos Aires · CABA</p>
+        <div class="flex flex-wrap justify-center gap-1 mb-4">
+          <span class="text-xs px-2 py-0.5 rounded-full" style="background:rgba(0,43,123,0.08); color:#002b7b;">Accidentes laborales</span>
+          <span class="text-xs px-2 py-0.5 rounded-full" style="background:rgba(0,43,123,0.08); color:#002b7b;">Buenos Aires</span>
+        </div>
+        <p class="text-xs font-semibold group-hover:underline" style="color:#045fc3;">Ver perfil →</p>
+      </a>
+      <a routerLink="/abogados/daiana-parache" class="group bg-white rounded-2xl p-6 text-center transition-all hover:shadow-lg" style="border:1px solid rgba(0,43,123,0.1);">
+        <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold"
+          style="background: linear-gradient(135deg, #7B1FA2, #9C27B0); border:2px solid rgba(0,43,123,0.15);">DP</div>
+        <p class="font-bold" style="color:#0b183a;">Daiana Parache</p>
+        <p class="text-xs mt-1" style="color:rgba(11,24,58,0.5);">Abogada · C.S.J.S.F. T° XXI F° 92</p>
+        <p class="text-xs mt-0.5 mb-3" style="color:rgba(11,24,58,0.45);">Santa Fe</p>
+        <div class="flex flex-wrap justify-center gap-1 mb-4">
+          <span class="text-xs px-2 py-0.5 rounded-full" style="background:rgba(0,43,123,0.08); color:#002b7b;">Santa Fe</span>
+          <span class="text-xs px-2 py-0.5 rounded-full" style="background:rgba(0,43,123,0.08); color:#002b7b;">ART</span>
+        </div>
+        <p class="text-xs font-semibold group-hover:underline" style="color:#045fc3;">Ver perfil →</p>
+      </a>
+    </div>
   </div>
-</div>
+</section>

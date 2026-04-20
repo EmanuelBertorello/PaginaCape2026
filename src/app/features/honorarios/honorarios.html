@@ -1,44 +1,106 @@
 <app-breadcrumb [items]="breadcrumbs" />
 
-<section style="background-color: #1A5276;" class="py-14">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 class="text-3xl sm:text-4xl font-bold text-white">Honorarios: Sin Costo Anticipado</h1>
-    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">
-      No cobramos nada hasta que vos cobrás. Así de simple.
+<!-- HERO -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+      style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+      <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+      Honorarios
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">Sin Costo Anticipado</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color:rgba(255,255,255,0.75);">
+      No cobramos nada hasta que vos cobrás. Así de simple. Cero riesgo económico para el trabajador.
     </p>
+    <!-- Highlight box -->
+    <div class="mt-8 inline-flex items-center gap-3 px-6 py-4 rounded-2xl"
+      style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);">
+      <span class="text-4xl font-black text-white">$0</span>
+      <span class="text-left text-sm" style="color:rgba(255,255,255,0.8);">Costo inicial<br>Si no ganamos, no cobramos</span>
+    </div>
   </div>
 </section>
 
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+<!-- COMO FUNCIONA -->
+<section style="background:#ffffff;" class="py-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
+        style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+        <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
+        Cómo funciona
+      </div>
+      <h2 class="text-2xl font-bold" style="color:#0b183a;">Honorarios a éxito: el modelo que nos define</h2>
+    </div>
 
-  <div class="card p-8">
-    <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">Honorarios a éxito: cómo funciona</h2>
-    <p class="leading-relaxed" style="color: #5D6D7E;">
-      Nuestros honorarios son siempre a éxito. Esto significa que solo cobramos si obtenemos un resultado favorable para vos. No hay gastos de inicio, no hay cuotas mensuales y no hay cargos ocultos.
-    </p>
-    <p class="mt-4 leading-relaxed" style="color: #5D6D7E;">
-      Cuando cobrás tu indemnización, descontamos un porcentaje acordado de antemano. Ese porcentaje se informa claramente en la primera consulta y está regulado por los colegios de abogados provinciales.
-    </p>
+    <div class="bg-white rounded-2xl p-8 mb-8" style="border:1px solid rgba(0,43,123,0.1); box-shadow:0 2px 12px rgba(0,43,123,0.05);">
+      <p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">
+        Nuestros honorarios son siempre a éxito. Esto significa que solo cobramos si obtenemos un resultado favorable para vos. No hay gastos de inicio, no hay cuotas mensuales y no hay cargos ocultos.
+      </p>
+      <p class="leading-relaxed" style="color:rgba(11,24,58,0.7);">
+        Cuando cobrás tu indemnización, descontamos un porcentaje acordado de antemano. Ese porcentaje se informa claramente en la primera consulta y está regulado por los colegios de abogados provinciales.
+      </p>
+    </div>
+
+    <!-- Timeline visual -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+      <div class="text-center p-5 rounded-2xl" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3"
+          style="background:#002b7b;">1</div>
+        <p class="font-bold text-sm" style="color:#0b183a;">Consulta gratis</p>
+        <p class="text-xs mt-1" style="color:rgba(11,24,58,0.55);">Evaluamos tu caso sin costo</p>
+      </div>
+      <div class="text-center p-5 rounded-2xl" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3"
+          style="background:#002b7b;">2</div>
+        <p class="font-bold text-sm" style="color:#0b183a;">Gestionamos todo</p>
+        <p class="text-xs mt-1" style="color:rgba(11,24,58,0.55);">Nos ocupamos del proceso completo</p>
+      </div>
+      <div class="text-center p-5 rounded-2xl" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3"
+          style="background:#059669;">3</div>
+        <p class="font-bold text-sm" style="color:#0b183a;">Cobrás, pagamos</p>
+        <p class="text-xs mt-1" style="color:rgba(11,24,58,0.55);">Solo cuando hay resultado</p>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div>
-    <h2 class="text-2xl font-semibold mb-6" style="color: #1C2833;">¿Qué está incluido en el servicio?</h2>
+<!-- QUE INCLUYE -->
+<section style="background:#F4F7FE; border-top:1px solid rgba(0,43,123,0.07);" class="py-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold" style="color:#0b183a;">¿Qué está incluido en el servicio?</h2>
+      <p class="mt-2 text-sm" style="color:rgba(11,24,58,0.55);">Todo esto sin costo inicial</p>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       @for (item of servicios; track item) {
-        <div class="flex items-start gap-3 p-4 rounded-lg" style="background-color: #F8FAFB;">
-          <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1E8449;" aria-hidden="true">
+        <div class="flex items-start gap-3 p-4 bg-white rounded-xl" style="border:1px solid rgba(0,43,123,0.08);">
+          <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#059669;" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
           </svg>
-          <p class="text-sm" style="color: #1C2833;">{{ item }}</p>
+          <p class="text-sm" style="color:#0b183a;">{{ item }}</p>
         </div>
       }
     </div>
   </div>
+</section>
 
-  <div class="card p-8 text-center" style="background-color: #D5F5E3; border: 1px solid #A9DFBF;">
-    <p class="text-xl font-bold mb-2" style="color: #1E8449;">Si no ganamos, no cobramos</p>
-    <p class="text-sm" style="color: #1C2833;">Este compromiso está en la base de cómo trabajamos. Tu riesgo económico es cero.</p>
-    <a routerLink="/contactanos" class="btn-primary mt-6 inline-flex">Consultar gratis</a>
+<!-- GARANTIA FINAL -->
+<section class="py-16" style="background: linear-gradient(135deg, #001a4d, #002b7b);">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+      style="background:rgba(5,150,105,0.2); border:2px solid rgba(5,150,105,0.4);">
+      <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#34D399;" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+      </svg>
+    </div>
+    <p class="text-2xl font-bold text-white mb-3">Si no ganamos, no cobramos</p>
+    <p class="text-base mb-8" style="color:rgba(255,255,255,0.65);">Este compromiso está en la base de cómo trabajamos. Tu riesgo económico es cero desde el primer día.</p>
+    <a routerLink="/contactanos" class="btn-primary text-base px-10 py-4">Consultar gratis ahora</a>
   </div>
-
-</div>
+</section>

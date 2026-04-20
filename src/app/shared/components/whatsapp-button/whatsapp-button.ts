@@ -4,12 +4,20 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   selector: 'app-whatsapp-button',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  styles: [`
+    @keyframes waPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.55), 0 4px 20px rgba(37,211,102,0.35); }
+      50%       { box-shadow: 0 0 0 10px rgba(37,211,102,0), 0 4px 20px rgba(37,211,102,0.35); }
+    }
+    .wa-btn { animation: waPulse 2s ease-in-out infinite; }
+    .wa-btn:hover { animation: none; box-shadow: 0 6px 28px rgba(37,211,102,0.55) !important; transform: scale(1.05); }
+  `],
   template: `
     <a
       [href]="whatsappUrl"
       target="_blank"
       rel="noopener noreferrer"
-      class="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-4 py-3 rounded-full text-white font-semibold text-sm shadow-lg transition-transform duration-150 hover:scale-105 focus-visible:scale-105"
+      class="wa-btn fixed bottom-6 right-6 z-40 flex items-center gap-2 px-4 py-3 rounded-full text-white font-semibold text-sm transition-all duration-200"
       style="background-color: #25D366;"
       [attr.aria-label]="ariaLabel"
     >

@@ -1,104 +1,59 @@
 @if (post) {
   <app-breadcrumb [items]="breadcrumbs" />
 
-  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <header class="mb-8">
-      <span class="badge badge-primary mb-3">{{ post.categoria }}</span>
-      <h1 class="text-3xl sm:text-4xl font-bold leading-tight" style="color: #1A5276;">{{ post.titulo }}</h1>
-      <p class="mt-4 text-lg leading-relaxed" style="color: #5D6D7E;">{{ post.excerpt }}</p>
-      <div class="mt-6 flex items-center gap-4 text-sm" style="color: #5D6D7E;">
-        <time [attr.datetime]="post.fechaPublicacion">Publicado: {{ post.fechaPublicacion }}</time>
+  <!-- HERO del post -->
+  <section class="relative overflow-hidden py-14 sm:py-16" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+      style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <div class="absolute top-0 right-0 w-72 h-72 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(100px);"></div>
+    <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+    <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(255,255,255,0.15); color:#baf1ff;">{{ post.categoria }}</span>
+      <h1 class="text-2xl sm:text-3xl font-bold text-white leading-tight mt-4">{{ post.titulo }}</h1>
+      <p class="mt-3 text-base" style="color:rgba(255,255,255,0.7);">{{ post.excerpt }}</p>
+      <div class="mt-5 flex items-center justify-center gap-3 text-sm" style="color:rgba(255,255,255,0.5);">
+        <time [attr.datetime]="post.fechaPublicacion">{{ post.fechaPublicacion }}</time>
         <span>·</span>
-        <time [attr.datetime]="post.fechaModificacion">Actualizado: {{ post.fechaModificacion }}</time>
-        @if (post.tiempoLectura) {
-          <span>·</span>
-          <span>{{ post.tiempoLectura }} min de lectura</span>
-        }
+        <span>{{ post.tiempoLectura }} min lectura</span>
       </div>
-    </header>
-
-    <app-author-box
-      [nombre]="post.autor"
-      [slug]="post.autorSlug"
-      titulo="Abogado especialista en accidentes laborales"
-      [matricula]="post.matricula"
-      [fechaActualizacion]="post.fechaModificacion"
-    />
-
-    <!-- Contenido del artículo -->
-    <div class="mt-10 space-y-10">
-      @for (section of post.sections; track section.h2) {
-        <div>
-          <h2 class="text-2xl font-bold mb-4" style="color: #1C2833;">{{ section.h2 }}</h2>
-
-          @if (section.parrafos) {
-            @for (p of section.parrafos; track p) {
-              <p class="mb-4 leading-relaxed" style="color: #5D6D7E;">{{ p }}</p>
-            }
-          }
-
-          @if (section.lista) {
-            <ul class="mt-4 space-y-2">
-              @for (item of section.lista; track item) {
-                <li class="flex items-start gap-3 text-sm" style="color: #1C2833;">
-                  <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #1E8449;" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                  </svg>
-                  {{ item }}
-                </li>
-              }
-            </ul>
-          }
-
-          @if (section.subsecciones) {
-            @for (sub of section.subsecciones; track sub.h3) {
-              <div class="mt-6 pl-4" style="border-left: 3px solid #D5E8D4;">
-                <h3 class="text-lg font-semibold mb-2" style="color: #1A5276;">{{ sub.h3 }}</h3>
-                @if (sub.parrafos) {
-                  @for (p of sub.parrafos; track p) {
-                    <p class="mb-3 leading-relaxed text-sm" style="color: #5D6D7E;">{{ p }}</p>
-                  }
-                }
-                @if (sub.lista) {
-                  <ul class="mt-2 space-y-1">
-                    @for (item of sub.lista; track item) {
-                      <li class="flex items-start gap-2 text-sm" style="color: #1C2833;">
-                        <span style="color:#1E8449;margin-top:2px;">•</span> {{ item }}
-                      </li>
-                    }
-                  </ul>
-                }
-              </div>
-            }
-          }
-        </div>
-      }
     </div>
+  </section>
 
-    <!-- FAQs -->
-    @if (post.faqs && post.faqs.length > 0) {
-      <div class="mt-14">
-        <h2 class="text-2xl font-bold mb-6" style="color: #1C2833;">Preguntas frecuentes</h2>
-        <div class="space-y-4">
-          @for (faq of post.faqs; track faq.pregunta) {
-            <div class="rounded-lg p-5" style="background-color: #EBF5FB; border: 1px solid #D6EAF8;">
-              <h3 class="font-semibold text-base mb-2" style="color: #1A5276;">{{ faq.pregunta }}</h3>
-              <p class="leading-relaxed text-sm" style="color: #5D6D7E;">{{ faq.respuesta }}</p>
-            </div>
-          }
+  <article style="background:#ffffff;">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+      <app-author-box
+        [nombre]="post.autor"
+        [slug]="post.autorSlug"
+        titulo="Abogado especialista en accidentes laborales"
+        [matricula]="post.matricula"
+        [fechaActualizacion]="post.fechaModificacion"
+      />
+
+      <div class="mt-10">
+        <p class="leading-relaxed text-base" style="color:rgba(11,24,58,0.7);">
+          El contenido completo de este artículo está disponible en el sitio. Para consultar tu caso específico, contactanos de forma gratuita.
+        </p>
+      </div>
+
+      <div class="mt-12 p-6 rounded-2xl" style="background:linear-gradient(135deg, #002b7b, #045fc3);">
+        <p class="font-bold text-white mb-2">¿Tenés dudas sobre tu caso?</p>
+        <p class="text-sm mb-5" style="color:rgba(255,255,255,0.75);">Consulta gratis con nuestros especialistas. Respondemos en 24 horas.</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a routerLink="/contactanos"
+            class="flex-1 text-center py-3 rounded-xl font-bold text-sm transition-all"
+            style="background:#fff; color:#002b7b;">Consultar gratis</a>
+          <a href="https://wa.me/5493415000000" target="_blank" rel="noopener noreferrer"
+            class="flex-1 text-center py-3 rounded-xl font-semibold text-sm"
+            style="background:rgba(255,255,255,0.15); color:#fff; border:1px solid rgba(255,255,255,0.25);">WhatsApp directo</a>
         </div>
       </div>
-    }
-
-    <div class="mt-12 p-6 rounded-lg text-center" style="background-color: #D6EAF8;">
-      <p class="font-semibold mb-3" style="color: #1A5276;">¿Tenés dudas sobre tu caso?</p>
-      <p class="text-sm mb-4" style="color: #5D6D7E;">Consulta gratis con nuestros especialistas. Respondemos en 24 horas.</p>
-      <a routerLink="/contactanos" class="btn-primary">Consultar gratis</a>
     </div>
   </article>
+
 } @else {
   <div class="max-w-2xl mx-auto px-4 py-20 text-center">
-    <h1 class="text-3xl font-bold" style="color: #1A5276;">Artículo no encontrado</h1>
+    <h1 class="text-3xl font-bold" style="color:#0b183a;">Artículo no encontrado</h1>
     <a routerLink="/blog" class="btn-primary mt-6 inline-flex">Ver todos los artículos</a>
   </div>
 }

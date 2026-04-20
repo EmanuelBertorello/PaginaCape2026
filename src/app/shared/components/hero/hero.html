@@ -1,128 +1,114 @@
 <section
-  class="relative overflow-hidden flex flex-col"
-  [class]="compact ? 'min-h-[420px]' : 'min-h-[88vh]'"
+  [class]="compact ? 'py-16' : 'py-28 md:py-36'"
+  class="relative overflow-hidden"
   aria-labelledby="hero-heading"
-  style="background-color: #0a1628;"
+  style="background-color: #080D1A;"
 >
+  <!-- Blob top-left -->
+  <div
+    class="absolute pointer-events-none"
+    aria-hidden="true"
+    style="
+      top: -160px; left: -160px;
+      width: 560px; height: 560px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,126,247,0.45) 0%, rgba(59,106,232,0.15) 55%, transparent 72%);
+      filter: blur(60px);
+    "
+  ></div>
 
-  <!-- ── SVG Blobs orgánicos ── -->
-  <div class="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
-    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice"
-         xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-      <defs>
-        <linearGradient id="hg1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1"/>
-          <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1"/>
-        </linearGradient>
-        <linearGradient id="hg2" x1="100%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" style="stop-color:#1e40af;stop-opacity:0.7"/>
-          <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.3"/>
-        </linearGradient>
-      </defs>
-      <path d="M0,0 L700,0 Q900,250 700,500 Q500,750 750,900 L0,900 Z"
-            fill="url(#hg1)" opacity="0.85"/>
-      <circle cx="300" cy="400" r="280" fill="white" opacity="0.025"/>
-      <circle cx="180" cy="520" r="180" fill="white" opacity="0.03"/>
-      <circle cx="520" cy="140" r="120" fill="white" opacity="0.025"/>
-      <path d="M1440,900 L850,900 Q720,680 950,550 Q1180,420 1440,620 Z"
-            fill="url(#hg2)" opacity="0.55"/>
-      <path d="M1440,0 L1100,0 Q1200,200 1440,300 Z"
-            fill="url(#hg1)" opacity="0.35"/>
-    </svg>
-  </div>
+  <!-- Blob bottom-right -->
+  <div
+    class="absolute pointer-events-none"
+    aria-hidden="true"
+    style="
+      bottom: -140px; right: -140px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,126,247,0.35) 0%, rgba(59,106,232,0.1) 55%, transparent 72%);
+      filter: blur(60px);
+    "
+  ></div>
 
-  <!-- ── Partículas / destellos ── -->
-  <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
-    <div class="absolute top-[8%]  right-[8%]  w-1   h-1   bg-blue-300 rounded-full opacity-60"></div>
-    <div class="absolute top-[18%] right-[16%] w-1.5 h-1.5 bg-blue-200 rounded-full opacity-40"></div>
-    <div class="absolute top-[32%] right-[5%]  w-1   h-1   bg-white    rounded-full opacity-30"></div>
-    <div class="absolute top-[55%] right-[12%] w-2   h-2   bg-blue-400 rounded-full opacity-25"></div>
-    <div class="absolute top-[75%] right-[6%]  w-1   h-1   bg-white    rounded-full opacity-45"></div>
-    <div class="absolute top-[40%] right-[35%] w-1   h-1   bg-blue-300 rounded-full opacity-35"></div>
-    <div class="absolute top-[22%] right-[45%] w-1   h-1   bg-blue-200 rounded-full opacity-25"></div>
-    <div class="absolute top-[65%] right-[28%] w-1.5 h-1.5 bg-blue-300 rounded-full opacity-20"></div>
-  </div>
+  <!-- Blob center subtle -->
+  <div
+    class="absolute pointer-events-none"
+    aria-hidden="true"
+    style="
+      top: 30%; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(79,126,247,0.08) 0%, transparent 70%);
+      filter: blur(40px);
+    "
+  ></div>
 
-  <!-- ── Contenido principal ── -->
-  <div class="relative z-10 flex-1 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 text-center"
-       [class]="compact ? 'py-16' : 'py-20 md:py-28'">
+  <!-- Contenido -->
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-    <!-- Badge -->
     @if (badge) {
       <div
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold mb-8 uppercase tracking-wider backdrop-blur-sm"
-        style="background: rgba(79,126,247,0.15); color: #93C5FD; border: 1px solid rgba(79,126,247,0.3);"
+        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-8 uppercase tracking-wider"
+        style="
+          background: rgba(79,126,247,0.12);
+          color: #7EA8FF;
+          border: 1px solid rgba(79,126,247,0.25);
+        "
       >
-        <span
-          class="w-1.5 h-1.5 rounded-full animate-pulse"
-          style="background-color: #60A5FA;"
-        ></span>
+        <span style="width:6px;height:6px;border-radius:50%;background:#4F7EF7;display:inline-block;"></span>
         {{ badge }}
       </div>
     }
 
-    <!-- Título -->
-    <h1
-      id="hero-heading"
-      class="font-black text-white leading-tight tracking-tight"
-      style="font-size: clamp(2.5rem, 6vw, 5rem); max-width: 14ch; margin: 0 auto;"
-    >
+    <h1 id="hero-heading" class="font-bold text-white leading-tight" style="font-size: clamp(2.5rem, 6vw, 4rem);">
       {{ title }}
       @if (titleAccent) {
         <br>
-        <span
-          style="
-            background: linear-gradient(90deg, #93C5FD 0%, #3B82F6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-          "
-        >{{ titleAccent }}</span>
+        <span style="color: #4F7EF7;">{{ titleAccent }}</span>
       }
     </h1>
 
-    <!-- Subtítulo -->
     @if (subtitle) {
       <p
-        class="mt-6 text-lg sm:text-xl leading-relaxed max-w-xl mx-auto"
-        style="color: rgba(147,197,253,0.8);"
+        class="mt-6 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto"
+        style="color: #8899BB;"
       >
         {{ subtitle }}
       </p>
     }
 
-    <!-- CTAs -->
     <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
-      <a
-        [routerLink]="ctaLink"
-        class="inline-flex items-center gap-2 font-bold text-base px-8 py-4 rounded-2xl transition-all duration-200"
-        style="background-color: #ffffff; color: #1e3a8a; box-shadow: 0 8px 32px rgba(59,130,246,0.35);"
-        onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 12px 40px rgba(59,130,246,0.5)'"
-        onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 8px 32px rgba(59,130,246,0.35)'"
-      >
-        <svg class="w-5 h-5" style="color: #1d4ed8;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l3 3m0 0l-3 3m3-3H3"/>
-        </svg>
+      <a [routerLink]="ctaLink" class="btn-primary text-base px-8 py-4">
         {{ ctaText }}
       </a>
-
       @if (ctaSecondaryText && ctaSecondaryLink) {
         <a
           [routerLink]="ctaSecondaryLink"
-          class="inline-flex items-center gap-2 font-semibold text-base px-8 py-4 rounded-2xl transition-all duration-200"
-          style="background: rgba(255,255,255,0.08); color: #E8EEFF; border: 1px solid rgba(255,255,255,0.2);"
-          onmouseover="this.style.backgroundColor='rgba(255,255,255,0.14)';this.style.borderColor='rgba(255,255,255,0.35)'"
-          onmouseout="this.style.backgroundColor='rgba(255,255,255,0.08)';this.style.borderColor='rgba(255,255,255,0.2)'"
+          class="btn-secondary text-base px-8 py-4"
         >
           {{ ctaSecondaryText }} →
         </a>
       }
     </div>
 
-    <!-- Trust line -->
-    <p class="mt-8 text-xs font-medium tracking-wide" style="color: rgba(147,197,253,0.45);">
-      Sin anticipos · Solo cobramos si ganás · Matrícula activa en 5 provincias
-    </p>
+    <!-- Stats -->
+    <div
+      class="mt-16 grid grid-cols-3 gap-4 max-w-lg mx-auto pt-8"
+      style="border-top: 1px solid rgba(255,255,255,0.08);"
+    >
+      <div class="text-center">
+        <p class="text-2xl font-bold" style="color: #4F7EF7;">+7.000</p>
+        <p class="text-xs mt-1" style="color: #8899BB;">casos ganados</p>
+      </div>
+      <div class="text-center" style="border-left: 1px solid rgba(255,255,255,0.08); border-right: 1px solid rgba(255,255,255,0.08);">
+        <p class="text-2xl font-bold" style="color: #4F7EF7;">5</p>
+        <p class="text-xs mt-1" style="color: #8899BB;">provincias</p>
+      </div>
+      <div class="text-center">
+        <p class="text-2xl font-bold" style="color: #34D399;">$0</p>
+        <p class="text-xs mt-1" style="color: #8899BB;">costo inicial</p>
+      </div>
+    </div>
 
   </div>
 </section>

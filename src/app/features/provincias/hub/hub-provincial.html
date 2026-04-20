@@ -1,13 +1,22 @@
 @if (provincia) {
   <app-breadcrumb [items]="breadcrumbs" />
 
-  <section style="background-color: #1A5276;" class="py-14">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <span class="badge mb-4" style="background-color: rgba(255,255,255,0.2); color: #D6EAF8;">{{ provincia.nombre }}</span>
+  <!-- HERO -->
+  <section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+      style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+    <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+        style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+        <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+        {{ provincia.nombre }}
+      </div>
       <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
         Abogados Accidentes Laborales en {{ provincia.nombre }}
       </h1>
-      <p class="mt-4 text-lg max-w-3xl mx-auto" style="color: #D6EAF8;">
+      <p class="mt-4 text-lg max-w-3xl mx-auto" style="color:rgba(255,255,255,0.75);">
         {{ provincia.descripcion }}
       </p>
       <a routerLink="/contactanos" class="btn-primary mt-8 inline-flex text-base px-8 py-4">
@@ -16,43 +25,88 @@
     </div>
   </section>
 
-  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-2xl font-semibold mb-8" style="color: #1C2833;">
-      Ciudades que cubrimos en {{ provincia.nombre }}
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      @for (ciudad of provincia.ciudades; track ciudad.slug) {
-        <app-city-card
-          [slug]="ciudad.slug"
-          [nombre]="ciudad.nombre"
-          [provincia]="ciudad.provincia"
-          [provinciaSlug]="ciudad.provinciaSlug"
-          [descripcion]="ciudad.descripcion"
-          [cmLocal]="ciudad.cmLocal ?? ''"
-        />
+  <!-- CIUDADES -->
+  <section style="background:#ffffff;" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
+          style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+          <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
+          Ciudades que cubrimos
+        </div>
+        <h2 class="text-2xl font-bold" style="color:#0b183a;">
+          Ciudades que cubrimos en {{ provincia.nombre }}
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        @for (ciudad of provincia.ciudades; track ciudad.slug) {
+          <app-city-card
+            [slug]="ciudad.slug"
+            [nombre]="ciudad.nombre"
+            [provincia]="ciudad.provincia"
+            [provinciaSlug]="ciudad.provinciaSlug"
+            [descripcion]="ciudad.descripcion"
+            [cmLocal]="ciudad.cmLocal ?? ''"
+          />
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO TEXT -->
+  <section style="background:#F4F7FE; border-top:1px solid rgba(0,43,123,0.07);" class="py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold mb-5" style="color:#0b183a;">
+        Cómo reclamar a la ART en {{ provincia.nombre }}
+      </h2>
+      <p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">
+        Si sufriste un accidente de trabajo o te diagnosticaron una enfermedad profesional en {{ provincia.nombre }}, tenés derecho a reclamar una indemnización ante la ART. El proceso comienza con la denuncia del siniestro, la atención médica y la derivación a la Comisión Médica local para la determinación del grado de incapacidad.
+      </p>
+      <p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">
+        En Capeletti Abogados representamos trabajadores de {{ provincia.nombre }} en todas las instancias: desde la primera consulta ante la CM hasta el juicio laboral si fuera necesario. Cobramos solo si ganamos, sin adelantos de gastos.
+      </p>
+      @if (provincia.cmPrincipal) {
+        <p class="leading-relaxed" style="color:rgba(11,24,58,0.7);">
+          La {{ provincia.cmPrincipal }} es la principal instancia de resolución en {{ provincia.nombre }}. Conocemos sus criterios de evaluación y cómo impugnar dictámenes desfavorables para maximizar la indemnización de cada trabajador.
+        </p>
       }
     </div>
   </section>
 
-  <section style="background-color: #F8FAFB;" class="py-16">
+  <!-- CONTACTO -->
+  <section style="background:#ffffff; border-top:1px solid rgba(0,43,123,0.07);" class="py-16">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-2xl font-semibold" style="color: #1C2833;">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-5"
+            style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
+            Consulta desde {{ provincia.nombre }}
+          </div>
+          <h2 class="text-2xl font-bold mb-4" style="color:#0b183a;">
             Consulta Gratis desde {{ provincia.nombre }}
           </h2>
-          <p class="mt-3 leading-relaxed" style="color: #5D6D7E;">
+          <p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">
             Nuestros abogados conocen las Comisiones Médicas locales de {{ provincia.nombre }}.
             No hay gastos de viaje ni demoras por distancia.
           </p>
           @if (provincia.cmPrincipal) {
-            <p class="mt-4 text-sm font-medium" style="color: #1A5276;">
-              📍 {{ provincia.cmPrincipal }}
-            </p>
+            <div class="flex items-center gap-2 mt-5 p-4 rounded-xl" style="background:rgba(0,43,123,0.06); border:1px solid rgba(0,43,123,0.1);">
+              <svg class="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#045fc3;" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <p class="text-sm font-medium" style="color:#002b7b;">{{ provincia.cmPrincipal }}</p>
+            </div>
           }
         </div>
-        <div class="card p-6">
-          <app-contact-form />
+        <div class="rounded-2xl overflow-hidden" style="box-shadow:0 8px 40px rgba(0,43,123,0.12);">
+          <div class="px-6 py-5" style="background: linear-gradient(135deg, #002b7b, #045fc3);">
+            <p class="font-bold text-white text-base">Evaluá tu caso gratis</p>
+            <p class="text-xs mt-1" style="color:rgba(255,255,255,0.7);">Respondemos en menos de 24 horas</p>
+          </div>
+          <div class="p-6 bg-white" style="border:1px solid rgba(0,43,123,0.1);">
+            <app-contact-form />
+          </div>
         </div>
       </div>
     </div>

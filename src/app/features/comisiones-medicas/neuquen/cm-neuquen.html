@@ -1,21 +1,80 @@
 <app-breadcrumb [items]="breadcrumbs" />
-<section style="background-color: #1A5276;" class="py-14">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 class="text-3xl sm:text-4xl font-bold text-white">Comisión Médica N° 10 — Neuquén</h1>
-    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color: #D6EAF8;">Guía para trabajadores del sector petrolero y de construcción en Neuquén.</p>
+
+<!-- HERO -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+      style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+      <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+      Comisión Médica · Neuquén
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">Comisión Médica N° 10 — Neuquén</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto" style="color:rgba(255,255,255,0.75);">
+      Guía para trabajadores del sector petrolero y de construcción en Neuquén.
+    </p>
   </div>
 </section>
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-    <div class="lg:col-span-2">
-      <h2 class="text-2xl font-semibold mb-4" style="color: #1C2833;">CM Neuquén: lo que necesitás saber</h2>
-      <p class="leading-relaxed" style="color: #5D6D7E;">La CM N° 10 de Neuquén atiende los casos de toda la provincia. La actividad petrolera e industrial hace que los casos sean frecuentemente complejos y con altos porcentajes de incapacidad. Contar con representación legal especializada es fundamental.</p>
-    </div>
-    <aside class="sticky top-24">
-      <div class="card p-6">
-        <h3 class="font-semibold mb-4" style="color: #1A5276;">Audiencia en CM Neuquén</h3>
-        <app-contact-form />
+
+<!-- CONTENIDO -->
+<section style="background:#ffffff;" class="py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div class="lg:col-span-2 space-y-8">
+        <div class="bg-white rounded-2xl p-7" style="border:1px solid rgba(0,43,123,0.1);">
+          <h2 class="text-2xl font-bold mb-5" style="color:#0b183a;">CM Neuquén: lo que necesitás saber</h2>
+          <p class="leading-relaxed" style="color:rgba(11,24,58,0.7);">
+            La CM N° 10 de Neuquén atiende los casos de toda la provincia. La actividad petrolera e industrial hace que los casos sean frecuentemente complejos y con altos porcentajes de incapacidad. Contar con representación legal especializada es fundamental.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-4" style="color:#0b183a;">¿Cómo prepararse para la audiencia?</h2>
+          <ul class="space-y-3">
+            @for (item of ['Historia clínica completa', 'Estudios de imágenes (radiografías, RMN)', 'Constancias de atención médica', 'Documentación del empleador y la ART']; track item) {
+              <li class="flex items-center gap-3 text-sm" style="color:rgba(11,24,58,0.75);">
+                <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#045fc3;" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                {{ item }}
+              </li>
+            }
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl" style="background:linear-gradient(135deg, #002b7b, #045fc3);">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center text-white font-bold text-sm" style="background:rgba(255,255,255,0.2);">BC</div>
+            <div>
+              <p class="font-bold text-white text-sm">Bruno Capeletti</p>
+              <p class="text-xs" style="color:rgba(255,255,255,0.7);">Especialista Patagonia · Neuquén, Río Negro y Entre Ríos</p>
+            </div>
+          </div>
+          <p class="text-sm" style="color:rgba(255,255,255,0.85);">Lideramos la oficina de Neuquén con amplio conocimiento de la CM local y los tribunales laborales de la región patagónica.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6" style="border:1px solid rgba(0,43,123,0.1);">
+          <h2 class="text-xl font-bold mb-3" style="color:#0b183a;">Impugnación del dictamen de la CM Neuquén</h2>
+          <p class="text-sm leading-relaxed" style="color:rgba(11,24,58,0.7);">
+            Si la CM N° 10 de Neuquén emitió un porcentaje de incapacidad bajo o rechazó tu accidente laboral en el sector petrolero o de construcción, podés impugnar el dictamen. Bruno Capeletti tiene amplia experiencia en impugnaciones en Neuquén, Río Negro y Entre Ríos. Consultanos antes de firmar cualquier documento.
+          </p>
+        </div>
       </div>
-    </aside>
+
+      <aside class="sticky top-24">
+        <div class="rounded-2xl overflow-hidden" style="box-shadow:0 8px 40px rgba(0,43,123,0.12);">
+          <div class="px-6 py-5" style="background: linear-gradient(135deg, #002b7b, #045fc3);">
+            <h3 class="font-bold text-white text-base">Audiencia en CM Neuquén</h3>
+            <p class="text-xs mt-1" style="color:rgba(255,255,255,0.7);">Consultanos antes de ir solo.</p>
+          </div>
+          <div class="p-6 bg-white" style="border:1px solid rgba(0,43,123,0.1);">
+            <app-contact-form />
+          </div>
+        </div>
+      </aside>
+    </div>
   </div>
-</div>
+</section>
