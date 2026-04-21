@@ -21,32 +21,8 @@ import { RESULTADOS_DATA } from '../../core/data/resultados.data';
 })
 export class HomeComponent implements OnInit, OnDestroy {
   private readonly seoService = inject(SeoService);
-  private slideInterval?: ReturnType<typeof setInterval>;
   private lesionInterval?: ReturnType<typeof setInterval>;
   readonly lesionDuration = 5000;
-
-  readonly currentSlide = signal(0);
-
-  readonly heroSlides = [
-    {
-      label: 'Accidentes Laborales',
-      img: 'https://images.unsplash.com/photo-1521791055366-0d553872952f?w=1600&q=80&auto=format&fit=crop',
-    },
-    {
-      label: 'Reclamos contra la ART',
-      img: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80&auto=format&fit=crop',
-    },
-    {
-      label: 'Defensa Laboral',
-      img: 'https://images.unsplash.com/photo-1436450412740-6b988f486c6b?w=1600&q=80&auto=format&fit=crop',
-    },
-  ];
-
-  goToSlide(i: number): void { this.currentSlide.set(i); }
-
-  prevSlide(): void { this.currentSlide.update(i => (i - 1 + this.heroSlides.length) % this.heroSlides.length); }
-
-  nextSlide(): void { this.currentSlide.update(i => (i + 1) % this.heroSlides.length); }
 
   readonly activeTeamCard = signal(0);
 
@@ -366,13 +342,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   nextTestimonio(): void { this.changeTestimonio(1); }
 
   ngOnDestroy(): void {
-    clearInterval(this.slideInterval);
     clearInterval(this.lesionInterval);
     clearInterval(this.testimonioInterval);
   }
 
   ngOnInit(): void {
-    this.slideInterval = setInterval(() => this.nextSlide(), 5000);
     this.lesionInterval = setInterval(() => this.nextLesion(), this.lesionDuration);
     this.testimonioInterval = setInterval(() => this.changeTestimonio(1), 5000);
     this.seoService.setPage({
