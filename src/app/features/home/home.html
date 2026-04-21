@@ -1,18 +1,25 @@
 <!-- HERO -->
-<section class="relative flex flex-col justify-center" style="background:#0b183a; min-height:92vh;">
+<section class="relative flex flex-col justify-center overflow-hidden" style="min-height:92vh;">
+
+  <!-- Imagen de fondo -->
+  <img
+    src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&q=85&auto=format&fit=crop"
+    alt=""
+    aria-hidden="true"
+    class="absolute inset-0 w-full h-full object-cover object-center"
+  />
+
+  <!-- Overlay oscuro para contraste y legibilidad -->
+  <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(11,24,58,0.88) 0%, rgba(0,43,123,0.78) 50%, rgba(11,24,58,0.82) 100%);"></div>
 
   <!-- Línea superior -->
-  <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(to right, transparent, #045fc3, transparent);"></div>
+  <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(to right, transparent, rgba(186,241,255,0.4), transparent);"></div>
 
-  <!-- Patrón de puntos sutil -->
-  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
-    style="opacity:0.018; background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 28px 28px;"></div>
-
-  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-36 text-center">
 
     <!-- Google Reviews -->
     <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full mb-10"
-      style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12);">
+      style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15);">
       <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
         <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
         <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -27,11 +34,11 @@
         }
       </div>
       <span class="text-sm font-semibold text-white">4,9</span>
-      <span class="text-sm" style="color:rgba(255,255,255,0.4);">· 247 reseñas Google</span>
+      <span class="text-sm" style="color:rgba(255,255,255,0.45);">· 247 reseñas Google</span>
     </div>
 
     <!-- Eyebrow -->
-    <p class="text-xs font-semibold uppercase tracking-widest mb-5" style="color:rgba(255,255,255,0.35); letter-spacing:0.2em;">
+    <p class="text-xs font-semibold uppercase tracking-widest mb-6" style="color:rgba(255,255,255,0.4); letter-spacing:0.2em;">
       Estudio de Derecho Laboral · Especialistas en ART · Desde 2013
     </p>
 
@@ -42,52 +49,19 @@
       <span style="color:#baf1ff;">Accidentes Laborales y ART</span>
     </h1>
 
-    <!-- Subtítulo con keywords geográficos y de conversión -->
-    <p class="text-lg leading-relaxed mb-4 max-w-2xl mx-auto" style="color:rgba(255,255,255,0.6);">
-      Reclamamos tu indemnización ante la ART y las Comisiones Médicas. Más de 10 años de experiencia exclusiva en derecho laboral. <strong class="font-semibold" style="color:rgba(255,255,255,0.8);">Sin costo previo — solo cobramos si ganamos.</strong>
+    <!-- Subtítulo -->
+    <p class="text-lg leading-relaxed mb-6 max-w-2xl mx-auto" style="color:rgba(255,255,255,0.65);">
+      Reclamamos tu indemnización ante la ART y las Comisiones Médicas. Más de 10 años de experiencia exclusiva en derecho laboral. <strong class="font-semibold" style="color:rgba(255,255,255,0.85);">Sin costo previo — solo cobramos si ganamos.</strong>
     </p>
 
-    <!-- Keywords geográficos visibles -->
-    <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 mb-10 text-sm" style="color:rgba(255,255,255,0.3);">
+    <!-- Keywords geográficos -->
+    <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm" style="color:rgba(255,255,255,0.3);">
       <span>Santa Fe</span><span aria-hidden="true">·</span>
       <span>Neuquén</span><span aria-hidden="true">·</span>
       <span>Buenos Aires</span><span aria-hidden="true">·</span>
       <span>Río Negro</span><span aria-hidden="true">·</span>
       <span>Entre Ríos</span><span aria-hidden="true">·</span>
       <span>Córdoba</span>
-    </div>
-
-    <!-- CTAs -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-      <a routerLink="/contactanos"
-        class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-base transition-all"
-        style="background:#ffffff; color:#002b7b;">
-        Consulta Gratis
-        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7 7 7-7 7"/>
-        </svg>
-      </a>
-      <a href="tel:+541125007192"
-        class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base text-white transition-all"
-        style="border:1px solid rgba(255,255,255,0.2);">
-        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-        </svg>
-        11-2500-7192
-      </a>
-    </div>
-
-    <!-- Separador -->
-    <div class="w-px h-10 mx-auto mb-10" style="background:rgba(255,255,255,0.1);"></div>
-
-    <!-- Stats -->
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10">
-      @for (stat of heroStats; track stat.label) {
-        <div>
-          <p class="text-3xl font-extrabold text-white leading-none">{{ stat.value }}</p>
-          <p class="text-xs uppercase tracking-widest mt-2" style="color:rgba(255,255,255,0.35);">{{ stat.label }}</p>
-        </div>
-      }
     </div>
 
   </div>
