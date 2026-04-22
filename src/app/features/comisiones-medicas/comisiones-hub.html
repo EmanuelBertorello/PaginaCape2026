@@ -56,33 +56,43 @@
       </div>
     </div>
 
-    <!-- Grilla de CMs -->
-    <div class="text-center mb-8">
+    <!-- Grilla por provincia -->
+    <div class="text-center mb-10">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
         style="background:rgba(0,43,123,0.1); color:#002b7b; border:1px solid rgba(0,43,123,0.2);">
         <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
-        Comisiones locales
+        Comisiones locales por provincia
       </div>
       <h2 class="text-2xl font-bold" style="color:#0b183a;">Comisiones Médicas donde operamos</h2>
+      <p class="text-sm mt-2" style="color:rgba(11,24,58,0.5);">+45 Comisiones Médicas en todo el país</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-      @for (cm of comisiones; track cm.url) {
-        <a [routerLink]="cm.url" class="group flex items-start gap-5 p-6 bg-white rounded-2xl transition-all hover:shadow-lg"
-          style="border:1px solid rgba(0,43,123,0.1);">
-          <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-            style="background: linear-gradient(135deg, #002b7b, #045fc3);">
-            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-bold text-base group-hover:text-[#045fc3] transition-colors" style="color:#0b183a;">{{ cm.titulo }}</h3>
-            <p class="text-sm mt-1.5 leading-relaxed" style="color:rgba(11,24,58,0.6);">{{ cm.descripcion }}</p>
-            <p class="text-xs mt-3 font-semibold" style="color:#045fc3;">Ver guía completa →</p>
-          </div>
-        </a>
-      }
-    </div>
+
+    @for (prov of provincias; track prov.nombre) {
+      <div class="mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-6 rounded-full" style="background:linear-gradient(to bottom, #002b7b, #045fc3);"></div>
+          <h3 class="text-lg font-bold" style="color:#0b183a;">{{ prov.nombre }}</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          @for (cm of prov.comisiones; track cm.url) {
+            <a [routerLink]="cm.url" class="group flex items-start gap-4 p-5 bg-white rounded-2xl transition-all hover:shadow-md"
+              style="border:1px solid rgba(0,43,123,0.1);">
+              <div class="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
+                style="background: linear-gradient(135deg, #002b7b, #045fc3);">
+                <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm group-hover:text-[#045fc3] transition-colors" style="color:#0b183a;">{{ cm.titulo }}</h4>
+                <p class="text-xs mt-1 leading-relaxed" style="color:rgba(11,24,58,0.6);">{{ cm.descripcion }}</p>
+                <p class="text-xs mt-2 font-semibold" style="color:#045fc3;">Ver guía →</p>
+              </div>
+            </a>
+          }
+        </div>
+      </div>
+    }
   </div>
 </section>
 

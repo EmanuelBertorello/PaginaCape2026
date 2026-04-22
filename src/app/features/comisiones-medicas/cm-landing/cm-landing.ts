@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit, inject } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { BreadcrumbComponent } from '../../../layout/breadcrumb/breadcrumb';
 import { FaqAccordionComponent } from '../../../shared/components/faq-accordion/faq-accordion';
 import { ContactFormComponent } from '../../../shared/components/contact-form/contact-form';
@@ -10,7 +10,7 @@ import { BreadcrumbItem } from '../../../core/models/interfaces';
 @Component({
   selector: 'app-cm-landing',
   standalone: true,
-  imports: [RouterLink, BreadcrumbComponent, FaqAccordionComponent, ContactFormComponent],
+  imports: [BreadcrumbComponent, FaqAccordionComponent, ContactFormComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './cm-landing.html',
 })
