@@ -37,8 +37,8 @@ export class NuevoBaremoComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setPage({
-      title: 'Nuevo Baremo ART 2026 — Qué Cambia y Cómo Te Afecta',
-      description: 'El nuevo baremo ART 2026 cambió los porcentajes de incapacidad. Conocé cómo te afecta y si podés obtener una mejor indemnización. Consulta gratis.',
+      title: 'Nuevo Baremo ART 2026: Cambios, Tabla y Cómo Te Afecta | Capeletti',
+      description: 'El baremo ART 2026 actualizó los porcentajes de incapacidad. Conocé los cambios, la nueva tabla y si tu caso puede mejorar. Abogados especializados.',
       path: '/nuevo-baremo-art-2026',
       schema: this.seoService.getFaqSchema(this.faqs.map(f => ({ pregunta: f.pregunta, respuesta: f.respuesta }))),
     });

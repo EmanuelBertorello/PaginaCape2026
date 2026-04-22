@@ -28,8 +28,8 @@ export interface ArticuloData {
 export const ARTICULOS_DATA: ArticuloData[] = [
   {
     slug: 'abogado-art-argentina',
-    seoTitle: 'Abogado Especialista en Reclamos contra la ART en Argentina',
-    seoDescription: 'Abogados expertos en reclamos contra la ART. Accidentes laborales, enfermedades profesionales, impugnación de alta médica e incapacidad 0%. Consulta gratis.',
+    seoTitle: 'Abogado ART en Argentina: Reclamos y Accidentes 2026 | Capeletti',
+    seoDescription: 'Abogados expertos en reclamos contra la ART. Accidentes laborales, enfermedades profesionales, alta médica prematura e incapacidad 0%. Sin anticipo. Consulta gratis.',
     badge: 'ART · Reclamos',
     h1: 'Abogado Especialista en Reclamos contra la ART en Argentina',
     intro: 'Si sufriste un accidente laboral o una enfermedad profesional y tu Aseguradora de Riesgos del Trabajo (ART) rechazó el siniestro, otorgó el alta médica prematuramente o determinó una incapacidad del 0%, es posible reclamar y obtener una indemnización. El sistema de riesgos del trabajo está regulado por la Ley 24.557, que establece las prestaciones médicas y económicas que deben recibir los trabajadores accidentados.',
@@ -75,8 +75,8 @@ export const ARTICULOS_DATA: ArticuloData[] = [
   },
   {
     slug: 'calculo-indemnizacion-art',
-    seoTitle: 'Cálculo de Incapacidad e Indemnización ART — Fórmula Legal 2026',
-    seoDescription: 'Cómo calcular la indemnización ART por accidente laboral. Fórmula legal, tabla de incapacidades, ejemplos reales y RIPTE actualizado 2026.',
+    seoTitle: 'Cálculo Indemnización ART 2026: Fórmula y Tabla | Capeletti',
+    seoDescription: 'Cómo calcular la indemnización ART por accidente laboral. Fórmula legal, tabla de incapacidades, ejemplos reales y RIPTE actualizado 2026. Consulta gratis.',
     badge: 'Indemnización · Cálculo',
     h1: 'Cálculo de Incapacidad e Indemnización ART',
     intro: 'Cuando un trabajador sufre un accidente laboral o una enfermedad profesional, determinar el porcentaje de incapacidad y la indemnización correspondiente es clave. En Argentina el sistema de Riesgos del Trabajo (Ley 24.557) utiliza una fórmula legal que combina salario, edad, porcentaje de incapacidad e índices de actualización. Muchos trabajadores reciben porcentajes muy bajos o altas sin incapacidad.',
@@ -181,8 +181,8 @@ export const ARTICULOS_DATA: ArticuloData[] = [
   },
   {
     slug: 'juicio-contra-art',
-    seoTitle: 'Juicio Contra la ART en Argentina — Guía Legal Completa para Trabajadores',
-    seoDescription: 'Cómo iniciar un juicio contra la ART en Argentina. Etapas del proceso judicial, pruebas clave, plazos y cuánto se puede cobrar. Abogados especializados.',
+    seoTitle: 'Juicio contra la ART en Argentina: Guía Legal 2026 | Capeletti',
+    seoDescription: 'Cómo iniciar un juicio contra la ART en Argentina. Etapas del proceso judicial, pruebas clave, plazos y cuánto se puede cobrar. Abogados especializados. Consulta gratis.',
     badge: 'Juicio · ART',
     h1: 'Juicio Contra la ART: Guía Legal Completa para Trabajadores',
     intro: 'Miles de trabajadores en Argentina sufren accidentes laborales o enfermedades profesionales cada año. En teoría, el sistema ART debería garantizar atención médica y una indemnización justa. En la práctica, las ART otorgan altas prematuras, determinan incapacidad 0%, rechazan accidentes o fijan incapacidades muy inferiores a las reales. Esto obliga a muchos trabajadores a iniciar juicios laborales.',
@@ -226,8 +226,8 @@ export const ARTICULOS_DATA: ArticuloData[] = [
   },
   {
     slug: 'reclamar-contra-art',
-    seoTitle: 'Cómo Reclamar Contra la ART en Argentina — Guía Completa 2026',
-    seoDescription: 'Guía completa para reclamar contra la ART en Argentina. Procedimiento ante Comisión Médica, plazos, documentación y derechos del trabajador accidentado.',
+    seoTitle: 'Cómo Reclamar contra la ART en Argentina 2026 | Capeletti',
+    seoDescription: 'Guía completa para reclamar contra la ART en Argentina. Procedimiento ante CM, plazos, documentación y derechos del trabajador accidentado. Consulta gratis.',
     badge: 'ART · Procedimiento',
     h1: 'Cómo Reclamar Contra la ART en Argentina',
     intro: 'El sistema de Riesgos del Trabajo en Argentina fue creado para garantizar atención médica, rehabilitación e indemnización cuando los trabajadores sufren accidentes o enfermedades profesionales. Sin embargo, en la práctica muchos trabajadores enfrentan situaciones problemáticas: altas prematuras, incapacidades 0%, rechazo del accidente y tratamientos insuficientes. Esta guía explica cómo funciona el sistema y cómo defenderte.',
@@ -270,8 +270,8 @@ export const ARTICULOS_DATA: ArticuloData[] = [
   },
   {
     slug: 'muerte-laboral',
-    seoTitle: 'Indemnización por Muerte Laboral en Argentina — Derechos de la Familia',
-    seoDescription: 'Indemnización por fallecimiento en accidente laboral. Derechos de familiares, cálculo del monto, quiénes pueden reclamar y cómo iniciar el trámite. Consulta gratis.',
+    seoTitle: 'Indemnización por Muerte Laboral: Derechos de la Familia | Capeletti',
+    seoDescription: 'Indemnización ART por fallecimiento en accidente laboral. Derechos de familiares, cálculo del monto, quiénes pueden reclamar y cómo iniciar el trámite. Consulta gratis.',
     badge: 'Fallecimiento · ART',
     h1: 'Indemnización por Muerte Laboral: Derechos de la Familia del Trabajador',
     intro: 'Cuando un trabajador fallece a causa de un accidente laboral o una enfermedad profesional, los familiares tienen derecho a una indemnización. El sistema de Riesgos del Trabajo (Ley 24.557) establece las prestaciones económicas que la ART debe pagar. En muchos casos, la familia desconoce estos derechos o la ART liquida montos inferiores a los que corresponden legalmente.',

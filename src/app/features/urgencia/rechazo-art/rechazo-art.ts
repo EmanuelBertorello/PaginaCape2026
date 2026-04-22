@@ -21,9 +21,14 @@ export class RechazoArtComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setPage({
-      title: 'La ART Rechazó Mi Accidente — Qué Hacer',
-      description: 'La ART rechazó tu accidente o enfermedad laboral? Podés impugnar el rechazo ante la Comisión Médica. Abogados especialistas, consulta urgente y gratis.',
+      title: 'ART Rechazó el Accidente Laboral: Cómo Impugnar en 2026 | Capeletti',
+      description: 'La ART rechazó tu accidente o enfermedad laboral. Tenés 5 días hábiles para impugnar ante la Comisión Médica. Abogados especializados. Consulta urgente gratis.',
       path: '/rechazo-art',
+      schema: this.seoService.getFaqSchema([
+        { pregunta: '¿Qué hago si la ART rechazó mi accidente?', respuesta: 'Podés impugnar el rechazo ante la Comisión Médica de la SRT dentro de los 5 días hábiles de notificado. Un abogado presentará la documentación para revertir el rechazo sin costo anticipado.' },
+        { pregunta: '¿Cuánto tiempo tengo para impugnar el rechazo de la ART?', respuesta: 'El plazo es de 5 días hábiles desde la notificación del rechazo, según la Res. SRT N° 5/2026. Es fundamental actuar rápido.' },
+        { pregunta: '¿La ART puede rechazar cualquier accidente?', respuesta: 'No. La ART debe demostrar que el accidente no tiene origen laboral. Si no lo prueba, el rechazo es impugnable. En Capeletti evaluamos cada caso sin costo.' },
+      ]),
     });
   }
 }

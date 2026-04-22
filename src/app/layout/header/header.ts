@@ -73,11 +73,16 @@ export class HeaderComponent {
     {
       label: 'ART',
       dropdown: [
+        { label: 'Alta Médica ART: cómo impugnarla', url: '/alta-medica-art' },
+        { label: 'Rechazo de ART: qué hacer', url: '/rechazo-art' },
+        { label: 'Cómo cobrar la indemnización', url: '/como-cobrar-la-art' },
         { label: 'Nuevo Baremo ART 2026', url: '/nuevo-baremo-art-2026' },
-        { label: 'Alta Médica ART', url: '/alta-medica-art' },
-        { label: 'Rechazo de ART', url: '/rechazo-art' },
-        { label: 'Cómo Cobrar la ART', url: '/como-cobrar-la-art' },
-        { label: 'Comisiones Médicas', url: '/comisiones-medicas' },
+        { label: 'Abogado especialista ART', url: '/abogado-art-argentina' },
+        { label: 'Cálculo de indemnización', url: '/calculo-indemnizacion-art' },
+        { label: 'Impugnar el alta médica', url: '/impugnacion-alta-medica' },
+        { label: 'Juicio contra la ART', url: '/juicio-contra-art' },
+        { label: 'Cómo reclamar contra la ART', url: '/reclamar-contra-art' },
+        { label: 'Muerte laboral: derechos', url: '/muerte-laboral' },
       ],
     },
     {
