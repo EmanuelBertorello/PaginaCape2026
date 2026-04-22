@@ -81,6 +81,21 @@ export class HeaderComponent {
       ],
     },
     {
+      label: 'Comisiones Médicas',
+      dropdown: [
+        { label: 'Ver todas las CMs', url: '/comisiones-medicas' },
+        { label: 'CM Rosario (N° 2)', url: '/comision-medica-rosario' },
+        { label: 'CM Santa Fe Capital (N° 1)', url: '/comision-medica-santa-fe' },
+        { label: 'CM Reconquista (N° 40C)', url: '/comision-medica-reconquista' },
+        { label: 'CM CABA (N° 10)', url: '/comision-medica-caba' },
+        { label: 'CM La Plata (N° 36)', url: '/comision-medica-la-plata' },
+        { label: 'CM Córdoba (N° 5)', url: '/comision-medica-cordoba' },
+        { label: 'CM Neuquén (N° 9)', url: '/comision-medica-neuquen' },
+        { label: 'CM Bahía Blanca (N° 4)', url: '/comision-medica-bahia-blanca' },
+        { label: 'CM Mar del Plata (N° 3)', url: '/comision-medica-mar-del-plata' },
+      ],
+    },
+    {
       label: 'Nosotros',
       dropdown: [
         { label: 'Sobre Nosotros', url: '/sobre-nosotros' },

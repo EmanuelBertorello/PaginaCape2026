@@ -114,13 +114,14 @@
         </div>
 
         <!-- ABOGADO RESPONSABLE (E-E-A-T) -->
-        <div class="flex items-start gap-5 p-6 rounded-2xl" [style]="'background: linear-gradient(135deg, ' + cm.abogado.gradFrom + ', ' + cm.abogado.gradTo + ');'">
-          <img [src]="cm.abogado.img" [alt]="cm.abogado.nombre"
+        <div class="flex items-start gap-5 p-6 rounded-2xl" style="background: linear-gradient(135deg, #002b7b, #045fc3);">
+          <img src="/brunito.png" alt="Dr. Bruno Capeletti"
             class="w-16 h-16 rounded-full object-cover shrink-0"
-            style="object-position:center 35%; border:2px solid rgba(255,255,255,0.3);">
+            style="object-position:center 40%; border:2px solid rgba(255,255,255,0.3);">
           <div>
-            <p class="font-bold text-white text-base mb-0.5">{{ cm.abogado.nombre }}</p>
-            <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:rgba(255,255,255,0.65);">{{ cm.abogado.especialidad }}</p>
+            <p class="font-bold text-white text-base mb-0.5">Dr. Bruno Capeletti</p>
+            <p class="text-xs font-semibold uppercase tracking-wider mb-0.5" style="color:rgba(255,255,255,0.65);">{{ cm.abogado.especialidad }}</p>
+            <p class="text-xs mb-2" style="color:rgba(255,255,255,0.45);">Mat. {{ cm.abogado.matricula }}</p>
             <p class="text-sm leading-relaxed" style="color:rgba(255,255,255,0.85);">{{ cm.abogado.bio }}</p>
           </div>
         </div>
