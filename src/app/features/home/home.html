@@ -15,52 +15,55 @@
   <!-- Línea superior -->
   <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(to right, transparent, rgba(186,241,255,0.4), transparent);"></div>
 
-  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-36 text-center">
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
 
-    <!-- Google Reviews -->
-    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full mb-10"
-      style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15);">
-      <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+    <!-- Google Reviews badge — destacado -->
+    <div class="inline-flex items-center gap-3 px-5 py-3 rounded-2xl mb-10"
+      style="background:#ffffff; box-shadow: 0 4px 24px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.1);">
+      <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
         <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
         <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
         <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
         <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
       </svg>
-      <div class="flex gap-0.5">
-        @for (s of [1,2,3,4,5]; track s) {
-          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" style="color:#fbbc04;" aria-hidden="true">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-          </svg>
-        }
+      <div class="flex items-center gap-1.5">
+        <div class="flex gap-0.5">
+          @for (s of [1,2,3,4,5]; track s) {
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" style="color:#fbbc04;" aria-hidden="true">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          }
+        </div>
+        <span class="text-base font-bold" style="color:#1a1a1a;">4,9</span>
       </div>
-      <span class="text-sm font-semibold text-white">4,9</span>
-      <span class="text-sm" style="color:rgba(255,255,255,0.45);">· 247 reseñas Google</span>
+      <div class="w-px h-4" style="background:#e5e7eb;"></div>
+      <span class="text-sm font-medium" style="color:#5a6472;">247 reseñas en Google</span>
     </div>
 
     <!-- Eyebrow -->
-    <p class="text-xs font-semibold uppercase tracking-widest mb-6" style="color:rgba(255,255,255,0.4); letter-spacing:0.2em;">
-      Estudio de Derecho Laboral · Especialistas en ART · Desde 2013
+    <p class="text-xs font-semibold uppercase tracking-widest mb-5" style="color:rgba(186,241,255,0.6); letter-spacing:0.22em;">
+      Estudio Jurídico · Especialistas en ART · Desde 2013
     </p>
 
     <!-- H1 — SEO principal -->
-    <h1 class="font-bold text-white leading-tight mb-6"
-      style="font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1.1;">
+    <h1 class="font-black text-white leading-tight mb-6"
+      style="font-size: clamp(2.6rem, 5.5vw, 4.2rem); line-height: 1.05; letter-spacing:-0.02em;">
       Abogados Especialistas en<br>
       <span style="color:#baf1ff;">Accidentes Laborales y ART</span>
     </h1>
 
     <!-- Subtítulo -->
-    <p class="text-lg leading-relaxed mb-6 max-w-2xl mx-auto" style="color:rgba(255,255,255,0.65);">
-      Reclamamos tu indemnización ante la ART y las Comisiones Médicas. Más de 10 años de experiencia exclusiva en derecho laboral. <strong class="font-semibold" style="color:rgba(255,255,255,0.85);">Sin costo previo — solo cobramos si ganamos.</strong>
+    <p class="text-lg leading-relaxed mb-10 max-w-2xl mx-auto" style="color:rgba(255,255,255,0.62);">
+      Reclamamos tu indemnización ante la ART y las Comisiones Médicas. Más de 10 años de experiencia exclusiva en derecho laboral. <strong class="font-semibold" style="color:#baf1ff;">Sin costo previo — solo cobramos si ganamos.</strong>
     </p>
 
     <!-- Keywords geográficos -->
-    <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm" style="color:rgba(255,255,255,0.3);">
-      <span>Santa Fe</span><span aria-hidden="true">·</span>
-      <span>Neuquén</span><span aria-hidden="true">·</span>
-      <span>Buenos Aires</span><span aria-hidden="true">·</span>
-      <span>Río Negro</span><span aria-hidden="true">·</span>
-      <span>Entre Ríos</span><span aria-hidden="true">·</span>
+    <div class="flex flex-wrap justify-center gap-x-5 gap-y-1.5 text-xs font-medium" style="color:rgba(255,255,255,0.28); letter-spacing:0.06em;">
+      <span>Santa Fe</span><span aria-hidden="true" style="color:rgba(255,255,255,0.15);">|</span>
+      <span>Neuquén</span><span aria-hidden="true" style="color:rgba(255,255,255,0.15);">|</span>
+      <span>Buenos Aires</span><span aria-hidden="true" style="color:rgba(255,255,255,0.15);">|</span>
+      <span>Río Negro</span><span aria-hidden="true" style="color:rgba(255,255,255,0.15);">|</span>
+      <span>Entre Ríos</span><span aria-hidden="true" style="color:rgba(255,255,255,0.15);">|</span>
       <span>Córdoba</span>
     </div>
 
@@ -73,54 +76,86 @@
 
 
 <!-- SOMOS EXPERTOS -->
-<section style="background:#ffffff;" class="py-20">
+<section style="background:#ffffff; border-top:1px solid rgba(0,43,123,0.07);" class="py-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <!-- Título + bajada -->
-    <div class="mb-12">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-3" style="color:#0b183a;">Somos Expertos en Derecho Laboral</h2>
-      <div class="w-16 h-0.5 mb-5" style="background:#b8960c;"></div>
-      <p class="text-base max-w-2xl" style="color:rgba(11,24,58,0.6);">
+    <!-- Header centrado -->
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
+        style="background:rgba(0,43,123,0.08); color:#002b7b; border:1px solid rgba(0,43,123,0.18);">
+        <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
+        Áreas de práctica
+      </div>
+      <h2 class="text-4xl font-bold mb-4" style="color:#0b183a;">Somos Expertos en <span style="color:#045fc3;">Derecho Laboral</span></h2>
+      <p class="text-base max-w-2xl mx-auto" style="color:rgba(11,24,58,0.55);">
         Estudio Jurídico especializado en accidentes laborales, despidos y enfermedades profesionales. Expertos en reclamos a la ART, trámites en Comisiones Médicas SRT y acuerdos en SECLO.
       </p>
     </div>
 
-    <!-- Tres cards con imagen -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <!-- Cuatro cards con imagen -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
-      <a routerLink="/accidente-de-trabajo" class="group relative overflow-hidden block" style="height:320px; text-decoration:none;">
+      <a routerLink="/accidente-de-trabajo" class="group relative overflow-hidden block rounded-2xl" style="height:320px; text-decoration:none; box-shadow:0 4px 24px rgba(0,43,123,0.1);">
         <img
           src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80&auto=format&fit=crop"
           alt="Accidentes de Trabajo"
           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <div class="absolute inset-0 transition-opacity duration-300" style="background:rgba(11,24,58,0.55);"></div>
-        <div class="absolute inset-0 flex items-end p-7">
-          <h3 class="text-white font-bold text-lg uppercase tracking-widest leading-tight">Accidentes de<br>Trabajo</h3>
+        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,43,123,0.88) 0%, rgba(11,24,58,0.25) 100%);"></div>
+        <div class="absolute inset-0 flex items-end p-6">
+          <div>
+            <div class="w-8 h-0.5 mb-3" style="background:#baf1ff;"></div>
+            <h3 class="text-white font-bold text-base uppercase tracking-widest leading-tight">Accidentes de<br>Trabajo</h3>
+            <p class="text-xs mt-2 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="color:#baf1ff;">Ver más →</p>
+          </div>
         </div>
       </a>
 
-      <a routerLink="/despido-sin-causa" class="group relative overflow-hidden block" style="height:320px; text-decoration:none;">
+      <a routerLink="/despido-sin-causa" class="group relative overflow-hidden block rounded-2xl" style="height:320px; text-decoration:none; box-shadow:0 4px 24px rgba(0,43,123,0.1);">
         <img
           src="https://images.unsplash.com/photo-1541199249251-f713e6145474?w=800&q=80&auto=format&fit=crop"
           alt="Despidos"
           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <div class="absolute inset-0 transition-opacity duration-300" style="background:rgba(11,24,58,0.55);"></div>
-        <div class="absolute inset-0 flex items-end p-7">
-          <h3 class="text-white font-bold text-lg uppercase tracking-widest">Despidos</h3>
+        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,43,123,0.88) 0%, rgba(11,24,58,0.25) 100%);"></div>
+        <div class="absolute inset-0 flex items-end p-6">
+          <div>
+            <div class="w-8 h-0.5 mb-3" style="background:#baf1ff;"></div>
+            <h3 class="text-white font-bold text-base uppercase tracking-widest">Despidos</h3>
+            <p class="text-xs mt-2 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="color:#baf1ff;">Ver más →</p>
+          </div>
         </div>
       </a>
 
-      <a routerLink="/enfermedad-profesional" class="group relative overflow-hidden block" style="height:320px; text-decoration:none;">
+      <a routerLink="/enfermedad-profesional" class="group relative overflow-hidden block rounded-2xl" style="height:320px; text-decoration:none; box-shadow:0 4px 24px rgba(0,43,123,0.1);">
         <img
-          src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=85&auto=format&fit=crop"
           alt="Enfermedades Profesionales"
           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <div class="absolute inset-0 transition-opacity duration-300" style="background:rgba(11,24,58,0.55);"></div>
-        <div class="absolute inset-0 flex items-end p-7">
-          <h3 class="text-white font-bold text-lg uppercase tracking-widest leading-tight">Enfermedades<br>Profesionales</h3>
+        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,43,123,0.88) 0%, rgba(11,24,58,0.25) 100%);"></div>
+        <div class="absolute inset-0 flex items-end p-6">
+          <div>
+            <div class="w-8 h-0.5 mb-3" style="background:#baf1ff;"></div>
+            <h3 class="text-white font-bold text-base uppercase tracking-widest leading-tight">Enfermedades<br>Profesionales</h3>
+            <p class="text-xs mt-2 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="color:#baf1ff;">Ver más →</p>
+          </div>
+        </div>
+      </a>
+
+      <a routerLink="/accidente-in-itinere" class="group relative overflow-hidden block rounded-2xl" style="height:320px; text-decoration:none; box-shadow:0 4px 24px rgba(0,43,123,0.1);">
+        <img
+          src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=85&auto=format&fit=crop"
+          alt="Accidentes de Tránsito"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,43,123,0.88) 0%, rgba(11,24,58,0.25) 100%);"></div>
+        <div class="absolute inset-0 flex items-end p-6">
+          <div>
+            <div class="w-8 h-0.5 mb-3" style="background:#baf1ff;"></div>
+            <h3 class="text-white font-bold text-base uppercase tracking-widest leading-tight">Accidentes de<br>Tránsito</h3>
+            <p class="text-xs mt-2 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="color:#baf1ff;">Ver más →</p>
+          </div>
         </div>
       </a>
 
@@ -166,10 +201,10 @@
           <img
             [src]="ab.img"
             [alt]="ab.nombre"
-            class="absolute inset-0 w-full h-full object-cover object-top"
-            [style]="'transition: transform 0.5s; transform: scale(' + (activeTeamCard() === i ? '1.05' : '1') + ');'"
+            class="absolute inset-0 w-full h-full object-cover"
+            [style]="'object-position:' + ab.imgPos + '; transition: transform 0.5s; transform: scale(' + (activeTeamCard() === i ? '1.05' : '1') + ');'"
           />
-          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(11,24,58,0.82) 0%, transparent 60%);"></div>
+          <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(11,24,58,0.55) 0%, transparent 40%, rgba(11,24,58,0.82) 100%);"></div>
           <div class="absolute top-4 right-4 flex gap-2" [style.opacity]="activeTeamCard() === i ? '1' : '0'" style="transition: opacity 0.3s;">
             <a href="#" class="w-9 h-9 rounded-full flex items-center justify-center transition-colors" style="background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.3);">
               <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -210,8 +245,8 @@
       @for (ab of teamAbogados; track ab.nombre) {
         <div class="group relative bg-white rounded-2xl shadow-sm overflow-hidden" style="border:1px solid #f3f4f6;">
           <div class="relative overflow-hidden" style="height:256px;">
-            <img [src]="ab.img" [alt]="ab.nombre" class="absolute inset-0 w-full h-full object-cover object-top" style="transition: transform 0.5s;" />
-            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(11,24,58,0.8) 0%, transparent 60%);"></div>
+            <img [src]="ab.img" [alt]="ab.nombre" class="absolute inset-0 w-full h-full object-cover" [style]="'object-position:' + ab.imgPos + '; transition: transform 0.5s;'" />
+            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(11,24,58,0.5) 0%, transparent 40%, rgba(11,24,58,0.8) 100%);"></div>
             <div class="absolute bottom-3 left-3 right-3">
               <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-white text-[10px] font-semibold shadow-lg"
                 [style]="'background: linear-gradient(to right, ' + ab.gradFrom + ', ' + ab.gradTo + ');'">
@@ -558,130 +593,47 @@
   </div>
 </section>
 
-<!-- PRESENCIA PROVINCIAL -->
-<section class="relative overflow-hidden" style="background:#f6f6f6;">
-  <!-- Línea superior degradada -->
+<!-- CTA CONTACTO -->
+<section class="relative overflow-hidden" style="background:#f0f4ff;">
+  <!-- Acento superior -->
   <div class="h-1 w-full" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
 
-  <!-- Marca de agua -->
-  <div class="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden select-none" aria-hidden="true">
-    <span class="font-black tracking-widest uppercase whitespace-nowrap" style="font-size:clamp(80px,14vw,180px); color:rgba(0,43,123,0.04); line-height:1;">PROVINCIAS</span>
-  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20">
-
-    <!-- Header dos columnas -->
-    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
-      <div>
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
+      <!-- Lado izquierdo — texto + garantías -->
+      <div class="lg:pt-4">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6"
           style="background:rgba(0,43,123,0.08); color:#002b7b; border:1px solid rgba(0,43,123,0.18);">
           <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
-          Cobertura Nacional
-        </div>
-        <h2 class="text-4xl lg:text-5xl font-bold leading-tight" style="color:#0b183a;">
-          Presencia Real<br><span style="color:#045fc3;">en 6 Provincias</span>
-        </h2>
-      </div>
-      <p class="text-base leading-relaxed lg:max-w-sm" style="color:rgba(11,24,58,0.55);">
-        Abogados y Comisiones Médicas locales en cada provincia. No derivamos tu caso: lo gestionamos nosotros, in situ.
-      </p>
-    </div>
-
-    <!-- Grid de cards provincia -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
-      @for (provincia of provincias; track provincia.slug; let i = $index) {
-        <a
-          [routerLink]="'/' + provincia.slug"
-          class="relative overflow-hidden group block rounded-2xl"
-          [style]="'height:' + (i % 2 === 0 ? '380px' : '300px') + '; text-decoration:none;'"
-        >
-          <img
-            [src]="provinciaFotos[i]"
-            [alt]="provincia.nombre"
-            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
-          <div class="absolute inset-0 transition-opacity duration-500"
-            style="background: linear-gradient(to top, rgba(0,43,123,0.92) 0%, rgba(4,95,195,0.55) 50%, rgba(0,43,123,0.12) 100%); opacity:0.88;">
-          </div>
-          <div class="absolute top-3 right-3 font-black leading-none select-none pointer-events-none"
-            style="color:rgba(255,255,255,0.07); font-size:72px;">
-            {{ (i + 1).toString().padStart(2, '0') }}
-          </div>
-          <div class="absolute bottom-0 left-0 right-0 p-5">
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
-              style="background:rgba(255,255,255,0.15); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.2);">
-              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-            </div>
-            <h3 class="font-bold text-white leading-tight mb-1" style="font-size:1.05rem;">{{ provincia.nombre }}</h3>
-            <p class="text-xs transition-opacity duration-300 group-hover:opacity-100" style="color:rgba(255,255,255,0.65); opacity:0.8;">
-              {{ provincia.ciudades.length }} ciudades · {{ provincia.cmPrincipal ?? 'Comisión Médica local' }}
-            </p>
-          </div>
-          <div class="absolute bottom-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            style="background: linear-gradient(to right, #002b7b, #045fc3);">
-          </div>
-        </a>
-      }
-    </div>
-
-    <!-- Stats boxes -->
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-      @for (stat of provinciaStats; track stat.label) {
-        <div class="group relative bg-white rounded-xl p-6 overflow-hidden transition-all duration-300 hover:shadow-xl"
-          style="border:1px solid rgba(0,43,123,0.08);">
-          <div class="absolute left-0 top-0 bottom-0 w-1 origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
-            style="background: linear-gradient(to bottom, #002b7b, #045fc3);">
-          </div>
-          <p class="text-3xl font-extrabold mb-1" style="color:#002b7b;">{{ stat.valor }}</p>
-          <p class="text-sm font-medium" style="color:#5a7ab8;">{{ stat.label }}</p>
-        </div>
-      }
-    </div>
-
-  </div>
-</section>
-
-<!-- CTA CONTACTO -->
-<section class="relative overflow-hidden py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
-  <!-- Línea superior -->
-  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
-  <!-- Blob decorativo -->
-  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.25); filter:blur(120px);"></div>
-  <!-- Grid sutil -->
-  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
-    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
-
-  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div>
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6"
-          style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
-          <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
           Consulta Gratuita
         </div>
-        <h2 class="text-4xl font-bold leading-tight mb-4 text-white">
-          Contanos Tu Caso<br><span style="color:#baf1ff;">Ahora</span>
+        <h2 class="text-4xl lg:text-5xl font-bold leading-tight mb-4" style="color:#0b183a;">
+          Contanos Tu Caso<br><span style="color:#045fc3;">Ahora</span>
         </h2>
-        <p class="text-base leading-relaxed mb-6" style="color:rgba(255,255,255,0.7);">Consulta gratuita y confidencial. Nuestros abogados te responden en menos de 24 horas.</p>
-        <ul class="space-y-3 mb-8">
+        <p class="text-base leading-relaxed mb-8" style="color:rgba(11,24,58,0.6);">
+          Consulta gratuita y confidencial. Nuestros abogados te responden en menos de 24 horas.
+        </p>
+
+        <ul class="space-y-3 mb-10">
           @for (item of garantias; track item) {
-            <li class="flex items-center gap-3 text-sm" style="color:rgba(255,255,255,0.8);">
-              <svg class="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#baf1ff;" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-              </svg>
+            <li class="flex items-center gap-3 text-sm font-medium" style="color:#1a2a4a;">
+              <span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style="background:#002b7b;">
+                <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="white" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
               {{ item }}
             </li>
           }
         </ul>
+
         <a
           href="https://wa.me/5493415000000?text=Hola%2C+necesito+consultar+sobre+un+accidente+laboral."
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-white transition-all"
-          style="background:#25D366; box-shadow:0 4px 16px rgba(37,211,102,0.4);"
+          class="inline-flex items-center gap-3 px-7 py-4 rounded-xl font-bold text-white text-base transition-all duration-300 hover:scale-105"
+          style="background:#25D366; box-shadow:0 4px 20px rgba(37,211,102,0.35);"
         >
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -689,17 +641,18 @@
           Consultar por WhatsApp
         </a>
       </div>
-      <div class="rounded-2xl overflow-hidden" style="background:#ffffff; box-shadow: 0 24px 60px rgba(0,0,0,0.3);">
-        <!-- Header de la card -->
+
+      <!-- Lado derecho — card formulario -->
+      <div class="rounded-2xl overflow-hidden" style="background:#ffffff; box-shadow: 0 8px 40px rgba(0,43,123,0.12); border:1px solid rgba(0,43,123,0.08);">
         <div class="px-7 py-5" style="background: linear-gradient(135deg, #002b7b, #045fc3);">
           <p class="font-bold text-white text-base">Evaluá tu caso gratis</p>
-          <p class="text-xs mt-0.5" style="color:rgba(255,255,255,0.7);">Respondemos en menos de 24 horas · Sin costo</p>
+          <p class="text-xs mt-0.5" style="color:rgba(255,255,255,0.65);">Respondemos en menos de 24 horas · Sin costo</p>
         </div>
-        <!-- Formulario sobre fondo blanco -->
         <div class="p-7">
           <app-contact-form />
         </div>
       </div>
+
     </div>
   </div>
 </section>

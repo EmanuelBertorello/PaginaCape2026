@@ -1,93 +1,211 @@
 <app-breadcrumb [items]="breadcrumbs" />
 
-<!-- HERO (urgente — rojo moderno) -->
-<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #5c0a0a 0%, #991b1b 50%, #7f1d1d 100%);">
+<!-- ZONA DE URGENCIA — visible sin scroll en mobile -->
+<div style="background:#7f1d1d; border-bottom:2px solid #dc2626;">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+    <p class="text-sm font-semibold text-white">
+      ⚠️ <strong>¿La ART te dio el alta y seguís con dolor?</strong> — Tenés <u>5 días hábiles</u> para impugnarla. Después de ese plazo, perdés opciones.
+    </p>
+    <a
+      href="https://wa.me/5493415000000?text=La+ART+me+dio+el+alta+m%C3%A9dica+y+necesito+consultar+urgente."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm text-white whitespace-nowrap shrink-0 transition-opacity hover:opacity-90"
+      style="background:#25D366;"
+    >
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Consultanos ahora — respondemos el mismo día
+    </a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #5c0a0a 0%, #991b1b 55%, #7f1d1d 100%);">
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
     style="opacity:0.05; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
   <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(220,38,38,0.3); filter:blur(120px);"></div>
-  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #991b1b, #dc2626, #991b1b);"></div>
+
   <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-6 uppercase tracking-wider"
-      style="background:rgba(255,255,255,0.15); color:#fff; border:1px solid rgba(255,255,255,0.3);">
-      ⚠️ URGENTE
+      style="background:rgba(255,255,255,0.12); color:#fff; border:1px solid rgba(255,255,255,0.25);">
+      ART y Proceso · Alta Médica
     </div>
-    <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
-      Alta Médica ART: No Firmes Sin Consultarnos
+    <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight mb-5" style="letter-spacing:-0.02em;">
+      Alta médica de la ART:<br>cómo impugnarla en 2026
     </h1>
-    <p class="mt-4 text-lg max-w-3xl mx-auto" style="color:rgba(255,255,255,0.8);">
-      El alta médica de la ART abre el proceso de indemnización. Firmar sin asesoramiento puede costarte miles de pesos.
+    <p class="text-lg max-w-3xl mx-auto leading-relaxed mb-3" style="color:rgba(255,255,255,0.8);">
+      Cuando la ART te da el alta médica, te está diciendo que tu tratamiento terminó. Pero si seguís con dolor o secuelas, ese alta puede estar adelantada. La ley argentina te da el derecho de impugnarla — y el plazo para hacerlo es muy corto.
     </p>
-    <a
-      href="https://wa.me/5493415000000?text=La+ART+me+dio+el+alta+m%C3%A9dica+y+necesito+asesoramiento+urgente."
-      target="_blank"
-      rel="noopener noreferrer"
-      class="btn-whatsapp mt-8 inline-flex text-base px-8 py-4"
-    >
-      Consulta Urgente por WhatsApp
-    </a>
+    <p class="text-sm" style="color:rgba(255,255,255,0.45);">
+      Actualizado: enero 2026 — Res. SRT N° 5/2026 (Boletín Oficial 29/01/2026) · Autor: Dr. Bruno Capeletti, matrícula C.S.J.S.F. T° XVI F° 48
+    </p>
   </div>
 </section>
 
-<!-- ALERTA -->
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-  <app-alert-banner
-    title="¿La ART te dio el alta y no estás curado?"
-    message="Tenés 10 días para presentar la disconformidad ante la Comisión Médica. No dejes pasar el plazo."
-    ctaText="Consultar ahora"
-    ctaHref="https://wa.me/5493415000000"
-  />
-</div>
-
-<!-- CONTENIDO -->
-<section style="background:#ffffff;" class="py-12">
+<!-- CONTENIDO PRINCIPAL -->
+<section style="background:#f8f9fc;" class="py-14">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-      <div class="lg:col-span-2 space-y-8">
-        <div>
-          <h2 class="text-2xl font-bold mb-4" style="color:#0b183a;">¿Qué es el alta médica de la ART?</h2>
-          <p class="leading-relaxed" style="color:rgba(11,24,58,0.7);">
-            El alta médica es la resolución de la ART que da por concluido el período de Incapacidad Laboral Temporaria (ILT). A partir de ese momento, la ART deja de pagar el salario complementario y se abre la etapa de evaluación de la incapacidad permanente.
-          </p>
-          <p class="mt-4 leading-relaxed" style="color:rgba(11,24,58,0.7);">
-            El problema es que muchas ART otorgan el alta prematuramente, cuando el trabajador todavía no está en condiciones de reintegrarse al trabajo o cuando las secuelas no fueron correctamente evaluadas.
-          </p>
+
+      <!-- Columna principal -->
+      <div class="lg:col-span-2 space-y-10">
+
+        <!-- TABLA: Disconformidad vs Divergencia -->
+        <div class="rounded-2xl overflow-hidden" style="border:1px solid rgba(0,43,123,0.1); box-shadow:0 2px 16px rgba(0,43,123,0.06);">
+          <div class="px-6 py-4" style="background: linear-gradient(135deg, #0b183a, #002b7b);">
+            <h2 class="font-bold text-white text-lg">El plazo que nadie te dice: 5 días hábiles</h2>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr style="background:rgba(0,43,123,0.05);">
+                  <th class="text-left px-5 py-3 font-semibold" style="color:#0b183a; border-bottom:1px solid rgba(0,43,123,0.1);">Trámite</th>
+                  <th class="text-left px-5 py-3 font-semibold" style="color:#0b183a; border-bottom:1px solid rgba(0,43,123,0.1);">Plazo</th>
+                  <th class="text-left px-5 py-3 font-semibold" style="color:#0b183a; border-bottom:1px solid rgba(0,43,123,0.1);">Formulario</th>
+                  <th class="text-left px-5 py-3 font-semibold" style="color:#0b183a; border-bottom:1px solid rgba(0,43,123,0.1);">Efecto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="background:#fff2f2; border-bottom:1px solid rgba(220,38,38,0.1);">
+                  <td class="px-5 py-4 font-semibold" style="color:#991b1b;">Disconformidad con el alta</td>
+                  <td class="px-5 py-4 font-bold" style="color:#991b1b;">5 días hábiles desde la notificación</td>
+                  <td class="px-5 py-4 text-xs" style="color:#4b5563;">Anexo IV — Res. SRT N° 5/2026</td>
+                  <td class="px-5 py-4 text-xs font-semibold" style="color:#991b1b;">Suspende el alta</td>
+                </tr>
+                <tr style="background:#fff;">
+                  <td class="px-5 py-4 font-semibold" style="color:#002b7b;">Divergencia en determinación de incapacidad</td>
+                  <td class="px-5 py-4" style="color:#374151;">A partir de los 21 días hábiles del alta (sin plazo máximo)</td>
+                  <td class="px-5 py-4 text-xs" style="color:#4b5563;">Anexo I — Res. SRT N° 5/2026</td>
+                  <td class="px-5 py-4 text-xs" style="color:#6b7280;">No suspende el alta</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="px-5 py-3 text-xs leading-relaxed" style="background:rgba(0,43,123,0.04); color:rgba(11,24,58,0.6); border-top:1px solid rgba(0,43,123,0.08);">
+            <strong>Novedad Res. SRT 5/2026:</strong> el plazo que la CM tiene para resolver pasó a 60 días hábiles, prorrogables 30 días más. Los formularios anteriores ya no son válidos.
+          </div>
         </div>
 
+        <!-- PASO A PASO -->
         <div>
-          <h2 class="text-2xl font-bold mb-5" style="color:#0b183a;">Qué hacer si no estás de acuerdo con el alta</h2>
+          <h2 class="text-2xl font-bold mb-6" style="color:#0b183a;">Qué hacer paso a paso si no estás de acuerdo con el alta</h2>
           <ol class="space-y-4">
             @for (paso of pasos; track paso.numero) {
-              <li class="flex items-start gap-4 p-4 rounded-xl" style="background:#F4F7FE; border:1px solid rgba(0,43,123,0.08);">
-                <span class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
-                  style="background:#002b7b;">{{ paso.numero }}</span>
+              <li class="flex items-start gap-4 p-5 rounded-xl bg-white" style="border:1px solid rgba(0,43,123,0.08); box-shadow:0 1px 4px rgba(0,43,123,0.04);">
+                <span class="w-9 h-9 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
+                  style="background:linear-gradient(135deg, #002b7b, #045fc3);">{{ paso.numero }}</span>
                 <div>
-                  <p class="font-semibold text-sm" style="color:#0b183a;">{{ paso.titulo }}</p>
-                  <p class="text-sm mt-0.5 leading-relaxed" style="color:rgba(11,24,58,0.6);">{{ paso.descripcion }}</p>
+                  <p class="font-bold text-sm mb-1" style="color:#0b183a;">{{ paso.titulo }}</p>
+                  <p class="text-sm leading-relaxed" style="color:rgba(11,24,58,0.65);">{{ paso.descripcion }}</p>
                 </div>
               </li>
             }
           </ol>
         </div>
 
+        <!-- QUÉ LLEVAR -->
+        <div class="rounded-2xl p-6 bg-white" style="border:1px solid rgba(0,43,123,0.1);">
+          <h2 class="text-xl font-bold mb-4" style="color:#0b183a;">Qué llevar el día que vas a la Comisión Médica</h2>
+          <ul class="space-y-3">
+            @for (item of queLevar; track item) {
+              <li class="flex items-start gap-3 text-sm" style="color:rgba(11,24,58,0.8);">
+                <span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5" style="background:#002b7b;">
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="white" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                {{ item }}
+              </li>
+            }
+          </ul>
+          <div class="mt-4 p-4 rounded-xl text-sm font-semibold" style="background:#fff7ed; border:1px solid #fed7aa; color:#9a3412;">
+            ⚠️ En Santa Fe, Neuquén, Entre Ríos y Río Negro la asistencia letrada es OBLIGATORIA desde el primer trámite
+          </div>
+        </div>
+
+        <!-- TABLA POR PROVINCIA -->
+        <div>
+          <h2 class="text-2xl font-bold mb-5" style="color:#0b183a;">Cómo funciona en las provincias donde opera Capeletti</h2>
+          <div class="rounded-2xl overflow-hidden" style="border:1px solid rgba(0,43,123,0.1);">
+            <table class="w-full text-sm">
+              <thead>
+                <tr style="background: linear-gradient(135deg, #0b183a, #002b7b);">
+                  <th class="text-left px-5 py-3 font-semibold text-white">Provincia</th>
+                  <th class="text-left px-5 py-3 font-semibold text-white hidden md:table-cell">CM donde se presenta</th>
+                  <th class="text-left px-5 py-3 font-semibold text-white">Nota clave</th>
+                </tr>
+              </thead>
+              <tbody>
+                @for (p of provincias; track p.nombre; let odd = $odd) {
+                  <tr [style]="odd ? 'background:rgba(0,43,123,0.02);' : 'background:#fff;'">
+                    <td class="px-5 py-3.5 font-semibold" style="color:#0b183a;">{{ p.nombre }}</td>
+                    <td class="px-5 py-3.5 hidden md:table-cell text-xs" style="color:#4b5563;">{{ p.cm }}</td>
+                    <td class="px-5 py-3.5 text-xs" style="color:#4b5563;">{{ p.nota }}</td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- FAQs -->
         <section aria-labelledby="faq-alta-h2">
-          <div class="flex items-center gap-3 mb-6 pb-4" style="border-bottom:1px solid rgba(0,43,123,0.1);">
-            <div class="w-2 h-6 rounded-full" style="background:linear-gradient(to bottom, #002b7b, #045fc3);"></div>
+          <div class="flex items-center gap-3 mb-6 pb-4" style="border-bottom:2px solid rgba(0,43,123,0.1);">
+            <div class="w-1 h-7 rounded-full" style="background:linear-gradient(to bottom, #002b7b, #045fc3);"></div>
             <h2 id="faq-alta-h2" class="text-2xl font-bold" style="color:#0b183a;">Preguntas Frecuentes</h2>
           </div>
           <app-faq-accordion [faqs]="faqs" />
         </section>
+
+        <!-- AUTOR E-E-A-T -->
+        <div class="flex items-start gap-5 p-6 rounded-2xl bg-white" style="border:1px solid rgba(0,43,123,0.1); box-shadow:0 2px 16px rgba(0,43,123,0.05);">
+          <img src="/brunito.png" alt="Dr. Bruno Capeletti" class="w-16 h-16 rounded-full object-cover shrink-0" style="object-position:center 40%;">
+          <div>
+            <p class="font-bold text-base mb-0.5" style="color:#0b183a;">Dr. Bruno Capeletti</p>
+            <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:#045fc3;">Abogado laboralista · Matrícula C.S.J.S.F. T° XVI F° 48</p>
+            <p class="text-sm leading-relaxed" style="color:rgba(11,24,58,0.65);">Especialista en accidentes laborales y reclamos ART. Actúa ante las Comisiones Médicas de Santa Fe, Neuquén, Entre Ríos, Río Negro, Buenos Aires y Córdoba.</p>
+          </div>
+        </div>
+
       </div>
 
-      <aside class="sticky top-24">
+      <!-- SIDEBAR -->
+      <aside class="sticky top-24 space-y-5">
+
+        <!-- Formulario -->
         <div class="rounded-2xl overflow-hidden" style="box-shadow:0 8px 40px rgba(153,27,27,0.15);">
-          <div class="px-6 py-4" style="background:#991b1b;">
+          <div class="px-6 py-5" style="background:linear-gradient(135deg, #7f1d1d, #991b1b);">
             <p class="font-bold text-white text-base">¿Recibiste el alta?</p>
-            <p class="text-xs mt-1" style="color:rgba(255,255,255,0.8);">Tenés 10 días para actuar. Consultanos ahora.</p>
+            <p class="text-xs mt-1" style="color:rgba(255,255,255,0.75);">Tenés 5 días hábiles para actuar. Consultanos ahora.</p>
           </div>
-          <div class="p-6 bg-white" style="border:1px solid rgba(153,27,27,0.15);">
+          <div class="p-6 bg-white" style="border:1px solid rgba(153,27,27,0.12);">
             <app-contact-form />
           </div>
         </div>
+
+        <!-- Links internos -->
+        <div class="rounded-2xl p-5 bg-white" style="border:1px solid rgba(0,43,123,0.1);">
+          <p class="text-xs font-bold uppercase tracking-wider mb-4" style="color:#002b7b;">También puede interesarte</p>
+          <ul class="space-y-2">
+            @for (link of [
+              {label:'Comisiones Médicas — hub', url:'/comisiones-medicas'},
+              {label:'Rechazo de denuncia ART', url:'/rechazo-art'},
+              {label:'Cómo cobrar la indemnización', url:'/como-cobrar-la-art'},
+              {label:'Hernia de disco laboral', url:'/hernia-de-disco-laboral'},
+              {label:'Lumbalgia laboral', url:'/lumbalgia-laboral'}
+            ]; track link.url) {
+              <li>
+                <a [attr.href]="link.url" class="flex items-center gap-2 text-sm hover:underline" style="color:#045fc3;">
+                  <svg class="w-3 h-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  {{ link.label }}
+                </a>
+              </li>
+            }
+          </ul>
+        </div>
+
       </aside>
     </div>
   </div>

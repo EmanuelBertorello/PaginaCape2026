@@ -1,0 +1,167 @@
+<!-- HERO SEDES -->
+<section class="relative flex flex-col justify-center overflow-hidden" style="min-height:52vh; background: linear-gradient(135deg, #0b183a 0%, #002b7b 55%, #023660 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(to right, transparent, rgba(186,241,255,0.35), transparent);"></div>
+
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6"
+      style="background:rgba(255,255,255,0.08); color:#baf1ff; border:1px solid rgba(186,241,255,0.2);">
+      <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+      Cobertura Nacional
+    </div>
+    <h1 class="font-bold text-white leading-tight mb-5" style="font-size: clamp(2rem, 5vw, 3.4rem); line-height:1.1;">
+      Nuestras Sedes en<br><span style="color:#baf1ff;">Todo el País</span>
+    </h1>
+    <p class="text-base leading-relaxed max-w-xl mx-auto" style="color:rgba(255,255,255,0.65);">
+      Abogados laborales locales en 6 provincias. Gestionamos tu reclamo ante la ART y la Comisión Médica más cercana a vos.
+    </p>
+  </div>
+
+  <div class="absolute bottom-0 left-0 right-0 h-px" style="background:rgba(255,255,255,0.07);"></div>
+</section>
+
+<!-- PROVINCIAS GRID -->
+<section class="relative overflow-hidden" style="background:#f6f6f6;">
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden select-none" aria-hidden="true">
+    <span class="font-black tracking-widest uppercase whitespace-nowrap" style="font-size:clamp(80px,14vw,180px); color:rgba(0,43,123,0.04); line-height:1;">PROVINCIAS</span>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-14">
+
+    <!-- Cards de provincias -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
+      @for (provincia of provincias; track provincia.slug; let i = $index) {
+        <a
+          [routerLink]="'/' + provincia.slug"
+          class="relative overflow-hidden group block rounded-2xl"
+          [style]="'height:' + (i % 2 === 0 ? '380px' : '300px') + '; text-decoration:none;'"
+        >
+          <img
+            [src]="provinciaFotos[i]"
+            [alt]="provincia.nombre"
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 transition-opacity duration-500"
+            style="background: linear-gradient(to top, rgba(0,43,123,0.92) 0%, rgba(4,95,195,0.55) 50%, rgba(0,43,123,0.12) 100%); opacity:0.88;">
+          </div>
+          <div class="absolute top-3 right-3 font-black leading-none select-none pointer-events-none"
+            style="color:rgba(255,255,255,0.07); font-size:72px;">
+            {{ (i + 1).toString().padStart(2, '0') }}
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
+              style="background:rgba(255,255,255,0.15); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.2);">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <h2 class="font-bold text-white leading-tight mb-1" style="font-size:1.05rem;">{{ provincia.nombre }}</h2>
+            <p class="text-xs transition-opacity duration-300 group-hover:opacity-100" style="color:rgba(255,255,255,0.65); opacity:0.8;">
+              {{ provincia.ciudades.length }} ciudades · {{ provincia.cmPrincipal ?? 'Comisión Médica local' }}
+            </p>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            style="background: linear-gradient(to right, #002b7b, #045fc3);">
+          </div>
+        </a>
+      }
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      @for (stat of stats; track stat.label) {
+        <div class="group relative bg-white rounded-xl p-6 overflow-hidden transition-all duration-300 hover:shadow-xl"
+          style="border:1px solid rgba(0,43,123,0.08);">
+          <div class="absolute left-0 top-0 bottom-0 w-1 origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
+            style="background: linear-gradient(to bottom, #002b7b, #045fc3);">
+          </div>
+          <p class="text-3xl font-extrabold mb-1" style="color:#002b7b;">{{ stat.valor }}</p>
+          <p class="text-sm font-medium" style="color:#5a7ab8;">{{ stat.label }}</p>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>
+
+<!-- DETALLE POR PROVINCIA -->
+<section style="background:#ffffff;" class="py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-14">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-4"
+        style="background:rgba(0,43,123,0.08); color:#002b7b; border:1px solid rgba(0,43,123,0.18);">
+        <span style="width:6px;height:6px;border-radius:50%;background:#045fc3;display:inline-block;flex-shrink:0;"></span>
+        Ciudades con atención
+      </div>
+      <h2 class="text-4xl font-bold mb-4" style="color:#0b183a;">Atendemos en <span style="color:#045fc3;">Cada Ciudad</span></h2>
+      <p class="text-base max-w-2xl mx-auto" style="color:rgba(11,24,58,0.55);">
+        Seleccioná tu provincia para ver las ciudades donde tenemos abogados disponibles.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      @for (provincia of provincias; track provincia.slug) {
+        <div class="rounded-2xl overflow-hidden" style="border:1px solid rgba(0,43,123,0.1); background:#fff; box-shadow:0 2px 16px rgba(0,43,123,0.06);">
+
+          <!-- Header provincia -->
+          <a [routerLink]="'/' + provincia.slug"
+            class="flex items-center gap-3 px-5 py-4 group transition-colors"
+            style="background: linear-gradient(135deg, #002b7b 0%, #045fc3 100%); text-decoration:none;">
+            <svg class="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="white" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            <div>
+              <p class="font-bold text-white text-base">{{ provincia.nombre }}</p>
+              <p class="text-xs" style="color:rgba(255,255,255,0.65);">{{ provincia.ciudades.length }} ciudades · {{ provincia.cmPrincipal }}</p>
+            </div>
+            <svg class="w-4 h-4 ml-auto text-white opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+
+          <!-- Lista de ciudades -->
+          <ul class="divide-y" style="border-color:rgba(0,43,123,0.06);">
+            @for (ciudad of provincia.ciudades; track ciudad.slug) {
+              <li>
+                <a [routerLink]="'/' + provincia.slug + '/' + ciudad.slug"
+                  class="flex items-center gap-3 px-5 py-3 group transition-colors hover:bg-blue-50"
+                  style="text-decoration:none;">
+                  <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#045fc3;"></span>
+                  <span class="text-sm font-medium flex-1" style="color:#0b183a;">{{ ciudad.nombre }}</span>
+                  @if (ciudad.cmLocal) {
+                    <span class="text-xs hidden sm:block" style="color:rgba(11,24,58,0.4);">{{ ciudad.cmLocal }}</span>
+                  }
+                  <svg class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="#045fc3" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </li>
+            }
+          </ul>
+
+        </div>
+      }
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="relative overflow-hidden py-16" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 50%, #023660 100%);">
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.25); filter:blur(120px);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 sm:px-6 text-center">
+    <h2 class="text-3xl font-bold text-white mb-4">¿No encontrás tu ciudad?</h2>
+    <p class="text-base mb-8" style="color:rgba(255,255,255,0.65);">
+      Atendemos trabajadores de todo el país. Consultá gratis y te decimos si podemos representarte.
+    </p>
+    <a routerLink="/contactanos"
+      class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-300 hover:scale-105"
+      style="background:#ffffff; color:#002b7b; text-decoration:none;">
+      Consultar ahora — sin costo
+    </a>
+  </div>
+</section>

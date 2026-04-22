@@ -1,0 +1,187 @@
+@if (cm) {
+
+<app-breadcrumb [items]="breadcrumbs" />
+
+<!-- HERO -->
+<section class="relative overflow-hidden py-16 sm:py-20" style="background: linear-gradient(135deg, #001a4d 0%, #002b7b 55%, #023660 100%);">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+    style="opacity:0.04; background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:rgba(4,95,195,0.3); filter:blur(120px);"></div>
+  <div class="absolute top-0 left-0 right-0 h-1" style="background: linear-gradient(to right, #002b7b, #045fc3, #002b7b);"></div>
+
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-wider"
+      style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2);">
+      <span style="width:6px;height:6px;border-radius:50%;background:#baf1ff;display:inline-block;flex-shrink:0;"></span>
+      Comisión Médica · {{ cm.provincia }}
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-black text-white leading-tight mb-4" style="letter-spacing:-0.02em;">{{ cm.nombre }}</h1>
+    <p class="text-lg max-w-2xl mx-auto mb-2" style="color:rgba(255,255,255,0.75);">
+      {{ cm.sectorPrincipal }}. Abogados laborales que actúan ante esta comisión.
+    </p>
+    <p class="text-sm" style="color:rgba(255,255,255,0.4);">Actualizado: abril 2026 · Fuente: SRT Argentina</p>
+  </div>
+</section>
+
+<!-- CONTENIDO -->
+<section style="background:#f8f9fc;" class="py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+      <!-- Columna principal -->
+      <div class="lg:col-span-2 space-y-8">
+
+        <!-- DATOS DUROS -->
+        <div class="rounded-2xl overflow-hidden bg-white" style="border:1px solid rgba(0,43,123,0.1); box-shadow:0 2px 16px rgba(0,43,123,0.06);">
+          <div class="px-6 py-4" style="background: linear-gradient(135deg, #0b183a, #002b7b);">
+            <h2 class="font-bold text-white text-lg">Datos de la {{ cm.nombre }}</h2>
+          </div>
+          <div class="divide-y" style="border-color:rgba(0,43,123,0.07);">
+            <div class="flex items-start gap-4 px-6 py-4">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="#045fc3" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-wider mb-0.5" style="color:#045fc3;">Dirección</p>
+                <p class="text-sm font-medium" style="color:#0b183a;">{{ cm.direccion }}</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 px-6 py-4">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="#045fc3" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-wider mb-0.5" style="color:#045fc3;">Horario mesa de entradas</p>
+                <p class="text-sm font-medium" style="color:#0b183a;">{{ cm.horario }}</p>
+                @if (cm.horarioDivergencias) {
+                  <p class="text-xs mt-1" style="color:rgba(11,24,58,0.5);">Divergencias: {{ cm.horarioDivergencias }}</p>
+                }
+              </div>
+            </div>
+            <div class="flex items-start gap-4 px-6 py-4">
+              <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="#045fc3" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+              </svg>
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-wider mb-1" style="color:#045fc3;">Zona de competencia</p>
+                <div class="flex flex-wrap gap-1.5">
+                  @for (loc of cm.competencia; track loc) {
+                    <span class="text-xs px-2.5 py-1 rounded-full font-medium" style="background:rgba(0,43,123,0.07); color:#002b7b;">{{ loc }}</span>
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUÉ PASA ANTES, DURANTE Y DESPUÉS -->
+        <div class="bg-white rounded-2xl p-7" style="border:1px solid rgba(0,43,123,0.1);">
+          <h2 class="text-xl font-bold mb-5" style="color:#0b183a;">¿Te citaron a esta CM?</h2>
+          <ol class="space-y-4">
+            @for (paso of [
+              {n:1, t:'Conseguí tu documentación', d:'DNI · Denuncia del siniestro · Historia clínica y estudios · Formulario designación patrocinio letrado (Anexo IV Res. SRT 5/2026)'},
+              {n:2, t:'Designá un abogado', d:'En las provincias adheridas a la Ley 27.348, la asistencia letrada es obligatoria desde el primer trámite. En Capeletti no cobramos anticipos.'},
+              {n:3, t:'Presentate en horario', d:'Llevá toda la documentación y presentate en el horario de mesa de entradas. El médico de la CM te evaluará el mismo día.'},
+              {n:4, t:'Si no estás de acuerdo, impugnás', d:'Tenés 5 días hábiles desde el dictamen para apelar. En Capeletti evaluamos si conviene apelar o ir directamente a la vía judicial.'}
+            ]; track paso.n) {
+              <li class="flex items-start gap-4">
+                <span class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
+                  style="background:linear-gradient(135deg, #002b7b, #045fc3);">{{ paso.n }}</span>
+                <div>
+                  <p class="font-semibold text-sm mb-0.5" style="color:#0b183a;">{{ paso.t }}</p>
+                  <p class="text-sm leading-relaxed" style="color:rgba(11,24,58,0.65);">{{ paso.d }}</p>
+                </div>
+              </li>
+            }
+          </ol>
+        </div>
+
+        <!-- SECTORES Y LESIONES -->
+        <div class="bg-white rounded-2xl p-7" style="border:1px solid rgba(0,43,123,0.1);">
+          <h2 class="text-xl font-bold mb-4" style="color:#0b183a;">Lesiones frecuentes en {{ cm.ciudad }}</h2>
+          <p class="text-sm leading-relaxed mb-5" style="color:rgba(11,24,58,0.65);">
+            La zona de {{ cm.ciudad }} concentra actividad en <strong>{{ cm.sectorPrincipal }}</strong>. En esta CM se tramitan frecuentemente:
+          </p>
+          <ul class="space-y-2">
+            @for (lesion of cm.lesionesFrequentes; track lesion) {
+              <li class="flex items-center gap-3 text-sm" style="color:rgba(11,24,58,0.8);">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#045fc3;"></span>
+                {{ lesion }}
+              </li>
+            }
+          </ul>
+        </div>
+
+        <!-- ABOGADO RESPONSABLE (E-E-A-T) -->
+        <div class="flex items-start gap-5 p-6 rounded-2xl" [style]="'background: linear-gradient(135deg, ' + cm.abogado.gradFrom + ', ' + cm.abogado.gradTo + ');'">
+          <img [src]="cm.abogado.img" [alt]="cm.abogado.nombre"
+            class="w-16 h-16 rounded-full object-cover shrink-0"
+            style="object-position:center 35%; border:2px solid rgba(255,255,255,0.3);">
+          <div>
+            <p class="font-bold text-white text-base mb-0.5">{{ cm.abogado.nombre }}</p>
+            <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:rgba(255,255,255,0.65);">{{ cm.abogado.especialidad }}</p>
+            <p class="text-sm leading-relaxed" style="color:rgba(255,255,255,0.85);">{{ cm.abogado.bio }}</p>
+          </div>
+        </div>
+
+        <!-- FAQs -->
+        <section aria-labelledby="faq-cm-h2">
+          <div class="flex items-center gap-3 mb-6 pb-4" style="border-bottom:2px solid rgba(0,43,123,0.1);">
+            <div class="w-1 h-7 rounded-full" style="background:linear-gradient(to bottom, #002b7b, #045fc3);"></div>
+            <h2 id="faq-cm-h2" class="text-2xl font-bold" style="color:#0b183a;">Preguntas Frecuentes</h2>
+          </div>
+          <app-faq-accordion [faqs]="cm.faqs" />
+        </section>
+
+        <!-- LINKS INTERNOS -->
+        <div class="bg-white rounded-2xl p-6" style="border:1px solid rgba(0,43,123,0.1);">
+          <p class="text-sm font-bold mb-4" style="color:#0b183a;">Guías relacionadas</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            @for (link of [
+              {label:'Alta médica ART: cómo impugnarla', url:'/alta-medica-art'},
+              {label:'Rechazo de denuncia ART', url:'/rechazo-art'},
+              {label:'Cómo cobrar la indemnización', url:'/como-cobrar-la-art'},
+              {label:'Todas las Comisiones Médicas', url:'/comisiones-medicas'}
+            ]; track link.url) {
+              <a [attr.href]="link.url" class="flex items-center gap-2 text-sm p-3 rounded-xl hover:bg-blue-50 transition-colors" style="color:#045fc3; border:1px solid rgba(0,43,123,0.08);">
+                <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                {{ link.label }}
+              </a>
+            }
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sticky top-24 space-y-5">
+
+        <div class="rounded-2xl overflow-hidden" style="box-shadow:0 8px 40px rgba(0,43,123,0.12);">
+          <div class="px-6 py-5" style="background: linear-gradient(135deg, #002b7b, #045fc3);">
+            <h3 class="font-bold text-white text-base">¿Vas a ir a la CM de {{ cm.ciudad }}?</h3>
+            <p class="text-xs mt-1" style="color:rgba(255,255,255,0.7);">Te representamos. Consultanos antes de ir solo.</p>
+          </div>
+          <div class="p-6 bg-white" style="border:1px solid rgba(0,43,123,0.1);">
+            <app-contact-form />
+          </div>
+        </div>
+
+        <div class="rounded-2xl p-5 bg-white" style="border:1px solid rgba(0,43,123,0.1);">
+          <p class="text-xs font-bold uppercase tracking-wider mb-3" style="color:#002b7b;">Línea gratuita SRT</p>
+          <p class="text-sm font-bold mb-1" style="color:#0b183a;">0800-666-6778</p>
+          <p class="text-xs" style="color:rgba(11,24,58,0.5);">Por consultas a la SRT: ayuda&#64;srt.gob.ar</p>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</section>
+
+} @else {
+  <div class="max-w-5xl mx-auto px-4 py-20 text-center">
+    <p style="color:rgba(11,24,58,0.5);">Comisión Médica no encontrada.</p>
+  </div>
+}

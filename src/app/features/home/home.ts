@@ -4,7 +4,6 @@ import { FaqAccordionComponent } from '../../shared/components/faq-accordion/faq
 import { ContactFormComponent } from '../../shared/components/contact-form/contact-form';
 import { SeoService } from '../../core/services/seo.service';
 import { LESIONES_DATA } from '../../core/data/lesiones.data';
-import { PROVINCIAS_DATA } from '../../core/data/ciudades.data';
 import { FAQS_DATA } from '../../core/data/faqs.data';
 import { RESULTADOS_DATA } from '../../core/data/resultados.data';
 
@@ -34,6 +33,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       bio: 'Fundador del estudio. Más de 10 años dedicados exclusivamente al derecho laboral y los reclamos contra la ART. Referente en Comisiones Médicas del litoral.',
       gradFrom: '#002b7b', gradTo: '#045fc3',
       img: '/brunito.png',
+      imgPos: 'center 40%',
     },
     {
       nombre: 'Dra. Rocío Bello',
@@ -42,14 +42,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       bio: 'Especialista en reclamos ante la ART y en despidos con causa. Acompaña a cada trabajador desde la denuncia del accidente hasta el cobro de la indemnización.',
       gradFrom: '#7c2d12', gradTo: '#b45309',
       img: '/rocio-bello.jpeg',
-    },
-    {
-      nombre: 'Dra. Daiana Parache',
-      cargo: 'Abogada — Santa Fe',
-      especialidad: 'Accidentes Laborales · Santa Fe',
-      bio: 'Referente del estudio en Santa Fe. Con profundo conocimiento de las Comisiones Médicas de Rosario, Santa Fe Capital y Reconquista, representa trabajadores de la industria y agroindustria.',
-      gradFrom: '#7B1FA2', gradTo: '#9C27B0',
-      img: '/assets/team/daiana-parache.webp',
+      imgPos: 'center 35%',
     },
     {
       nombre: 'Dr. Laureano Bamonde',
@@ -58,6 +51,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       bio: 'Egresado de la Facultad de Derecho de la UNR. Especializado en derecho laboral, con sólida experiencia en accidentes de trabajo y enfermedades profesionales. Atención personalizada y defensa eficaz del trabajador.',
       gradFrom: '#023660', gradTo: '#045fc3',
       img: '/laureano.png',
+      imgPos: 'top',
     },
     {
       nombre: 'Dr. Julián Casalli',
@@ -66,6 +60,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       bio: 'Graduado en la Facultad de Derecho de la UNR. Se dedica al asesoramiento en reclamos por accidentes laborales, enfermedades profesionales, jubilaciones y pensiones ante ANSES.',
       gradFrom: '#1e3a5f', gradTo: '#2563eb',
       img: '/JulianCasalli.png',
+      imgPos: 'top',
     },
   ];
 
@@ -84,11 +79,11 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   readonly lesionFotos = [
     '/assets/lesiones/hernia-de-disco.webp',
-    '/assets/lesiones/lumbalgia-laboral.jpg',
+    'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=90&auto=format&fit=crop',
     '/assets/lesiones/manguito-rotador.avif',
     '/assets/lesiones/accidente-obra-construccion.webp',
     '/assets/lesiones/fallecimiento-accidente-laboral.jpg',
-    '/assets/lesiones/gran-invalidez-laboral.webp',
+    'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=90&auto=format&fit=crop',
     '/assets/lesiones/accidente-in-itinere.jpg',
     '/assets/lesiones/lesion-meniscos-laboral.webp',
   ];
@@ -100,24 +95,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     'Impugnación de alta médica',
   ];
 
-  readonly provinciaFotos = [
-    '/santa-fe-logo.jpg',
-    '/nequen.jpg',
-    '/rio negro.jpg',
-    '/entre rios.jpg',
-    '/buenos aires.jpg',
-    '/cordoba.jpg',
-  ];
-
-  readonly provinciaStats = [
-    { valor: '6', label: 'Provincias cubiertas' },
-    { valor: '+15', label: 'Ciudades con atención' },
-    { valor: '98%', label: 'Tasa de éxito' },
-    { valor: '+10', label: 'Años de presencia' },
-  ];
-
   readonly lesiones = LESIONES_DATA.slice(0, 8);
-  readonly provincias = PROVINCIAS_DATA;
   readonly faqsHome = FAQS_DATA.filter(f =>
     ['art-general', 'indemnizaciones', 'honorarios'].includes(f.categoria ?? '')
   ).slice(0, 6);

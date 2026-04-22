@@ -21,6 +21,11 @@ export const routes: Routes = [
 
   // === CORE PAGES ===
   {
+    path: 'sedes',
+    loadComponent: () => import('./features/sedes/sedes').then(m => m.SedesComponent),
+    title: 'Nuestras Sedes en Argentina | Capeletti Abogados',
+  },
+  {
     path: 'sobre-nosotros',
     loadComponent: () => import('./features/sobre-nosotros/sobre-nosotros').then(m => m.SobreNosotrosComponent),
   },
@@ -81,20 +86,48 @@ export const routes: Routes = [
 
   // === COMISIONES MÉDICAS LOCALES ===
   {
-    path: 'comision-medica-reconquista',
-    loadComponent: () => import('./features/comisiones-medicas/reconquista/cm-reconquista').then(m => m.CmReconquistaComponent),
-  },
-  {
-    path: 'comision-medica-neuquen',
-    loadComponent: () => import('./features/comisiones-medicas/neuquen/cm-neuquen').then(m => m.CmNeuquenComponent),
-  },
-  {
     path: 'comision-medica-rosario',
-    loadComponent: () => import('./features/comisiones-medicas/rosario/cm-rosario').then(m => m.CmRosarioComponent),
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
   },
   {
     path: 'comision-medica-santa-fe',
-    loadComponent: () => import('./features/comisiones-medicas/santa-fe/cm-santa-fe').then(m => m.CmSantaFeComponent),
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
+  },
+  {
+    path: 'comision-medica-reconquista',
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
+  },
+  {
+    path: 'comision-medica-neuquen',
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
+  },
+  {
+    path: 'comision-medica-parana',
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
+  },
+  {
+    path: 'comision-medica-concordia',
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
+  },
+  {
+    path: 'comision-medica-bariloche',
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
+  },
+  {
+    path: 'comision-medica-viedma',
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
+  },
+  {
+    path: 'comision-medica-general-roca',
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
+  },
+  {
+    path: 'comision-medica-cordoba',
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
+  },
+  {
+    path: 'comision-medica-caba',
+    loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent),
   },
 
   // === LANDINGS DE LESIONES ===
