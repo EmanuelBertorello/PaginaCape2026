@@ -289,6 +289,19 @@ export const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'cordoba',
+    children: [
+      {
+        path: '',
+        loadComponent: () => import('./features/provincias/hub/hub-provincial').then(m => m.HubProvincialComponent),
+      },
+      {
+        path: ':ciudad',
+        loadComponent: () => import('./features/provincias/ciudad/landing-ciudad').then(m => m.LandingCiudadComponent),
+      },
+    ],
+  },
 
   // === ARTÍCULOS / LANDINGS ===
   {
