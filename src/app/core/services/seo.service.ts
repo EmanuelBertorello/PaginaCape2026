@@ -11,9 +11,12 @@ export class SeoService {
 
   private readonly siteName = 'Capeletti Abogados';
   private readonly siteUrl = 'https://capelettiabogados.com';
+  private readonly defaultOgImage = 'https://capelettiabogados.com/og-default.webp';
 
   setTitle(pageTitle: string): void {
-    const fullTitle = `${pageTitle} | ${this.siteName}`;
+    const fullTitle = pageTitle.includes(' | Capeletti')
+      ? pageTitle
+      : `${pageTitle} | ${this.siteName}`;
     this.title.setTitle(fullTitle);
     this.meta.updateTag({ property: 'og:title', content: fullTitle });
     this.meta.updateTag({ name: 'twitter:title', content: fullTitle });
@@ -31,7 +34,6 @@ export class SeoService {
       ? path
       : `${this.siteUrl}${path}`;
 
-    // Remover canonical existente si hay
     const existing = this.document.querySelector('link[rel="canonical"]');
     if (existing) {
       existing.setAttribute('href', canonicalUrl);
@@ -50,13 +52,15 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:description', content: data.description });
     this.meta.updateTag({ property: 'og:url', content: data.url });
     this.meta.updateTag({ property: 'og:type', content: data.type ?? 'website' });
-    if (data.image) {
-      this.meta.updateTag({ property: 'og:image', content: data.image });
-    }
+    const image = data.image ?? this.defaultOgImage;
+    this.meta.updateTag({ property: 'og:image', content: image });
+    this.meta.updateTag({ property: 'og:image:width', content: '1200' });
+    this.meta.updateTag({ property: 'og:image:height', content: '630' });
+    this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    this.meta.updateTag({ name: 'twitter:image', content: image });
   }
 
   setSchema(schema: object): void {
-    // Remover schema anterior de la misma página si existe
     const existing = this.document.querySelector('script[type="application/ld+json"][data-seo="dynamic"]');
     if (existing) {
       existing.remove();
@@ -77,14 +81,12 @@ export class SeoService {
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
   }
 
-  /**
-   * Método de conveniencia: establece title + description + canonical + OG en una llamada
-   */
   setPage(params: {
     title: string;
     description: string;
     path: string;
     ogType?: OgData['type'];
+    ogImage?: string;
     schema?: object;
   }): void {
     const canonicalUrl = `${this.siteUrl}${params.path}`;
@@ -93,10 +95,13 @@ export class SeoService {
     this.setDescription(params.description);
     this.setCanonical(params.path);
     this.setOpenGraph({
-      title: `${params.title} | ${this.siteName}`,
+      title: params.title.includes(' | Capeletti')
+        ? params.title
+        : `${params.title} | ${this.siteName}`,
       description: params.description,
       url: canonicalUrl,
       type: params.ogType ?? 'website',
+      image: params.ogImage,
     });
 
     if (params.schema) {
@@ -104,19 +109,29 @@ export class SeoService {
     }
   }
 
-  /**
-   * Schema base para LegalService (home + sobre nosotros)
-   */
   getLegalServiceSchema(): object {
     return {
       '@context': 'https://schema.org',
-      '@type': ['LegalService', 'Organization'],
+      '@type': 'LegalService',
       name: 'Capeletti Abogados',
       url: this.siteUrl,
       logo: `${this.siteUrl}/assets/logo.webp`,
+      image: this.defaultOgImage,
       telephone: '+54-11-25007192',
       email: 'consultas@capelettiabogados.com',
-      areaServed: ['Santa Fe', 'Neuquén', 'Río Negro', 'Entre Ríos', 'Buenos Aires', 'Ciudad Autónoma de Buenos Aires'],
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Rosario',
+        addressRegion: 'Santa Fe',
+        addressCountry: 'AR',
+      },
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+      },
+      areaServed: ['Santa Fe', 'Neuquén', 'Río Negro', 'Entre Ríos', 'Buenos Aires', 'Córdoba', 'Ciudad Autónoma de Buenos Aires'],
       knowsAbout: [
         'accidentes laborales',
         'ART',
@@ -125,6 +140,7 @@ export class SeoService {
         'Comisiones Médicas',
         'hernia de disco laboral',
         'accidente in itinere',
+        'despido sin causa',
       ],
       sameAs: [
         'https://www.linkedin.com/company/capeletti-abogados',
@@ -133,9 +149,19 @@ export class SeoService {
     };
   }
 
-  /**
-   * Schema para páginas de FAQ
-   */
+  getOrganizationSchema(): object {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Capeletti Abogados',
+      url: this.siteUrl,
+      logo: `${this.siteUrl}/assets/logo.webp`,
+      sameAs: [
+        'https://www.linkedin.com/company/capeletti-abogados',
+      ],
+    };
+  }
+
   getFaqSchema(faqs: Array<{ pregunta: string; respuesta: string }>): object {
     return {
       '@context': 'https://schema.org',
@@ -151,9 +177,6 @@ export class SeoService {
     };
   }
 
-  /**
-   * Schema para perfiles de abogados
-   */
   getPersonSchema(params: {
     nombre: string;
     cargo: string;
@@ -180,9 +203,6 @@ export class SeoService {
     };
   }
 
-  /**
-   * Schema LocalBusiness para landings de ciudad
-   */
   getLocalBusinessSchema(params: {
     ciudad: string;
     provincia: string;
@@ -207,9 +227,6 @@ export class SeoService {
     };
   }
 
-  /**
-   * Schema Article para blog y guías
-   */
   getArticleSchema(params: {
     titulo: string;
     descripcion: string;
@@ -218,7 +235,9 @@ export class SeoService {
     autor: string;
     slug: string;
     seccion: 'blog' | 'guias';
+    imagen?: string;
   }): object {
+    const imageUrl = params.imagen ?? this.defaultOgImage;
     return {
       '@context': 'https://schema.org',
       '@type': 'Article',
@@ -227,6 +246,12 @@ export class SeoService {
       url: `${this.siteUrl}/${params.seccion}/${params.slug}`,
       datePublished: params.fechaPublicacion,
       dateModified: params.fechaModificacion,
+      image: {
+        '@type': 'ImageObject',
+        url: imageUrl,
+        width: 1200,
+        height: 630,
+      },
       author: {
         '@type': 'Person',
         name: params.autor,
@@ -244,9 +269,6 @@ export class SeoService {
     };
   }
 
-  /**
-   * Schema BreadcrumbList
-   */
   getBreadcrumbSchema(items: Array<{ label: string; url: string }>): object {
     return {
       '@context': 'https://schema.org',

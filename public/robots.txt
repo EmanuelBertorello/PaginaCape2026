@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /contactanos
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://capelettiabogados.com/sitemap.xml

@@ -173,6 +173,16 @@ export const routes: Routes = [
   { path: 'comision-medica-villa-dolores', loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent) },
   { path: 'comision-medica-laboulaye', loadComponent: () => import('./features/comisiones-medicas/cm-landing/cm-landing').then(m => m.CmLandingComponent) },
 
+  // === PÁGINAS DE SERVICIO PRINCIPAL ===
+  {
+    path: 'accidente-de-trabajo',
+    loadComponent: () => import('./features/lesiones/lesion-page').then(m => m.LesionPageComponent),
+  },
+  {
+    path: 'despido-sin-causa',
+    loadComponent: () => import('./features/lesiones/lesion-page').then(m => m.LesionPageComponent),
+  },
+
   // === LANDINGS DE LESIONES ===
   {
     path: 'hernia-de-disco-laboral',

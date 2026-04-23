@@ -330,4 +330,98 @@ En Capeletti Abogados llevamos más de 10 años representando trabajadores con h
     volumen: 'alto',
     faqs: [],
   },
+  {
+    slug: 'accidente-de-trabajo',
+    titulo: 'Accidente de Trabajo',
+    metaTitle: 'Accidente de Trabajo: Indemnización y Reclamo ART 2026 | Capeletti',
+    metaDescription: 'Sufriste un accidente de trabajo? La ART debe cubrir tu tratamiento y pagarte una indemnización. Abogados especialistas. Consulta gratis, sin anticipos.',
+    h1: 'Accidente de Trabajo: Qué Hacer y Cómo Cobrar la Indemnización',
+    h2s: [
+      'Qué es un accidente de trabajo según la ley argentina',
+      'Qué cubre la ART ante un accidente laboral',
+      'Pasos desde el accidente hasta el cobro de la indemnización',
+      'Cuánto se cobra por un accidente de trabajo en 2026',
+      'Preguntas frecuentes sobre accidentes de trabajo',
+    ],
+    descripcionCorta: 'Un accidente de trabajo activa tu derecho a indemnización. La ART debe cubrir el tratamiento completo y pagar según el porcentaje de incapacidad que determine la Comisión Médica. Actuá rápido: el plazo de prescripción es 2 años.',
+    descripcionLarga: `Un accidente de trabajo es todo hecho súbito y violento que ocurra por el hecho o en ocasión del trabajo, o en el trayecto entre el domicilio del trabajador y el lugar de trabajo. La Ley 24.557 de Riesgos del Trabajo regula los derechos del trabajador y las obligaciones de la ART.
+
+Cuando sufrís un accidente, la ART debe cubrir tu tratamiento médico completo: internación, cirugías, rehabilitación y medicamentos. Una vez recibida el alta médica, la Comisión Médica evalúa tu porcentaje de incapacidad permanente y determina la indemnización que te corresponde.
+
+En Capeletti Abogados llevamos más de 10 años representando trabajadores accidentados en Santa Fe, Neuquén, Río Negro, Entre Ríos, Buenos Aires y Córdoba. Conocemos cada Comisión Médica local y los mecanismos para maximizar la indemnización de nuestros clientes sin adelantar honorarios.`,
+    beneficios: [
+      'Evaluación gratuita de tu caso en 24 hs',
+      'Sin honorarios anticipados — solo cobramos si ganamos',
+      'Representación en Comisiones Médicas de toda Argentina',
+      'Más de 10 años de experiencia exclusiva en accidentes laborales',
+    ],
+    cpcEstimado: 'muy-alto',
+    volumen: 'muy-alto',
+    sectorFoco: 'construcción, logística, industria, salud',
+    faqs: [
+      {
+        pregunta: '¿Qué debo hacer inmediatamente después de un accidente de trabajo?',
+        respuesta: 'Denunciá el accidente a tu empleador cuanto antes y pedí que notifiquen a la ART. La ART tiene obligación de brindarte atención médica de inmediato. Luego, contactá a un abogado laboralista para proteger tus derechos desde el inicio del trámite.',
+      },
+      {
+        pregunta: '¿La ART puede rechazar un accidente de trabajo?',
+        respuesta: 'Sí, la ART puede rechazar el accidente si considera que no tiene origen laboral. Tenés 5 días hábiles para impugnar el rechazo ante la Comisión Médica de la SRT. Es fundamental actuar rápido y con representación legal.',
+      },
+      {
+        pregunta: '¿Cuánto tiempo tengo para reclamar por un accidente de trabajo?',
+        respuesta: 'El plazo de prescripción es de 2 años desde el accidente o desde que se determinó la incapacidad permanente. No esperes: actuá antes para no perder derechos.',
+      },
+      {
+        pregunta: '¿Cuánto se cobra por un accidente de trabajo?',
+        respuesta: 'Depende del porcentaje de incapacidad permanente determinado por la Comisión Médica. La fórmula base es: 53 × salario mensual × % incapacidad × (65 / edad). En 2026 el piso mínimo por incapacidad permanente parcial supera los $17 millones. Calculamos tu caso gratis.',
+      },
+    ],
+  },
+  {
+    slug: 'despido-sin-causa',
+    titulo: 'Despido Sin Causa',
+    metaTitle: 'Despido Sin Causa: Indemnización y Derechos del Trabajador 2026 | Capeletti',
+    metaDescription: 'Te despidieron sin causa? Conocé tus derechos: indemnización por antigüedad, preaviso, vacaciones y más. Abogados laboralistas. Consulta gratis.',
+    h1: 'Despido Sin Causa: Tus Derechos y la Indemnización que te Corresponde',
+    h2s: [
+      'Qué es el despido sin causa y qué dice la Ley de Contrato de Trabajo',
+      'Qué indemnizaciones te corresponden al ser despedido',
+      'Cómo calcular la indemnización por despido en 2026',
+      'Qué hacer si tu empleador no paga o paga de menos',
+      'Preguntas frecuentes sobre despidos laborales',
+    ],
+    descripcionCorta: 'El despido sin causa te da derecho a indemnización por antigüedad, preaviso y vacaciones proporcionales. Si tu empleador no cumple, tenemos las herramientas legales para cobrar lo que te corresponde.',
+    descripcionLarga: `El despido sin causa justificada es aquel en que el empleador decide terminar el vínculo laboral sin alegar ningún motivo. La Ley de Contrato de Trabajo (LCT) protege al trabajador y establece una indemnización mínima equivalente a un mes de salario por cada año de antigüedad.
+
+Además de la indemnización por antigüedad, te corresponde: preaviso (15 días a 2 meses según antigüedad), vacaciones proporcionales, SAC proporcional y haberes del mes en curso. Si el empleador no paga en los plazos legales, se aplican multas adicionales que pueden duplicar la indemnización.
+
+En Capeletti Abogados evaluamos tu caso, calculamos lo que te corresponde y negociamos con tu empleador o iniciamos el juicio laboral si es necesario. Sin anticipos: solo cobramos si ganamos.`,
+    beneficios: [
+      'Cálculo gratuito de tu indemnización en 24 hs',
+      'Sin honorarios anticipados — solo cobramos si ganamos',
+      'Negociación extrajudicial y representación en juicio laboral',
+      'Conocemos la jurisprudencia laboral de cada provincia',
+    ],
+    cpcEstimado: 'muy-alto',
+    volumen: 'muy-alto',
+    sectorFoco: 'todos los sectores',
+    faqs: [
+      {
+        pregunta: '¿Cuánto me corresponde por despido sin causa?',
+        respuesta: 'La indemnización base es 1 mes de salario por año de antigüedad (o fracción mayor a 3 meses). A eso se suman: preaviso (15 días si tenés menos de 5 años; 1 mes si tenés más), vacaciones proporcionales y SAC proporcional.',
+      },
+      {
+        pregunta: '¿Qué pasa si mi empleador no me paga la indemnización?',
+        respuesta: 'Si el empleador no abona en tiempo y forma, se aplican multas del art. 80, 132 bis y 2° del art. 16 de la Ley 25.561 que pueden elevar significativamente el monto a cobrar. Además, podemos iniciar juicio laboral para cobrar con intereses.',
+      },
+      {
+        pregunta: '¿Puedo cobrar por accidente de trabajo y también reclamar por despido?',
+        respuesta: 'Sí. Si tenías una lesión laboral en curso al momento del despido, los reclamos por indemnización laboral y por ART son independientes y complementarios. Evaluamos ambos en la consulta inicial.',
+      },
+      {
+        pregunta: '¿Cuánto tiempo tengo para reclamar por despido?',
+        respuesta: 'El plazo de prescripción para reclamar créditos laborales es de 2 años desde que el crédito es exigible. No esperes: cuanto antes actúes, más herramientas tenemos.',
+      },
+    ],
+  },
 ];
