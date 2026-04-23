@@ -106,6 +106,26 @@ export class ComisionesMedicasHubComponent implements OnInit {
       title: 'Comisiones Médicas ART — Guía Completa por Provincia',
       description: 'Todo sobre las Comisiones Médicas: qué son, cómo funcionan, dónde están. Guías para Rosario, Santa Fe, Neuquén y Reconquista.',
       path: '/comisiones-medicas',
+      schema: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'LegalService',
+            name: 'Capeletti Abogados',
+            url: 'https://capelettiabogados.com',
+            telephone: '+54-11-25007192',
+            areaServed: ['Santa Fe', 'Buenos Aires', 'Neuquén', 'Río Negro', 'Entre Ríos', 'Córdoba'],
+            knowsAbout: ['Comisiones Médicas ART', 'accidentes laborales', 'indemnizaciones laborales'],
+          },
+          {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://capelettiabogados.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Comisiones Médicas', item: 'https://capelettiabogados.com/comisiones-medicas' },
+            ],
+          },
+        ],
+      },
     });
   }
 }

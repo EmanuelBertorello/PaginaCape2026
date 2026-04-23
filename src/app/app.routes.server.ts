@@ -241,6 +241,7 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {
       return [
+        { slug: 'inconstitucionalidad-decreto-549-2025' },
         { slug: 'que-hacer-despues-de-un-accidente-laboral' },
         { slug: 'como-calcular-indemnizacion-art' },
         { slug: 'hernia-de-disco-baremo-2026' },

@@ -96,6 +96,7 @@ app.get('/sitemap.xml', (_req: Request, res: Response) => {
 
     // Blog
     { loc: '/blog', changefreq: 'weekly', priority: '0.7', lastmod: today },
+    { loc: '/blog/inconstitucionalidad-decreto-549-2025', changefreq: 'monthly', priority: '0.8', lastmod: '2026-04-22' },
     { loc: '/blog/que-hacer-despues-de-un-accidente-laboral', changefreq: 'monthly', priority: '0.7' },
     { loc: '/blog/como-calcular-indemnizacion-art', changefreq: 'monthly', priority: '0.7' },
     { loc: '/blog/hernia-de-disco-baremo-2026', changefreq: 'monthly', priority: '0.7' },
