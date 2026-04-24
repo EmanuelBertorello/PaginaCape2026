@@ -26,6 +26,8 @@ export class ResultadosComponent implements OnInit {
       title: 'Casos Ganados — Resultados de Capeletti Abogados',
       description: 'Conocé los resultados reales de Capeletti Abogados: casos ganados, montos cobrados y tipos de lesiones. Más de 7.000 trabajadores representados exitosamente.',
       path: '/resultados',
+      breadcrumbs: this.breadcrumbs,
+      schema: this.seoService.getLegalServiceSchema(),
     });
   }
 }

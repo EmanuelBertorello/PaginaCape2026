@@ -35,6 +35,7 @@ export class CmLandingComponent implements OnInit {
         title: this.cm.metaTitle,
         description: this.cm.metaDescription,
         path: '/' + slug,
+        breadcrumbs: this.breadcrumbs,
         schema: this.seoService.getFaqSchema(this.cm.faqs),
       });
     }

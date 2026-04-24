@@ -35,6 +35,7 @@ export class ArticuloLandingComponent implements OnInit {
         description: a.seoDescription,
         path: '/' + a.slug,
         ogType: 'article',
+        breadcrumbs: this.breadcrumbs,
         schema: this.seoService.getArticleSchema({
           titulo: a.seoTitle,
           descripcion: a.seoDescription,

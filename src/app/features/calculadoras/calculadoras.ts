@@ -48,6 +48,7 @@ export class CalculadorasComponent implements OnInit {
       title: 'Calculadora de Indemnización Laboral 2026',
       description: 'Calculá una estimación de tu indemnización por accidente laboral o enfermedad profesional en Argentina. Herramienta gratuita de Capeletti Abogados.',
       path: '/calculadoras-de-indemnizacion',
+      breadcrumbs: this.breadcrumbs,
     });
   }
 }

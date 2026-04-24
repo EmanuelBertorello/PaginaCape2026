@@ -129,9 +129,19 @@ ${urls.map(u => `  <url>
 app.get('/robots.txt', (_req: Request, res: Response) => {
   const robotsTxt = `User-agent: *
 Allow: /
+Disallow: /contactanos
 
-Disallow: /admin/
-Disallow: /*.json$
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml`;
 

@@ -34,6 +34,8 @@ export class HonorariosComponent implements OnInit {
       title: 'Honorarios — Sin Costo Anticipado',
       description: 'Capeletti Abogados trabaja con honorarios a éxito. No cobramos nada hasta que vos cobrás tu indemnización. Conocé cómo funciona nuestro sistema de honorarios.',
       path: '/honorarios',
+      breadcrumbs: this.breadcrumbs,
+      schema: this.seoService.getLegalServiceSchema(),
     });
   }
 }

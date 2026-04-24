@@ -331,7 +331,10 @@ export class HomeComponent implements OnInit, OnDestroy {
       title: 'Abogados Accidentes Laborales y ART',
       description: 'Abogados especialistas en accidentes laborales, ART e indemnizaciones en Santa Fe, Neuquén, Río Negro, Entre Ríos y Buenos Aires. Consulta gratis, sin anticipos, solo cobramos si ganamos.',
       path: '/',
-      schema: this.seoService.getLegalServiceSchema(),
+      schema: this.seoService.combineSchemas([
+        this.seoService.getLegalServiceSchema(),
+        this.seoService.getWebSiteSchema(),
+      ]),
     });
   }
 }

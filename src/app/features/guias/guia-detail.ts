@@ -35,6 +35,16 @@ export class GuiaDetailComponent implements OnInit {
       description: 'Guía legal completa sobre ' + this.titulo.toLowerCase() + '. Información actualizada para trabajadores de Argentina. Por Capeletti Abogados.',
       path: '/guias/' + this.slug,
       ogType: 'article',
+      breadcrumbs: this.breadcrumbs,
+      schema: this.seoService.getArticleSchema({
+        titulo: this.titulo + ' — Guía Legal',
+        descripcion: 'Guía legal completa sobre ' + this.titulo.toLowerCase() + '. Información actualizada para trabajadores de Argentina.',
+        fechaPublicacion: '2026-01-01',
+        fechaModificacion: new Date().toISOString().split('T')[0],
+        autor: 'Bruno Capeletti',
+        slug: this.slug,
+        seccion: 'guias',
+      }),
     });
   }
 }

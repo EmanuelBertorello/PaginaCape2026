@@ -45,6 +45,7 @@ export class LesionPageComponent implements OnInit {
         title: this.lesion.metaTitle,
         description: this.lesion.metaDescription,
         path: '/' + this.lesion.slug,
+        breadcrumbs: this.breadcrumbs,
         schema: this.lesion.faqs.length > 0
           ? this.seoService.getFaqSchema(this.lesion.faqs.map(f => ({ pregunta: f.pregunta, respuesta: f.respuesta })))
           : undefined,

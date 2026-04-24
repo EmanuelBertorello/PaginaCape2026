@@ -62,6 +62,7 @@ import { SeoService } from '../../core/services/seo.service';
                 title: 'Blog — Derecho Laboral y ART',
                 description: 'Artículos sobre accidentes laborales, ART, Comisiones Médicas e indemnizaciones. Información actualizada para trabajadores y abogados de Argentina.',
                 path: '/blog',
+                breadcrumbs: this.breadcrumbs,
         });
   }
 }

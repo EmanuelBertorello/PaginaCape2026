@@ -137,6 +137,7 @@ export class AltaMedicaComponent implements OnInit {
       title: 'Alta médica de la ART: cómo impugnarla en 2026 | Capeletti Abogados',
       description: '¿La ART te dio el alta y seguís con dolor? Tenés 5 días hábiles para impugnarla. Te explicamos el procedimiento actualizado con Res. SRT 5/2026. Consulta gratis.',
       path: '/alta-medica-art',
+      breadcrumbs: this.breadcrumbs,
       schema: this.seoService.getFaqSchema(this.faqs.map(f => ({ pregunta: f.pregunta, respuesta: f.respuesta }))),
     });
   }

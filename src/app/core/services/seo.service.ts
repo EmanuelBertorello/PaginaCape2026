@@ -60,6 +60,14 @@ export class SeoService {
     this.meta.updateTag({ name: 'twitter:image', content: image });
   }
 
+  combineSchemas(schemas: object[]): object {
+    const items = schemas.map(s => {
+      const { '@context': _ctx, ...rest } = s as Record<string, unknown>;
+      return rest;
+    });
+    return { '@context': 'https://schema.org', '@graph': items };
+  }
+
   setSchema(schema: object): void {
     const existing = this.document.querySelector('script[type="application/ld+json"][data-seo="dynamic"]');
     if (existing) {
@@ -88,6 +96,7 @@ export class SeoService {
     ogType?: OgData['type'];
     ogImage?: string;
     schema?: object;
+    breadcrumbs?: Array<{ label: string; url: string }>;
   }): void {
     const canonicalUrl = `${this.siteUrl}${params.path}`;
 
@@ -104,15 +113,23 @@ export class SeoService {
       image: params.ogImage,
     });
 
-    if (params.schema) {
-      this.setSchema(params.schema);
+    const schemas: object[] = [];
+    if (params.schema) schemas.push(params.schema);
+    if (params.breadcrumbs?.length) schemas.push(this.getBreadcrumbSchema(params.breadcrumbs));
+
+    if (schemas.length === 0) {
+      this.document.querySelector('script[type="application/ld+json"][data-seo="dynamic"]')?.remove();
+    } else if (schemas.length === 1) {
+      this.setSchema(schemas[0]);
+    } else {
+      this.setSchema(this.combineSchemas(schemas));
     }
   }
 
   getLegalServiceSchema(): object {
     return {
       '@context': 'https://schema.org',
-      '@type': 'LegalService',
+      '@type': ['LegalService', 'LocalBusiness'],
       name: 'Capeletti Abogados',
       url: this.siteUrl,
       logo: `${this.siteUrl}/assets/logo.webp`,
@@ -146,6 +163,30 @@ export class SeoService {
         'https://www.linkedin.com/company/capeletti-abogados',
       ],
       priceRange: 'Sin cargo por consulta inicial',
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        reviewCount: '247',
+        bestRating: '5',
+        worstRating: '1',
+      },
+    };
+  }
+
+  getWebSiteSchema(): object {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: this.siteName,
+      url: this.siteUrl,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${this.siteUrl}/preguntas-frecuentes?q={search_term_string}`,
+        },
+        'query-input': 'required name=search_term_string',
+      },
     };
   }
 

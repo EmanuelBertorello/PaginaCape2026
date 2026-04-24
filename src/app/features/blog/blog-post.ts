@@ -105,6 +105,7 @@ interface PostStub {
                         description: this.post.metaDescription,
                         path: '/blog/' + slug,
                         ogType: 'article',
+                        breadcrumbs: this.breadcrumbs,
                         schema: this.seoService.getArticleSchema({
                                     titulo: this.post.titulo,
                                     descripcion: this.post.metaDescription,

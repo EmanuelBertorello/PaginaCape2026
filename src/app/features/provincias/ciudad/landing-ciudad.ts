@@ -44,6 +44,7 @@ export class LandingCiudadComponent implements OnInit {
         title: this.ciudad.metaTitle,
         description: this.ciudad.metaDescription,
         path: '/' + provinciaSlug + '/' + ciudadSlug,
+        breadcrumbs: this.breadcrumbs,
         schema: this.seoService.getLocalBusinessSchema({
           ciudad: this.ciudad.nombre,
           provincia: this.ciudad.provincia,

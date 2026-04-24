@@ -44,6 +44,7 @@ export class GuiasHubComponent implements OnInit {
       title: 'Guías Legales Gratuitas — Accidentes Laborales y ART',
       description: 'Guías completas y gratuitas sobre accidentes laborales, ART, Comisiones Médicas y enfermedades profesionales. Escritas por abogados especializados.',
       path: '/guias',
+      breadcrumbs: this.breadcrumbs,
     });
   }
 }

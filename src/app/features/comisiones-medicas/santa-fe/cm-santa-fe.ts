@@ -22,6 +22,8 @@ export class CmSantaFeComponent implements OnInit {
       title: 'Comisión Médica Santa Fe Capital N° 1 — Guía ART',
       description: 'Todo sobre la CM N° 1 de Santa Fe Capital. Preparación, documentación y representación legal. Capeletti Abogados.',
       path: '/comision-medica-santa-fe',
+      breadcrumbs: this.breadcrumbs,
+      schema: this.seoService.getLocalBusinessSchema({ ciudad: 'Santa Fe', provincia: 'Santa Fe', slug: 'comision-medica-santa-fe' }),
     });
   }
 }

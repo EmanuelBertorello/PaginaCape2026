@@ -31,6 +31,7 @@ export class ComoCobrarComponent implements OnInit {
       title: 'Cómo Cobrar la Indemnización ART en 2026 | Capeletti Abogados',
       description: 'Guía completa: cómo cobrar la indemnización ART por accidente laboral. Pasos, plazos, fórmula de cálculo 2026 y qué hacer si la ART no paga. Consulta gratis.',
       path: '/como-cobrar-la-art',
+      breadcrumbs: this.breadcrumbs,
       schema: this.seoService.getFaqSchema([
         { pregunta: '¿Cuánto demora cobrar la indemnización ART?', respuesta: 'Desde la denuncia hasta el cobro puede demorar entre 60 y 180 días dependiendo de la CM y si hay impugnación. Con abogado el proceso es más ágil.' },
         { pregunta: '¿Qué porcentaje cobra el abogado por la ART?', respuesta: 'En Capeletti trabajamos a honorarios a éxito: solo cobramos si ganamos, sin anticipos. El porcentaje se acuerda antes de comenzar.' },

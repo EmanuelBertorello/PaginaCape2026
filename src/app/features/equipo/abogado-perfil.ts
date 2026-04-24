@@ -33,6 +33,7 @@ export class AbogadoPerfilComponent implements OnInit {
         title: `${this.abogado.nombre} ${this.abogado.apellido} — ${this.abogado.titulo}`,
         description: `${this.abogado.titulo}. ${this.abogado.matricula}. Especialista en accidentes laborales en ${this.abogado.provinciasFoco.join(', ')}.`,
         path: '/abogados/' + slug,
+        breadcrumbs: this.breadcrumbs,
         schema: this.seoService.getPersonSchema({
           nombre: `${this.abogado.nombre} ${this.abogado.apellido}`,
           cargo: this.abogado.titulo,

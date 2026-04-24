@@ -29,6 +29,7 @@ export class SobreNosotrosComponent implements OnInit {
       title: 'Sobre Nosotros — Estudio Capeletti',
       description: 'Conocé al equipo de Capeletti Abogados. Más de 10 años especializados en accidentes laborales y ART en Santa Fe, Neuquén, Entre Ríos, Río Negro y Buenos Aires.',
       path: '/sobre-nosotros',
+      breadcrumbs: this.breadcrumbs,
       schema: this.seoService.getLegalServiceSchema(),
     });
   }

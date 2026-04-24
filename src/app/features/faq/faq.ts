@@ -40,6 +40,7 @@ export class FaqComponent implements OnInit {
       title: 'Preguntas Frecuentes sobre ART y Accidentes Laborales',
       description: 'Respuestas a las preguntas más comunes sobre accidentes laborales, ART, Comisiones Médicas e indemnizaciones en Argentina. Todo lo que necesitás saber.',
       path: '/preguntas-frecuentes',
+      breadcrumbs: this.breadcrumbs,
       schema: this.seoService.getFaqSchema(
         FAQS_DATA.map(f => ({ pregunta: f.pregunta, respuesta: f.respuesta }))
       ),

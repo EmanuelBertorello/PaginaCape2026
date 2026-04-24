@@ -34,6 +34,7 @@ export class HubProvincialComponent implements OnInit {
         title: this.provincia.metaTitle,
         description: this.provincia.metaDescription,
         path: '/' + this.provincia.slug,
+        breadcrumbs: this.breadcrumbs,
         schema: this.seoService.getLocalBusinessSchema({
           ciudad: this.provincia.nombre,
           provincia: this.provincia.nombre,

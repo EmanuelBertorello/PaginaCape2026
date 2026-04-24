@@ -22,6 +22,8 @@ export class CmNeuquenComponent implements OnInit {
       title: 'Comisión Médica Neuquén N° 10 — Guía ART',
       description: 'Guía completa de la CM N° 10 de Neuquén. Preparación, documentación y representación legal especializada en petróleo y construcción.',
       path: '/comision-medica-neuquen',
+      breadcrumbs: this.breadcrumbs,
+      schema: this.seoService.getLocalBusinessSchema({ ciudad: 'Neuquén', provincia: 'Neuquén', slug: 'comision-medica-neuquen' }),
     });
   }
 }

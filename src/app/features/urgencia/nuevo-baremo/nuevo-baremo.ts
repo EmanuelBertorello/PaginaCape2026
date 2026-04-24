@@ -40,6 +40,7 @@ export class NuevoBaremoComponent implements OnInit {
       title: 'Nuevo Baremo ART 2026: Cambios, Tabla y Cómo Te Afecta | Capeletti',
       description: 'El baremo ART 2026 actualizó los porcentajes de incapacidad. Conocé los cambios, la nueva tabla y si tu caso puede mejorar. Abogados especializados.',
       path: '/nuevo-baremo-art-2026',
+      breadcrumbs: this.breadcrumbs,
       schema: this.seoService.getFaqSchema(this.faqs.map(f => ({ pregunta: f.pregunta, respuesta: f.respuesta }))),
     });
   }

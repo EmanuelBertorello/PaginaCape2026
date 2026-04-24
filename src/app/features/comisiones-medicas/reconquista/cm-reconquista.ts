@@ -22,6 +22,8 @@ export class CmReconquistaComponent implements OnInit {
       title: 'Comisión Médica Reconquista N° 17 — Guía ART Norte Santa Fe',
       description: 'Guía para la CM de Reconquista. Especialistas en zona norte de Santa Fe: agroindustria, forestal y construcción. Capeletti Abogados.',
       path: '/comision-medica-reconquista',
+      breadcrumbs: this.breadcrumbs,
+      schema: this.seoService.getLocalBusinessSchema({ ciudad: 'Reconquista', provincia: 'Santa Fe', slug: 'comision-medica-reconquista' }),
     });
   }
 }

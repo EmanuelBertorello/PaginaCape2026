@@ -50,9 +50,10 @@ export class MediosComponent implements OnInit {
   ];
   ngOnInit(): void {
     this.seoService.setPage({
-      title: ' Abogados en los Medios',
-      description: 'Apariciones de  Abogados en medios de comunicación. Notas sobre derecho laboral, ART y accidentes de trabajo.',
+      title: 'Capeletti Abogados en los Medios',
+      description: 'Apariciones de Capeletti Abogados en medios de comunicación. Notas sobre derecho laboral, ART y accidentes de trabajo en Argentina.',
       path: '/medios',
+      breadcrumbs: this.breadcrumbs,
     });
   }
 }

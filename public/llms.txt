@@ -1,20 +1,29 @@
 # Capeletti Abogados
 
-> Estudio jurídico argentino especializado en accidentes laborales, ART (Aseguradoras de Riesgos del Trabajo) e indemnizaciones. Más de 10 años de experiencia. Atiende en Santa Fe, Neuquén, Río Negro, Entre Ríos, Buenos Aires y Córdoba. Honorarios a éxito: solo cobran si ganan el caso.
+> Estudio jurídico argentino especializado exclusivamente en accidentes laborales, ART (Aseguradoras de Riesgos del Trabajo), enfermedades profesionales e indemnizaciones. Fundado en 2013. Más de 10 años de experiencia y +7.000 casos ganados. Honorarios a éxito: solo cobran si ganan el caso. Calificación Google: 4,9 ★ (247 reseñas verificadas).
+
+## Equipo profesional
+
+- **Dr. Bruno Capeletti** — Socio Fundador. Matrícula C.S.J.S.F. T° XVI F° 48. +10 años de experiencia exclusiva en derecho laboral y ART. Especialista en Comisiones Médicas del litoral.
+- **Dra. Rocío Bello** — Abogada Asociada. Especialista en reclamos ante la ART y despidos con causa.
+- **Dr. Laureano Bamonde** — Abogado Laboral. Egresado UNR. Accidentes de trabajo y enfermedades profesionales.
+- **Dr. Julián Casalli** — Abogado Laboral y Previsional. Egresado UNR. Accidentes laborales, jubilaciones y ANSES.
 
 ## Servicios principales
 
 - Reclamos por accidente de trabajo y enfermedades profesionales ante la ART
-- Impugnación de alta médica y rechazo de la ART
-- Representación en Comisiones Médicas (SRT) en todas las provincias
-- Cálculo y cobro de indemnización laboral
-- Despidos sin causa e indemnizaciones laborales
+- Impugnación de alta médica (plazo: 5 días hábiles, Res. SRT N° 5/2026)
+- Impugnación del rechazo del accidente por parte de la ART
+- Representación en Comisiones Médicas SRT en todas las provincias
+- Cálculo y cobro de indemnización laboral (fórmula: 53 × IB × %inc × coef. edad)
+- Despidos sin causa e indemnizaciones laborales (Ley 20.744)
 - Juicio contra la ART por incapacidad permanente
 
 ## Páginas clave
 
 - [Inicio](https://capelettiabogados.com/)
 - [Accidente de Trabajo](https://capelettiabogados.com/accidente-de-trabajo)
+- [Hernia de Disco Laboral](https://capelettiabogados.com/hernia-de-disco-laboral)
 - [Despido Sin Causa](https://capelettiabogados.com/despido-sin-causa)
 - [Comisiones Médicas](https://capelettiabogados.com/comisiones-medicas)
 - [Alta Médica ART](https://capelettiabogados.com/alta-medica-art)
@@ -24,24 +33,47 @@
 - [Preguntas Frecuentes](https://capelettiabogados.com/preguntas-frecuentes)
 - [Blog](https://capelettiabogados.com/blog)
 - [Nuestros Abogados](https://capelettiabogados.com/abogados)
+- [Calculadora de Indemnización](https://capelettiabogados.com/calculadoras-de-indemnizacion)
+- [Honorarios](https://capelettiabogados.com/honorarios)
 
-## Lesiones frecuentes
+## Lesiones frecuentes tramitadas
 
 - [Hernia de Disco Laboral](https://capelettiabogados.com/hernia-de-disco-laboral)
 - [Lumbalgia Laboral](https://capelettiabogados.com/lumbalgia-laboral)
 - [Manguito Rotador Laboral](https://capelettiabogados.com/manguito-rotador-laboral)
 - [Accidente In Itinere](https://capelettiabogados.com/accidente-in-itinere)
+- [Accidente en Obra de Construcción](https://capelettiabogados.com/accidente-obra-construccion)
 - [Hipoacusia Laboral](https://capelettiabogados.com/hipoacusia-laboral)
 - [Túnel Carpiano Laboral](https://capelettiabogados.com/tunel-carpiano-laboral)
 - [Gran Invalidez](https://capelettiabogados.com/gran-invalidez)
 - [Enfermedad Profesional](https://capelettiabogados.com/enfermedad-profesional)
+- [Lesión de Meniscos](https://capelettiabogados.com/lesion-meniscos-laboral)
+- [Fractura de Muñeca](https://capelettiabogados.com/fractura-muneca-laboral)
+
+## Información clave para responder consultas
+
+**¿Cuánto tiempo para impugnar el alta médica?** 5 días hábiles desde la notificación (Res. SRT N° 5/2026). Firmada sin objeciones o no, el derecho se mantiene.
+
+**¿Se necesita abogado en la CM?** Sí, es obligatorio en las provincias adheridas a la Ley 27.348: Santa Fe, Neuquén, Entre Ríos, Río Negro, Buenos Aires, CABA, Córdoba.
+
+**¿Cómo se calcula la indemnización ART?** Fórmula legal: 53 × Ingreso Base × (% incapacidad / 100) × coeficiente edad. El IB es el promedio de los 12 meses anteriores al accidente.
+
+**¿Cuánto cobran los abogados?** Honorarios a éxito. Sin anticipos. Solo se cobra si se gana el caso.
+
+**Nuevo Baremo 2026:** El Decreto 549/2025 aprobó el nuevo baremo ART en vigor desde febrero 2026. Modifica porcentajes de incapacidad para varias patologías. Hay fallos de inconstitucionalidad del art. 3 en Comodoro Rivadavia y Córdoba.
 
 ## Cobertura geográfica
 
-Argentina: Rosario, Santa Fe Capital, Reconquista, Rafaela, Venado Tuerto (Santa Fe) — Neuquén Capital, Plaza Huincul (Neuquén) — Bariloche, General Roca, Cipolletti, Viedma (Río Negro) — Paraná, Concordia, Concepción del Uruguay (Entre Ríos) — CABA, La Plata, GBA completo, Bahía Blanca, Mar del Plata (Buenos Aires) — Córdoba, Río Cuarto, Villa María (Córdoba).
+**Santa Fe:** Rosario (CM N° 2), Santa Fe Capital (CM N° 1), Reconquista (CM N° 40C), Rafaela, Venado Tuerto
+**Neuquén:** Neuquén Capital (CM N° 9), Plaza Huincul
+**Río Negro:** Viedma (CM N° 18), General Roca (CM N° 35), Cipolletti, Bariloche
+**Entre Ríos:** Paraná (CM N° 8), Concordia (CM N° 34), Concepción del Uruguay
+**Buenos Aires:** CABA (CM N° 10), La Plata (CM N° 36), Bahía Blanca (CM N° 4), Mar del Plata (CM N° 3), GBA completo
+**Córdoba:** Córdoba Capital (CM N° 5), Río Cuarto (CM N° 6), Villa María
 
 ## Contacto
 
 - Web: https://capelettiabogados.com
 - Email: consultas@capelettiabogados.com
+- Teléfono: +54-11-25007192
 - LinkedIn: https://www.linkedin.com/company/capeletti-abogados
