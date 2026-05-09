@@ -29,14 +29,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Rosario', 'San Lorenzo', 'Cañada de Gómez', 'Casilda', 'Carcarañá', 'Villa Constitución', 'Rufino', 'Venado Tuerto'],
     sectorPrincipal: 'industria frigorífica, construcción, metalurgia, salud',
     lesionesFrequentes: ['Hernia de disco lumbar', 'Lumbalgia crónica', 'Lesiones de hombro (manguito rotador)', 'Accidentes en obra de construcción', 'Hipoacusia laboral'],
-    abogado: { especialidad: 'ART · Comisión Médica Rosario', bio: 'Actuamos ante la CM N° 2 de Rosario desde 2013. Más de 10 años representando trabajadores de la industria y construcción rosarina ante esta comisión.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · Comisión Médica Rosario', bio: 'Actuamos ante la CM N° 2 de Rosario desde 2013. Más de 10 años representando trabajadores de la industria y construcción rosarina ante esta comisión.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Rosario?', respuesta: 'Sí. En Santa Fe la asistencia letrada es obligatoria desde el primer trámite ante la Comisión Médica, según la Ley 27.348. En Capeletti no cobramos honorarios anticipados — solo si ganamos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM N° 2 de Rosario?', respuesta: 'El trámite ante la Comisión Médica de Rosario tiene un plazo máximo de 60 días hábiles para resolver, con posibilidad de prórroga de 30 días más según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de Rosario?', respuesta: 'Tenés 5 días hábiles del dictamen para apelar ante la Comisión Médica Central (Moreno 401, CABA). En Capeletti evaluamos en cada caso si conviene apelar o ir directamente a la vía judicial.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de Rosario?', respuesta: 'La CM N° 2 se encuentra en Av. Corrientes 332, Rosario. Podés llegar en colectivo desde el centro o en auto con estacionamiento en las inmediaciones.' },
     ],
-    metaTitle: 'Comisión Médica Rosario — CM N°2 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica Rosario — CM N°2 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección, horarios y trámites de la CM N°2 de Rosario. Abogados laborales que actúan ante esta comisión. Consulta gratis.',
   },
   {
@@ -51,14 +51,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Santa Fe Capital', 'Santo Tomé', 'Sauce Viejo', 'Laguna Paiva', 'San Justo', 'Esperanza', 'Rafaela', 'Sunchales'],
     sectorPrincipal: 'administración pública, construcción, salud, agroindustria',
     lesionesFrequentes: ['Hernia de disco lumbar', 'Lumbalgia crónica', 'Accidentes de tránsito in itinere', 'Lesiones de rodilla (meniscos)', 'Síndrome de túnel carpiano'],
-    abogado: { especialidad: 'ART · CM Santa Fe Capital', bio: 'Especialista en reclamos ante la ART en Santa Fe Capital. Actuamos ante la CM N° 1 desde el inicio del trámite hasta el cobro de la indemnización.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Santa Fe Capital', bio: 'Especialista en reclamos ante la ART en Santa Fe Capital. Actuamos ante la CM N° 1 desde el inicio del trámite hasta el cobro de la indemnización.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Santa Fe Capital?', respuesta: 'Sí. En Santa Fe la asistencia letrada es obligatoria desde el primer trámite ante la Comisión Médica, según la Ley 27.348. En Capeletti no cobramos honorarios anticipados — solo si ganamos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM N° 1 de Santa Fe?', respuesta: 'El trámite tiene un plazo máximo de 60 días hábiles para resolver, con posibilidad de prórroga de 30 días más según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de Santa Fe?', respuesta: 'Tenés 5 días hábiles del dictamen para apelar ante la Comisión Médica Central (Moreno 401, CABA) o iniciar la vía judicial laboral.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de Santa Fe Capital?', respuesta: 'La CM N° 1 se encuentra en Laprida 2752, Santa Fe Capital. Consultanos y te orientamos sobre cómo llegar y qué documentación llevar.' },
     ],
-    metaTitle: 'Comisión Médica Santa Fe Capital — CM N°1 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica Santa Fe Capital — CM N°1 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección, horarios y trámites de la CM N°1 de Santa Fe Capital. Abogados laborales locales. Consulta gratis.',
   },
   {
@@ -73,14 +73,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Reconquista', 'Avellaneda', 'Vera', 'Las Toscas', 'Villa Ocampo', 'Malabrigo', 'Romang', 'San Javier'],
     sectorPrincipal: 'agroindustria, frigoríficos, forestal, construcción',
     lesionesFrequentes: ['Hernia de disco lumbar', 'Hipoacusia laboral', 'Lumbalgia crónica', 'Accidentes de trabajo en frigorífico', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · CM Reconquista y norte santafesino', bio: 'Actuamos ante la Comisión Médica de Reconquista (CM 40C, Av. España 504) desde 2014. Especialistas en la agroindustria y el sector forestal del norte de Santa Fe.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Reconquista y norte santafesino', bio: 'Actuamos ante la Comisión Médica de Reconquista (CM 40C, Av. España 504) desde 2014. Especialistas en la agroindustria y el sector forestal del norte de Santa Fe.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Reconquista?', respuesta: 'Sí. En Santa Fe la asistencia letrada es obligatoria desde el primer trámite ante la CM, según la Ley 27.348. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM de Reconquista?', respuesta: 'El plazo máximo es de 60 días hábiles para resolver, con posibilidad de prórroga de 30 días más según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de Reconquista?', respuesta: 'Tenés 5 días hábiles del dictamen para apelar ante la CM Central en CABA, o iniciar la vía judicial. Te asesoramos en cada caso.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de Reconquista?', respuesta: 'La CM se encuentra en Av. España 504, Reconquista. Si vivís en Vera, Las Toscas, Villa Ocampo o Avellaneda, esta es tu CM.' },
     ],
-    metaTitle: 'Comisión Médica Reconquista — CM N°40C | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica Reconquista — CM N°40C 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección, horarios y trámites de la CM de Reconquista. Especialistas en agroindustria norte de Santa Fe. Consulta gratis.',
   },
   {
@@ -95,14 +95,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Neuquén Capital', 'Plottier', 'Centenario', 'Cutral-Có', 'Plaza Huincul', 'Zapala', 'San Martín de los Andes', 'toda la provincia'],
     sectorPrincipal: 'industria petrolera, Vaca Muerta, construcción, turismo',
     lesionesFrequentes: ['Accidentes en obras petroleras', 'Lesiones por esfuerzo en perforación', 'Accidentes en construcción', 'Enfermedades profesionales por exposición química', 'Lumbalgia laboral'],
-    abogado: { especialidad: 'ART · CM Neuquén · Vaca Muerta', bio: 'Actuamos ante la CM N° 9 de Neuquén (Bartolomé Mitre 950) representando trabajadores del sector petrolero, construcción y turismo. Presencia real en Neuquén Capital.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Neuquén · Vaca Muerta', bio: 'Actuamos ante la CM N° 9 de Neuquén (Bartolomé Mitre 950) representando trabajadores del sector petrolero, construcción y turismo. Presencia real en Neuquén Capital.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Neuquén?', respuesta: 'Sí. Neuquén adhirió a la Ley 27.348, por lo que la asistencia letrada es obligatoria desde el primer trámite. En Capeletti no cobramos anticipos — solo si ganamos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM N° 9 de Neuquén?', respuesta: 'El plazo máximo es de 60 días hábiles con posibilidad de prórroga según la Res. SRT N° 5/2026. La CM de Neuquén es la única para toda la provincia.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de Neuquén?', respuesta: 'Tenés 5 días hábiles para apelar ante la Comisión Médica Central (Moreno 401, CABA) o iniciar la vía judicial laboral.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de Neuquén?', respuesta: 'La CM N° 9 se encuentra en Bartolomé Mitre 950, Neuquén Capital. Es la única CM para toda la provincia de Neuquén.' },
     ],
-    metaTitle: 'Comisión Médica Neuquén — CM N°9 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica Neuquén — CM N°9 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección, horarios y trámites de la CM N°9 de Neuquén. Especialistas en petróleo y Vaca Muerta. Consulta gratis.',
   },
   {
@@ -117,14 +117,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Paraná', 'Diamante', 'Victoria', 'La Paz', 'Gualeguaychú', 'Nogoyá', 'Villaguay', 'Crespo'],
     sectorPrincipal: 'agroindustria, citricultura, construcción, salud',
     lesionesFrequentes: ['Lumbalgia crónica', 'Hernia de disco lumbar', 'Accidentes en cosecha citrícola', 'Lesiones de hombro', 'Hipoacusia laboral'],
-    abogado: { especialidad: 'ART · CM Paraná · Entre Ríos', bio: 'Actuamos ante la CM N° 8 de Paraná representando trabajadores de toda la provincia de Entre Ríos. Entre Ríos adhirió a la Ley 27.348 — la asistencia letrada es obligatoria.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Paraná · Entre Ríos', bio: 'Actuamos ante la CM N° 8 de Paraná representando trabajadores de toda la provincia de Entre Ríos. Entre Ríos adhirió a la Ley 27.348 — la asistencia letrada es obligatoria.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Paraná?', respuesta: 'Sí. Entre Ríos adhirió a la Ley 27.348, por lo que la asistencia letrada es obligatoria desde el primer trámite ante la CM. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM N° 8 de Paraná?', respuesta: 'El plazo máximo es de 60 días hábiles con posibilidad de prórroga de 30 días más según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de Paraná?', respuesta: 'Tenés 5 días hábiles del dictamen para apelar ante la CM Central (Moreno 401, CABA) o iniciar la vía judicial laboral.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de Paraná?', respuesta: 'La CM N° 8 se encuentra en Mendoza 115, Paraná, Entre Ríos. Si vivís en Diamante, Victoria o Gualeguaychú, esta también es tu CM.' },
     ],
-    metaTitle: 'Comisión Médica Paraná — CM N°8 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica Paraná — CM N°8 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección, horarios y trámites de la CM N°8 de Paraná, Entre Ríos. Abogados laborales locales. Consulta gratis.',
   },
   {
@@ -138,14 +138,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Concordia', 'Colón', 'San José', 'Federación', 'Federal', 'Concepción del Uruguay'],
     sectorPrincipal: 'citricultura, arándanos, agroindustria, turismo',
     lesionesFrequentes: ['Accidentes en cosecha citrícola', 'Lumbalgia laboral', 'Lesiones en manos y muñecas', 'Hipoacusia por maquinaria agrícola', 'Accidentes de tránsito in itinere'],
-    abogado: { especialidad: 'ART · CM Concordia · norte de Entre Ríos', bio: 'Representamos trabajadores citrícolas y agroindustriales ante la CM N° 34 de Concordia. Conocemos los criterios locales y los sectores específicos de la zona.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Concordia · norte de Entre Ríos', bio: 'Representamos trabajadores citrícolas y agroindustriales ante la CM N° 34 de Concordia. Conocemos los criterios locales y los sectores específicos de la zona.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Concordia?', respuesta: 'Sí. Entre Ríos adhirió a la Ley 27.348. La asistencia letrada es obligatoria desde el primer trámite. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM N° 34 de Concordia?', respuesta: 'El plazo máximo es de 60 días hábiles según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de Concordia?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central o ir a la vía judicial.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de Concordia?', respuesta: 'La CM N° 34 se encuentra en Alberdi 47, Concordia. Si vivís en Colón, Federación o Federal, esta es tu CM.' },
     ],
-    metaTitle: 'Comisión Médica Concordia — CM N°34 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica Concordia — CM N°34 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección y trámites de la CM N°34 de Concordia, Entre Ríos. Especialistas en citricultura. Consulta gratis.',
   },
   {
@@ -159,14 +159,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Bariloche', 'El Bolsón', 'Lago Puelo', 'Dina Huapi', 'toda la zona andina'],
     sectorPrincipal: 'turismo, hotelería, gastronomía, construcción, fruticultura',
     lesionesFrequentes: ['Accidentes en construcción', 'Lumbalgia laboral', 'Lesiones en hotelería y gastronomía', 'Accidentes de tránsito in itinere', 'Lesiones de hombro'],
-    abogado: { especialidad: 'ART · CM Bariloche · Río Negro', bio: 'Actuamos ante la delegación de Bariloche representando trabajadores del turismo, la hotelería y la construcción. Río Negro adhirió a la Ley 27.348.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Bariloche · Río Negro', bio: 'Actuamos ante la delegación de Bariloche representando trabajadores del turismo, la hotelería y la construcción. Río Negro adhirió a la Ley 27.348.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Bariloche?', respuesta: 'Sí. Río Negro adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM de Bariloche?', respuesta: 'El plazo máximo es de 60 días hábiles según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de Bariloche?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM N° 18 (Viedma) o la CM Central en CABA.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de Bariloche?', respuesta: 'La CM se encuentra en Moreno 35, Bariloche. Si vivís en El Bolsón o Lago Puelo, también podés tramitar aquí.' },
     ],
-    metaTitle: 'Comisión Médica Bariloche | Dirección y trámites ART | Capeletti',
+    metaTitle: 'Comisión Médica Bariloche 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección y trámites de la CM de Bariloche, Río Negro. Especialistas en turismo y construcción. Consulta gratis.',
   },
   {
@@ -180,14 +180,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Viedma', 'Carmen de Patagones', 'Las Grutas', 'San Antonio Oeste', 'toda la costa rionegrina'],
     sectorPrincipal: 'administración pública, fruticultura, turismo, pesca',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes de tránsito in itinere', 'Lesiones musculoesqueléticas', 'Enfermedades profesionales por esfuerzo', 'Hipoacusia laboral'],
-    abogado: { especialidad: 'ART · CM Viedma · Río Negro', bio: 'Actuamos ante la CM N° 18 de Viedma representando trabajadores de toda la costa rionegrina y la patagonia norte.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Viedma · Río Negro', bio: 'Actuamos ante la CM N° 18 de Viedma representando trabajadores de toda la costa rionegrina y la patagonia norte.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Viedma?', respuesta: 'Sí. Río Negro adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM N° 18 de Viedma?', respuesta: 'El plazo máximo es de 60 días hábiles según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de Viedma?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central (Moreno 401, CABA) o iniciar la vía judicial.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de Viedma?', respuesta: 'La CM N° 18 se encuentra en Colón 135, Viedma. Es la CM cabecera de la provincia de Río Negro.' },
     ],
-    metaTitle: 'Comisión Médica Viedma — CM N°18 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica Viedma — CM N°18 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección y trámites de la CM N°18 de Viedma, Río Negro. Abogados laborales locales. Consulta gratis.',
   },
   {
@@ -201,14 +201,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['General Roca', 'Cipolletti', 'Allen', 'Cinco Saltos', 'Catriel', 'Fernández Oro', 'Villa Regina'],
     sectorPrincipal: 'fruticultura, petróleo, agroindustria, construcción',
     lesionesFrequentes: ['Accidentes en cosecha frutícola', 'Lumbalgia laboral', 'Lesiones de hombro', 'Accidentes petroleros (Catriel)', 'Enfermedades profesionales por frío'],
-    abogado: { especialidad: 'ART · CM General Roca · Alto Valle', bio: 'Actuamos ante la CM N° 35 de General Roca representando trabajadores del Alto Valle del Río Negro: fruticultura, petróleo y construcción.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM General Roca · Alto Valle', bio: 'Actuamos ante la CM N° 35 de General Roca representando trabajadores del Alto Valle del Río Negro: fruticultura, petróleo y construcción.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de General Roca?', respuesta: 'Sí. Río Negro adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM N° 35 de General Roca?', respuesta: 'El plazo máximo es de 60 días hábiles según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de General Roca?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central o iniciar la vía judicial laboral.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de General Roca?', respuesta: 'La CM N° 35 se encuentra en Av. Roca 543, General Roca. Si vivís en Cipolletti, Allen o Cinco Saltos, esta es tu CM.' },
     ],
-    metaTitle: 'Comisión Médica General Roca — CM N°35 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica General Roca — CM N°35 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección y trámites de la CM N°35 de General Roca, Río Negro. Especialistas en fruticultura y petróleo. Consulta gratis.',
   },
   {
@@ -223,14 +223,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Córdoba Capital', 'Alta Gracia', 'La Calera', 'Jesús María', 'Carlos Paz', 'toda la zona metropolitana'],
     sectorPrincipal: 'industria automotriz, construcción, agroindustria, salud',
     lesionesFrequentes: ['Accidentes en industria automotriz', 'Hernia de disco lumbar', 'Accidentes en obra de construcción', 'Enfermedades profesionales por ruido', 'Lesiones de hombro'],
-    abogado: { especialidad: 'ART · CM Córdoba Capital', bio: 'Actuamos ante la CM N° 5 de Córdoba Capital representando trabajadores de la industria automotriz, la construcción y la agroindustria cordobesa.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Córdoba Capital', bio: 'Actuamos ante la CM N° 5 de Córdoba Capital representando trabajadores de la industria automotriz, la construcción y la agroindustria cordobesa.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Córdoba?', respuesta: 'Sí. Córdoba adhirió a la Ley 27.348. La asistencia letrada es obligatoria desde el primer trámite. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM N° 5 de Córdoba?', respuesta: 'El plazo máximo es de 60 días hábiles con posibilidad de prórroga según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de Córdoba?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central (Moreno 401, CABA) o iniciar la vía judicial.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de Córdoba Capital?', respuesta: 'La CM N° 5 se encuentra en Buenos Aires 454, Córdoba Capital, en pleno centro de la ciudad.' },
     ],
-    metaTitle: 'Comisión Médica Córdoba — CM N°5 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica Córdoba — CM N°5 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección y trámites de la CM N°5 de Córdoba Capital. Especialistas en industria automotriz y construcción. Consulta gratis.',
   },
   {
@@ -245,14 +245,14 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Ciudad Autónoma de Buenos Aires', 'todas las delegaciones de CABA'],
     sectorPrincipal: 'gastronomía, salud, construcción, comercio, transporte',
     lesionesFrequentes: ['Lumbalgia laboral', 'Síndrome de túnel carpiano', 'Accidentes de tránsito in itinere', 'Lesiones en hostelería y gastronomía', 'Enfermedades profesionales'],
-    abogado: { especialidad: 'ART · CM CABA · Buenos Aires', bio: 'Actuamos ante la CM N° 10 de CABA y sus delegaciones representando trabajadores de la Ciudad Autónoma y el Gran Buenos Aires.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM CABA · Buenos Aires', bio: 'Actuamos ante la CM N° 10 de CABA y sus delegaciones representando trabajadores de la Ciudad Autónoma y el Gran Buenos Aires.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de CABA?', respuesta: 'Sí. CABA adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos — solo si ganamos.' },
       { pregunta: '¿Cuánto tarda el trámite ante la CM N° 10 de CABA?', respuesta: 'El plazo máximo es de 60 días hábiles con posibilidad de prórroga de 30 días más según la Res. SRT N° 5/2026.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen de la CM de CABA?', respuesta: 'La propia CM 10 actúa como CM Central para apelaciones. También podés ir directamente a la vía judicial laboral.' },
       { pregunta: '¿Cómo llego a la Comisión Médica de CABA?', respuesta: 'La CM N° 10 se encuentra en Moreno 401, CABA (a metros del Congreso). También hay delegación en Villa Urquiza (Av. Olazábal 4300).' },
     ],
-    metaTitle: 'Comisión Médica CABA — CM N°10 | Moreno 401 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica CABA — CM N°10 | Moreno 401 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'Conocé la dirección, horarios y trámites de la CM N°10 de CABA (Moreno 401). Abogados laborales. Consulta gratis.',
   },
 
@@ -268,13 +268,13 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Venado Tuerto', 'Rufino', 'Melincué', 'San Gregorio', 'Laboulaye zona SF'],
     sectorPrincipal: 'agroindustria, soja, ganadería, semillas',
     lesionesFrequentes: ['Lumbalgia laboral', 'Hernia de disco por esfuerzo', 'Accidentes en maquinaria agrícola', 'Lesiones en cosecha', 'Accidentes de tránsito in itinere'],
-    abogado: { especialidad: 'ART · CM Venado Tuerto · sur de Santa Fe', bio: 'Actuamos ante la delegación de Venado Tuerto representando trabajadores del sur santafesino. En Santa Fe la asistencia letrada es obligatoria desde el primer trámite.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Venado Tuerto · sur de Santa Fe', bio: 'Actuamos ante la delegación de Venado Tuerto representando trabajadores del sur santafesino. En Santa Fe la asistencia letrada es obligatoria desde el primer trámite.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Venado Tuerto?', respuesta: 'Sí. En Santa Fe la asistencia letrada es obligatoria desde el primer trámite ante la CM, según la Ley 27.348. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Venado Tuerto?', respuesta: 'Atiende el sur de Santa Fe: Venado Tuerto, Rufino, Melincué y localidades cercanas.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central (Moreno 401, CABA) o iniciar la vía judicial laboral.' },
     ],
-    metaTitle: 'Comisión Médica Venado Tuerto | Dirección y trámites ART | Capeletti',
+    metaTitle: 'Comisión Médica Venado Tuerto 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'CM de Venado Tuerto, Santa Fe. Abogados laborales sin anticipo. Especialistas en accidentes agroindustriales. Consulta gratis.',
   },
   {
@@ -288,7 +288,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Rafaela', 'Sunchales', 'Esperanza', 'Brinkmann', 'Morteros'],
     sectorPrincipal: 'industria láctea, metalurgia, agro, transporte',
     lesionesFrequentes: ['Lumbalgia laboral', 'Hipoacusia por maquinaria industrial', 'Accidentes en planta láctea', 'Lesiones en transporte de larga distancia', 'Síndrome de túnel carpiano'],
-    abogado: { especialidad: 'ART · CM Rafaela · centro de Santa Fe', bio: 'Actuamos ante la delegación de Rafaela representando trabajadores de la industria láctea y metalúrgica del centro santafesino.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Rafaela · centro de Santa Fe', bio: 'Actuamos ante la delegación de Rafaela representando trabajadores de la industria láctea y metalúrgica del centro santafesino.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Rafaela?', respuesta: 'Sí. En Santa Fe la asistencia letrada es obligatoria desde el primer trámite ante la CM, según la Ley 27.348. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿La CM de Rafaela también atiende Sunchales?', respuesta: 'Sí, la delegación de Rafaela atiende toda la zona centro de Santa Fe incluyendo Sunchales, Esperanza y localidades cercanas.' },
@@ -308,7 +308,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['San Francisco', 'Brinkmann', 'Devoto', 'Las Varillas', 'Morteros', 'Frontera'],
     sectorPrincipal: 'agroindustria, industria láctea, metalmecánica',
     lesionesFrequentes: ['Lumbalgia laboral', 'Hernia de disco por esfuerzo', 'Accidentes en maquinaria agrícola', 'Hipoacusia laboral', 'Lesiones en planta industrial'],
-    abogado: { especialidad: 'ART · CM San Francisco · límite Córdoba-Santa Fe', bio: 'Actuamos ante la delegación de San Francisco representando trabajadores de la frontera Córdoba-Santa Fe. Especialistas en agroindustria y metalmecánica.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM San Francisco · límite Córdoba-Santa Fe', bio: 'Actuamos ante la delegación de San Francisco representando trabajadores de la frontera Córdoba-Santa Fe. Especialistas en agroindustria y metalmecánica.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de San Francisco?', respuesta: 'Sí. Córdoba adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de San Francisco?', respuesta: 'Atiende el este cordobés y la frontera con Santa Fe: San Francisco, Brinkmann, Devoto, Las Varillas y Morteros.' },
@@ -330,7 +330,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['La Matanza', 'San Justo', 'Isidro Casanova', 'Gregorio de Laferrere', 'González Catán'],
     sectorPrincipal: 'manufactura, comercio, logística, construcción',
     lesionesFrequentes: ['Lumbalgia laboral', 'Hernia de disco lumbar', 'Accidentes en obra de construcción', 'Accidentes de tránsito in itinere', 'Lesiones de hombro'],
-    abogado: { especialidad: 'ART · GBA Oeste · CM Ramos Mejía', bio: 'Actuamos ante la CM 38 Delegación Ramos Mejía representando trabajadores de La Matanza y el GBA Oeste. Consulta gratuita y sin anticipos.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · GBA Oeste · CM Ramos Mejía', bio: 'Actuamos ante la CM 38 Delegación Ramos Mejía representando trabajadores de La Matanza y el GBA Oeste. Consulta gratuita y sin anticipos.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Ramos Mejía?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti te asesoramos gratis y sin anticipos — solo cobramos si ganamos.' },
       { pregunta: '¿Qué zona atiende la CM de Ramos Mejía?', respuesta: 'Atiende exclusivamente el partido de La Matanza: San Justo, Ramos Mejía, Isidro Casanova, Gregorio de Laferrere y González Catán.' },
@@ -350,7 +350,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Morón', 'Hurlingham', 'Ituzaingó', 'Merlo'],
     sectorPrincipal: 'manufactura, servicios, comercio, logística',
     lesionesFrequentes: ['Lumbalgia laboral', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere', 'Lesiones de hombro', 'Síndrome de túnel carpiano'],
-    abogado: { especialidad: 'ART · GBA Oeste · CM Morón', bio: 'Actuamos ante la CM N°38 de Morón representando trabajadores de Morón, Hurlingham, Ituzaingó y Merlo.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · GBA Oeste · CM Morón', bio: 'Actuamos ante la CM N°38 de Morón representando trabajadores de Morón, Hurlingham, Ituzaingó y Merlo.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Morón?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable para proteger tus derechos. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Morón?', respuesta: 'Atiende Morón, Hurlingham, Ituzaingó y Merlo (GBA Oeste).' },
@@ -370,7 +370,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Moreno', 'General Rodríguez'],
     sectorPrincipal: 'manufactura, agro, logística, construcción',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en obra de construcción', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · GBA Oeste · CM Moreno', bio: 'Actuamos ante la CM N°15 de Moreno representando trabajadores de Moreno y General Rodríguez.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · GBA Oeste · CM Moreno', bio: 'Actuamos ante la CM N°15 de Moreno representando trabajadores de Moreno y General Rodríguez.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Moreno?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos — solo si ganamos.' },
       { pregunta: '¿Qué zona atiende la CM de Moreno?', respuesta: 'Atiende los partidos de Moreno y General Rodríguez (GBA Oeste).' },
@@ -390,7 +390,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['San Fernando', 'San Isidro', 'Vicente López'],
     sectorPrincipal: 'servicios, comercio, salud, construcción',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes de tránsito in itinere', 'Lesiones de hombro', 'Síndrome de túnel carpiano', 'Hernia de disco lumbar'],
-    abogado: { especialidad: 'ART · GBA Norte · CM San Isidro', bio: 'Actuamos ante la CM N°39 de San Isidro representando trabajadores de San Fernando, San Isidro y Vicente López.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · GBA Norte · CM San Isidro', bio: 'Actuamos ante la CM N°39 de San Isidro representando trabajadores de San Fernando, San Isidro y Vicente López.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de San Isidro?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de San Isidro?', respuesta: 'Atiende San Fernando, San Isidro y Vicente López (GBA Norte). La sede está en Boulogne.' },
@@ -410,7 +410,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['General San Martín', 'Ciudadela', 'José C. Paz', 'San Miguel', 'Malvinas Argentinas'],
     sectorPrincipal: 'industria, metalurgia, logística, servicios',
     lesionesFrequentes: ['Lumbalgia laboral', 'Hernia de disco lumbar', 'Accidentes en industria metalúrgica', 'Accidentes de tránsito in itinere', 'Lesiones de hombro'],
-    abogado: { especialidad: 'ART · GBA Norte-Oeste · CM San Martín', bio: 'Actuamos ante la CM 38 Delegación San Martín representando trabajadores del GBA Norte-Oeste: industria, logística y servicios.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · GBA Norte-Oeste · CM San Martín', bio: 'Actuamos ante la CM 38 Delegación San Martín representando trabajadores del GBA Norte-Oeste: industria, logística y servicios.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de San Martín?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de San Martín?', respuesta: 'Atiende Gral. San Martín, Ciudadela, José C. Paz, San Miguel y Malvinas Argentinas. También hay sede de homologación en San Lorenzo 2535.' },
@@ -430,7 +430,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Lomas de Zamora', 'Banfield', 'Lavallol', 'Temperley', 'Turdera'],
     sectorPrincipal: 'comercio, servicios, salud, construcción',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes de tránsito in itinere', 'Hernia de disco lumbar', 'Lesiones de hombro', 'Síndrome de túnel carpiano'],
-    abogado: { especialidad: 'ART · GBA Sur · CM Lomas de Zamora', bio: 'Actuamos ante la CM 37 Delegación Lomas de Zamora representando trabajadores de Lomas, Banfield, Temperley y zona sur.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · GBA Sur · CM Lomas de Zamora', bio: 'Actuamos ante la CM 37 Delegación Lomas de Zamora representando trabajadores de Lomas, Banfield, Temperley y zona sur.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Lomas de Zamora?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Lomas de Zamora?', respuesta: 'Atiende Lomas de Zamora, Banfield, Lavallol, Temperley y Turdera (GBA Sur).' },
@@ -450,7 +450,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Lanús', 'Avellaneda'],
     sectorPrincipal: 'industria, metalurgia, comercio, logística',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en industria metalúrgica', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere', 'Lesiones de hombro'],
-    abogado: { especialidad: 'ART · GBA Sur · CM Lanús', bio: 'Actuamos ante la CM N°37 de Lanús representando trabajadores de Lanús y Avellaneda, zona industrial del GBA Sur.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · GBA Sur · CM Lanús', bio: 'Actuamos ante la CM N°37 de Lanús representando trabajadores de Lanús y Avellaneda, zona industrial del GBA Sur.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Lanús?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos — solo si ganamos.' },
       { pregunta: '¿Qué zona atiende la CM de Lanús?', respuesta: 'Atiende los partidos de Lanús y Avellaneda, zona industrial del sur del GBA.' },
@@ -470,7 +470,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Quilmes', 'Berazategui', 'Florencio Varela', 'San Francisco Solano'],
     sectorPrincipal: 'industria, logística, comercio, construcción',
     lesionesFrequentes: ['Lumbalgia laboral', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere', 'Accidentes en obra de construcción', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · GBA Sur · CM Quilmes', bio: 'Actuamos ante la CM 37 Delegación Quilmes representando trabajadores del GBA Sur Este: Quilmes, Berazategui y Florencio Varela.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · GBA Sur · CM Quilmes', bio: 'Actuamos ante la CM 37 Delegación Quilmes representando trabajadores del GBA Sur Este: Quilmes, Berazategui y Florencio Varela.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Quilmes?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Quilmes?', respuesta: 'Atiende Quilmes, Berazategui, Florencio Varela y San Francisco Solano.' },
@@ -490,7 +490,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Ezeiza', 'Esteban Echeverría', 'Almirante Brown', 'Burzaco', 'Monte Grande', 'Canning', 'Glew', 'Luis Guillón', 'Longchamps'],
     sectorPrincipal: 'logística, aeropuerto, agroindustria, construcción',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en logística y carga aérea', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere', 'Lesiones por esfuerzo repetitivo'],
-    abogado: { especialidad: 'ART · GBA Sur · CM Ezeiza', bio: 'Actuamos ante la CM 37 Delegación Ezeiza representando trabajadores de Ezeiza, Almirante Brown, Esteban Echeverría y zona.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · GBA Sur · CM Ezeiza', bio: 'Actuamos ante la CM 37 Delegación Ezeiza representando trabajadores de Ezeiza, Almirante Brown, Esteban Echeverría y zona.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Ezeiza?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Ezeiza?', respuesta: 'Atiende Ezeiza, Esteban Echeverría, Almirante Brown, Burzaco, Monte Grande, Canning, Glew, Luis Guillón y Longchamps.' },
@@ -512,7 +512,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['La Plata', 'Berisso', 'Ensenada', 'Brandsen', 'Magdalena', 'General Paz', 'Punta Indio'],
     sectorPrincipal: 'administración pública, petroquímica, construcción, salud, educación',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en petroquímica', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere', 'Enfermedades profesionales por exposición química'],
-    abogado: { especialidad: 'ART · CM La Plata · Buenos Aires', bio: 'Actuamos ante la CM N°36 de La Plata representando trabajadores del sector público, petroquímico y de la construcción bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM La Plata · Buenos Aires', bio: 'Actuamos ante la CM N°36 de La Plata representando trabajadores del sector público, petroquímico y de la construcción bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de La Plata?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos — solo si ganamos.' },
       { pregunta: '¿Qué zona atiende la CM N°36 de La Plata?', respuesta: 'Atiende La Plata, Berisso, Ensenada, Brandsen, Magdalena y General Paz.' },
@@ -532,7 +532,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Bahía Blanca', 'Coronel Rosales', 'Villarino', 'Patagones', 'Tornquist', 'Tres Arroyos'],
     sectorPrincipal: 'petroquímica, portuaria, agroindustria, construcción',
     lesionesFrequentes: ['Enfermedades profesionales por exposición química', 'Accidentes portuarios', 'Lumbalgia laboral', 'Hernia de disco lumbar', 'Accidentes en construcción'],
-    abogado: { especialidad: 'ART · CM Bahía Blanca · Buenos Aires', bio: 'Actuamos ante la CM N°4 de Bahía Blanca representando trabajadores del polo petroquímico, el puerto y la construcción del sur bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Bahía Blanca · Buenos Aires', bio: 'Actuamos ante la CM N°4 de Bahía Blanca representando trabajadores del polo petroquímico, el puerto y la construcción del sur bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Bahía Blanca?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Bahía Blanca?', respuesta: 'Atiende Bahía Blanca, Coronel Rosales, Villarino, Patagones, Tornquist y Tres Arroyos.' },
@@ -552,7 +552,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Mar del Plata', 'General Pueyrredón', 'Necochea', 'Balcarce', 'Mar Chiquita'],
     sectorPrincipal: 'turismo, pesca, construcción, gastronomía, comercio',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en pesca', 'Lesiones en gastronomía y hotelería', 'Accidentes en construcción', 'Accidentes de tránsito in itinere'],
-    abogado: { especialidad: 'ART · CM Mar del Plata · Buenos Aires', bio: 'Actuamos ante la CM N°3 de Mar del Plata representando trabajadores del turismo, la pesca y la construcción marplatense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Mar del Plata · Buenos Aires', bio: 'Actuamos ante la CM N°3 de Mar del Plata representando trabajadores del turismo, la pesca y la construcción marplatense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Mar del Plata?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Mar del Plata?', respuesta: 'Atiende Mar del Plata, General Pueyrredón, Necochea, Balcarce y Mar Chiquita.' },
@@ -572,7 +572,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Pergamino', 'Ramallo', 'San Nicolás', 'Rojas', 'Colón'],
     sectorPrincipal: 'agroindustria, soja, maíz, ganadería, logística',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en maquinaria agrícola', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · CM Pergamino · norte bonaerense', bio: 'Actuamos ante la CM N°21 de Pergamino representando trabajadores de la agroindustria del norte bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Pergamino · norte bonaerense', bio: 'Actuamos ante la CM N°21 de Pergamino representando trabajadores de la agroindustria del norte bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Pergamino?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Pergamino?', respuesta: 'Atiende Pergamino, Ramallo, San Nicolás, Rojas y Colón (norte de Buenos Aires).' },
@@ -592,7 +592,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Junín', 'Chacabuco', 'Lincoln', 'General Viamonte', 'Bragado'],
     sectorPrincipal: 'agroindustria, ganadería, comercio, salud',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en maquinaria agrícola', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · CM Junín · oeste bonaerense', bio: 'Actuamos ante la CM N°26 de Junín representando trabajadores del oeste bonaerense: agro, ganadería y servicios.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Junín · oeste bonaerense', bio: 'Actuamos ante la CM N°26 de Junín representando trabajadores del oeste bonaerense: agro, ganadería y servicios.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Junín?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Junín?', respuesta: 'Atiende Junín, Chacabuco, Lincoln, General Viamonte y Bragado (oeste de Buenos Aires).' },
@@ -612,7 +612,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Zárate', 'Campana', 'Exaltación de la Cruz', 'Escobar'],
     sectorPrincipal: 'industria petroquímica, metalurgia, portuaria, logística',
     lesionesFrequentes: ['Enfermedades profesionales por exposición química', 'Accidentes en planta industrial', 'Lumbalgia laboral', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere'],
-    abogado: { especialidad: 'ART · CM Zárate · industria bonaerense', bio: 'Actuamos ante la CM N°29 de Zárate representando trabajadores del polo industrial Zárate-Campana: petroquímica, metalurgia y puertos.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Zárate · industria bonaerense', bio: 'Actuamos ante la CM N°29 de Zárate representando trabajadores del polo industrial Zárate-Campana: petroquímica, metalurgia y puertos.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Zárate?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Zárate?', respuesta: 'Atiende Zárate, Campana, Exaltación de la Cruz y Escobar. Zona del polo industrial norte del GBA.' },
@@ -632,13 +632,13 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Saladillo', 'Las Flores', 'General Alvear', 'Tapalqué'],
     sectorPrincipal: 'agroindustria, ganadería, campo',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en maquinaria agrícola', 'Hernia de disco por esfuerzo', 'Accidentes de tránsito in itinere', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · CM Saladillo · interior bonaerense', bio: 'Actuamos ante la delegación de Saladillo representando trabajadores del interior bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Saladillo · interior bonaerense', bio: 'Actuamos ante la delegación de Saladillo representando trabajadores del interior bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Saladillo?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Saladillo?', respuesta: 'Atiende Saladillo, Las Flores, General Alvear y Tapalqué.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central (Moreno 401, CABA) o iniciar la vía judicial.' },
     ],
-    metaTitle: 'Comisión Médica Saladillo | Dirección y trámites ART | Capeletti',
+    metaTitle: 'Comisión Médica Saladillo 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'CM Saladillo, Buenos Aires. Agroindustria y ganadería. Abogados laborales sin anticipo. Consulta gratis.',
   },
   {
@@ -652,13 +652,13 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Tandil', 'Azul', 'Olavarría', 'Benito Juárez', 'Rauch'],
     sectorPrincipal: 'metalurgia, turismo, agro, construcción, comercio',
     lesionesFrequentes: ['Accidentes en metalurgia y fundición', 'Lumbalgia laboral', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere', 'Lesiones en construcción'],
-    abogado: { especialidad: 'ART · CM Tandil · centro-sur bonaerense', bio: 'Actuamos ante la CM N°30 de Tandil representando trabajadores de la metalurgia, el turismo y la construcción de la zona serrana bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Tandil · centro-sur bonaerense', bio: 'Actuamos ante la CM N°30 de Tandil representando trabajadores de la metalurgia, el turismo y la construcción de la zona serrana bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Tandil?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Tandil?', respuesta: 'Atiende Tandil, Azul, Olavarría, Benito Juárez y Rauch.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central (Moreno 401, CABA) o iniciar la vía judicial.' },
     ],
-    metaTitle: 'Comisión Médica Tandil — CM N°30 | Dirección y trámites | Capeletti',
+    metaTitle: 'Comisión Médica Tandil — CM N°30 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'CM N°30 Tandil. Metalurgia, turismo y agro. Abogados laborales sin anticipo. Consulta gratis.',
   },
   {
@@ -672,7 +672,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Trenque Lauquen', 'Pehuajó', 'Carlos Tejedor', 'Rivadavia', 'Hipólito Yrigoyen'],
     sectorPrincipal: 'agroindustria, soja, ganadería, campo',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en maquinaria agrícola', 'Hernia de disco por esfuerzo', 'Accidentes de tránsito in itinere', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · CM Trenque Lauquen · oeste bonaerense', bio: 'Actuamos ante la CM N°28 de Trenque Lauquen representando trabajadores del agro y la ganadería del oeste bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Trenque Lauquen · oeste bonaerense', bio: 'Actuamos ante la CM N°28 de Trenque Lauquen representando trabajadores del agro y la ganadería del oeste bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Trenque Lauquen?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Trenque Lauquen?', respuesta: 'Atiende Trenque Lauquen, Pehuajó, Carlos Tejedor, Rivadavia e Hipólito Yrigoyen.' },
@@ -692,7 +692,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Dolores', 'General Lavalle', 'Tordillo', 'General Madariaga', 'Castelli', 'Maipú'],
     sectorPrincipal: 'ganadería, agro, turismo, campo',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en campo ganadero', 'Hernia de disco por esfuerzo', 'Accidentes de tránsito in itinere', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · CM Dolores · interior bonaerense', bio: 'Actuamos ante la CM N°27 de Dolores representando trabajadores de la ganadería y el campo del interior bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Dolores · interior bonaerense', bio: 'Actuamos ante la CM N°27 de Dolores representando trabajadores de la ganadería y el campo del interior bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Dolores?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Dolores?', respuesta: 'Atiende Dolores, General Lavalle, Tordillo, General Madariaga, Castelli y Maipú.' },
@@ -712,13 +712,13 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Azul', 'Olavarría', 'Tapalqué', 'General Lamadrid'],
     sectorPrincipal: 'cemento, agroindustria, ganadería, construcción',
     lesionesFrequentes: ['Enfermedades profesionales en industria del cemento', 'Lumbalgia laboral', 'Accidentes en maquinaria agrícola', 'Hernia de disco lumbar', 'Hipoacusia laboral'],
-    abogado: { especialidad: 'ART · CM Azul · centro bonaerense', bio: 'Actuamos ante la delegación de Azul representando trabajadores de la industria del cemento, el agro y la ganadería del centro bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Azul · centro bonaerense', bio: 'Actuamos ante la delegación de Azul representando trabajadores de la industria del cemento, el agro y la ganadería del centro bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Azul?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Azul?', respuesta: 'Atiende Azul, Olavarría, Tapalqué y General Lamadrid.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central (Moreno 401, CABA) o iniciar la vía judicial.' },
     ],
-    metaTitle: 'Comisión Médica Azul | Dirección y trámites ART | Capeletti',
+    metaTitle: 'Comisión Médica Azul 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'CM Azul, Buenos Aires. Cemento, agro y ganadería. Abogados laborales sin anticipo. Consulta gratis.',
   },
   {
@@ -732,13 +732,13 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Pinamar', 'Villa Gesell', 'La Costa', 'General Madariaga'],
     sectorPrincipal: 'turismo, hotelería, gastronomía, construcción',
     lesionesFrequentes: ['Accidentes en hotelería y gastronomía', 'Lumbalgia laboral', 'Lesiones en construcción', 'Accidentes de tránsito in itinere', 'Lesiones de hombro'],
-    abogado: { especialidad: 'ART · CM Pinamar · costa bonaerense', bio: 'Actuamos ante la delegación de Pinamar representando trabajadores del turismo, la hotelería y la construcción de la costa atlántica bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Pinamar · costa bonaerense', bio: 'Actuamos ante la delegación de Pinamar representando trabajadores del turismo, la hotelería y la construcción de la costa atlántica bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Pinamar?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Pinamar?', respuesta: 'Atiende Pinamar, Villa Gesell, La Costa y General Madariaga.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central (Moreno 401, CABA) o iniciar la vía judicial.' },
     ],
-    metaTitle: 'Comisión Médica Pinamar | Dirección y trámites ART | Capeletti',
+    metaTitle: 'Comisión Médica Pinamar 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'CM Pinamar, costa bonaerense. Turismo, hotelería y gastronomía. Abogados sin anticipo. Consulta gratis.',
   },
   {
@@ -752,13 +752,13 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Necochea', 'Quequén', 'San Cayetano', 'Lobería'],
     sectorPrincipal: 'pesca, agroindustria, portuaria, turismo',
     lesionesFrequentes: ['Accidentes en industria pesquera', 'Lumbalgia laboral', 'Accidentes portuarios', 'Hernia de disco lumbar', 'Accidentes de tránsito in itinere'],
-    abogado: { especialidad: 'ART · CM Necochea · sur bonaerense', bio: 'Actuamos ante la delegación de Necochea representando trabajadores de la pesca, el puerto y el agro del sur bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Necochea · sur bonaerense', bio: 'Actuamos ante la delegación de Necochea representando trabajadores de la pesca, el puerto y el agro del sur bonaerense.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Necochea?', respuesta: 'No es obligatorio en Buenos Aires, pero es muy recomendable. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Necochea?', respuesta: 'Atiende Necochea, Quequén, San Cayetano y Lobería.' },
       { pregunta: '¿Qué pasa si no estoy de acuerdo con el dictamen?', respuesta: 'Tenés 5 días hábiles para apelar ante la CM Central (Moreno 401, CABA) o iniciar la vía judicial.' },
     ],
-    metaTitle: 'Comisión Médica Necochea | Dirección y trámites ART | Capeletti',
+    metaTitle: 'Comisión Médica Necochea 2026 | Reclamo ART | Capeletti Abogados',
     metaDescription: 'CM Necochea, Buenos Aires. Pesca, puerto y agro. Abogados laborales sin anticipo. Consulta gratis.',
   },
 
@@ -774,7 +774,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Plaza Huincul', 'Cutral-Có', 'Zapala', 'zona petrolera Neuquén'],
     sectorPrincipal: 'industria petrolera, Vaca Muerta, petroquímica',
     lesionesFrequentes: ['Accidentes en pozos petroleros', 'Enfermedades profesionales por exposición química', 'Lesiones por esfuerzo en perforación', 'Lumbalgia laboral', 'Accidentes en transporte de materiales peligrosos'],
-    abogado: { especialidad: 'ART · CM Plaza Huincul · petróleo Neuquén', bio: 'Actuamos ante la delegación de Plaza Huincul representando trabajadores del sector petrolero de la cuenca Neuquina y Vaca Muerta.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Plaza Huincul · petróleo Neuquén', bio: 'Actuamos ante la delegación de Plaza Huincul representando trabajadores del sector petrolero de la cuenca Neuquina y Vaca Muerta.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Plaza Huincul?', respuesta: 'Sí. Neuquén adhirió a la Ley 27.348. La asistencia letrada es obligatoria desde el primer trámite. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Plaza Huincul?', respuesta: 'Atiende Plaza Huincul, Cutral-Có, Zapala y toda la zona petrolera del norte neuquino.' },
@@ -796,7 +796,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Cipolletti', 'Cinco Saltos', 'Fernández Oro', 'Allen'],
     sectorPrincipal: 'fruticultura, agroindustria, construcción, comercio',
     lesionesFrequentes: ['Accidentes en cosecha frutícola', 'Lumbalgia laboral', 'Lesiones de hombro', 'Accidentes en empaque de frutas', 'Accidentes de tránsito in itinere'],
-    abogado: { especialidad: 'ART · CM Cipolletti · Alto Valle de Río Negro', bio: 'Actuamos ante la delegación de Cipolletti representando trabajadores de la fruticultura y la agroindustria del Alto Valle de Río Negro.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Cipolletti · Alto Valle de Río Negro', bio: 'Actuamos ante la delegación de Cipolletti representando trabajadores de la fruticultura y la agroindustria del Alto Valle de Río Negro.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Cipolletti?', respuesta: 'Sí. Río Negro adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Cipolletti?', respuesta: 'Atiende Cipolletti, Cinco Saltos, Fernández Oro y Allen. Es delegación de la CM N°35 (General Roca).' },
@@ -818,7 +818,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Concepción del Uruguay', 'Colón', 'San José', 'Gualeguaychú', 'Villaguay'],
     sectorPrincipal: 'agroindustria, citricultura, arándanos, ganadería',
     lesionesFrequentes: ['Accidentes en cosecha citrícola', 'Lumbalgia laboral', 'Lesiones en manos y muñecas', 'Accidentes de tránsito in itinere', 'Hipoacusia por maquinaria agrícola'],
-    abogado: { especialidad: 'ART · CM Concepción del Uruguay · Entre Ríos', bio: 'Actuamos ante la CM N°41 de Concepción del Uruguay representando trabajadores de la citricultura y el agro del sur de Entre Ríos.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Concepción del Uruguay · Entre Ríos', bio: 'Actuamos ante la CM N°41 de Concepción del Uruguay representando trabajadores de la citricultura y el agro del sur de Entre Ríos.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Concepción del Uruguay?', respuesta: 'Sí. Entre Ríos adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Concepción del Uruguay?', respuesta: 'Atiende Concepción del Uruguay, Colón, San José, Gualeguaychú y Villaguay.' },
@@ -840,7 +840,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Río Cuarto', 'Villa María', 'Bell Ville', 'General Cabrera', 'Laboulaye', 'zona sur de Córdoba'],
     sectorPrincipal: 'agroindustria, soja, ganadería, comercio, construcción',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en maquinaria agrícola', 'Hernia de disco por esfuerzo', 'Accidentes de tránsito in itinere', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · CM Río Cuarto · sur de Córdoba', bio: 'Actuamos ante la CM N°6 de Río Cuarto representando trabajadores del agro, la ganadería y la construcción del sur cordobés.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Río Cuarto · sur de Córdoba', bio: 'Actuamos ante la CM N°6 de Río Cuarto representando trabajadores del agro, la ganadería y la construcción del sur cordobés.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Río Cuarto?', respuesta: 'Sí. Córdoba adhirió a la Ley 27.348. La asistencia letrada es obligatoria desde el primer trámite. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM N°6 de Río Cuarto?', respuesta: 'Atiende Río Cuarto, Villa María, Bell Ville, General Cabrera, Laboulaye y el sur de Córdoba.' },
@@ -860,7 +860,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Villa María', 'Villa Nueva', 'Bell Ville', 'San Francisco (zona)'],
     sectorPrincipal: 'agroindustria, industria láctea, construcción, servicios',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en planta láctea', 'Hernia de disco por esfuerzo', 'Accidentes en maquinaria agrícola', 'Síndrome de túnel carpiano'],
-    abogado: { especialidad: 'ART · CM Villa María · centro de Córdoba', bio: 'Actuamos ante la delegación de Villa María representando trabajadores de la industria láctea y el agro del centro cordobés.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Villa María · centro de Córdoba', bio: 'Actuamos ante la delegación de Villa María representando trabajadores de la industria láctea y el agro del centro cordobés.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Villa María?', respuesta: 'Sí. Córdoba adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Villa María?', respuesta: 'Atiende Villa María, Villa Nueva, Bell Ville y zona centro de Córdoba.' },
@@ -880,7 +880,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Bell Ville', 'Marcos Juárez', 'Leones', 'General Roca (Cba.)'],
     sectorPrincipal: 'agroindustria, soja, ganadería, frigoríficos',
     lesionesFrequentes: ['Accidentes en frigorífico', 'Lumbalgia laboral', 'Accidentes en maquinaria agrícola', 'Hipoacusia laboral', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · CM Bell Ville · este de Córdoba', bio: 'Actuamos ante la delegación de Bell Ville representando trabajadores de la agroindustria y los frigoríficos del este cordobés.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Bell Ville · este de Córdoba', bio: 'Actuamos ante la delegación de Bell Ville representando trabajadores de la agroindustria y los frigoríficos del este cordobés.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Bell Ville?', respuesta: 'Sí. Córdoba adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Bell Ville?', respuesta: 'Atiende Bell Ville, Marcos Juárez, Leones y General Roca (Córdoba).' },
@@ -900,7 +900,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Villa Dolores', 'San Javier', 'Mina Clavero', 'Cruz del Eje', 'Serranías'],
     sectorPrincipal: 'turismo, construcción, agro, minería',
     lesionesFrequentes: ['Accidentes en construcción turística', 'Lumbalgia laboral', 'Accidentes de tránsito in itinere', 'Lesiones en agro y campo', 'Hernia de disco lumbar'],
-    abogado: { especialidad: 'ART · CM Villa Dolores · serranías cordobesas', bio: 'Actuamos ante la delegación de Villa Dolores representando trabajadores del turismo, la construcción y el agro de las serranías cordobesas.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Villa Dolores · serranías cordobesas', bio: 'Actuamos ante la delegación de Villa Dolores representando trabajadores del turismo, la construcción y el agro de las serranías cordobesas.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Villa Dolores?', respuesta: 'Sí. Córdoba adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Villa Dolores?', respuesta: 'Atiende Villa Dolores, San Javier, Mina Clavero, Cruz del Eje y las serranías cordobesas.' },
@@ -920,7 +920,7 @@ export const COMISIONES_MEDICAS_DATA: CmData[] = [
     competencia: ['Laboulaye', 'General Levalle', 'Buchardo', 'Vicuña Mackenna'],
     sectorPrincipal: 'agroindustria, soja, ganadería, campo',
     lesionesFrequentes: ['Lumbalgia laboral', 'Accidentes en maquinaria agrícola', 'Hernia de disco por esfuerzo', 'Accidentes de tránsito in itinere', 'Lesiones musculoesqueléticas'],
-    abogado: { especialidad: 'ART · CM Laboulaye · sur de Córdoba', bio: 'Actuamos ante la delegación de Laboulaye representando trabajadores del agro y la ganadería del sur cordobés.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
+    abogado: { especialidad: 'ART · CM Laboulaye · sur de Córdoba', bio: 'Actuamos ante la delegación de Laboulaye representando trabajadores del agro y la ganadería del sur cordobés.', matricula: 'C.S.J.S.F. T� XVI F� 48' },
     faqs: [
       { pregunta: '¿Necesito abogado para ir a la Comisión Médica de Laboulaye?', respuesta: 'Sí. Córdoba adhirió a la Ley 27.348. La asistencia letrada es obligatoria. En Capeletti no cobramos anticipos.' },
       { pregunta: '¿Qué zona atiende la CM de Laboulaye?', respuesta: 'Atiende Laboulaye, General Levalle, Buchardo y Vicuña Mackenna (sur de Córdoba).' },

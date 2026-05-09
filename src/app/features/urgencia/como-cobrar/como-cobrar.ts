@@ -2,11 +2,12 @@ import { Component, ChangeDetectionStrategy, OnInit, inject } from '@angular/cor
 import { RouterLink } from '@angular/router';
 import { BreadcrumbComponent } from '../../../layout/breadcrumb/breadcrumb';
 import { SeoService } from '../../../core/services/seo.service';
+import { AuthorBoxComponent } from '../../../shared/components/author-box/author-box';
 
 @Component({
   selector: 'app-como-cobrar',
   standalone: true,
-  imports: [RouterLink, BreadcrumbComponent],
+  imports: [RouterLink, BreadcrumbComponent, AuthorBoxComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './como-cobrar.html',
 })

@@ -608,53 +608,201 @@ export const PROVINCIAS_DATA: ProvinciaData[] = [
     nombre: 'Santa Fe',
     descripcion: 'Santa Fe es la provincia con mayor actividad industrial del interior argentino. Nuestro estudio tiene presencia en Rosario, la capital provincial, Reconquista, Rafaela y Venado Tuerto.',
     ciudades: CIUDADES_SANTA_FE,
-    cmPrincipal: 'CM N° 2 — Rosario / CM N° 1 — Santa Fe',
+    cmPrincipal: 'CM N° 2 — Rosario / CM N° 1 — Santa Fe Capital',
     metaTitle: 'Abogados Laborales Santa Fe | Capeletti Abogados',
     metaDescription: 'Abogados especializados en accidentes laborales y ART en Santa Fe. Rosario, capital, Reconquista y más ciudades. Consulta gratis.',
+    contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.7);">En Capeletti Abogados, nuestra conexión con Santa Fe es natural: es el corazón productivo donde la agroindustria y el cordón metalmecánico definen el ritmo del país. Operamos en esta provincia porque conocemos la complejidad de los accidentes en plantas aceiteras, terminales portuarias y talleres metalúrgicos. Desde siniestros en silos hasta lesiones por movimientos repetitivos en líneas de montaje, estamos presentes para que el trabajador santafesino reciba la indemnización que la ley le garantiza.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Sectores laborales más afectados en Santa Fe</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">La siniestralidad en la provincia se concentra en sectores de alta exigencia física. La <strong style="color:#0b183a;">Agroindustria y Aceiteras</strong> registran accidentes graves por caídas en altura, atrapamientos en cintas transportadoras y explosiones de polvo en silos. La <strong style="color:#0b183a;">Industria Metalmecánica</strong>, pilar en ciudades como Rosario y Rafaela, presenta riesgos constantes de cortes, amputaciones y quemaduras por soldadura. El <strong style="color:#0b183a;">Transporte de Cargas</strong>, vinculado a la exportación de granos, sufre alto índice de accidentes viales. La <strong style="color:#0b183a;">Logística Portuaria</strong> expone a los estibadores a lesiones osteoarticulares severas por maniobras de carga en buques y barcazas.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Comisiones Médicas en Santa Fe</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Comisión Médica N° 2 (Rosario):</strong> Centraliza los casos del sur provincial y el cordón industrial, siendo una de las de mayor actividad del país.</li>
+  <li><strong style="color:#0b183a;">Comisión Médica N° 1 (Santa Fe Capital):</strong> Atiende los reclamos de la zona centro y norte de la provincia.</li>
+  <li><strong style="color:#0b183a;">Delegaciones Rafaela y Venado Tuerto:</strong> Sedes estratégicas para descentralizar los trámites de los nodos productivos del interior santafesino.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Por qué necesitás un abogado local en Santa Fe</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">Conocemos los criterios locales para la fijación de incapacidades y los Convenios Colectivos de Aceiteros, UOM o Camioneros, fundamentales para liquidar correctamente el Ingreso Base Mensual. La representación local te asegura que el cálculo de tu indemnización incluya todos los adicionales que ganás por convenio, evitando que la ART te pague de menos.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Casos que atendemos en Santa Fe</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Accidentes en Plantas y Silos:</strong> Caídas, atrapamientos y exposición a atmósferas peligrosas.</li>
+  <li><strong style="color:#0b183a;">Lesiones Metalúrgicas:</strong> Traumatismos por prensas, tornos y equipos pesados.</li>
+  <li><strong style="color:#0b183a;">Enfermedades Profesionales:</strong> Hipoacusia por ruido industrial, asma ocupacional y hernias de disco.</li>
+  <li><strong style="color:#0b183a;">Accidentes In Itinere:</strong> Choques en Circunvalación, Ruta 34 o Autopista Rosario-Santa Fe.</li>
+  <li><strong style="color:#0b183a;">Rechazos de Siniestros:</strong> Accionamos cuando la ART alega que tu lesión es "preexistente" para no hacerse cargo.</li>
+</ul>`,
   },
   {
     slug: 'neuquen',
     nombre: 'Neuquén',
     descripcion: 'Neuquén es la provincia patagónica con mayor crecimiento. La industria petrolera y la construcción concentran la mayor cantidad de accidentes laborales graves.',
     ciudades: CIUDADES_NEUQUEN,
-    cmPrincipal: 'CM N° 10 — Neuquén Capital',
+    cmPrincipal: 'CM N° 9 — Neuquén Capital',
     metaTitle: 'Abogados Laborales Neuquén | Capeletti Abogados',
-    metaDescription: 'Abogados especializados en ART, petróleo y accidentes laborales en Neuquén. CM local N°10. Consulta gratis y sin anticipos.',
+    metaDescription: 'Abogados especializados en ART, petróleo y accidentes laborales en Neuquén. CM local N°9. Consulta gratis y sin anticipos.',
+    contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.7);">En Capeletti Abogados, entendemos que la realidad laboral de Neuquén es única en el país. El motor de la provincia, impulsado por el desarrollo masivo de Vaca Muerta y la actividad hidrocarburífera, genera una dinámica de alta intensidad que no siempre respeta la integridad física de los trabajadores. Operamos en esta provincia porque sabemos que el sector petrolero, si bien ofrece salarios competitivos, conlleva riesgos extremos. Nuestro compromiso es garantizar que el trabajador neuquino no quede desprotegido ante el poder de las grandes operadoras y las ART.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Sectores laborales más afectados en Neuquén</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">La economía neuquina se sostiene sobre pilares de alta siniestralidad. El <strong style="color:#0b183a;">sector Petrolero y Gasífero</strong> encabeza la lista: las tareas en torres de perforación, el manejo de químicos y las jornadas de "diagrama" extendidas suelen derivar en aplastamientos, quemaduras o patologías crónicas por esfuerzo. En segundo lugar, el <strong style="color:#0b183a;">Transporte y Logística</strong>, vital para el abastecimiento de los yacimientos, registra un alto índice de accidentes viales y lesiones osteoarticulares. También destaca la <strong style="color:#0b183a;">Construcción</strong>, vinculada a la infraestructura civil y petrolera, donde las caídas de altura y los golpes por objetos son frecuentes. Finalmente, los <strong style="color:#0b183a;">Servicios Petroleros</strong>, que incluyen mantenimiento y catering en campamentos, exponen a riesgos ergonómicos y accidentes in itinere.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Comisiones Médicas en Neuquén</h2>
+<p class="leading-relaxed mb-3" style="color:rgba(11,24,58,0.7);">Para reclamar una indemnización, el paso obligado es la instancia administrativa ante la SRT. En la provincia contamos con sedes estratégicas:</p>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Comisión Médica N° 9 (Neuquén Capital):</strong> Tiene jurisdicción sobre la capital y zonas de influencia directa, concentrando el mayor volumen de expedientes por la cercanía a las sedes administrativas de las empresas.</li>
+  <li><strong style="color:#0b183a;">Delegación Zapala:</strong> Fundamental para los trabajadores del centro de la provincia, evitando traslados innecesarios.</li>
+  <li><strong style="color:#0b183a;">Delegación Plaza Huincul/Cutral-Có:</strong> Atiende los casos del corazón petrolero de la provincia.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Por qué necesitás un abogado local en Neuquén</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">Tener representación con presencia en Neuquén no es solo una cuestión de cercanía — es una ventaja estratégica. Conocemos cómo funcionan las Comisiones Médicas locales y los tiempos de los juzgados laborales de la provincia. Fundamentalmente, entendemos los Convenios Colectivos de Trabajo específicos, como el de Petroleros Privados (CCT 644/12) o el de la Construcción (UOCRA), que tienen escalas salariales e ítems particulares que impactan directamente en el cálculo de tu indemnización. Un abogado que no conoce la liquidación de un recibo petrolero puede hacerte perder mucho dinero.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Casos que atendemos en Neuquén</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Accidentes en Yacimiento:</strong> Explosiones, atrapamientos, golpes y caídas en pozos o plantas.</li>
+  <li><strong style="color:#0b183a;">Accidentes In Itinere:</strong> Siniestros en las rutas 7, 22 y 151, frecuentes en el traslado a yacimientos.</li>
+  <li><strong style="color:#0b183a;">Enfermedades Profesionales:</strong> Hernias de disco por cargas, hipoacusia por ruido de maquinaria y afecciones respiratorias.</li>
+  <li><strong style="color:#0b183a;">Impugnación de Altas Médicas:</strong> Si la ART te dio el alta pero todavía tenés limitaciones, apelamos de inmediato.</li>
+  <li><strong style="color:#0b183a;">Diferencias de Indemnización:</strong> Si el porcentaje de incapacidad es menor al real, vamos a juicio para que se te pague lo que corresponde.</li>
+</ul>`,
   },
   {
     slug: 'rio-negro',
     nombre: 'Río Negro',
     descripcion: 'Río Negro combina actividades de turismo, fruticultura y construcción. Nuestra oficina en Neuquén capital cubre toda la región patagónica.',
     ciudades: CIUDADES_RIO_NEGRO,
-    cmPrincipal: 'CM — Bariloche / CM — General Roca / CM — Viedma',
+    cmPrincipal: 'CM N° 18 — Viedma / CM N° 35 — General Roca / CM — Bariloche',
     metaTitle: 'Abogados Laborales Río Negro | Capeletti Abogados',
     metaDescription: 'Abogados para reclamos de ART en Río Negro. Bariloche, General Roca, Viedma y toda la provincia. Consulta gratis con especialista.',
+    contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.7);">En Río Negro, la producción frutícola y el turismo de alta montaña generan un escenario laboral de gran exigencia física. Capeletti Abogados brinda soporte en la provincia porque entendemos que el trabajador del Alto Valle o de la zona cordillerana enfrenta riesgos estacionales muy marcados. Ya sea en la cosecha de la pera y la manzana, en las cámaras frigoríficas o en los servicios turísticos de Bariloche, los accidentes ocurren y las ART suelen retacear la atención.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Sectores laborales más afectados en Río Negro</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">La <strong style="color:#0b183a;">Fruticultura</strong> es el sector crítico, con accidentes recurrentes por caídas de escaleras durante la cosecha y lesiones por maquinaria agrícola. El sector de <strong style="color:#0b183a;">Empaque y Frigoríficos</strong> registra afecciones respiratorias por frío y lesiones por movimientos repetitivos en líneas de selección. El <strong style="color:#0b183a;">Turismo y Hotelería</strong>, central en Bariloche, presenta riesgos ergonómicos para mucamas y personal de cocina, además de accidentes en traslados de montaña. La <strong style="color:#0b183a;">Industria Extractiva</strong> en la zona este también aporta casos de siniestralidad por manejo de cargas pesadas.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Comisiones Médicas en Río Negro</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Comisión Médica N° 18 (Viedma):</strong> Atiende la capital y la zona del Valle Inferior.</li>
+  <li><strong style="color:#0b183a;">Comisión Médica N° 35 (General Roca):</strong> Sede central para todos los trabajadores del Alto Valle del Río Negro.</li>
+  <li><strong style="color:#0b183a;">Delegación Bariloche:</strong> Para la zona andina, evitando que los trabajadores deban cruzar la provincia para una junta médica.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Por qué necesitás un abogado local en Río Negro</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">El trabajo temporario o de temporada —típico en la fruta y el turismo— requiere un análisis legal especial para calcular la indemnización. En Capeletti Abogados sabemos cómo computar esos meses de actividad para que el cálculo del ingreso base sea justo. Conocemos los convenios de Fruticultura y Gastronómicos, y estamos habituados a la dinámica de las comisiones rionegrinas.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Casos que atendemos en Río Negro</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Accidentes de Cosecha:</strong> Caídas de "bins" o escaleras, y heridas con herramientas de poda.</li>
+  <li><strong style="color:#0b183a;">Lesiones por Frío:</strong> Afecciones en manos y pulmones por trabajo en cámaras frigoríficas.</li>
+  <li><strong style="color:#0b183a;">Accidentes en Rutas del Valle:</strong> Siniestros en la Ruta 22 y rutas rurales de acceso a chacras.</li>
+  <li><strong style="color:#0b183a;">Enfermedades de Columna:</strong> Muy frecuentes por la carga de cajones y posturas forzadas en tareas rurales.</li>
+  <li><strong style="color:#0b183a;">Impugnación de Porcentaje:</strong> Si te dan un 0% y seguís con dolor, lo revertimos con fundamentos médicos.</li>
+</ul>`,
   },
   {
     slug: 'entre-rios',
     nombre: 'Entre Ríos',
     descripcion: 'Entre Ríos tiene fuerte actividad agroindustrial y citrícola. Nuestro equipo atiende casos en Paraná, Concordia, Concepción del Uruguay y toda la provincia.',
     ciudades: CIUDADES_ENTRE_RIOS,
-    cmPrincipal: 'CM N° 5 — Paraná',
+    cmPrincipal: 'CM N° 8 — Paraná / CM N° 34 — Concordia',
     metaTitle: 'Abogados Laborales Entre Ríos | Capeletti Abogados',
     metaDescription: 'Abogados especializados en accidentes laborales y ART en Entre Ríos. Paraná, Concordia y más. Consulta gratis.',
+    contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.7);">Entre Ríos combina una economía diversa donde la avicultura, la ganadería, la actividad citrícola y el turismo fluvial coexisten con sectores industriales en expansión. Capeletti Abogados opera en la provincia porque conocemos que los trabajadores rurales e industriales entrerrianos enfrentan riesgos específicos que las ART suelen minimizar. Nuestra presencia garantiza que cada trabajador tenga acceso a una defensa técnica sólida sin importar la distancia.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Sectores laborales más afectados en Entre Ríos</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">La <strong style="color:#0b183a;">Avicultura</strong> concentra una parte importante de los accidentes de la provincia: manipulación de maquinaria en galpones, cargas repetitivas y exposición a gases. La <strong style="color:#0b183a;">Citricultura</strong> en la zona de Concordia y Federación genera lesiones por caídas en altura durante la cosecha y por movimientos repetitivos. El sector <strong style="color:#0b183a;">Cárnico y de Frigoríficos</strong> registra cortes y lesiones por frío. Finalmente, la <strong style="color:#0b183a;">Construcción e Infraestructura</strong> en Paraná y Concordia aporta casos de caídas y golpes frecuentes.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Comisiones Médicas en Entre Ríos</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Comisión Médica N° 8 (Paraná):</strong> Sede principal que cubre la capital y zona centro de la provincia.</li>
+  <li><strong style="color:#0b183a;">Comisión Médica N° 34 (Concordia):</strong> Atiende el norte entrerriano y la zona citrícola de Federación y Colón.</li>
+  <li><strong style="color:#0b183a;">Comisión Médica N° 41 (Concepción del Uruguay):</strong> Cubre el sur de la provincia y la zona de Gualeguaychú.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Por qué necesitás un abogado local en Entre Ríos</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">Los convenios colectivos de avicultores (UATRE) y frigoríficos tienen particularidades salariales que impactan directamente en el cálculo del ingreso base. Conocemos los juzgados laborales de Paraná y Concordia y estamos habituados a impugnar dictámenes de las CMs entrerrianas. Un abogado que no conoce esos convenios puede hacerte perder diferencias significativas en la liquidación final.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Casos que atendemos en Entre Ríos</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Accidentes en Galpones Avícolas:</strong> Lesiones por maquinaria, cargas y exposición a gases.</li>
+  <li><strong style="color:#0b183a;">Lesiones en Cosecha Citrícola:</strong> Caídas de escaleras y lesiones musculoesqueléticas por esfuerzo repetitivo.</li>
+  <li><strong style="color:#0b183a;">Accidentes en Frigoríficos:</strong> Cortes, lesiones por frío y golpes con equipos de carga.</li>
+  <li><strong style="color:#0b183a;">Accidentes In Itinere:</strong> Rutas nacionales 14 y 18, frecuentes en traslados rurales.</li>
+  <li><strong style="color:#0b183a;">Enfermedades Profesionales:</strong> Hipoacusia, afecciones respiratorias y problemas lumbares.</li>
+</ul>`,
   },
   {
     slug: 'buenos-aires',
     nombre: 'Buenos Aires',
     descripcion: 'Buenos Aires incluye CABA y el conurbano, con millones de trabajadores y alta actividad en construcción, salud, gastronomía y logística.',
     ciudades: CIUDADES_BUENOS_AIRES,
-    cmPrincipal: 'CM N° 1 — CABA / CM N° 36 — La Plata',
+    cmPrincipal: 'CM N° 10 — CABA / CM N° 36 — La Plata / CM N° 38 — GBA',
     metaTitle: 'Abogados Laborales Buenos Aires | Capeletti Abogados',
     metaDescription: 'Abogados especializados en accidentes laborales y ART en Buenos Aires y CABA. Consulta gratis sin anticipos.',
+    contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.7);">La provincia de Buenos Aires, con su vasto cordón industrial y el dinamismo del GBA, presenta los índices de siniestralidad más altos del país. En Capeletti Abogados operamos en territorio bonaerense para asistir a trabajadores de la construcción, operarios de logística y empleados industriales que día a día enfrentan condiciones de riesgo. Estamos acá para nivelar la balanza frente a las ART, asegurando que ningún trabajador quede desamparado tras un siniestro.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Sectores laborales más afectados en Buenos Aires</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">La <strong style="color:#0b183a;">Construcción</strong> es el sector con mayor riesgo en el GBA y La Plata, con frecuentes caídas de andamios y derrumbes. La <strong style="color:#0b183a;">Logística y Almacenamiento</strong>, concentrada en parques industriales de zona norte y oeste, registra múltiples lesiones de columna y accidentes con autoelevadores. La <strong style="color:#0b183a;">Industria Manufacturera</strong> (textil, plástica y alimenticia) presenta riesgos de atrapamientos y dermatitis químicas. El <strong style="color:#0b183a;">Reparto y Mensajería</strong> sufre una epidemia de accidentes viales que las ART intentan rechazar sistemáticamente.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Comisiones Médicas en Buenos Aires</h2>
+<p class="leading-relaxed mb-3" style="color:rgba(11,24,58,0.7);">La provincia cuenta con una red amplia de comisiones para que no tengas que viajar largas distancias:</p>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">CM N° 10 (CABA):</strong> Moreno 401, Ciudad Autónoma de Buenos Aires.</li>
+  <li><strong style="color:#0b183a;">CM N° 36 (La Plata):</strong> Berisso, Ensenada, Brandsen y zona sur bonaerense.</li>
+  <li><strong style="color:#0b183a;">CM N° 38 y delegaciones GBA:</strong> Morón, Ramos Mejía, San Martín, Lomas de Zamora, Quilmes, Ezeiza y más — cubriendo todo el conurbano.</li>
+  <li><strong style="color:#0b183a;">CM N° 4 (Bahía Blanca) y N° 3 (Mar del Plata):</strong> Para el interior y la zona costera.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Por qué necesitás un abogado local en Buenos Aires</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">La justicia laboral bonaerense tiene particularidades procesales únicas. Contar con abogados que litigan en los Tribunales de Trabajo de la provincia y manejan los convenios de UOCRA, Comercio o Camioneros es vital. Sabemos cómo impugnar los dictámenes médicos insuficientes en las comisiones del GBA y cómo acelerar los tiempos para que tu indemnización no se licue por la inflación.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Casos que atendemos en Buenos Aires</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Accidentes en Obras:</strong> Caídas de altura, golpes por caída de objetos y electrocución.</li>
+  <li><strong style="color:#0b183a;">Siniestros Viales Laborales:</strong> Accidentes en moto, camionetas de reparto y traslados al trabajo.</li>
+  <li><strong style="color:#0b183a;">Enfermedades por Esfuerzo:</strong> Hernias, problemas lumbares crónicos y várices por bipedestación.</li>
+  <li><strong style="color:#0b183a;">Rechazo de Enfermedad Profesional:</strong> Cuando la ART dice que tu dolencia no está en el listado oficial.</li>
+  <li><strong style="color:#0b183a;">Bajas Médicas Prematuras:</strong> Obligamos a que la ART siga brindando rehabilitación si no estás recuperado.</li>
+</ul>`,
   },
   {
     slug: 'cordoba',
     nombre: 'Córdoba',
     descripcion: 'Córdoba es la segunda provincia más grande del país. Alta actividad en industria automotriz, construcción y agroindustria con numerosos accidentes laborales.',
     ciudades: CIUDADES_CORDOBA,
-    cmPrincipal: 'CM N° 7 — Córdoba Capital / CM — Río Cuarto',
+    cmPrincipal: 'CM N° 5 — Córdoba Capital / CM N° 6 — Río Cuarto',
     metaTitle: 'Abogados Laborales Córdoba | Capeletti Abogados',
     metaDescription: 'Abogados especializados en accidentes laborales y ART en Córdoba. Consulta gratis, sin anticipos.',
+    contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.7);">Córdoba es la segunda provincia del país en actividad industrial y una de las más dinámicas en materia laboral. La industria automotriz, el sector sojero y la construcción generan un volumen significativo de accidentes que las ART no siempre cubren adecuadamente. En Capeletti Abogados operamos en Córdoba para que el trabajador cordobés tenga acceso a una defensa técnica especializada, con conocimiento real de las comisiones médicas locales y los convenios colectivos que rigen la provincia.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Sectores laborales más afectados en Córdoba</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">La <strong style="color:#0b183a;">Industria Automotriz y Metalmecánica</strong> (FIAT, Renault, autopartistas) concentra un alto número de accidentes por prensas, tornos y manipulación de materiales pesados. El <strong style="color:#0b183a;">Sector Agropecuario y Sojero</strong> presenta accidentes con maquinaria agrícola y exposición a agroquímicos. La <strong style="color:#0b183a;">Construcción</strong>, en plena expansión en Córdoba Capital, Río Cuarto y Villa María, suma caídas de altura y golpes. Finalmente, el <strong style="color:#0b183a;">Transporte de Cargas</strong> por las rutas 9, 36 y 7 registra frecuentes accidentes viales con resultado de lesiones graves.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Comisiones Médicas en Córdoba</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Comisión Médica N° 5 (Córdoba Capital):</strong> La más activa de la provincia, con jurisdicción sobre la zona metropolitana.</li>
+  <li><strong style="color:#0b183a;">Comisión Médica N° 6 (Río Cuarto):</strong> Cubre el sur cordobés y la región agropecuaria de La Pampa limítrofe.</li>
+  <li><strong style="color:#0b183a;">CM Villa María, Bell Ville, San Francisco:</strong> Nodos estratégicos para el interior industrial de la provincia.</li>
+  <li><strong style="color:#0b183a;">CM Villa Dolores y Laboulaye:</strong> Para la zona serrana oeste y el sur-centro provincial.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Por qué necesitás un abogado local en Córdoba</h2>
+<p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">Los convenios de SMATA (automotrices), UOCRA (construcción) y UATRE (rural) tienen escalas salariales específicas que afectan directamente el cálculo del ingreso base. Conocemos los juzgados laborales de Córdoba Capital y el funcionamiento de las comisiones médicas del interior. Esa combinación de conocimiento técnico-legal y presencia local es lo que garantiza una liquidación justa.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Casos que atendemos en Córdoba</h2>
+<ul class="space-y-3 ml-5 list-disc mb-5" style="color:rgba(11,24,58,0.7);">
+  <li><strong style="color:#0b183a;">Accidentes en Fábricas Automotrices:</strong> Lesiones por prensas, grúas y líneas de montaje.</li>
+  <li><strong style="color:#0b183a;">Accidentes Agrícolas:</strong> Vuelcos de tractores, atrapamientos en cosechadoras y exposición a agroquímicos.</li>
+  <li><strong style="color:#0b183a;">Caídas en Obra:</strong> Andamios, escaleras y superficies de trabajo inestables.</li>
+  <li><strong style="color:#0b183a;">Enfermedades Profesionales:</strong> Hipoacusia en planta industrial, hernia de disco y lesiones por vibración.</li>
+  <li><strong style="color:#0b183a;">Impugnación de Porcentaje:</strong> Si la CM cordobesa fijó un porcentaje bajo, lo revisamos con fundamentos médicos.</li>
+</ul>`,
   },
 ];

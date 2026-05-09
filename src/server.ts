@@ -96,6 +96,9 @@ app.get('/sitemap.xml', (_req: Request, res: Response) => {
 
     // Blog
     { loc: '/blog', changefreq: 'weekly', priority: '0.7', lastmod: today },
+    { loc: '/blog/que-hacer-si-la-art-te-rechaza-el-siniestro', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-08' },
+    { loc: '/blog/accidente-in-itinere-como-probarlo-ante-la-art', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-08' },
+    { loc: '/blog/como-impugnar-porcentaje-incapacidad-art', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-08' },
     { loc: '/blog/inconstitucionalidad-decreto-549-2025', changefreq: 'monthly', priority: '0.8', lastmod: '2026-04-22' },
     { loc: '/blog/que-hacer-despues-de-un-accidente-laboral', changefreq: 'monthly', priority: '0.7' },
     { loc: '/blog/como-calcular-indemnizacion-art', changefreq: 'monthly', priority: '0.7' },

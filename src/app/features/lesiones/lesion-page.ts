@@ -8,6 +8,7 @@ import { PROVINCIAS_DATA } from '../../core/data/ciudades.data';
 import { SeoService } from '../../core/services/seo.service';
 import { LESIONES_DATA } from '../../core/data/lesiones.data';
 import { LesionData, BreadcrumbItem } from '../../core/models/interfaces';
+import { AuthorBoxComponent } from '../../shared/components/author-box/author-box';
 
 @Component({
   selector: 'app-lesion-page',
@@ -18,6 +19,7 @@ import { LesionData, BreadcrumbItem } from '../../core/models/interfaces';
     FaqAccordionComponent,
     AlertBannerComponent,
     ContactFormComponent,
+    AuthorBoxComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './lesion-page.html',
@@ -41,10 +43,15 @@ export class LesionPageComponent implements OnInit {
         { label: this.lesion.titulo, url: '/' + this.lesion.slug },
       ];
 
+      const ogImageMap: Record<string, string> = {
+        'despido-sin-causa': this.seoService.ogImages.legislacion,
+        'accidente-de-trabajo': this.seoService.ogImages.accidente,
+      };
       this.seoService.setPage({
         title: this.lesion.metaTitle,
         description: this.lesion.metaDescription,
         path: '/' + this.lesion.slug,
+        ogImage: ogImageMap[this.lesion.slug],
         schema: this.lesion.faqs.length > 0
           ? this.seoService.getFaqSchema(this.lesion.faqs.map(f => ({ pregunta: f.pregunta, respuesta: f.respuesta })))
           : undefined,

@@ -44,6 +44,19 @@ export class GuiasHubComponent implements OnInit {
       title: 'Guías Legales Gratuitas — Accidentes Laborales y ART',
       description: 'Guías completas y gratuitas sobre accidentes laborales, ART, Comisiones Médicas y enfermedades profesionales. Escritas por abogados especializados.',
       path: '/guias',
+      schema: {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Guías Legales — Accidentes Laborales y ART',
+        url: 'https://capelettiabogados.com/guias',
+        description: 'Guías gratuitas sobre accidentes laborales, ART y Comisiones Médicas.',
+        itemListElement: this.guias.map((g, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: g.titulo,
+          url: `https://capelettiabogados.com/guias/${g.slug}`,
+        })),
+      },
     });
   }
 }

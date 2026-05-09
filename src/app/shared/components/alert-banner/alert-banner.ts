@@ -37,5 +37,5 @@ export class AlertBannerComponent {
   @Input({ required: true }) title = '';
   @Input({ required: true }) message = '';
   @Input() ctaText = '';
-  @Input() ctaHref = 'https://wa.me/5493415000000';
+  @Input() ctaHref = 'https://wa.me/5491125007192';
 }

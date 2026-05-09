@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { BreadcrumbComponent } from '../../../layout/breadcrumb/breadcrumb';
 import { CityCardComponent } from '../../../shared/components/city-card/city-card';
 import { ContactFormComponent } from '../../../shared/components/contact-form/contact-form';
@@ -17,9 +18,11 @@ import { ProvinciaData, BreadcrumbItem } from '../../../core/models/interfaces';
 export class HubProvincialComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly seoService = inject(SeoService);
+  private readonly sanitizer = inject(DomSanitizer);
 
   provincia: ProvinciaData | null = null;
   breadcrumbs: BreadcrumbItem[] = [];
+  safeContent: SafeHtml | null = null;
 
   ngOnInit(): void {
     const slug = this.route.snapshot.url[0]?.path ?? this.route.parent?.snapshot.url[0]?.path ?? '';
@@ -30,6 +33,9 @@ export class HubProvincialComponent implements OnInit {
         { label: 'Inicio', url: '/' },
         { label: this.provincia.nombre, url: '/' + this.provincia.slug },
       ];
+      if (this.provincia.contenidoHtml) {
+        this.safeContent = this.sanitizer.bypassSecurityTrustHtml(this.provincia.contenidoHtml);
+      }
       this.seoService.setPage({
         title: this.provincia.metaTitle,
         description: this.provincia.metaDescription,

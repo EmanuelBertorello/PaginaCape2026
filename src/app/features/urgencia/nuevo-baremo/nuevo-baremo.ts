@@ -4,11 +4,12 @@ import { BreadcrumbComponent } from '../../../layout/breadcrumb/breadcrumb';
 import { FaqAccordionComponent } from '../../../shared/components/faq-accordion/faq-accordion';
 import { SeoService } from '../../../core/services/seo.service';
 import { FaqItem } from '../../../core/models/interfaces';
+import { AuthorBoxComponent } from '../../../shared/components/author-box/author-box';
 
 @Component({
   selector: 'app-nuevo-baremo',
   standalone: true,
-  imports: [RouterLink, BreadcrumbComponent, FaqAccordionComponent],
+  imports: [RouterLink, BreadcrumbComponent, FaqAccordionComponent, AuthorBoxComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './nuevo-baremo.html',
 })

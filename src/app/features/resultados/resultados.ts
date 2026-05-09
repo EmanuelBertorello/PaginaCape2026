@@ -26,6 +26,29 @@ export class ResultadosComponent implements OnInit {
       title: 'Casos Ganados — Resultados de Capeletti Abogados',
       description: 'Conocé los resultados reales de Capeletti Abogados: casos ganados, montos cobrados y tipos de lesiones. Más de 7.000 trabajadores representados exitosamente.',
       path: '/resultados',
+      schema: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'ItemList',
+            name: 'Casos ganados — Capeletti Abogados',
+            description: 'Resultados reales de indemnizaciones obtenidas para trabajadores accidentados.',
+            itemListElement: this.resultados.slice(0, 10).map((r, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: `${r.tipo} — ${r.lesion}`,
+              description: r.descripcionBreve,
+            })),
+          },
+          {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://capelettiabogados.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Resultados', item: 'https://capelettiabogados.com/resultados' },
+            ],
+          },
+        ],
+      },
     });
   }
 }

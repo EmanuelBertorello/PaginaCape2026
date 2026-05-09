@@ -1,12 +1,13 @@
 import { Component, ChangeDetectionStrategy, OnInit, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { BreadcrumbComponent } from '../../layout/breadcrumb/breadcrumb';
+import { AuthorBoxComponent } from '../../shared/components/author-box/author-box';
 import { SeoService } from '../../core/services/seo.service';
 
 @Component({
   selector: 'app-sobre-nosotros',
   standalone: true,
-  imports: [RouterLink, BreadcrumbComponent],
+  imports: [RouterLink, BreadcrumbComponent, AuthorBoxComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './sobre-nosotros.html',
 })

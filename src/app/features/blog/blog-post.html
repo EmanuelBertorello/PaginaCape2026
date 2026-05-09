@@ -30,11 +30,15 @@
         [fechaActualizacion]="post.fechaModificacion"
       />
 
-      <div class="mt-10">
-        <p class="leading-relaxed text-base" style="color:rgba(11,24,58,0.7);">
-          El contenido completo de este artículo está disponible en el sitio. Para consultar tu caso específico, contactanos de forma gratuita.
-        </p>
-      </div>
+      @if (safeContent) {
+        <div class="mt-10" [innerHTML]="safeContent"></div>
+      } @else {
+        <div class="mt-10">
+          <p class="leading-relaxed text-base" style="color:rgba(11,24,58,0.7);">
+            Para consultar tu caso específico, contactanos de forma gratuita.
+          </p>
+        </div>
+      }
 
       <div class="mt-12 p-6 rounded-2xl" style="background:linear-gradient(135deg, #002b7b, #045fc3);">
         <p class="font-bold text-white mb-2">¿Tenés dudas sobre tu caso?</p>
@@ -43,7 +47,7 @@
           <a routerLink="/contactanos"
             class="flex-1 text-center py-3 rounded-xl font-bold text-sm transition-all"
             style="background:#fff; color:#002b7b;">Consultar gratis</a>
-          <a href="https://wa.me/5493415000000" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/5491125007192" target="_blank" rel="noopener noreferrer"
             class="flex-1 text-center py-3 rounded-xl font-semibold text-sm"
             style="background:rgba(255,255,255,0.15); color:#fff; border:1px solid rgba(255,255,255,0.25);">WhatsApp directo</a>
         </div>

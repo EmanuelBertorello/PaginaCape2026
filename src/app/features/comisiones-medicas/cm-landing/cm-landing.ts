@@ -35,7 +35,27 @@ export class CmLandingComponent implements OnInit {
         title: this.cm.metaTitle,
         description: this.cm.metaDescription,
         path: '/' + slug,
-        schema: this.seoService.getFaqSchema(this.cm.faqs),
+        ogImage: this.seoService.ogImages.comisionMedica,
+        schema: {
+          '@context': 'https://schema.org',
+          '@graph': [
+            {
+              '@type': 'LegalService',
+              name: `Capeletti Abogados — Comisión Médica ${this.cm.ciudad}`,
+              url: `https://capelettiabogados.com/${slug}`,
+              telephone: '+54-11-25007192',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: this.cm.ciudad,
+                addressRegion: this.cm.provincia,
+                addressCountry: 'AR',
+              },
+              areaServed: { '@type': 'City', name: this.cm.ciudad },
+              knowsAbout: ['Comisiones Médicas ART', 'accidentes laborales', 'indemnizaciones laborales'],
+            },
+            this.seoService.getFaqSchema(this.cm.faqs),
+          ],
+        },
       });
     }
   }

@@ -4,11 +4,12 @@ import { FaqAccordionComponent } from '../../../shared/components/faq-accordion/
 import { ContactFormComponent } from '../../../shared/components/contact-form/contact-form';
 import { SeoService } from '../../../core/services/seo.service';
 import { FaqItem } from '../../../core/models/interfaces';
+import { AuthorBoxComponent } from '../../../shared/components/author-box/author-box';
 
 @Component({
   selector: 'app-alta-medica',
   standalone: true,
-  imports: [BreadcrumbComponent, FaqAccordionComponent, ContactFormComponent],
+  imports: [BreadcrumbComponent, FaqAccordionComponent, ContactFormComponent, AuthorBoxComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './alta-medica.html',
 })

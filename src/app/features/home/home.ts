@@ -331,7 +331,26 @@ export class HomeComponent implements OnInit, OnDestroy {
       title: 'Abogados Accidentes Laborales y ART',
       description: 'Abogados especialistas en accidentes laborales, ART e indemnizaciones en Santa Fe, Neuquén, Río Negro, Entre Ríos y Buenos Aires. Consulta gratis, sin anticipos, solo cobramos si ganamos.',
       path: '/',
-      schema: this.seoService.getLegalServiceSchema(),
+      ogImage: this.seoService.ogImages.accidente,
+      schema: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          this.seoService.getLegalServiceSchema(),
+          {
+            '@type': 'WebSite',
+            name: 'Capeletti Abogados',
+            url: 'https://capelettiabogados.com',
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: {
+                '@type': 'EntryPoint',
+                urlTemplate: 'https://capelettiabogados.com/blog?q={search_term_string}',
+              },
+              'query-input': 'required name=search_term_string',
+            },
+          },
+        ],
+      },
     });
   }
 }

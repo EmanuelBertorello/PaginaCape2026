@@ -241,6 +241,13 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {
       return [
+        { slug: 'art-no-paga-baja-laboral' },
+        { slug: 'gran-invalidez-laboral-art' },
+        { slug: 'enfermedad-profesional-vs-accidente-laboral' },
+        { slug: 'alta-medica-art-antes-de-recuperarse' },
+        { slug: 'que-hacer-si-la-art-te-rechaza-el-siniestro' },
+        { slug: 'accidente-in-itinere-como-probarlo-ante-la-art' },
+        { slug: 'como-impugnar-porcentaje-incapacidad-art' },
         { slug: 'inconstitucionalidad-decreto-549-2025' },
         { slug: 'que-hacer-despues-de-un-accidente-laboral' },
         { slug: 'como-calcular-indemnizacion-art' },

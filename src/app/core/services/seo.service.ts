@@ -11,7 +11,14 @@ export class SeoService {
 
   private readonly siteName = 'Capeletti Abogados';
   private readonly siteUrl = 'https://capelettiabogados.com';
-  private readonly defaultOgImage = 'https://capelettiabogados.com/og-default.webp';
+  private readonly defaultOgImage = 'https://capelettiabogados.com/og-accidente-trabajo.webp';
+  readonly ogImages = {
+    accidente: 'https://capelettiabogados.com/og-accidente-trabajo.webp',
+    honorarios: 'https://capelettiabogados.com/og-honorarios.webp',
+    comisionMedica: 'https://capelettiabogados.com/og-comision-medica.webp',
+    blog: 'https://capelettiabogados.com/og-blog.webp',
+    legislacion: 'https://capelettiabogados.com/og-legislacion-laboral.webp',
+  };
 
   setTitle(pageTitle: string): void {
     const fullTitle = pageTitle.includes(' | Capeletti')
@@ -121,9 +128,16 @@ export class SeoService {
       email: 'consultas@capelettiabogados.com',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'Ignacio Warnes 1666',
         addressLocality: 'Rosario',
         addressRegion: 'Santa Fe',
         addressCountry: 'AR',
+        postalCode: '2000',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: -32.9468,
+        longitude: -60.6393,
       },
       openingHoursSpecification: {
         '@type': 'OpeningHoursSpecification',
@@ -142,8 +156,55 @@ export class SeoService {
         'accidente in itinere',
         'despido sin causa',
       ],
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        reviewCount: '247',
+        bestRating: '5',
+        worstRating: '1',
+      },
+      review: [
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Ezequiel Gudiño' },
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody: 'Mi experiencia con el estudio Capeletti fue muy profesional, todo el equipo me trató espectacular durante todo el proceso, me garantizaron seguridad y compromiso. Recomiendo la experiencia de trabajar con ellos.',
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Emanuel Bertorello' },
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody: 'Excelente atención y asesoramiento. Se nota la especialización en accidentes laborales y reclamos contra las ART. Explican todo con claridad, acompañan el proceso y logran resultados favorables. Totalmente recomendables.',
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Cristian Suarez' },
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody: 'Estoy muy conforme por lo logrado. Gracias por brindarme toda su atención excelente en cada momento.',
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Lucas Saavedra' },
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody: 'Gracias Bruno y todo su cuerpo de trabajo. Excelente como se comprometieron conmigo y muy buena atención.',
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Blas Nuñez' },
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody: 'Muy buena la atención, muy atentos a los casos que toman, muy responsables. Estoy muy agradecido por todo.',
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Robert Ruda' },
+          reviewRating: { '@type': 'Rating', ratingValue: '4', bestRating: '5' },
+          reviewBody: 'Muy buen trabajo específico y detalles de cada paso, muy buena atención.',
+        },
+      ],
       sameAs: [
         'https://www.linkedin.com/company/capeletti-abogados',
+        'https://www.instagram.com/capelettiabogados/',
+        'https://www.facebook.com/bruno.capeletti.102928',
       ],
       priceRange: 'Sin cargo por consulta inicial',
     };
@@ -266,6 +327,18 @@ export class SeoService {
           url: `${this.siteUrl}/assets/logo.webp`,
         },
       },
+    };
+  }
+
+  getSpeakableSchema(url: string): object {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', 'h2', '.speakable'],
+      },
+      url,
     };
   }
 

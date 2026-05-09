@@ -29,7 +29,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
   `,
 })
 export class WhatsappButtonComponent {
-  @Input() phone = '5493415000000';
+  @Input() phone = '5491125007192';
   @Input() message = 'Hola, necesito consultar sobre un accidente laboral.';
   @Input() ariaLabel = 'Consultar por WhatsApp';
 

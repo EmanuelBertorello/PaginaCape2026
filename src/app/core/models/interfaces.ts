@@ -56,6 +56,7 @@ export interface ProvinciaData {
   cmPrincipal?: string;
   metaTitle: string;
   metaDescription: string;
+  contenidoHtml?: string;
 }
 
 // === ABOGADOS ===

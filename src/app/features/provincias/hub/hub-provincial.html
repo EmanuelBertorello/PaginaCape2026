@@ -56,20 +56,51 @@
   <!-- SEO TEXT -->
   <section style="background:#F4F7FE; border-top:1px solid rgba(0,43,123,0.07);" class="py-14">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold mb-5" style="color:#0b183a;">
-        Cómo reclamar a la ART en {{ provincia.nombre }}
-      </h2>
-      <p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">
-        Si sufriste un accidente de trabajo o te diagnosticaron una enfermedad profesional en {{ provincia.nombre }}, tenés derecho a reclamar una indemnización ante la ART. El proceso comienza con la denuncia del siniestro, la atención médica y la derivación a la Comisión Médica local para la determinación del grado de incapacidad.
-      </p>
-      <p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">
-        En Capeletti Abogados representamos trabajadores de {{ provincia.nombre }} en todas las instancias: desde la primera consulta ante la CM hasta el juicio laboral si fuera necesario. Cobramos solo si ganamos, sin adelantos de gastos.
-      </p>
-      @if (provincia.cmPrincipal) {
-        <p class="leading-relaxed" style="color:rgba(11,24,58,0.7);">
-          La {{ provincia.cmPrincipal }} es la principal instancia de resolución en {{ provincia.nombre }}. Conocemos sus criterios de evaluación y cómo impugnar dictámenes desfavorables para maximizar la indemnización de cada trabajador.
+      @if (safeContent) {
+        <div [innerHTML]="safeContent" class="prose-legal"></div>
+      } @else {
+        <h2 class="text-2xl font-bold mb-5" style="color:#0b183a;">
+          Cómo reclamar a la ART en {{ provincia.nombre }}
+        </h2>
+        <p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">
+          Si sufriste un accidente de trabajo o te diagnosticaron una enfermedad profesional en {{ provincia.nombre }}, tenés derecho a reclamar una indemnización ante la ART. El proceso comienza con la denuncia del siniestro, la atención médica y la derivación a la Comisión Médica local para la determinación del grado de incapacidad.
         </p>
+        <p class="leading-relaxed mb-4" style="color:rgba(11,24,58,0.7);">
+          En Capeletti Abogados representamos trabajadores de {{ provincia.nombre }} en todas las instancias: desde la primera consulta ante la CM hasta el juicio laboral si fuera necesario. Cobramos solo si ganamos, sin adelantos de gastos.
+        </p>
+        @if (provincia.cmPrincipal) {
+          <p class="leading-relaxed" style="color:rgba(11,24,58,0.7);">
+            La {{ provincia.cmPrincipal }} es la principal instancia de resolución en {{ provincia.nombre }}. Conocemos sus criterios de evaluación y cómo impugnar dictámenes desfavorables para maximizar la indemnización de cada trabajador.
+          </p>
+        }
       }
+    </div>
+  </section>
+
+  <!-- BLOG LINKS -->
+  <section style="background:#ffffff; border-top:1px solid rgba(0,43,123,0.07);" class="py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-xl font-bold mb-5" style="color:#0b183a;">Artículos relacionados</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/blog/que-hacer-si-la-art-te-rechaza-el-siniestro"
+          class="bg-white rounded-2xl p-5 hover:shadow-md transition-all" style="border:1px solid rgba(0,43,123,0.1);">
+          <p class="text-xs font-semibold mb-2" style="color:#045fc3;">Accidentes Laborales</p>
+          <h3 class="font-bold text-sm leading-snug" style="color:#0b183a;">Qué hacer si la ART te rechaza el siniestro</h3>
+          <p class="text-xs mt-2 font-semibold" style="color:#045fc3;">Leer →</p>
+        </a>
+        <a href="/blog/como-impugnar-porcentaje-incapacidad-art"
+          class="bg-white rounded-2xl p-5 hover:shadow-md transition-all" style="border:1px solid rgba(0,43,123,0.1);">
+          <p class="text-xs font-semibold mb-2" style="color:#045fc3;">Comisiones Médicas</p>
+          <h3 class="font-bold text-sm leading-snug" style="color:#0b183a;">Cómo impugnar el porcentaje de incapacidad</h3>
+          <p class="text-xs mt-2 font-semibold" style="color:#045fc3;">Leer →</p>
+        </a>
+        <a href="/blog/alta-medica-art-antes-de-recuperarse"
+          class="bg-white rounded-2xl p-5 hover:shadow-md transition-all" style="border:1px solid rgba(0,43,123,0.1);">
+          <p class="text-xs font-semibold mb-2" style="color:#045fc3;">Accidentes Laborales</p>
+          <h3 class="font-bold text-sm leading-snug" style="color:#0b183a;">Alta médica ART: qué hacer si fue antes de tiempo</h3>
+          <p class="text-xs mt-2 font-semibold" style="color:#045fc3;">Leer →</p>
+        </a>
+      </div>
     </div>
   </section>
 

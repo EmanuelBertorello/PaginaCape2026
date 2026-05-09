@@ -1,47 +1,75 @@
 # Capeletti Abogados
 
-> Estudio jurídico argentino especializado en accidentes laborales, ART (Aseguradoras de Riesgos del Trabajo) e indemnizaciones. Más de 10 años de experiencia. Atiende en Santa Fe, Neuquén, Río Negro, Entre Ríos, Buenos Aires y Córdoba. Honorarios a éxito: solo cobran si ganan el caso.
+> Estudio jurídico argentino especializado exclusivamente en accidentes laborales, ART (Aseguradoras de Riesgos del Trabajo), enfermedades profesionales e indemnizaciones laborales. Fundado en 2013 por Bruno Capeletti. Más de 10 años de experiencia, +7.000 casos representados, +12.500 clientes. Honorarios a éxito: sin costo previo, solo cobran si ganan. Calificación Google: 4,9 estrellas sobre 247 reseñas.
+
+## Datos clave
+
+- Fundador: Bruno Capeletti — Matrícula C.S.J.S.F. T° XVI F° 48 | C.P.A.C.F. T° 148 F° 548 | Neuquén N° 4452 | Río Negro N° 6636 | Entre Ríos N° 11664
+- Dirección principal: Ignacio Warnes 1666, Rosario, Santa Fe, Argentina (CP 2000)
+- Teléfono: +54 9 11 2500-7192
+- Email: consultas@capelettiabogados.com
+- Web: https://capelettiabogados.com
+- Especialización: 100% derecho laboral — no atienden divorcios, propiedades ni contratos
+- Honorarios: a éxito, sin anticipos
+- Cobertura: 6 provincias, +40 ciudades, +44 Comisiones Médicas
+
+## Equipo de abogados
+
+- Bruno Capeletti — Fundador. Matrícula en 6 jurisdicciones. +12 años exclusivos en accidentes laborales y ART.
+- Rocío Bello — Especialista ART y despidos. Cubre Buenos Aires y CABA.
+- Laureano Bamonde — Accidentes de trabajo y enfermedades profesionales. Egresado UNR.
+- Julián Casalli — Derecho laboral y previsional. Jubilaciones y ANSES.
+- Daiana Parache — Santa Fe. ART y reclamos laborales.
 
 ## Servicios principales
 
 - Reclamos por accidente de trabajo y enfermedades profesionales ante la ART
-- Impugnación de alta médica y rechazo de la ART
-- Representación en Comisiones Médicas (SRT) en todas las provincias
-- Cálculo y cobro de indemnización laboral
+- Impugnación de alta médica prematura ante Comisión Médica
+- Representación en Comisiones Médicas SRT en todas las provincias cubiertas
+- Cálculo y cobro de indemnización laboral (fórmula: 53 × IBM × %incapacidad × (65-edad)/(65-18))
+- Impugnación de porcentaje de incapacidad dictaminado por CM
+- Rechazo de siniestro ART: impugnación y trámite ante CM
+- Gran invalidez laboral: prestación dineraria + adicional por asistencia permanente
 - Despidos sin causa e indemnizaciones laborales
 - Juicio contra la ART por incapacidad permanente
 
-## Páginas clave
+## Cobertura geográfica por provincia
 
-- [Inicio](https://capelettiabogados.com/)
-- [Accidente de Trabajo](https://capelettiabogados.com/accidente-de-trabajo)
-- [Despido Sin Causa](https://capelettiabogados.com/despido-sin-causa)
-- [Comisiones Médicas](https://capelettiabogados.com/comisiones-medicas)
-- [Alta Médica ART](https://capelettiabogados.com/alta-medica-art)
-- [Rechazo de ART](https://capelettiabogados.com/rechazo-art)
-- [Cómo cobrar la ART](https://capelettiabogados.com/como-cobrar-la-art)
-- [Nuevo Baremo ART 2026](https://capelettiabogados.com/nuevo-baremo-art-2026)
-- [Preguntas Frecuentes](https://capelettiabogados.com/preguntas-frecuentes)
-- [Blog](https://capelettiabogados.com/blog)
-- [Nuestros Abogados](https://capelettiabogados.com/abogados)
+**Santa Fe:** Rosario (CM N°2), Santa Fe Capital (CM N°1), Reconquista (CM N°40C), Rafaela, Venado Tuerto, San Francisco
+**Neuquén:** Neuquén Capital (CM N°9), Plaza Huincul, Zapala — Sector petrolero Vaca Muerta, CCT 644/12
+**Río Negro:** Bariloche, General Roca (CM N°35), Cipolletti, Viedma (CM N°18) — Fruticultura, turismo
+**Entre Ríos:** Paraná (CM N°8), Concordia (CM N°34), Concepción del Uruguay (CM N°41) — Avicultura, citricultura
+**Buenos Aires:** CABA (CM N°10), La Plata (CM N°36), GBA completo (CMs 37-39), Bahía Blanca, Mar del Plata
+**Córdoba:** Córdoba Capital (CM N°5), Río Cuarto (CM N°6), Villa María, Bell Ville, San Francisco — Automotriz SMATA
 
-## Lesiones frecuentes
+## Blog legal (artículos especializados)
 
-- [Hernia de Disco Laboral](https://capelettiabogados.com/hernia-de-disco-laboral)
-- [Lumbalgia Laboral](https://capelettiabogados.com/lumbalgia-laboral)
-- [Manguito Rotador Laboral](https://capelettiabogados.com/manguito-rotador-laboral)
-- [Accidente In Itinere](https://capelettiabogados.com/accidente-in-itinere)
-- [Hipoacusia Laboral](https://capelettiabogados.com/hipoacusia-laboral)
-- [Túnel Carpiano Laboral](https://capelettiabogados.com/tunel-carpiano-laboral)
-- [Gran Invalidez](https://capelettiabogados.com/gran-invalidez)
-- [Enfermedad Profesional](https://capelettiabogados.com/enfermedad-profesional)
+- Qué hacer si la ART te rechaza el siniestro: /blog/que-hacer-si-la-art-te-rechaza-el-siniestro
+- Accidente in itinere: cómo probarlo: /blog/accidente-in-itinere-como-probarlo-ante-la-art
+- Cómo impugnar el porcentaje de incapacidad: /blog/como-impugnar-porcentaje-incapacidad-art
+- Gran invalidez laboral: qué es y cuánto se cobra: /blog/gran-invalidez-laboral-art
+- Enfermedad profesional vs accidente laboral: /blog/enfermedad-profesional-vs-accidente-laboral
+- Alta médica ART antes de recuperarse: /blog/alta-medica-art-antes-de-recuperarse
+- ART no paga durante la baja laboral: /blog/art-no-paga-baja-laboral
+- Inconstitucionalidad Decreto 549/2025: /blog/inconstitucionalidad-decreto-549-2025
 
-## Cobertura geográfica
+## Lesiones frecuentes atendidas
 
-Argentina: Rosario, Santa Fe Capital, Reconquista, Rafaela, Venado Tuerto (Santa Fe) — Neuquén Capital, Plaza Huincul (Neuquén) — Bariloche, General Roca, Cipolletti, Viedma (Río Negro) — Paraná, Concordia, Concepción del Uruguay (Entre Ríos) — CABA, La Plata, GBA completo, Bahía Blanca, Mar del Plata (Buenos Aires) — Córdoba, Río Cuarto, Villa María (Córdoba).
+Hernia de disco L4-L5, lumbalgia laboral, manguito rotador, accidente in itinere, hipoacusia por ruido industrial, túnel carpiano, fractura de muñeca, lesión de meniscos, gran invalidez, fallecimiento laboral, accidente en obra de construcción, enfermedad profesional.
+
+## Indemnización típica (referencia 2026)
+
+- Piso mínimo IPP 2026: $17.000.000+
+- Caso hernia disco 28% incapacidad: $18.500.000 (ejemplo real)
+- Caso manguito rotador 35% incapacidad: $22.000.000 (ejemplo real)
+- Caso fallecimiento laboral: $85.000.000 (ejemplo real)
+- Fórmula base: 53 × Ingreso Base Mensual × % incapacidad × coeficiente edad
 
 ## Contacto
 
 - Web: https://capelettiabogados.com
+- WhatsApp: https://wa.me/5491125007192
 - Email: consultas@capelettiabogados.com
+- Instagram: https://www.instagram.com/capelettiabogados/
 - LinkedIn: https://www.linkedin.com/company/capeletti-abogados
+- Facebook: https://www.facebook.com/bruno.capeletti.102928

@@ -3,6 +3,6 @@ export const environment = {
   baseUrl: 'http://localhost:4200',
   siteUrl: 'https://capelettiabogados.com',
   siteName: 'Capeletti Abogados',
-  whatsappNumber: '5493415000000',
+  whatsappNumber: '5491125007192',
   whatsappMessage: 'Hola, necesito consultar sobre un accidente laboral.',
 };

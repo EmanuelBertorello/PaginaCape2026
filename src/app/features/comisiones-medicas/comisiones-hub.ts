@@ -106,6 +106,7 @@ export class ComisionesMedicasHubComponent implements OnInit {
       title: 'Comisiones Médicas ART — Guía Completa por Provincia',
       description: 'Todo sobre las Comisiones Médicas: qué son, cómo funcionan, dónde están. Guías para Rosario, Santa Fe, Neuquén y Reconquista.',
       path: '/comisiones-medicas',
+      ogImage: this.seoService.ogImages.comisionMedica,
       schema: {
         '@context': 'https://schema.org',
         '@graph': [

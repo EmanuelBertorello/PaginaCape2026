@@ -3,11 +3,12 @@ import { BreadcrumbComponent } from '../../../layout/breadcrumb/breadcrumb';
 import { AlertBannerComponent } from '../../../shared/components/alert-banner/alert-banner';
 import { ContactFormComponent } from '../../../shared/components/contact-form/contact-form';
 import { SeoService } from '../../../core/services/seo.service';
+import { AuthorBoxComponent } from '../../../shared/components/author-box/author-box';
 
 @Component({
   selector: 'app-rechazo-art',
   standalone: true,
-  imports: [BreadcrumbComponent, AlertBannerComponent, ContactFormComponent],
+  imports: [BreadcrumbComponent, AlertBannerComponent, ContactFormComponent, AuthorBoxComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './rechazo-art.html',
 })
