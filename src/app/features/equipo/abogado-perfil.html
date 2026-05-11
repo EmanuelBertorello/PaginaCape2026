@@ -15,11 +15,11 @@
           <img
             [src]="abogado.foto"
             [alt]="abogado.nombre + ' ' + abogado.apellido"
-            class="w-28 h-28 rounded-full object-cover shrink-0"
-            style="border:3px solid rgba(255,255,255,0.3);"
+            class="w-72 h-72 rounded-full object-cover shrink-0"
+            style="border:4px solid rgba(255,255,255,0.35);"
           />
         } @else {
-          <div class="w-28 h-28 rounded-full flex items-center justify-center text-white text-4xl font-bold shrink-0"
+          <div class="w-72 h-72 rounded-full flex items-center justify-center text-white text-4xl font-bold shrink-0"
             style="background:rgba(255,255,255,0.15); border:3px solid rgba(255,255,255,0.3);">
             {{ abogado.nombre[0] }}{{ abogado.apellido[0] }}
           </div>

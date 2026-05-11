@@ -42,44 +42,46 @@ Su filosofía de trabajo: "Cada trabajador lesionado merece ser representado con
     slug: 'rocio-bello',
     nombre: 'Rocío',
     apellido: 'Bello',
-    titulo: 'Abogada — Especialista en Accidentes Laborales Buenos Aires',
+    titulo: 'Abogada — Especialista en Despidos y Enfermedades Profesionales',
     matricula: 'C.A.B.A. T° 105 F° 318',
-    universidad: 'Universidad de Buenos Aires (UBA)',
+    universidad: 'Universidad Nacional de Lomas de Zamora (UNLZ)',
     especializaciones: [
-      'Accidentes Laborales',
+      'Despidos y Extinción del Contrato de Trabajo',
+      'Enfermedades Profesionales',
       'Reclamos ante ART',
       'Justicia Nacional del Trabajo',
-      'Enfermedades Profesionales',
-      'Accidentes In Itinere — CABA y GBA',
+      'Accidentes Laborales — CABA y GBA',
     ],
-    biografia: `Rocío Bello lidera la representación del estudio Capeletti en la provincia y Ciudad de Buenos Aires. Especialista en litigación ante la Justicia Nacional del Trabajo, tiene amplia experiencia en reclamos de trabajadores de todos los sectores productivos bonaerenses.
+    biografia: `Rocío Bello es abogada graduada en la Universidad Nacional de Lomas de Zamora (UNLZ). Su práctica profesional está orientada principalmente a los despidos y a los reclamos derivados de enfermedades profesionales, representando a trabajadores tanto en el ámbito bonaerense como en la Ciudad de Buenos Aires.
 
-Egresada de la UBA, trabaja con un equipo consolidado en CABA y el conurbano bonaerense, atendiendo casos de industria, logística, construcción y servicios. Su conocimiento del sistema de ART en el ámbito metropolitano le permite maximizar los resultados para cada trabajador.`,
+Con un enfoque cercano y personalizado, acompaña a cada trabajador desde el inicio del conflicto laboral hasta la resolución definitiva del caso, asegurando la defensa efectiva de sus derechos en todas las instancias del proceso. Su experiencia en la Justicia Nacional del Trabajo le permite actuar con agilidad y precisión en cada expediente.`,
     foto: '/rocio-bello.jpeg',
     provinciasFoco: ['Buenos Aires', 'CABA'],
     casosEspeciales: [
-      'Accidentes en logística y transporte en GBA',
-      'Enfermedades profesionales en industria alimentaria',
-      'Hipoacusia laboral en metalurgia y construcción',
+      'Despidos con causa en industria y servicios',
+      'Enfermedades profesionales en entornos laborales de alto riesgo',
+      'Reclamos por incapacidad ante ART en GBA y CABA',
     ],
   },
   {
     slug: 'daiana-parache',
     nombre: 'Daiana',
     apellido: 'Parache',
-    titulo: 'Abogada — Especialista en Accidentes Laborales Santa Fe',
-    matricula: 'C.S.J.S.F. T° XXI F° 92',
-    universidad: 'Universidad Nacional del Litoral (UNL)',
+    titulo: 'Abogada — Especialista en Accidentes de Trabajo y Enfermedades Profesionales',
+    matricula: 'Pcia. de Buenos Aires · Rosario',
+    universidad: 'Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN)',
     especializaciones: [
-      'Accidentes Laborales — Santa Fe',
-      'Reclamos ante Comisiones Médicas',
-      'Enfermedades Profesionales',
-      'Alta Médica e Impugnaciones',
-      'Reclamos ART en Agroindustria',
+      'Accidentes de Trabajo y Enfermedades Profesionales',
+      'Reclamos ante ART — Etapa Administrativa y Judicial',
+      'Litigación ante Comisiones Médicas',
+      'Representación ante Juzgados y Tribunales Laborales',
+      'Derecho Laboral — Pcia. de Buenos Aires y Rosario',
     ],
-    biografia: `Daiana Parache es la referente del estudio Capeletti para la provincia de Santa Fe. Con profundo conocimiento de las Comisiones Médicas de Rosario, Santa Fe Capital y Reconquista, representa a trabajadores de la industria, agroindustria y servicios en toda la provincia.
+    biografia: `Daiana Giselle Parache es abogada egresada de la Facultad de Derecho de la UNICEN (2019), con amplia experiencia en Derecho Laboral y enfoque exclusivo en Accidentes de Trabajo y Enfermedades Profesionales.
 
-Egresada de la Universidad Nacional del Litoral, se especializó en los procesos ante las CMs santafesinas y la impugnación de altas médicas prematuras. Su trato cercano y dedicación personalizada a cada caso son reconocidos por cientos de trabajadores que pasaron por el estudio.`,
+Su práctica profesional se centra en brindar asesoramiento integral y estratégico en reclamos contra Aseguradoras de Riesgos de Trabajo (ART), interviniendo tanto en la etapa administrativa ante las Comisiones Médicas como en la instancia judicial ante los Juzgados y Tribunales Laborales.
+
+Cuenta con matrícula profesional activa en la Provincia de Buenos Aires y en Rosario, brindando asesoramiento jurídico en ambas jurisdicciones. Su labor se distingue por la responsabilidad y el compromiso orientados a la defensa efectiva de la integridad y los derechos de los trabajadores.`,
     foto: '/assets/team/daiana-parache.webp',
     provinciasFoco: ['Santa Fe'],
     casosEspeciales: [
@@ -102,9 +104,9 @@ Egresada de la Universidad Nacional del Litoral, se especializó en los procesos
       'Litigación Laboral',
       'Representación en Comisiones Médicas',
     ],
-    biografia: `Laureano Bamonde es abogado egresado de la Facultad de Derecho de la Universidad Nacional de Rosario. Especializado en derecho laboral, cuenta con sólida experiencia en accidentes de trabajo y enfermedades profesionales.
+    biografia: `Laureano Bamonde es abogado egresado de la Facultad de Derecho de la Universidad Nacional de Rosario. Especializado en derecho laboral, cuenta con sólida experiencia en la representación de trabajadores afectados por accidentes de trabajo y enfermedades profesionales.
 
-Brinda asesoramiento estratégico y representación integral a cada trabajador, con un enfoque orientado a la excelencia, la atención personalizada y la defensa eficaz de los derechos del trabajador en todas las instancias del proceso.`,
+Brinda asesoramiento estratégico y representación integral en cada caso, con un enfoque orientado a la excelencia, la atención personalizada y la defensa eficaz de los derechos del trabajador en todas las instancias del proceso — desde la denuncia del siniestro hasta el cobro de la indemnización.`,
     foto: '/laureano.png',
     provinciasFoco: ['Santa Fe', 'Buenos Aires'],
     casosEspeciales: [
@@ -129,7 +131,7 @@ Brinda asesoramiento estratégico y representación integral a cada trabajador, 
     ],
     biografia: `Julián Casalli es abogado graduado en la Facultad de Derecho de la Universidad Nacional de Rosario. Se dedica principalmente al asesoramiento y trámite de reclamos por accidentes laborales y enfermedades profesionales, acompañando a cada trabajador desde la primera consulta hasta el cobro de la indemnización.
 
-Además de su especialización en derecho laboral, realiza asesoramiento y trámite de jubilaciones y pensiones, incluyendo pensiones por invalidez laboral vinculadas a accidentes de trabajo. Esta doble especialización le permite brindar una cobertura integral al trabajador y su familia en los momentos más críticos.`,
+Además de su especialización en derecho laboral, realiza asesoramiento y trámite de jubilaciones y pensiones, incluyendo pensiones por invalidez laboral vinculadas a accidentes de trabajo. Esta doble especialización le permite brindar una cobertura integral al trabajador y su familia en los momentos más difíciles, abordando tanto el reclamo indemnizatorio como la cobertura previsional que puede corresponder.`,
     foto: '/JulianCasalli.png',
     provinciasFoco: ['Santa Fe', 'Rosario'],
     casosEspeciales: [

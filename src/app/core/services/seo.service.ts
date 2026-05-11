@@ -125,7 +125,7 @@ export class SeoService {
       logo: `${this.siteUrl}/assets/logo.webp`,
       image: this.defaultOgImage,
       telephone: '+54-11-25007192',
-      email: 'consultas@capelettiabogados.com',
+      email: 'info@capeletti.com',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Ignacio Warnes 1666',

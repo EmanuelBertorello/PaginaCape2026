@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python C:/Users/EMANUEL/.claude/skills/seo-audit/scripts/fetch_page.py https://capelettiabogados.com/)",
+      "WebFetch(domain:capelettiabogados.com)",
+      "Bash(Select-String -Pattern \"daiana|parache|photo|foto\" -i)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\EMANUEL\\\\Downloads\" -File | Where-Object { $_.Extension -match \"\\\\.\\(jpg|jpeg|png|webp|avif\\)\" } | Select-Object Name, LastWriteTime | Sort-Object LastWriteTime -Descending | Select-Object -First 15)",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"C:\\\\Users\\\\EMANUEL\\\\Desktop\\\\SCRPITS\\\\PaginaCape2026\\\\public\\\\assets\\\\team\")",
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\EMANUEL\\\\Downloads\\\\ChatGPT Image 11 may 2026, 10_20_07 a.m..png\" -Destination \"C:\\\\Users\\\\EMANUEL\\\\Desktop\\\\SCRPITS\\\\PaginaCape2026\\\\public\\\\assets\\\\team\\\\daiana-parache.png\")",
+      "PowerShell(node --version)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\EMANUEL\\\\Desktop\\\\SCRPITS\\\\PaginaCape2026\\\\node_modules\" -Directory | Where-Object { $_.Name -match \"image|sharp|jimp|canvas|webp|squoosh\" } | Select-Object Name)",
+      "PowerShell(python --version 2>$null)",
+      "PowerShell(python3 --version 2>$null)",
+      "PowerShell(python -c \"from PIL import Image; img = Image.open\\('C:/Users/EMANUEL/Desktop/SCRPITS/PaginaCape2026/public/assets/team/daiana-parache.png'\\); img.save\\('C:/Users/EMANUEL/Desktop/SCRPITS/PaginaCape2026/public/assets/team/daiana-parache.webp', 'WEBP', quality=90\\); print\\('OK'\\)\")"
+    ]
+  }
+}
