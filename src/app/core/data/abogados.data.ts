@@ -30,7 +30,7 @@ Egresado de la Universidad Nacional del Litoral, se especializó en el sistema d
 Su conocimiento profundo de las Comisiones Médicas locales, los baremos y las estrategias de litigación en toda la región lo posicionan como uno de los referentes en accidentes laborales y ART en el interior del país.
 
 Su filosofía de trabajo: "Cada trabajador lesionado merece ser representado con la misma calidad que una gran empresa. El sistema está hecho para desalentar el reclamo; nuestro trabajo es revertir eso."`,
-    foto: '/brunito.png',
+    foto: '/assets/team/bruno-capeletti.webp',
     provinciasFoco: ['Neuquén', 'Río Negro', 'Entre Ríos', 'Buenos Aires', 'CABA', 'Santa Fe'],
     casosEspeciales: [
       'Accidentes en pozos petroleros y construcción de infraestructura',
@@ -55,7 +55,7 @@ Su filosofía de trabajo: "Cada trabajador lesionado merece ser representado con
     biografia: `Rocío Bello es abogada graduada en la Universidad Nacional de Lomas de Zamora (UNLZ). Su práctica profesional está orientada principalmente a los despidos y a los reclamos derivados de enfermedades profesionales, representando a trabajadores tanto en el ámbito bonaerense como en la Ciudad de Buenos Aires.
 
 Con un enfoque cercano y personalizado, acompaña a cada trabajador desde el inicio del conflicto laboral hasta la resolución definitiva del caso, asegurando la defensa efectiva de sus derechos en todas las instancias del proceso. Su experiencia en la Justicia Nacional del Trabajo le permite actuar con agilidad y precisión en cada expediente.`,
-    foto: '/rocio-bello.jpeg',
+    foto: '/assets/team/rocio-bello.webp',
     provinciasFoco: ['Buenos Aires', 'CABA'],
     casosEspeciales: [
       'Despidos con causa en industria y servicios',
@@ -107,7 +107,7 @@ Cuenta con matrícula profesional activa en la Provincia de Buenos Aires y en Ro
     biografia: `Laureano Bamonde es abogado egresado de la Facultad de Derecho de la Universidad Nacional de Rosario. Especializado en derecho laboral, cuenta con sólida experiencia en la representación de trabajadores afectados por accidentes de trabajo y enfermedades profesionales.
 
 Brinda asesoramiento estratégico y representación integral en cada caso, con un enfoque orientado a la excelencia, la atención personalizada y la defensa eficaz de los derechos del trabajador en todas las instancias del proceso — desde la denuncia del siniestro hasta el cobro de la indemnización.`,
-    foto: '/laureano.png',
+    foto: '/assets/team/laureano-bamonde.webp',
     provinciasFoco: ['Santa Fe', 'Buenos Aires'],
     casosEspeciales: [
       'Accidentes de trabajo con incapacidades parciales y permanentes',
@@ -132,7 +132,7 @@ Brinda asesoramiento estratégico y representación integral en cada caso, con u
     biografia: `Julián Casalli es abogado graduado en la Facultad de Derecho de la Universidad Nacional de Rosario. Se dedica principalmente al asesoramiento y trámite de reclamos por accidentes laborales y enfermedades profesionales, acompañando a cada trabajador desde la primera consulta hasta el cobro de la indemnización.
 
 Además de su especialización en derecho laboral, realiza asesoramiento y trámite de jubilaciones y pensiones, incluyendo pensiones por invalidez laboral vinculadas a accidentes de trabajo. Esta doble especialización le permite brindar una cobertura integral al trabajador y su familia en los momentos más difíciles, abordando tanto el reclamo indemnizatorio como la cobertura previsional que puede corresponder.`,
-    foto: '/JulianCasalli.png',
+    foto: '/assets/team/julian-casalli.webp',
     provinciasFoco: ['Santa Fe', 'Rosario'],
     casosEspeciales: [
       'Accidentes laborales con reclamo simultáneo de jubilación por invalidez',

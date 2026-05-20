@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       especialidad: 'Accidentes Laborales y ART',
       bio: 'Fundador del estudio. Más de 10 años dedicados exclusivamente al derecho laboral y los reclamos contra la ART. Referente en Comisiones Médicas del litoral.',
       gradFrom: '#002b7b', gradTo: '#045fc3',
-      img: '/brunito.png',
+      img: '/assets/team/bruno-capeletti.webp',
       imgPos: 'center 40%',
     },
     {
@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       especialidad: 'Despidos y Enfermedades Profesionales',
       bio: 'Graduada en la UNLZ. Orientada a despidos y reclamos por enfermedades profesionales. Representa trabajadores ante la Justicia Nacional del Trabajo en CABA y GBA.',
       gradFrom: '#7c2d12', gradTo: '#b45309',
-      img: '/rocio-bello.jpeg',
+      img: '/assets/team/rocio-bello.webp',
       imgPos: 'center 35%',
     },
     {
@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       especialidad: 'Accidentes de Trabajo · Enfermedades Profesionales',
       bio: 'Egresado de la Facultad de Derecho de la UNR. Especializado en accidentes de trabajo y enfermedades profesionales, con asesoramiento estratégico y representación integral en todas las instancias del proceso.',
       gradFrom: '#023660', gradTo: '#045fc3',
-      img: '/laureano.png',
+      img: '/assets/team/laureano-bamonde.webp',
       imgPos: 'center 25%',
     },
     {
@@ -59,7 +59,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       especialidad: 'Accidentes Laborales · Jubilaciones · ANSES',
       bio: 'Graduado en la UNR. Se dedica al asesoramiento y trámite de accidentes laborales, enfermedades profesionales, jubilaciones y pensiones — incluyendo pensiones por invalidez laboral ante ANSES.',
       gradFrom: '#1e3a5f', gradTo: '#2563eb',
-      img: '/JulianCasalli.png',
+      img: '/assets/team/julian-casalli.webp',
       imgPos: 'top',
     },
     {
@@ -88,11 +88,11 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   readonly lesionFotos = [
     '/assets/lesiones/hernia-de-disco.webp',
-    'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=90&auto=format&fit=crop',
+    '/assets/lesiones/lumbalgia-laboral.jpg',
     '/assets/lesiones/manguito-rotador.avif',
     '/assets/lesiones/accidente-obra-construccion.webp',
     '/assets/lesiones/fallecimiento-accidente-laboral.jpg',
-    'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=90&auto=format&fit=crop',
+    '/assets/lesiones/gran-invalidez-laboral.webp',
     '/assets/lesiones/accidente-in-itinere.jpg',
     '/assets/lesiones/lesion-meniscos-laboral.webp',
   ];

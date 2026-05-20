@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { DatePipe } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { BreadcrumbComponent } from '../../layout/breadcrumb/breadcrumb';
 import { AuthorBoxComponent } from '../../shared/components/author-box/author-box';
@@ -31,7 +32,7 @@ const STYLE_H3 = 'color:#0b183a;';
 @Component({
     selector: 'app-blog-post',
     standalone: true,
-    imports: [RouterLink, BreadcrumbComponent, AuthorBoxComponent],
+    imports: [RouterLink, DatePipe, BreadcrumbComponent, AuthorBoxComponent],
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './blog-post.html',
 })
@@ -57,6 +58,64 @@ export class BlogPostComponent implements OnInit {
             fechaModificacion: '2026-04-22',
             categoria: 'Baremo 2026',
             tiempoLectura: 8,
+            contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Imagine que sufrió un accidente laboral o descubrió una enfermedad profesional antes del cambio normativo de 2026. Hizo la denuncia, inició su trámite y, al momento de presentarse ante las autoridades, se encuentra con una sorpresa preocupante: pretenden evaluar sus secuelas físicas utilizando las reglas del nuevo sistema, alegando que el artículo 3 del Decreto 549/2025 obliga a aplicarlo a todos los expedientes en trámite, sin importar cuándo ocurrió el hecho.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Esta situación generó una enorme alarma en el ámbito laboral, ya que la nueva normativa suele ser notablemente menos favorable para el trabajador en diversos tipos de lesiones. Sin embargo, no todo está perdido. La justicia de distintas provincias ya empezó a dictar sentencias firmes que declaran al <strong class="font-semibold" style="color:#0b183a;">decreto 549/2025 inconstitucional</strong>, abriendo una puerta fundamental para defender el valor real de su <a href="/calculo-indemnizacion-art" style="color:#045fc3;font-weight:600;">indemnización por accidente</a>.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">¿Qué dice la ley y por qué el Art. 3 viola la Constitución?</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">El núcleo de la controversia radica en el artículo 3 del Decreto 549/2025. Este apartado dispone que las tablas de evaluación de incapacidades laborales (el <a href="/nuevo-baremo-art-2026" style="color:#045fc3;font-weight:600;">nuevo baremo 2026</a>) se deben aplicar de forma inmediata a todos los trámites que no cuenten con una resolución definitiva, abarcando incluso contingencias ocurridas con anterioridad a su entrada en vigencia. Esto es lo que jurídicamente se denomina un <strong class="font-semibold" style="color:#0b183a;">baremo retroactivo</strong>.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">En el derecho argentino, la regla general establecida por el Código Civil y Comercial y respaldada por la Constitución Nacional es que las leyes no tienen efecto retroactivo si afectan derechos adquiridos. Cuando un trabajador sufre un siniestro laboral, su derecho a ser indemnizado se consolida bajo el régimen legal vigente en el momento exacto del accidente. Modificar las reglas para otorgar porcentajes de incapacidad menores viola el principio de irretroactividad de la ley, el derecho de propiedad y el principio de progresividad social.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Los fallos de inconstitucionalidad: Comodoro Rivadavia y Córdoba</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Los argumentos teóricos ya se transformaron en realidad judicial. El Tribunal de Comodoro Rivadavia determinó que la aplicación retroactiva de estas tablas configuraba una quita patrimonial arbitraria e injustificada. Casi en simultáneo, los tribunales de la provincia de Córdoba se pronunciaron en el mismo sentido, sentando un precedente sólido.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Los jueces coincidieron en que el Poder Ejecutivo no puede, mediante un decreto, licuar las indemnizaciones de los trabajadores alterando los porcentajes de secuelas de hechos del pasado. Para cualquier trabajador accidentado antes de febrero de 2026, esto significa que cuenta con herramientas legales para impugnar el baremo 2026 ante la justicia y exigir que se le compute su incapacidad con el baremo anterior (Decreto 659/96), que suele reconocer mayores puntajes para lesiones como la <a href="/hernia-de-disco-laboral" style="color:#045fc3;font-weight:600;">hernia de disco laboral</a>.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">¿A quién afecta el art. 3 del Decreto 549/2025?</h2>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<h3 class="font-bold mb-3" style="color:#0b183a;">Análisis de impacto de la retroactividad</h3>
+<ul class="space-y-3 ml-5 list-disc mb-0">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Trabajadores perjudicados:</strong> los que sufrieron un accidente o <a href="/accidente-in-itinere" style="color:#045fc3;font-weight:600;">accidente in itinere</a> antes de la vigencia del decreto, pero cuyos casos siguen en trámite administrativo sin dictamen definitivo.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Casos no afectados:</strong> accidentes posteriores a la vigencia plena de la norma, y expedientes que ya contaban con homologación, acuerdo firmado o sentencia judicial firme previa al decreto.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Zona gris en disputa:</strong> expedientes iniciados antes de la reforma pero aún bajo revisión médica sin resolución final. Si la ART pretende usar el nuevo baremo retroactivamente, el trabajador debe impugnarlo judicialmente.</li>
+</ul>
+</div>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Paso a paso: qué hacer si te aplicaron el nuevo baremo</h2>
+
+<ol class="space-y-4 ml-5 list-decimal mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Revisar las fechas clave del expediente.</strong> Verificar que la fecha del accidente o la primera manifestación de la enfermedad sea anterior a la entrada en vigencia de la nueva norma. Esta diferencia cronológica es el fundamento de todo el reclamo.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Controlar el dictamen de la Comisión Médica.</strong> Al recibir la notificación de la <a href="/comisiones-medicas" style="color:#045fc3;font-weight:600;">Comisión Médica</a>, verificar qué decreto utilizaron para el porcentaje de incapacidad. Si menciona el Decreto 549/2025, hay fundamento para impugnar.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Hacer reserva de derechos de inmediato.</strong> Al firmar cualquier acta en el ámbito administrativo, dejar constancia expresa de que no se consiente la aplicación de la nueva normativa por resultar violatoria de derechos constitucionales.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">No firmar acuerdos en la audiencia de homologación.</strong> Si la ART liquida un monto calculado en base al baremo nuevo, no firmar conformidad sin consultar a un abogado especialista.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Interponer la demanda judicial.</strong> Una vez agotada la vía administrativa, plantear la demanda laboral solicitando que el juez declare el art. 3 inaplicable por inconstitucional para la situación particular del trabajador.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Solicitar pericia médica con el baremo anterior.</strong> El perito médico judicial debe evaluar las dolencias bajo los parámetros del Decreto 659/96, garantizando el respeto a la normativa vigente al momento del siniestro.</li>
+</ol>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Errores comunes que debés evitar</h2>
+
+<ul class="space-y-3 ml-5 list-disc mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Creer que el dictamen de la Comisión Médica es irrebatible.</strong> Los dictámenes administrativos se pueden apelar e impugnar ante los juzgados laborales. No son la última palabra.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Firmar la conformidad en la audiencia de homologación.</strong> Si firma el acuerdo por temor o desinformación, revertir la situación se vuelve sumamente complejo porque el acto adquiere fuerza legal.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">No contar con abogado especialista desde el inicio.</strong> Dejarse guiar por los médicos de la propia aseguradora tras recibir el <a href="/alta-medica-art" style="color:#045fc3;font-weight:600;">alta médica de la ART</a> suele derivar en la pérdida de plazos legales para impugnar.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Preguntas frecuentes</h2>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿La declaración de inconstitucionalidad se aplica automáticamente a casos ya cerrados?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">No. Los fallos argentinos tienen efecto para el caso particular en el que se dictaron. Si ya cobró una indemnización y firmó el acuerdo definitivo, no se beneficiará de forma automática. Cada trabajador afectado debe iniciar su propio planteo judicial para que el juez declare el decreto 549/2025 inconstitucional en su causa.</p>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">Si la Comisión Médica emite un dictamen con el baremo nuevo, ¿se puede apelar?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Sí. Existen plazos legales estrictos desde la notificación del dictamen para rechazarlo y recurrir a la vía judicial. Es fundamental apelar argumentando la vulneración de los derechos adquiridos y solicitando la aplicación de las tablas vigentes al momento del accidente.</p>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Qué baremo conviene más según el tipo de lesión?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">En la gran mayoría de las lesiones traumatológicas y afecciones de columna, el baremo anterior (Decreto 659/96) resulta más favorable porque otorga mayores porcentajes de incapacidad. Un porcentaje más alto en la <a href="/calculo-indemnizacion-art" style="color:#045fc3;font-weight:600;">fórmula de indemnización</a> significa un monto final sustancialmente mayor para el trabajador.</p>
+`,
         },
         {
             slug: 'que-hacer-despues-de-un-accidente-laboral',
@@ -70,6 +129,78 @@ export class BlogPostComponent implements OnInit {
             fechaModificacion: '2026-01-10',
             categoria: 'Accidentes Laborales',
             tiempoLectura: 5,
+            contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Sufrir un siniestro en el puesto de trabajo genera un estado de shock, miedo e incertidumbre inmediata. Sin embargo, cuando se trata del sistema legal y médico, el reloj empieza a correr en su contra desde el primer minuto. Saber exactamente qué hacer después de un accidente laboral resulta fundamental, ya que las decisiones de las primeras 48 horas definirán la evolución de su salud y el éxito de su reclamo económico.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Las Aseguradoras de Riesgos del Trabajo cuentan con equipos entrenados para minimizar su responsabilidad y reducir el costo de las prestaciones. Mantener la calma y seguir una serie de pasos estratégicos le permitirá resguardar su integridad física sin otorgar ventajas que la aseguradora pueda usar para recortar sus derechos.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">¿Qué dice la ley sobre tus derechos iniciales?</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">La Ley de Riesgos del Trabajo N° 24.557 establece obligaciones estrictas para las empresas. Ante un siniestro, el empleador tiene la obligación legal de denunciar el hecho ante la aseguradora dentro de las primeras 24 horas. Esta notificación da inicio formal a la cobertura médica y farmacéutica que usted requiere de forma urgente.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Si por temor, negligencia o mala fe su empleador se niega a notificar el hecho, la ley le otorga el derecho de realizar la denuncia ART por sus propios medios: mediante telegrama laboral gratuito, llamado a la línea de emergencias de la aseguradora o presentándose directamente en un centro médico prestador.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Las primeras horas: qué hacer paso a paso</h2>
+
+<ol class="space-y-4 ml-5 list-decimal mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Notificar inmediatamente al empleador.</strong> Avise de forma verbal y, en lo posible, por escrito (mensaje, correo) a su supervisor o Recursos Humanos. Deje asentado el día, la hora exacta y una descripción breve del hecho.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Buscar atención médica de urgencia.</strong> Su salud es la prioridad absoluta. Exija que lo trasladen al centro médico que asigne la aseguradora. Si la urgencia es severa, asista al hospital más cercano; los profesionales dejarán constancia de que las lesiones provienen de un evento laboral.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Verificar o realizar la denuncia ante la ART.</strong> Asegúrese de obtener el número de siniestro asignado. Si su empleador no le brinda constancia de la denuncia, comuníquese directamente con la ART para radicarla usted mismo.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Documentar la escena y las consecuencias físicas.</strong> Si las condiciones lo permiten, tome fotografías del lugar del accidente, de las herramientas o maquinarias involucradas, y de sus lesiones visibles.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Identificar y registrar testigos presenciales.</strong> Anote los nombres y teléfonos de compañeros o terceras personas que hayan presenciado el hecho. Sus declaraciones serán vitales ante cualquier desconocimiento de la ART.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Consultar con un abogado especialista.</strong> Analizar el escenario con un profesional dentro de las primeras 48 horas le permitirá conocer sus derechos y estructurar la estrategia para reclamar la <a href="/calculo-indemnizacion-art" style="color:#045fc3;font-weight:600;">indemnización por accidente</a> que corresponde.</li>
+</ol>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Qué documentar en las primeras 48 horas</h2>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<h3 class="font-bold mb-2" style="color:#0b183a;">Del accidente</h3>
+<ul class="space-y-2 ml-5 list-disc mb-0">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Fotografías del espacio físico, roturas o falta de elementos de seguridad.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Copia de la notificación enviada al empleador reportando el infortunio.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Datos de contacto de compañeros que actúen como testigos del hecho.</li>
+</ul>
+</div>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<h3 class="font-bold mb-2" style="color:#0b183a;">De la atención médica</h3>
+<ul class="space-y-2 ml-5 list-disc mb-0">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Certificado médico de la guardia con el diagnóstico inicial.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Constancia de la denuncia del siniestro emitida por la ART con su número identificatorio.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Recetarios, indicaciones de reposo y tickets de gastos en traslados o farmacia.</li>
+</ul>
+</div>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Errores que pueden arruinar tu reclamo</h2>
+
+<ul class="space-y-3 ml-5 list-disc mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Firmar documentos en blanco o formularios de conformidad.</strong> Jamás firme papeles extendidos por los médicos o inspectores de la ART sin leerlos o sin asesoramiento.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Aceptar el alta médica prematura sin objeciones.</strong> Si la ART intenta dar el <a href="/alta-medica-art" style="color:#045fc3;font-weight:600;">alta médica</a> y usted persiste con dolor, debe impugnar esa decisión de inmediato.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Minimizar los dolores ante los médicos de la ART.</strong> Al ser evaluado, describa con precisión cada dolencia. Lo que no figure en la ficha médica no existirá para el cálculo indemnizatorio.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">No guardar los recibos de sueldo de los últimos 12 meses.</strong> El monto de la indemnización se calcula sobre el promedio de remuneraciones brutas; conservar estos documentos es vital para auditar las cuentas de la aseguradora.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Ir solo a la Comisión Médica.</strong> Presentarse ante la <a href="/comisiones-medicas" style="color:#045fc3;font-weight:600;">Comisión Médica</a> sin abogado ni médico de parte lo coloca en una situación de severa desigualdad técnica.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">¿Cuándo buscar un abogado?</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">La respuesta es clara: lo antes posible. Contar con asesoramiento legal desde las primeras horas evita que la ART dilate los tratamientos, fragüe las altas médicas o dictamine un porcentaje de incapacidad inferior al daño real.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">En Capeletti Abogados brindamos una primera consulta completamente gratuita, sin anticipo. Trabajamos bajo la modalidad de cuota litis: solo percibimos honorarios cuando usted cobra efectivamente la indemnización que le corresponde.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Preguntas frecuentes</h2>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Qué pasa si el empleador se niega a hacer la denuncia?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Puede radicarla usted mismo directamente ante la ART mediante telegrama obrero gratuito (Ley 23.789) o comunicándose a los canales de urgencias de la aseguradora. La falta de colaboración del empleador no anula sus derechos de cobertura médica ni indemnizatoria.</p>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Puedo reclamar si ya pasaron varios días desde el accidente?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Sí. Los plazos de prescripción legal le otorgan un margen mayor para accionar. Sin embargo, demorar la denuncia complica la demostración del nexo causal entre las tareas laborales y la lesión. Actuar cuanto antes fortalece el caso.</p>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Qué hacer si el accidente ocurrió en el trayecto al trabajo?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Se trata de un <a href="/accidente-in-itinere" style="color:#045fc3;font-weight:600;">accidente in itinere</a>, que tiene la misma cobertura que un siniestro dentro del establecimiento. Es fundamental recopilar constancias adicionales: denuncia policial, datos del recorrido, comprobantes de transporte y testimonios de personas que lo auxiliaron.</p>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Cuánto tiempo tengo para reclamar la indemnización?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">El plazo general de prescripción es de dos años desde el cese de la incapacidad laboral temporaria o desde la determinación de la secuela definitiva. Sin embargo, dejar pasar el tiempo debilita las pruebas médicas, por lo que actuar rápido siempre es la mejor recomendación.</p>
+`,
         },
         {
             slug: 'como-calcular-indemnizacion-art',
@@ -83,6 +214,97 @@ export class BlogPostComponent implements OnInit {
             fechaModificacion: '2026-02-15',
             categoria: 'Indemnizaciones',
             tiempoLectura: 7,
+            contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Una de las mayores incertidumbres que enfrenta un trabajador tras sufrir un siniestro es saber cuánto dinero le corresponde cobrar por las secuelas físicas. En la práctica, la gran mayoría de los damnificados acepta la primera propuesta económica que la aseguradora pone sobre la mesa sin revisar las cuentas, asumiendo que la liquidación es correcta.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Aunque la fórmula matemática está fijada por la Ley de Riesgos del Trabajo, el verdadero problema radica en las variables que se introducen en ella. Las aseguradoras suelen cometer errores sistemáticos a su favor al establecer el promedio salarial o al tasar las secuelas físicas. Por este motivo, aprender a <strong class="font-semibold" style="color:#0b183a;">calcular indemnización ART</strong> de forma independiente es el primer paso para defender el valor real del resarcimiento.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">La fórmula legal de la Ley 24.557</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Para las situaciones de incapacidad laboral parcial y permanente, la ley estipula una ecuación que multiplica diferentes aspectos laborales y biológicos del afectado:</p>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<p class="leading-relaxed font-bold mb-0 text-center" style="color:#0b183a; font-size:1.25rem;">53 × IBM × (65 ÷ Edad) × % de Incapacidad</p>
+</div>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">A esta base se le debe añadir un adicional del <strong class="font-semibold" style="color:#0b183a;">20%</strong> en concepto de daño moral y otros perjuicios complementarios (establecido por la Ley 26.773), aplicable a todos los siniestros ocurridos en el propio puesto laboral. Para descifrar cómo calcular la indemnización por accidente laboral, es necesario desglosar cada uno de sus tres componentes.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">El IBM: el componente más importante</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">El Ingreso Base Mensual (IBM) es el promedio de las remuneraciones brutas sujetas a aportes durante los 12 meses anteriores al accidente, actualizados mes a mes aplicando el índice RIPTE para evitar el deterioro por inflación. No equivale al último sueldo neto percibido: incluye todos los rubros remunerativos.</p>
+
+<ul class="space-y-3 ml-5 list-disc mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Incluye obligatoriamente:</strong> sueldo básico convencional, adicionales por antigüedad, presentismo, títulos, viáticos habituales y horas extras realizadas de manera regular.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Excluye:</strong> asignaciones familiares de ANSES e indemnizaciones por despido o vacaciones no gozadas que figuren de modo excepcional en el recibo.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">El coeficiente de edad</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">La legislación aplica un criterio de proporcionalidad: cuanto más joven sea el empleado al momento del accidente, mayor será el factor multiplicador. El coeficiente se obtiene dividiendo 65 por la edad exacta del trabajador el día del siniestro.</p>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<h3 class="font-bold mb-2" style="color:#0b183a;">Ejemplos del coeficiente según la edad</h3>
+<ul class="space-y-2 ml-5 list-disc mb-0">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Trabajador de 20 años:</strong> 65 ÷ 20 = 3,25</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Trabajador de 30 años:</strong> 65 ÷ 30 = 2,16</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Trabajador de 45 años:</strong> 65 ÷ 45 = 1,44</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Trabajador de 60 años:</strong> 65 ÷ 60 = 1,08</li>
+</ul>
+</div>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Porcentajes de incapacidad frecuentes en 2026</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">El tercer elemento es el porcentaje de incapacidad, determinado por el cuerpo médico legal utilizando el <a href="/nuevo-baremo-art-2026" style="color:#045fc3;font-weight:600;">baremo 2026</a>. Estos son los rangos habituales de referencia según la lesión:</p>
+
+<ul class="space-y-3 ml-5 list-disc mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Columna vertebral:</strong> una <a href="/hernia-de-disco-laboral" style="color:#045fc3;font-weight:600;">hernia de disco laboral</a> operada con afectación neurológica se encuadra entre un 8% y un 20% según limitaciones y nivel vertebral.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Miembros superiores:</strong> lesiones de manguito rotador o síndrome del túnel carpiano se tasan entre un 4% y un 15%, variando según dominancia y grado de limitación.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Miembros inferiores:</strong> rupturas de meniscos o ligamentos cruzados con inestabilidad articular promedian entre un 3% y un 10%.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Tres ejemplos de cálculo real en 2026</h2>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">Caso 1: obrero metalúrgico de 26 años</h3>
+<p class="leading-relaxed mb-3" style="color:rgba(11,24,58,0.75)">IBM actualizado: $1.300.000 — Incapacidad: 10% — Coeficiente de edad: 65 ÷ 26 = 2,5</p>
+<ul class="space-y-1 ml-5 list-disc mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Cálculo base: 53 × $1.300.000 × 2,5 × 10% = $17.225.000</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Adicional Ley 26.773 (+20%): <strong class="font-semibold" style="color:#0b183a;">$3.445.000</strong></li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Indemnización total estimada: $20.670.000</strong></li>
+</ul>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">Caso 2: trabajador de la construcción de 40 años</h3>
+<p class="leading-relaxed mb-3" style="color:rgba(11,24,58,0.75)">IBM actualizado: $1.100.000 — Incapacidad: 8% — Coeficiente de edad: 65 ÷ 40 = 1,625</p>
+<ul class="space-y-1 ml-5 list-disc mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Cálculo base: 53 × $1.100.000 × 1,625 × 8% = $7.579.000</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Adicional Ley 26.773 (+20%): <strong class="font-semibold" style="color:#0b183a;">$1.515.800</strong></li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Indemnización total estimada: $9.094.800</strong></li>
+</ul>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">Caso 3: empleada de maestranza de 52 años</h3>
+<p class="leading-relaxed mb-3" style="color:rgba(11,24,58,0.75)">IBM actualizado: $950.000 — Incapacidad: 6% — Coeficiente de edad: 65 ÷ 52 = 1,25</p>
+<ul class="space-y-1 ml-5 list-disc mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Cálculo base: 53 × $950.000 × 1,25 × 6% = $3.776.250</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)">Adicional Ley 26.773 (+20%): <strong class="font-semibold" style="color:#0b183a;">$755.250</strong></li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Indemnización total estimada: $4.531.500</strong></li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Por qué el monto real puede ser mayor</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Los montos anteriores representan la base mínima legal que el sistema administrativo debería liquidar. Sin embargo, los peritos oficiales de la <a href="/comisiones-medicas" style="color:#045fc3;font-weight:600;">Comisión Médica</a> suelen otorgar porcentajes de incapacidad llamativamente bajos, buscando abaratar el desembolso final de la ART.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Para evitar esta quita, el trabajador puede recurrir a la instancia judicial con abogados especialistas y peritos médicos independientes. Al impugnar las resoluciones administrativas deficientes, se logra frecuentemente duplicar o triplicar los puntos de incapacidad reconocidos. Además, cuando el accidente ocurrió por negligencia grave del empleador en materia de seguridad, es viable activar acciones por responsabilidad civil adicional.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Preguntas frecuentes</h2>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Puede la ART ofrecerme un monto menor al mínimo de ley?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">No directamente, pero recurren a la subvaluación técnica de las variables: consolidan un IBM mal calculado (sin horas extras o adicionales debidos) u ocultan secuelas físicas bajo diagnósticos de condiciones preexistentes. Por ello, la liquidación formal siempre debe ser auditada por profesionales ajenos a la aseguradora.</p>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Cómo se defiende el monto frente a la inflación?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">La ley dispone que los salarios del IBM deben indexarse mediante el índice RIPTE hasta la fecha del siniestro. Desde el hecho hasta el cobro efectivo del capital, se adicionan tasas de interés moratorias de carácter obligatorio determinadas por los tribunales laborales provinciales.</p>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Cuánto cobra el abogado para iniciar el reclamo?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">En Capeletti Abogados trabajamos bajo pacto de cuota litis: no se abona ningún anticipo ni consulta inicial. Nuestros honorarios consisten en un porcentaje de los montos recuperados, cobrándose únicamente cuando usted percibe efectivamente su indemnización por incapacidad laboral. Si no gana, no pagamos.</p>
+`,
         },
         {
             slug: 'hernia-de-disco-baremo-2026',
@@ -96,6 +318,90 @@ export class BlogPostComponent implements OnInit {
             fechaModificacion: '2026-01-10',
             categoria: 'Baremo 2026',
             tiempoLectura: 6,
+            contenidoHtml: `
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Durante muchos años, los trabajadores que padecían una <a href="/hernia-de-disco-laboral" style="color:#045fc3;font-weight:600;">hernia de disco laboral</a> se encontraban con una pared infranqueable al momento de reclamar: las aseguradoras solían otorgar porcentajes de incapacidad llamativamente bajos o rechazaban el caso argumentando que se trataba de una enfermedad preexistente o degenerativa. Con la entrada en vigencia de las nuevas normativas de evaluación médica, el panorama ha dado un giro que modifica las reglas del juego para quienes sufren estas lesiones en la columna.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Las modificaciones introducidas impactan directamente en el cálculo de los puntos de incapacidad, exigiendo un análisis técnico más riguroso. Si bien este cambio abre nuevas oportunidades para optimizar el cobro del resarcimiento, los beneficios no se aplican de manera automática ni generalizada. El éxito del reclamo dependerá del tipo de lesión, la documentación médica aportada y la estrategia legal frente a la junta médica de la aseguradora.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">¿Qué dice la ley sobre las afecciones de columna?</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">El Baremo de la Ley de Riesgos del Trabajo es la tabla oficial que los profesionales de la salud utilizan para dictaminar el porcentaje de daño permanente que le quedó a un trabajador tras un siniestro. Mediante el Decreto 549/2025, el Poder Ejecutivo implementó formalmente el <a href="/nuevo-baremo-art-2026" style="color:#045fc3;font-weight:600;">nuevo baremo 2026</a>, con el objetivo de actualizar los criterios de ponderación de las patologías laborales.</p>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Para que una dolencia de columna sea reconocida, debe demostrarse el nexo causal directo entre las tareas habituales del empleado (carga de peso, torsión repetitiva del tronco) y la rotura o desplazamiento del disco intervertebral. La novedad del régimen actual es que eleva los topes de resarcimiento para los casos donde el daño neurológico y funcional se encuentra plenamente acreditado por estudios de alta complejidad.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Qué cambió para las hernias de disco</h2>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<h3 class="font-bold mb-2" style="color:#0b183a;">Hernia lumbar (L4-L5 / L5-S1)</h3>
+<p class="leading-relaxed mb-0" style="color:rgba(11,24,58,0.75)">Con el baremo anterior: 5% a 10% sin cirugía, 8% a 15% con cirugía. Con el <strong class="font-semibold" style="color:#0b183a;">baremo 2026</strong>: 8% a 12% si existe compromiso radicular documentado por electromiograma, y 12% a 20% en casos post-quirúrgicos con secuelas funcionales persistentes.</p>
+</div>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<h3 class="font-bold mb-2" style="color:#0b183a;">Hernia cervical (C5-C6 / C6-C7)</h3>
+<p class="leading-relaxed mb-0" style="color:rgba(11,24,58,0.75)">Con el baremo anterior: 3% a 8% sin compromiso neurológico. Con el baremo 2026: 5% a 15% cuando se adjunta una electromiografía que ratifica fehacientemente la existencia de una radiculopatía activa.</p>
+</div>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<h3 class="font-bold mb-2" style="color:#0b183a;">Hernias múltiples</h3>
+<p class="leading-relaxed mb-0" style="color:rgba(11,24,58,0.75)">El régimen anterior tendía a licuar los porcentajes cuando el trabajador presentaba afecciones en más de un nivel vertebral. El nuevo sistema introduce un método más justo de combinación de niveles, permitiendo sumar los detrimentos corporales de forma articulada cuando el desgaste laboral afectó múltiples segmentos de la columna.</p>
+</div>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">¿El nuevo baremo te beneficia?</h2>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<h3 class="font-bold mb-3" style="color:#0b183a;">Análisis de aplicabilidad según el caso</h3>
+<ul class="space-y-3 ml-5 list-disc mb-0">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Aplicación directa y beneficiosa:</strong> trabajadores que sufrieron el accidente con posterioridad a la vigencia del decreto y cuentan con estudios electromiográficos positivos obtendrán un porcentaje superior al del pasado.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Sin cambios automáticos:</strong> siniestros que ya cuentan con resoluciones firmes, acuerdos homologados o cobros efectuados. Estos expedientes cerrados no se reabren por el mero cambio de ley.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Zona gris en disputa:</strong> expedientes iniciados antes de la reforma pero sin dictamen definitivo. Si la ART pretende usar el nuevo baremo retroactivamente para restar puntos, el trabajador debe impugnar la medida judicialmente.</li>
+</ul>
+</div>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Impacto en el monto de la indemnización</h2>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Para ilustrar con cifras concretas la diferencia que genera un cambio porcentual, analizamos un caso representativo: operario de 40 años, IBM actualizado de $1.200.000, hernia lumbar L4-L5 post-quirúrgica.</p>
+
+<div class="p-5 rounded-2xl mb-5" style="background:#f4f7fe; border:1px solid rgba(0,43,123,0.1);">
+<h3 class="font-bold mb-2" style="color:#0b183a;">Comparativo: baremo anterior vs. baremo 2026</h3>
+<ul class="space-y-3 ml-5 list-disc mb-0">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Baremo anterior (10% de incapacidad):</strong> 53 × $1.200.000 × 1,625 × 10% = $10.335.000</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Baremo 2026 (17% con EMG positivo):</strong> 53 × $1.200.000 × 1,625 × 17% = $17.569.500</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Diferencia a favor del trabajador: +$7.234.500</strong> por el mismo daño físico, con el mismo IBM y edad.</li>
+</ul>
+</div>
+
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Este ejemplo muestra por qué resulta determinante contar con el estudio electromiográfico actualizado antes de presentarse ante la <a href="/comisiones-medicas" style="color:#045fc3;font-weight:600;">Comisión Médica</a>. Sin esa documentación, el tribunal médico aplica los parámetros mínimos y la indemnización se calcula a la baja.</p>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Paso a paso: qué hacer si la ART aplica el baremo viejo</h2>
+
+<ol class="space-y-4 ml-5 list-decimal mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Realizar la resonancia magnética y la electromiografía actualizadas.</strong> Son los estudios base que el nuevo baremo exige para reconocer los rangos superiores de incapacidad. Sin imágenes de calidad recientes y un electromiograma que certifique el compromiso neurológico, el dictamen médico siempre irá hacia los valores mínimos.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Obtener informe de especialista (traumatólogo o neurocirujano).</strong> Este informe privado describirá la afectación funcional real, la limitación de movilidad medida en grados y la relación causal con las tareas laborales. Es el respaldo principal de cualquier impugnación.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Presentar la impugnación ante la Comisión Médica.</strong> Con los estudios y el informe del especialista, se formaliza la impugnación indicando el baremo y el rango porcentual que corresponde aplicar. La CM debe convocar a una revisión.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Apelar ante la justicia laboral si la CM mantiene el criterio bajo.</strong> Ante un juez, un perito médico independiente evalúa la lesión sin los condicionamientos institucionales de la Comisión Médica, y generalmente reconoce valores más cercanos a la realidad clínica.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">No firmar ningún acuerdo antes de cerrar la instancia médica.</strong> Una vez firmada la conformidad con el monto propuesto por la ART, revertir el proceso se vuelve extremadamente difícil. Consultar siempre antes de firmar.</li>
+</ol>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Errores comunes que cometen los trabajadores</h2>
+
+<ul class="space-y-3 ml-5 list-disc mb-5">
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Presentarse a la Comisión Médica sin resonancia ni electromiograma recientes.</strong> El médico evaluador solo puede trabajar con lo que el trabajador lleva. Sin estudios actualizados, el dictamen se emite a la baja.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Aceptar el alta médica con el primer porcentaje ofrecido.</strong> Si recibiste el <a href="/alta-medica-art" style="color:#045fc3;font-weight:600;">alta médica de la ART</a> y el porcentaje no refleja la situación real, tenés plazo para impugnarlo. La aceptación tácita juega siempre a favor de la aseguradora.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">Minimizar el dolor durante la revisión médica oficial.</strong> Describir con exactitud el nivel de dolor, la limitación de movimiento y el impacto en las actividades cotidianas es tan importante como los estudios. Lo que no se manifiesta no queda registrado en el expediente.</li>
+<li class="leading-relaxed" style="color:rgba(11,24,58,0.75)"><strong class="font-semibold" style="color:#0b183a;">No consultar al abogado hasta que el proceso está muy avanzado.</strong> Las estrategias más efectivas se construyen desde el inicio del trámite, no cuando la ART ya liquidó y el trabajador firmó sin revisar.</li>
+</ul>
+
+<h2 class="text-2xl font-bold mt-10 mb-4" style="color:#0b183a;">Preguntas frecuentes</h2>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿El nuevo baremo se aplica automáticamente a mi caso de hernia de disco?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Para accidentes ocurridos desde la vigencia del Decreto 549/2025, sí. Para expedientes anteriores sin resolución firme, la situación es disputada jurídicamente: algunos tribunales consideran que el baremo vigente al momento del accidente es el que protege los derechos adquiridos del trabajador. Cada caso requiere análisis individual según la fecha del siniestro y el estado del expediente.</p>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Qué estudios son indispensables para obtener un porcentaje justo?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">La resonancia magnética lumbar o cervical es el estudio base para documentar la hernia. Para acreditar compromiso neurológico —y acceder a los rangos superiores del baremo 2026— es indispensable la electromiografía con medición de velocidad de conducción nerviosa. Un informe de traumatólogo o neurocirujano especialista eleva significativamente las posibilidades de un dictamen favorable.</p>
+
+<h3 class="font-bold mb-2" style="color:#0b183a;">¿Puedo reclamar la indemnización aunque ya me hayan dado el alta?</h3>
+<p class="leading-relaxed mb-5" style="color:rgba(11,24,58,0.75)">Sí, si quedan secuelas físicas documentadas. El alta médica cierra el tratamiento activo, pero no el reclamo por incapacidad permanente. Si tras el alta seguís con dolor o dificultad para realizar tus tareas habituales, podés solicitar que la <a href="/comisiones-medicas" style="color:#045fc3;font-weight:600;">Comisión Médica</a> evalúe tu incapacidad permanente. El plazo de prescripción es de dos años desde el alta definitiva.</p>
+`,
         },
         {
             slug: 'gran-invalidez-laboral-art',

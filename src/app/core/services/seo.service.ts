@@ -124,7 +124,7 @@ export class SeoService {
       url: this.siteUrl,
       logo: `${this.siteUrl}/assets/logo.webp`,
       image: this.defaultOgImage,
-      telephone: '+54-11-25007192',
+      telephone: '+541125007192',
       email: 'info@capeletti.com',
       address: {
         '@type': 'PostalAddress',
@@ -139,6 +139,30 @@ export class SeoService {
         latitude: -32.9468,
         longitude: -60.6393,
       },
+      location: [
+        {
+          '@type': 'Place',
+          name: 'Capeletti Abogados — Sede Rosario',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Ignacio Warnes 1666',
+            addressLocality: 'Rosario',
+            addressRegion: 'Santa Fe',
+            postalCode: '2000',
+            addressCountry: 'AR',
+          },
+        },
+        {
+          '@type': 'Place',
+          name: 'Capeletti Abogados — Sede Neuquén',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Neuquén',
+            addressRegion: 'Neuquén',
+            addressCountry: 'AR',
+          },
+        },
+      ],
       openingHoursSpecification: {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -204,9 +228,7 @@ export class SeoService {
       sameAs: [
         'https://www.linkedin.com/company/capeletti-abogados',
         'https://www.instagram.com/capelettiabogados/',
-        'https://www.facebook.com/bruno.capeletti.102928',
       ],
-      priceRange: 'Sin cargo por consulta inicial',
     };
   }
 
@@ -274,7 +296,7 @@ export class SeoService {
       '@type': 'LocalBusiness',
       name: `Capeletti Abogados — ${params.ciudad}`,
       url: `${this.siteUrl}/${params.slug}`,
-      telephone: '+54-11-25007192',
+      telephone: '+541125007192',
       address: {
         '@type': 'PostalAddress',
         addressLocality: params.ciudad,

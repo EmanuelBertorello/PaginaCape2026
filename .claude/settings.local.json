@@ -11,7 +11,14 @@
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\EMANUEL\\\\Desktop\\\\SCRPITS\\\\PaginaCape2026\\\\node_modules\" -Directory | Where-Object { $_.Name -match \"image|sharp|jimp|canvas|webp|squoosh\" } | Select-Object Name)",
       "PowerShell(python --version 2>$null)",
       "PowerShell(python3 --version 2>$null)",
-      "PowerShell(python -c \"from PIL import Image; img = Image.open\\('C:/Users/EMANUEL/Desktop/SCRPITS/PaginaCape2026/public/assets/team/daiana-parache.png'\\); img.save\\('C:/Users/EMANUEL/Desktop/SCRPITS/PaginaCape2026/public/assets/team/daiana-parache.webp', 'WEBP', quality=90\\); print\\('OK'\\)\")"
+      "PowerShell(python -c \"from PIL import Image; img = Image.open\\('C:/Users/EMANUEL/Desktop/SCRPITS/PaginaCape2026/public/assets/team/daiana-parache.png'\\); img.save\\('C:/Users/EMANUEL/Desktop/SCRPITS/PaginaCape2026/public/assets/team/daiana-parache.webp', 'WEBP', quality=90\\); print\\('OK'\\)\")",
+      "Bash(mkdir -p /c/Users/ema/.claude/projects/c--Users-ema-Desktop-PaginaCape2026/memory)",
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "PowerShell(node_modules\\\\.bin\\\\tsc.cmd --noEmit 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\ema\\\\Desktop\\\\PaginaCape2026\\\\node_modules\\\\.bin\\\\tsc.cmd\" --noEmit 2>&1)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\ema\\.claude\\projects\\c--Users-ema-Desktop-PaginaCape2026\\memory"
     ]
   }
 }

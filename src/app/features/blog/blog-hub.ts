@@ -1,12 +1,13 @@
 import { Component, ChangeDetectionStrategy, OnInit, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { DatePipe } from '@angular/common';
 import { BreadcrumbComponent } from '../../layout/breadcrumb/breadcrumb';
 import { SeoService } from '../../core/services/seo.service';
 
 @Component({
     selector: 'app-blog-hub',
     standalone: true,
-    imports: [RouterLink, BreadcrumbComponent],
+    imports: [RouterLink, DatePipe, BreadcrumbComponent],
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './blog-hub.html',
 })

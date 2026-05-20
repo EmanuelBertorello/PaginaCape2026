@@ -27,8 +27,8 @@ export class SobreNosotrosComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setPage({
-      title: 'Sobre Nosotros — Estudio Capeletti',
-      description: 'Conocé al equipo de Capeletti Abogados. Más de 10 años especializados en accidentes laborales y ART en Santa Fe, Neuquén, Entre Ríos, Río Negro y Buenos Aires.',
+      title: 'Abogados Laboralistas en Argentina — Estudio Capeletti | Capeletti Abogados',
+      description: 'Más de 10 años especializados exclusivamente en accidentes laborales y ART. Conocé al equipo de Capeletti Abogados: matrícula activa en 6 provincias, consulta gratis.',
       path: '/sobre-nosotros',
       schema: this.seoService.getLegalServiceSchema(),
     });

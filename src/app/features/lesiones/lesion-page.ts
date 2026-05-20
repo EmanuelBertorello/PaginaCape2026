@@ -47,14 +47,19 @@ export class LesionPageComponent implements OnInit {
         'despido-sin-causa': this.seoService.ogImages.legislacion,
         'accidente-de-trabajo': this.seoService.ogImages.accidente,
       };
+      const breadcrumbSchema = this.seoService.getBreadcrumbSchema(this.breadcrumbs);
+      const schemas: object[] = [breadcrumbSchema];
+      if (this.lesion.faqs.length > 0) {
+        schemas.push(this.seoService.getFaqSchema(
+          this.lesion.faqs.map(f => ({ pregunta: f.pregunta, respuesta: f.respuesta }))
+        ));
+      }
       this.seoService.setPage({
         title: this.lesion.metaTitle,
         description: this.lesion.metaDescription,
         path: '/' + this.lesion.slug,
         ogImage: ogImageMap[this.lesion.slug],
-        schema: this.lesion.faqs.length > 0
-          ? this.seoService.getFaqSchema(this.lesion.faqs.map(f => ({ pregunta: f.pregunta, respuesta: f.respuesta })))
-          : undefined,
+        schema: { '@context': 'https://schema.org', '@graph': schemas },
       });
     }
   }

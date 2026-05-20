@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /contactanos
 
 User-agent: GPTBot
 Allow: /

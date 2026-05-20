@@ -98,9 +98,10 @@
 
       <a routerLink="/accidente-de-trabajo" class="group relative overflow-hidden block rounded-2xl" style="height:320px; text-decoration:none; box-shadow:0 4px 24px rgba(0,43,123,0.1);">
         <img
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80&auto=format&fit=crop"
+          src="/assets/servicios/accidente-trabajo.webp"
           alt="Accidentes de Trabajo"
           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
         />
         <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,43,123,0.88) 0%, rgba(11,24,58,0.25) 100%);"></div>
         <div class="absolute inset-0 flex items-end p-6">
@@ -114,9 +115,10 @@
 
       <a routerLink="/despido-sin-causa" class="group relative overflow-hidden block rounded-2xl" style="height:320px; text-decoration:none; box-shadow:0 4px 24px rgba(0,43,123,0.1);">
         <img
-          src="https://images.unsplash.com/photo-1541199249251-f713e6145474?w=800&q=80&auto=format&fit=crop"
+          src="/assets/servicios/despido-laboral.webp"
           alt="Despidos"
           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
         />
         <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,43,123,0.88) 0%, rgba(11,24,58,0.25) 100%);"></div>
         <div class="absolute inset-0 flex items-end p-6">
@@ -130,9 +132,10 @@
 
       <a routerLink="/enfermedad-profesional" class="group relative overflow-hidden block rounded-2xl" style="height:320px; text-decoration:none; box-shadow:0 4px 24px rgba(0,43,123,0.1);">
         <img
-          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=85&auto=format&fit=crop"
+          src="/assets/servicios/enfermedad-profesional.webp"
           alt="Enfermedades Profesionales"
           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
         />
         <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,43,123,0.88) 0%, rgba(11,24,58,0.25) 100%);"></div>
         <div class="absolute inset-0 flex items-end p-6">
@@ -146,9 +149,10 @@
 
       <a routerLink="/accidente-in-itinere" class="group relative overflow-hidden block rounded-2xl" style="height:320px; text-decoration:none; box-shadow:0 4px 24px rgba(0,43,123,0.1);">
         <img
-          src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=85&auto=format&fit=crop"
+          src="/assets/servicios/accidente-itinere.webp"
           alt="Accidentes de Tránsito"
           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
         />
         <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,43,123,0.88) 0%, rgba(11,24,58,0.25) 100%);"></div>
         <div class="absolute inset-0 flex items-end p-6">
@@ -204,6 +208,7 @@
             [alt]="ab.nombre"
             class="absolute inset-0 w-full h-full object-cover"
             [style]="'object-position:' + ab.imgPos + '; transition: transform 0.5s; transform: scale(' + (activeTeamCard() === i ? '1.05' : '1') + ');'"
+            loading="lazy"
           />
           <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(11,24,58,0.55) 0%, transparent 40%, rgba(11,24,58,0.82) 100%);"></div>
           <div class="absolute top-4 right-4 flex gap-2" [style.opacity]="activeTeamCard() === i ? '1' : '0'" style="transition: opacity 0.3s;">
@@ -246,7 +251,7 @@
       @for (ab of teamAbogados; track ab.nombre) {
         <div class="group relative bg-white rounded-2xl shadow-sm overflow-hidden" style="border:1px solid #f3f4f6;">
           <div class="relative overflow-hidden" style="height:256px;">
-            <img [src]="ab.img" [alt]="ab.nombre" class="absolute inset-0 w-full h-full object-cover" [style]="'object-position:' + ab.imgPos + '; transition: transform 0.5s;'" />
+            <img [src]="ab.img" [alt]="ab.nombre" class="absolute inset-0 w-full h-full object-cover" [style]="'object-position:' + ab.imgPos + '; transition: transform 0.5s;'" loading="lazy" />
             <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(11,24,58,0.5) 0%, transparent 40%, rgba(11,24,58,0.8) 100%);"></div>
             <div class="absolute bottom-3 left-3 right-3">
               <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-white text-[10px] font-semibold shadow-lg"
@@ -358,6 +363,7 @@
             [src]="lesionFotos[activeLesion()]"
             [alt]="lesiones[activeLesion()].titulo"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+            loading="lazy"
           />
           <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(11,24,58,0.7) 0%, transparent 60%);"></div>
           <!-- Badge -->
@@ -416,7 +422,8 @@
         >
           <div class="relative overflow-hidden" style="height:176px;">
             <img [src]="lesionFotos[i]" [alt]="lesion.titulo"
-              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy" />
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(11,24,58,0.7) 0%, transparent 60%);"></div>
             <div class="absolute bottom-3 left-3">
               <div class="w-9 h-9 rounded-xl flex items-center justify-center shadow-lg"
