@@ -37,7 +37,7 @@ export class FaqComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setPage({
-      title: 'Preguntas Frecuentes sobre ART y Accidentes Laborales',
+      title: 'Preguntas Frecuentes — ART y Accidentes Laborales | Capeletti',
       description: 'Respuestas a las preguntas más comunes sobre accidentes laborales, ART, Comisiones Médicas e indemnizaciones en Argentina. Todo lo que necesitás saber.',
       path: '/preguntas-frecuentes',
       schema: this.seoService.getFaqSchema(

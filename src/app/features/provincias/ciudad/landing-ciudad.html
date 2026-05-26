@@ -32,6 +32,20 @@
           }
         </div>
       }
+      <div class="mt-4">
+        <a
+          href="https://share.google/BvpPrtaLcWOGE1Quf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-xs font-medium"
+          style="color:rgba(255,255,255,0.6);"
+        >
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          Ver ubicación en Google Maps
+        </a>
+      </div>
       <div class="mt-8">
         <a routerLink="/contactanos" class="btn-primary text-base px-8 py-4">
           Consulta Gratis
@@ -82,6 +96,61 @@
       </div>
     </div>
   </section>
+
+  <!-- INDUSTRIAS Y LESIONES -->
+  @if (ciudad.industriasPrincipales?.length || ciudad.lesionesComunes?.length) {
+    <section style="background:#ffffff; border-top:1px solid rgba(0,43,123,0.07);" class="py-14">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          @if (ciudad.industriasPrincipales?.length) {
+            <div>
+              <h2 class="text-xl font-bold mb-4" style="color:#0b183a;">
+                Industrias con mayor siniestralidad en {{ ciudad.nombre }}
+              </h2>
+              <ul class="space-y-2">
+                @for (ind of ciudad.industriasPrincipales!; track ind) {
+                  <li class="flex items-start gap-3 text-sm" style="color:rgba(11,24,58,0.75);">
+                    <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#045fc3;" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                    {{ ind }}
+                  </li>
+                }
+              </ul>
+            </div>
+          }
+          @if (ciudad.lesionesComunes?.length) {
+            <div>
+              <h2 class="text-xl font-bold mb-4" style="color:#0b183a;">
+                Lesiones más frecuentes en {{ ciudad.nombre }}
+              </h2>
+              <ul class="space-y-2">
+                @for (les of ciudad.lesionesComunes!; track les) {
+                  <li class="flex items-start gap-3 text-sm" style="color:rgba(11,24,58,0.75);">
+                    <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#dc2626;" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    {{ les }}
+                  </li>
+                }
+              </ul>
+            </div>
+          }
+        </div>
+        @if (ciudad.parrafoSeo) {
+          <p class="mt-8 leading-relaxed text-sm" style="color:rgba(11,24,58,0.65);">{{ ciudad.parrafoSeo }}</p>
+        }
+        @if (ciudad.jurisdiccion) {
+          <div class="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-medium" style="background:rgba(0,43,123,0.06); color:#002b7b; border:1px solid rgba(0,43,123,0.1);">
+            <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+            </svg>
+            Jurisdicción: {{ ciudad.jurisdiccion }}
+          </div>
+        }
+      </div>
+    </section>
+  }
 
   <!-- SEO TEXT -->
   <section style="background:#F4F7FE; border-top:1px solid rgba(0,43,123,0.07);" class="py-14">

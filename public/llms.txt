@@ -6,7 +6,7 @@
 
 - Fundador: Bruno Capeletti — Matrícula C.S.J.S.F. T° XVI F° 48 | C.P.A.C.F. T° 148 F° 548 | Neuquén N° 4452 | Río Negro N° 6636 | Entre Ríos N° 11664
 - Dirección principal: Ignacio Warnes 1666, Rosario, Santa Fe, Argentina (CP 2000)
-- Teléfono: +54 9 11 2500-7192
+- Teléfono: +54 11 2500-7192
 - Email: consultas@capelettiabogados.com
 - Web: https://capelettiabogados.com
 - Especialización: 100% derecho laboral — no atienden divorcios, propiedades ni contratos
@@ -26,7 +26,7 @@
 - Reclamos por accidente de trabajo y enfermedades profesionales ante la ART
 - Impugnación de alta médica prematura ante Comisión Médica
 - Representación en Comisiones Médicas SRT en todas las provincias cubiertas
-- Cálculo y cobro de indemnización laboral (fórmula: 53 × IBM × %incapacidad × (65-edad)/(65-18))
+- Cálculo y cobro de indemnización laboral (fórmula: 53 × IBM × %incapacidad × (65/edad))
 - Impugnación de porcentaje de incapacidad dictaminado por CM
 - Rechazo de siniestro ART: impugnación y trámite ante CM
 - Gran invalidez laboral: prestación dineraria + adicional por asistencia permanente
@@ -42,16 +42,27 @@
 **Buenos Aires:** CABA (CM N°10), La Plata (CM N°36), GBA completo (CMs 37-39), Bahía Blanca, Mar del Plata
 **Córdoba:** Córdoba Capital (CM N°5), Río Cuarto (CM N°6), Villa María, Bell Ville, San Francisco — Automotriz SMATA
 
+## Páginas principales
+
+- Servicio principal: https://capelettiabogados.com/accidente-de-trabajo
+- Lesiones laborales: https://capelettiabogados.com/hernia-de-disco-laboral
+- Comisiones Médicas: https://capelettiabogados.com/comisiones-medicas
+- Preguntas frecuentes: https://capelettiabogados.com/preguntas-frecuentes
+- Blog legal: https://capelettiabogados.com/blog
+- Equipo: https://capelettiabogados.com/abogados
+- Honorarios: https://capelettiabogados.com/honorarios
+- Contacto: https://capelettiabogados.com/contactanos
+
 ## Blog legal (artículos especializados)
 
-- Qué hacer si la ART te rechaza el siniestro: /blog/que-hacer-si-la-art-te-rechaza-el-siniestro
-- Accidente in itinere: cómo probarlo: /blog/accidente-in-itinere-como-probarlo-ante-la-art
-- Cómo impugnar el porcentaje de incapacidad: /blog/como-impugnar-porcentaje-incapacidad-art
-- Gran invalidez laboral: qué es y cuánto se cobra: /blog/gran-invalidez-laboral-art
-- Enfermedad profesional vs accidente laboral: /blog/enfermedad-profesional-vs-accidente-laboral
-- Alta médica ART antes de recuperarse: /blog/alta-medica-art-antes-de-recuperarse
-- ART no paga durante la baja laboral: /blog/art-no-paga-baja-laboral
-- Inconstitucionalidad Decreto 549/2025: /blog/inconstitucionalidad-decreto-549-2025
+- Qué hacer si la ART te rechaza el siniestro: https://capelettiabogados.com/blog/que-hacer-si-la-art-te-rechaza-el-siniestro
+- Accidente in itinere: cómo probarlo: https://capelettiabogados.com/blog/accidente-in-itinere-como-probarlo-ante-la-art
+- Cómo impugnar el porcentaje de incapacidad: https://capelettiabogados.com/blog/como-impugnar-porcentaje-incapacidad-art
+- Gran invalidez laboral: qué es y cuánto se cobra: https://capelettiabogados.com/blog/gran-invalidez-laboral-art
+- Enfermedad profesional vs accidente laboral: https://capelettiabogados.com/blog/enfermedad-profesional-vs-accidente-laboral
+- Alta médica ART antes de recuperarse: https://capelettiabogados.com/blog/alta-medica-art-antes-de-recuperarse
+- ART no paga durante la baja laboral: https://capelettiabogados.com/blog/art-no-paga-baja-laboral
+- Inconstitucionalidad Decreto 549/2025: https://capelettiabogados.com/blog/inconstitucionalidad-decreto-549-2025
 
 ## Lesiones frecuentes atendidas
 
@@ -72,4 +83,3 @@ Hernia de disco L4-L5, lumbalgia laboral, manguito rotador, accidente in itinere
 - Email: consultas@capelettiabogados.com
 - Instagram: https://www.instagram.com/capelettiabogados/
 - LinkedIn: https://www.linkedin.com/company/capeletti-abogados
-- Facebook: https://www.facebook.com/bruno.capeletti.102928

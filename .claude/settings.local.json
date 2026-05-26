@@ -15,7 +15,18 @@
       "Bash(mkdir -p /c/Users/ema/.claude/projects/c--Users-ema-Desktop-PaginaCape2026/memory)",
       "Bash(node_modules/.bin/tsc --noEmit)",
       "PowerShell(node_modules\\\\.bin\\\\tsc.cmd --noEmit 2>&1)",
-      "PowerShell(& \"C:\\\\Users\\\\ema\\\\Desktop\\\\PaginaCape2026\\\\node_modules\\\\.bin\\\\tsc.cmd\" --noEmit 2>&1)"
+      "PowerShell(& \"C:\\\\Users\\\\ema\\\\Desktop\\\\PaginaCape2026\\\\node_modules\\\\.bin\\\\tsc.cmd\" --noEmit 2>&1)",
+      "PowerShell(npm --version)",
+      "PowerShell(npx firebase --version 2>&1)",
+      "PowerShell(npx -y firebase-tools@latest --version 2>&1)",
+      "PowerShell($html = Get-Content \"C:\\\\Users\\\\ema\\\\Desktop\\\\PaginaCape2026\\\\dist\\\\pagina2026\\\\browser\\\\index.html\" -Raw; $matches = [regex]::Matches\\($html, 'styles-[A-Z0-9]+\\\\.css'\\); \"CSS link tags: $\\($matches.Count\\)\"; $matches | ForEach-Object { $_.Value } | Sort-Object -Unique)",
+      "PowerShell($html = Get-Content \"C:\\\\Users\\\\ema\\\\Desktop\\\\PaginaCape2026\\\\dist\\\\pagina2026\\\\browser\\\\index.html\" -Raw; $html | Select-String -Pattern 'styles' -AllMatches | ForEach-Object { $_.Matches } | ForEach-Object { $_.Value })",
+      "PowerShell(magick --version 2>&1)",
+      "PowerShell(ffmpeg -version 2>&1)",
+      "PowerShell(node -e \"console.log\\('node ok'\\)\" 2>&1)",
+      "PowerShell(node -e \"const c=require\\('crypto'\\); console.log\\(c.createHash\\('sha256'\\).update\\(\\\\\"this.media='all'\\\\\"\\).digest\\('base64'\\)\\);\")",
+      "Bash(node -e \"const c=require\\('crypto'\\); const h=c.createHash\\('sha256'\\).update\\(\\\\\"this.media='all'\\\\\"\\).digest\\('base64'\\); console.log\\(h\\);\")",
+      "Bash(node -e \"const c=require\\('crypto'\\); let d=''; process.stdin.on\\('data',x=>d+=x\\); process.stdin.on\\('end',\\(\\)=>console.log\\(c.createHash\\('sha256'\\).update\\(d.trim\\(\\)\\).digest\\('base64'\\)\\)\\);\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\ema\\.claude\\projects\\c--Users-ema-Desktop-PaginaCape2026\\memory"

@@ -30,7 +30,24 @@ export class SobreNosotrosComponent implements OnInit {
       title: 'Abogados Laboralistas en Argentina — Estudio Capeletti | Capeletti Abogados',
       description: 'Más de 10 años especializados exclusivamente en accidentes laborales y ART. Conocé al equipo de Capeletti Abogados: matrícula activa en 6 provincias, consulta gratis.',
       path: '/sobre-nosotros',
-      schema: this.seoService.getLegalServiceSchema(),
+      schema: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          this.seoService.getLegalServiceSchema(),
+          {
+            '@type': 'AboutPage',
+            name: 'Sobre Capeletti Abogados',
+            url: 'https://capelettiabogados.com/sobre-nosotros',
+            description: 'Estudio jurídico argentino fundado en 2013. Más de 10 años especializados exclusivamente en accidentes laborales y ART. +7.000 casos representados.',
+            mainEntity: {
+              '@type': 'LegalService',
+              name: 'Capeletti Abogados',
+              url: 'https://capelettiabogados.com',
+              foundingDate: '2013',
+            },
+          },
+        ],
+      },
     });
   }
 }

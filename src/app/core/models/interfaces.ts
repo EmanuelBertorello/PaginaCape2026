@@ -46,6 +46,10 @@ export interface CiudadData {
   cmSlug?: string;
   metaTitle: string;
   metaDescription: string;
+  industriasPrincipales?: string[];
+  lesionesComunes?: string[];
+  parrafoSeo?: string;
+  jurisdiccion?: string;
 }
 
 export interface ProvinciaData {

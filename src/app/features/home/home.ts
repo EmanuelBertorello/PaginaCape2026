@@ -345,6 +345,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         '@context': 'https://schema.org',
         '@graph': [
           this.seoService.getLegalServiceSchema(),
+          this.seoService.getBreadcrumbSchema([{ label: 'Inicio', url: '/' }]),
           {
             '@type': 'WebSite',
             name: 'Capeletti Abogados',

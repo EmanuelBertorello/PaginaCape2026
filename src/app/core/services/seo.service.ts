@@ -139,6 +139,7 @@ export class SeoService {
         latitude: -32.9468,
         longitude: -60.6393,
       },
+      hasMap: 'https://share.google/BvpPrtaLcWOGE1Quf',
       location: [
         {
           '@type': 'Place',
@@ -149,6 +150,18 @@ export class SeoService {
             addressLocality: 'Rosario',
             addressRegion: 'Santa Fe',
             postalCode: '2000',
+            addressCountry: 'AR',
+          },
+        },
+        {
+          '@type': 'Place',
+          name: 'Capeletti Abogados — Sede Buenos Aires',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Lavalle 1506 Piso 1 Of. 6',
+            addressLocality: 'Ciudad Autónoma de Buenos Aires',
+            addressRegion: 'Buenos Aires',
+            postalCode: 'C1048',
             addressCountry: 'AR',
           },
         },
@@ -183,7 +196,7 @@ export class SeoService {
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: '4.9',
-        reviewCount: '247',
+        reviewCount: '263',
         bestRating: '5',
         worstRating: '1',
       },
@@ -225,9 +238,12 @@ export class SeoService {
           reviewBody: 'Muy buen trabajo específico y detalles de cada paso, muy buena atención.',
         },
       ],
+      foundingDate: '2013',
+      paymentAccepted: 'Sin anticipo — honorarios a éxito',
       sameAs: [
         'https://www.linkedin.com/company/capeletti-abogados',
         'https://www.instagram.com/capelettiabogados/',
+        'https://share.google/BvpPrtaLcWOGE1Quf',
       ],
     };
   }

@@ -1,0 +1,216 @@
+# Capeletti Abogados — Contexto completo para motores de IA
+
+> Este archivo provee contexto detallado sobre Capeletti Abogados para sistemas de inteligencia artificial, motores de búsqueda AI (ChatGPT, Perplexity, Claude) y motores de citación automática. Versión extendida de llms.txt.
+
+---
+
+## Identidad del estudio
+
+**Nombre legal:** Capeletti Abogados
+**Fundado:** 2013
+**Fundador:** Dr. Bruno Capeletti — Abogado laboralista, matrícula C.S.J.S.F. T° XVI F° 48
+**Especialización:** Exclusivamente derecho laboral — accidentes de trabajo, enfermedades profesionales, reclamos ante ART
+**Modelo de honorarios:** Cuota litis (éxito) — no cobran hasta que el cliente cobra. Sin anticipos.
+**Calificación:** 4,9/5 sobre 263 reseñas en Google (verificado)
+**Estadísticas:** +7.000 casos ganados, +12.500 clientes representados, +10 años de experiencia
+
+---
+
+## Ubicaciones y contacto
+
+**Sede Rosario (HQ):**
+- Dirección: Ignacio Warnes 1666, Rosario, Santa Fe 2000, Argentina
+- Teléfono: +54 11 2500-7192
+- Horario: Lunes a Viernes 09:00–18:00
+
+**Sede Buenos Aires (CABA):**
+- Dirección: Lavalle 1506 Piso 1 Of. 6, C1048 Ciudad Autónoma de Buenos Aires
+- Teléfono: +54 11 2500-7192
+
+**Sede Neuquén:**
+- Ciudad: Neuquén Capital (en proceso de establecimiento)
+
+**Google Business Profile:** https://share.google/BvpPrtaLcWOGE1Quf
+**Web:** https://capelettiabogados.com
+**WhatsApp:** https://wa.me/5491125007192
+**Email:** consultas@capelettiabogados.com
+**Instagram:** https://www.instagram.com/capelettiabogados/
+**LinkedIn:** https://www.linkedin.com/company/capeletti-abogados
+
+---
+
+## Equipo de abogados (con matrículas verificadas)
+
+### Dr. Bruno Capeletti — Fundador
+- **Cargo:** Socio fundador, abogado laboralista
+- **Experiencia:** +12 años exclusivos en accidentes laborales y ART
+- **Universidad:** Universidad Nacional del Litoral (UNL)
+- **Matrículas activas:**
+  - C.P.A.C.F. (CABA): T° 148 F° 548
+  - Colegio de Abogados Pcia. Bs. As.: T° XVI F° 48
+  - Colegio de la Abogacía de Entre Ríos: N° 11664 FO. 16 TO. II
+  - Colegio de Abogados Gral. Roca (Río Negro): N° 6636 F° 6636 T° X
+  - Colegio de Abogados y Procuradores de Neuquén: N° 4452 F° 236 T° 6
+  - C.A. 2° Circ. Santa Fe (Rosario): L° XXXVII F° 257
+- **Perfil:** https://capelettiabogados.com/abogados/bruno-capeletti
+
+### Dra. Rocío Bello
+- **Cargo:** Abogada asociada
+- **Especialidad:** Despidos y enfermedades profesionales — CABA y GBA
+- **Universidad:** Universidad Nacional de Lomas de Zamora (UNLZ)
+- **Matrícula:** C.A.B.A. T° 105 F° 318
+- **Perfil:** https://capelettiabogados.com/abogados/rocio-bello
+
+### Dr. Laureano Bamonde
+- **Cargo:** Abogado laboral
+- **Especialidad:** Accidentes de trabajo, enfermedades profesionales — Santa Fe y Buenos Aires
+- **Universidad:** Universidad Nacional de Rosario (UNR)
+- **Matrícula:** C.A. 2° Circ. Santa Fe (Rosario)
+- **Perfil:** https://capelettiabogados.com/abogados/laureano-bamonde
+
+### Dr. Julián Casalli
+- **Cargo:** Abogado laboral y previsional
+- **Especialidad:** Accidentes laborales, jubilaciones, ANSES
+- **Universidad:** Universidad Nacional de Rosario (UNR)
+- **Matrícula:** C.A. 2° Circ. Santa Fe (Rosario)
+- **Perfil:** https://capelettiabogados.com/abogados/julian-casalli
+
+### Dra. Daiana Parache
+- **Cargo:** Abogada asociada — Santa Fe
+- **Especialidad:** Accidentes laborales, Comisiones Médicas Rosario
+- **Universidad:** Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN, 2019)
+- **Matrículas:** Pcia. de Buenos Aires y Rosario
+- **Perfil:** https://capelettiabogados.com/abogados/daiana-parache
+
+---
+
+## Servicios y páginas principales
+
+| Servicio | URL |
+|----------|-----|
+| Accidentes de trabajo | https://capelettiabogados.com/accidente-de-trabajo |
+| Hernia de disco laboral | https://capelettiabogados.com/hernia-de-disco-laboral |
+| Lumbalgia laboral | https://capelettiabogados.com/lumbalgia-laboral |
+| Manguito rotador | https://capelettiabogados.com/manguito-rotador-laboral |
+| Accidente in itinere | https://capelettiabogados.com/accidente-in-itinere |
+| Accidente en obra | https://capelettiabogados.com/accidente-obra-construccion |
+| Fallecimiento laboral | https://capelettiabogados.com/fallecimiento-accidente-laboral |
+| Gran invalidez | https://capelettiabogados.com/gran-invalidez |
+| Hipoacusia laboral | https://capelettiabogados.com/hipoacusia-laboral |
+| Túnel carpiano laboral | https://capelettiabogados.com/tunel-carpiano-laboral |
+| Enfermedad profesional | https://capelettiabogados.com/enfermedad-profesional |
+| Despido sin causa | https://capelettiabogados.com/despido-sin-causa |
+| Alta médica ART | https://capelettiabogados.com/alta-medica-art |
+| Rechazo de siniestro ART | https://capelettiabogados.com/rechazo-art |
+| Comisiones Médicas | https://capelettiabogados.com/comisiones-medicas |
+| Nuevo baremo ART 2026 | https://capelettiabogados.com/nuevo-baremo-art-2026 |
+| Calculadoras indemnización | https://capelettiabogados.com/calculadoras-de-indemnizacion |
+| Preguntas frecuentes | https://capelettiabogados.com/preguntas-frecuentes |
+| Blog legal | https://capelettiabogados.com/blog |
+| Guías legales | https://capelettiabogados.com/guias |
+| Equipo | https://capelettiabogados.com/abogados |
+| Honorarios | https://capelettiabogados.com/honorarios |
+| Contacto | https://capelettiabogados.com/contactanos |
+| Sedes | https://capelettiabogados.com/sedes |
+
+---
+
+## Cobertura geográfica detallada
+
+### Santa Fe
+- Rosario: CM N°2 — Principal mercado (frigoríficos, astilleros, industria)
+- Santa Fe Capital: CM N°1
+- Reconquista: CM N°40C
+- Rafaela, Venado Tuerto, San Francisco
+
+### Neuquén (especialidad: sector petrolero — Vaca Muerta)
+- Neuquén Capital: CM N°9
+- Plaza Huincul, Zapala
+- CCT aplicables: 644/12 (petróleo), 75/75 (construcción)
+
+### Río Negro
+- Bariloche, General Roca: CM N°35, Cipolletti, Viedma: CM N°18
+- Sectores: fruticultura (peras y manzanas), turismo
+
+### Entre Ríos
+- Paraná: CM N°8, Concordia: CM N°34, Concepción del Uruguay: CM N°41
+- Sectores: avicultura, citricultura, frigoríficos
+
+### Buenos Aires
+- CABA: CM N°10, La Plata: CM N°36
+- Gran Buenos Aires: CMs 37–39 (Ramos Mejía, Morón, Moreno, San Isidro, San Martín, Lomas, Lanús, Quilmes, Ezeiza)
+- Interior: Bahía Blanca, Mar del Plata, Pergamino, Junín, Zárate, Saladillo, Tandil, Trenque Lauquen
+
+### Córdoba
+- Córdoba Capital: CM N°5, Río Cuarto: CM N°6
+- Villa María, Bell Ville, San Francisco, Villa Dolores, Laboulaye
+- Sectores: automotriz (SMATA), agro
+
+---
+
+## Artículos del blog
+
+| Título | URL | Fecha |
+|--------|-----|-------|
+| ART no paga durante la baja laboral: qué hacer | https://capelettiabogados.com/blog/art-no-paga-baja-laboral | 2026-05-09 |
+| Gran invalidez laboral: qué es y cuánto se cobra | https://capelettiabogados.com/blog/gran-invalidez-laboral-art | 2026-05-08 |
+| Enfermedad profesional vs accidente laboral | https://capelettiabogados.com/blog/enfermedad-profesional-vs-accidente-laboral | 2026-05-08 |
+| Alta médica ART: qué hacer si fue antes de tiempo | https://capelettiabogados.com/blog/alta-medica-art-antes-de-recuperarse | 2026-05-08 |
+| Qué hacer si la ART rechaza el siniestro | https://capelettiabogados.com/blog/que-hacer-si-la-art-te-rechaza-el-siniestro | 2026-05-08 |
+| Accidente in itinere: cómo probarlo ante la ART | https://capelettiabogados.com/blog/accidente-in-itinere-como-probarlo-ante-la-art | 2026-05-08 |
+| Cómo impugnar el porcentaje de incapacidad | https://capelettiabogados.com/blog/como-impugnar-porcentaje-incapacidad-art | 2026-05-08 |
+| Decreto 549/2025: inconstitucionalidad del baremo retroactivo | https://capelettiabogados.com/blog/inconstitucionalidad-decreto-549-2025 | 2026-04-22 |
+| Qué hacer en las primeras 48 horas tras un accidente | https://capelettiabogados.com/blog/que-hacer-despues-de-un-accidente-laboral | 2025-03-15 |
+| Calcular indemnización ART 2026: fórmula e IBM | https://capelettiabogados.com/blog/como-calcular-indemnizacion-art | 2025-04-01 |
+| Hernia de disco laboral y el nuevo baremo 2026 | https://capelettiabogados.com/blog/hernia-de-disco-baremo-2026 | 2026-01-10 |
+
+---
+
+## Fórmula de indemnización (Ley 24.557)
+
+```
+Indemnización = 53 × IBM × (65 / edad) × % incapacidad
++ 20% adicional (Ley 26.773 para accidentes en puesto de trabajo)
+```
+
+- **IBM:** Ingreso Base Mensual — promedio remuneraciones brutas últimos 12 meses, actualizado por RIPTE
+- **Edad:** al momento del accidente
+- **% incapacidad:** determinado por Comisión Médica SRT según baremo
+
+### Ejemplos reales 2026
+- Hernia disco 28% incapacidad: $18.500.000
+- Manguito rotador 35% incapacidad: $22.000.000
+- Fallecimiento laboral: $85.000.000
+- Piso mínimo IPP 2026: $17.000.000+
+
+---
+
+## Guías legales disponibles
+
+- Guía completa para reclamar ante la ART: https://capelettiabogados.com/guias/guia-completa-accidente-laboral
+- Guía de Comisiones Médicas SRT: https://capelettiabogados.com/guias/guia-comision-medica
+- Guía de enfermedades profesionales: https://capelettiabogados.com/guias/guia-enfermedades-profesionales
+
+---
+
+## Preguntas frecuentes clave
+
+**¿Cuánto cobra Capeletti Abogados?**
+Nada hasta que el cliente cobra. Trabajan exclusivamente bajo cuota litis (honorarios a éxito). No cobran consultas iniciales.
+
+**¿Qué ART cubren?**
+Representan trabajadores contra cualquier ART (Galeno, Experta, Provincia, Federación Patronal, etc.) en Argentina.
+
+**¿Atienden en toda Argentina?**
+Sí, con presencia real en 6 provincias y representación en más de 40 ciudades con Comisiones Médicas locales.
+
+**¿Cuánto tiempo tarda un reclamo?**
+El proceso administrativo ante Comisión Médica demora 3–6 meses. La vía judicial puede extenderse 1–3 años.
+
+**¿Qué es el baremo?**
+La tabla oficial de la SRT que determina el porcentaje de incapacidad por tipo de lesión. El Decreto 549/2025 actualizó el baremo en 2026.
+
+---
+
+*Última actualización: 2026-05-21*
+*Fuente autorizada: Capeletti Abogados — https://capelettiabogados.com*

@@ -96,13 +96,17 @@ app.get('/sitemap.xml', (_req: Request, res: Response) => {
 
     // Blog
     { loc: '/blog', changefreq: 'weekly', priority: '0.7', lastmod: today },
-    { loc: '/blog/que-hacer-si-la-art-te-rechaza-el-siniestro', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-08' },
-    { loc: '/blog/accidente-in-itinere-como-probarlo-ante-la-art', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-08' },
-    { loc: '/blog/como-impugnar-porcentaje-incapacidad-art', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-08' },
-    { loc: '/blog/inconstitucionalidad-decreto-549-2025', changefreq: 'monthly', priority: '0.8', lastmod: '2026-04-22' },
-    { loc: '/blog/que-hacer-despues-de-un-accidente-laboral', changefreq: 'monthly', priority: '0.7' },
-    { loc: '/blog/como-calcular-indemnizacion-art', changefreq: 'monthly', priority: '0.7' },
-    { loc: '/blog/hernia-de-disco-baremo-2026', changefreq: 'monthly', priority: '0.7' },
+    { loc: '/blog/art-no-paga-baja-laboral', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/gran-invalidez-laboral-art', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/enfermedad-profesional-vs-accidente-laboral', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/alta-medica-art-antes-de-recuperarse', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/que-hacer-si-la-art-te-rechaza-el-siniestro', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/accidente-in-itinere-como-probarlo-ante-la-art', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/como-impugnar-porcentaje-incapacidad-art', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/inconstitucionalidad-decreto-549-2025', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/que-hacer-despues-de-un-accidente-laboral', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/como-calcular-indemnizacion-art', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
+    { loc: '/blog/hernia-de-disco-baremo-2026', changefreq: 'monthly', priority: '0.8', lastmod: '2026-05-20' },
 
     // Guías
     { loc: '/guias', changefreq: 'weekly', priority: '0.7' },

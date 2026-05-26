@@ -12,6 +12,7 @@ interface HowToStep { name: string; text: string; }
 interface PostStub {
     slug: string;
     titulo: string;
+    metaTitle?: string;
     metaDescription: string;
     excerpt: string;
     autor: string;
@@ -49,6 +50,7 @@ export class BlogPostComponent implements OnInit {
         {
             slug: 'inconstitucionalidad-decreto-549-2025',
             titulo: 'Inconstitucionalidad del art. 3 del Decreto 549/2025: argumentos y fallos',
+            metaTitle: 'Decreto 549/2025: baremo retroactivo inconstitucional | Capeletti',
             metaDescription: 'El art. 3 del Decreto 549/2025 aplica el nuevo baremo a expedientes anteriores. Ya hay fallos de inconstitucionalidad en Comodoro Rivadavia y Córdoba.',
             excerpt: 'El art. 3 aplica el nuevo baremo a expedientes anteriores a febrero 2026. Ya hay fallos de inconstitucionalidad en Comodoro Rivadavia y Córdoba.',
             autor: 'Bruno Capeletti',
@@ -120,6 +122,7 @@ export class BlogPostComponent implements OnInit {
         {
             slug: 'que-hacer-despues-de-un-accidente-laboral',
             titulo: 'Qué hacer en las primeras 48 horas después de un accidente laboral',
+            metaTitle: 'Accidente laboral: primeras 48 horas — guía práctica | Capeletti',
             metaDescription: 'Los primeros pasos después de un accidente laboral son cruciales para el reclamo. Guía completa de Capeletti Abogados.',
             excerpt: 'Los primeros pasos después de un accidente laboral son cruciales para el éxito del reclamo. Te explicamos qué hacer y qué evitar.',
             autor: 'Bruno Capeletti',
@@ -205,6 +208,7 @@ export class BlogPostComponent implements OnInit {
         {
             slug: 'como-calcular-indemnizacion-art',
             titulo: 'Cómo se calcula la indemnización por accidente laboral en 2026',
+            metaTitle: 'Calcular indemnización ART 2026: fórmula e IBM | Capeletti',
             metaDescription: 'La fórmula para calcular la indemnización de la ART explicada paso a paso. Salario base, porcentaje de incapacidad y coeficiente de edad.',
             excerpt: 'La fórmula legal para calcular la indemnización de la ART depende del salario, la edad y el porcentaje de incapacidad.',
             autor: 'Bruno Capeletti',
@@ -406,6 +410,7 @@ export class BlogPostComponent implements OnInit {
         {
             slug: 'gran-invalidez-laboral-art',
             titulo: 'Gran invalidez laboral: qué es y cuánto se cobra',
+            metaTitle: 'Gran invalidez laboral: prestación ART 2026 | Capeletti',
             metaDescription: 'Conocé qué es la gran invalidez laboral, cuándo corresponde reclamarla ante la ART y cómo se calcula la indemnización.',
             excerpt: 'La gran invalidez se declara cuando el trabajador necesita asistencia permanente de otra persona. Te explicamos qué implica, cómo reclamarla y cuánto corresponde cobrar.',
             autor: 'Bruno Capeletti',
@@ -468,6 +473,7 @@ export class BlogPostComponent implements OnInit {
         {
             slug: 'enfermedad-profesional-vs-accidente-laboral',
             titulo: 'Enfermedad profesional vs accidente laboral: diferencias legales',
+            metaTitle: 'Enfermedad profesional vs accidente laboral | Capeletti',
             metaDescription: 'Conocé la diferencia entre enfermedad profesional y accidente laboral, cómo reclamar ante la ART y cuándo corresponde indemnización.',
             excerpt: 'Muchas veces el trabajador sabe que se lesionó por el trabajo, pero no sabe cómo encuadrarlo. Te explicamos la diferencia y cómo reclamar mejor.',
             autor: 'Bruno Capeletti',
@@ -547,6 +553,7 @@ export class BlogPostComponent implements OnInit {
         {
             slug: 'alta-medica-art-antes-de-recuperarse',
             titulo: 'Alta médica ART: qué hacer si fue antes de tiempo',
+            metaTitle: 'Alta médica ART prematura: cómo impugnarla | Capeletti',
             metaDescription: 'Si la ART te dio el alta médica y seguís con dolor, conocé cómo impugnarla ante Comisión Médica y reclamar indemnización.',
             excerpt: 'Recibir el alta médica de la ART cuando todavía tenés dolor o limitaciones es muy común. Te explicamos qué hacer, cómo impugnarla y qué plazos tenés.',
             autor: 'Bruno Capeletti',
@@ -727,6 +734,7 @@ export class BlogPostComponent implements OnInit {
         {
             slug: 'como-impugnar-porcentaje-incapacidad-art',
             titulo: 'Cómo impugnar el porcentaje de incapacidad de la Comisión Médica',
+            metaTitle: 'Impugnar incapacidad ART — Comisión Médica | Capeletti',
             metaDescription: 'Si la Comisión Médica fijó un porcentaje bajo, conocé cómo impugnar la incapacidad ART y reclamar una indemnización justa.',
             excerpt: 'Que la Comisión Médica te dé un porcentaje bajo no significa que tenés que aceptarlo. Te explicamos cómo revisar el dictamen e impugnar.',
             autor: 'Bruno Capeletti',
@@ -897,7 +905,7 @@ export class BlogPostComponent implements OnInit {
                   }
                 : { '@context': 'https://schema.org', '@graph': [articleSchema, speakable] };
             this.seoService.setPage({
-                title: this.post.titulo,
+                title: this.post.metaTitle ?? this.post.titulo,
                 description: this.post.metaDescription,
                 path: '/blog/' + slug,
                 ogType: 'article',
