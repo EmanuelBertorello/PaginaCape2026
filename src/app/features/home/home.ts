@@ -88,12 +88,12 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   readonly lesionFotos = [
     '/assets/lesiones/hernia-de-disco.webp',
-    '/assets/lesiones/lumbalgia-laboral.jpg',
-    '/assets/lesiones/manguito-rotador.avif',
+    '/assets/lesiones/lumbalgia-laboral.webp',
+    '/assets/lesiones/manguito-rotador.webp',
     '/assets/lesiones/accidente-obra-construccion.webp',
-    '/assets/lesiones/fallecimiento-accidente-laboral.jpg',
+    '/assets/lesiones/fallecimiento-accidente-laboral.webp',
     '/assets/lesiones/gran-invalidez-laboral.webp',
-    '/assets/lesiones/accidente-in-itinere.jpg',
+    '/assets/lesiones/accidente-in-itinere.webp',
     '/assets/lesiones/lesion-meniscos-laboral.webp',
   ];
 

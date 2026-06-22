@@ -26,7 +26,16 @@
       "PowerShell(node -e \"console.log\\('node ok'\\)\" 2>&1)",
       "PowerShell(node -e \"const c=require\\('crypto'\\); console.log\\(c.createHash\\('sha256'\\).update\\(\\\\\"this.media='all'\\\\\"\\).digest\\('base64'\\)\\);\")",
       "Bash(node -e \"const c=require\\('crypto'\\); const h=c.createHash\\('sha256'\\).update\\(\\\\\"this.media='all'\\\\\"\\).digest\\('base64'\\); console.log\\(h\\);\")",
-      "Bash(node -e \"const c=require\\('crypto'\\); let d=''; process.stdin.on\\('data',x=>d+=x\\); process.stdin.on\\('end',\\(\\)=>console.log\\(c.createHash\\('sha256'\\).update\\(d.trim\\(\\)\\).digest\\('base64'\\)\\)\\);\")"
+      "Bash(node -e \"const c=require\\('crypto'\\); let d=''; process.stdin.on\\('data',x=>d+=x\\); process.stdin.on\\('end',\\(\\)=>console.log\\(c.createHash\\('sha256'\\).update\\(d.trim\\(\\)\\).digest\\('base64'\\)\\)\\);\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\ema\\\\Desktop\\\\PaginaCape2026\\\\src\\\\app\" -Recurse -Directory | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\ema\\\\Desktop\\\\PaginaCape2026\\\\\", \"\"\\) })",
+      "PowerShell(git -C \"C:\\\\Users\\\\ema\\\\Desktop\\\\PaginaCape2026\" log --oneline -15)",
+      "PowerShell($f = Get-Item \"C:\\\\Users\\\\ema\\\\Desktop\\\\PaginaCape2026\\\\public\\\\assets\\\\team\\\\daiana-parache.webp\" -ErrorAction SilentlyContinue; if \\($f\\) { \"Existe: $\\($f.Length\\) bytes\" } else { \"NO EXISTE\" })",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); proj=list\\(d['projects'].keys\\(\\)\\)[0]; b=d['projects'][proj]['architect']['build']; print\\('outputPath:', b.get\\('options',{}\\).get\\('outputPath','N/A'\\)\\); print\\('builder:', b.get\\('builder','N/A'\\)\\)\")",
+      "Bash(node _ftp_explore.mjs)",
+      "Bash(node _deploy.mjs)",
+      "Bash(node -e ' *)",
+      "Bash(grep -v \"//\")",
+      "Bash(git status *)"
     ],
     "additionalDirectories": [
       "C:\\Users\\ema\\.claude\\projects\\c--Users-ema-Desktop-PaginaCape2026\\memory"

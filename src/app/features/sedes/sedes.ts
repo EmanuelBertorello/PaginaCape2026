@@ -16,12 +16,12 @@ export class SedesComponent {
   readonly provincias = PROVINCIAS_DATA;
 
   readonly provinciaFotos = [
-    '/santa-fe-logo.jpg',
-    '/nequen.jpg',
-    '/rio negro.jpg',
-    '/entre rios.jpg',
-    '/buenos aires.jpg',
-    '/cordoba.jpg',
+    '/santa-fe-logo.webp',
+    '/nequen.webp',
+    '/rio-negro.webp',
+    '/entre-rios.webp',
+    '/buenos-aires.webp',
+    '/cordoba.webp',
   ];
 
   readonly stats = [
