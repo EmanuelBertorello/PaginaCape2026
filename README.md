@@ -1,59 +1,83 @@
-# Pagina2026
+PaginaCape2026
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+Sitio web del Dr. Capeletti, desarrollado en Angular.
 
-## Development server
+📋 Descripción
 
-To start a local development server, run:
+Este proyecto contiene el frontend del sitio web del Dr. Capeletti, con información profesional, servicios ofrecidos y datos de contacto.
 
-```bash
-ng serve
-```
+🛠️ Stack técnico
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Angular CLI v21.1.4
+TypeScript
+HTML5 / CSS3
+Vitest para testing
+Firebase Hosting para el deploy
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+📋 Requisitos previos
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+Node.js (versión LTS recomendada)
+Angular CLI instalado globalmente:
 
-## Building
 
-To build the project run:
+bash  npm install -g @angular/cli
 
-```bash
-ng build
-```
+🚀 Instalación
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+bashgit clone https://github.com/EmanuelBertorello/PaginaCape2026.git
+cd PaginaCape2026
+npm install
 
-## Running unit tests
+💻 Desarrollo
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Para levantar un servidor de desarrollo local:
 
-```bash
-ng test
-```
+bashng serve
 
-## Running end-to-end tests
+Abrí tu navegador en http://localhost:4200/. La aplicación se recarga automáticamente cada vez que modificás algún archivo fuente.
 
-For end-to-end (e2e) testing, run:
+🧩 Generar componentes
 
-```bash
-ng e2e
-```
+Angular CLI incluye herramientas de scaffolding. Por ejemplo, para generar un componente:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+bashng generate component nombre-del-componente
 
-## Additional Resources
+Para ver todos los esquemas disponibles (components, directives, pipes, etc.):
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+bashng generate --help
+
+🏗️ Build
+
+Para compilar el proyecto:
+
+bashng build
+
+Los artefactos de build se guardan en dist/, optimizados para producción por defecto.
+
+✅ Tests
+
+Para ejecutar los tests unitarios con Vitest:
+
+bashng test
+
+☁️ Deploy
+
+El proyecto se despliega mediante Firebase Hosting. Para deployar (con Firebase CLI ya configurado):
+
+bashfirebase deploy
+
+📁 Estructura del proyecto
+
+PaginaCape2026/
+├── src/              # Código fuente de la aplicación
+├── public/           # Archivos públicos / estáticos
+├── .firebase/        # Configuración de Firebase
+├── firebase.json     # Configuración de hosting
+└── angular.json      # Configuración de Angular CLI
+
+👤 Autor
+
+Desarrollado por Emanuel Bertorello
